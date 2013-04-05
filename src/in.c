@@ -11,7 +11,8 @@ int main()
 	float __Des = 3.2;
 	float 4des = 3.33;
 	int c = #;
-	char * b = "you are so great\n";
+	char[10] b;
+	char[] b = "you are so great\n";
 	int kd = 2.0e-2;
 	int n = 2.1e-1;
 	int jed = 2.3*(1-2) ;
@@ -19,5 +20,8 @@ int main()
 		i = i&&i;
 		printf("\"'efd\n");/*fucd
 				   sek*/
+	}
+	while(a = b; b++;c++){
+		print "a b c\n";
 	}
 }

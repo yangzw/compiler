@@ -45,12 +45,7 @@ sub scanner{
 	while($i < $length){
 		my $code =get_key_code($list->[$i]);
 		if($code > -1){ #关键字
-			if($list->[$i] eq "char" and $list->[$i+1] eq '*'){
-				$list->[$i+1] = $list->[$i] . $list->[$i+1];
-				$i++;
-				$code =get_key_code($list->[$i]);
-			}
-			elsif($list->[$i] =~ /(\+|-|\*|\\|>|<|!|=)/){
+			if($list->[$i] =~ /(\+|-|\*|\\|>|<|!|=)/){
 				if($list->[$i+1] eq "="){
 					$list->[$i+1] = $list->[$i] . $list->[$i+1];
 					$i++;
