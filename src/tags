@@ -1,0 +1,43 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Id_table	Tables.pm	/^	package Id_table$/;"	p
+Key	Key.pm	/^package Key;$/;"	p
+Num_table	Tables.pm	/^	package Num_table$/;"	p
+Symbol	from_internet.cpp	/^	Symbol$/;"	e	enum:eType	file:
+Type	Tables.pm	/^	sub Type{$/;"	s
+_tmain	from_internet.cpp	/^int _tmain(int argc, _TCHAR* argv[])$/;"	f
+canEmp	first.pl	/^sub canEmp{$/;"	s
+default_name	Tables.pm	/^	sub default_name{' '}$/;"	s
+default_type	Tables.pm	/^	sub default_type{'int'}$/;"	s
+eCharFlag	from_internet.cpp	/^enum eCharFlag$/;"	g	file:
+eType	from_internet.cpp	/^enum eType$/;"	g	file:
+error	first.pl	/^sub error{$/;"	s
+error	scanning.pl	/^sub error{$/;"	s
+explain	from_internet.cpp	/^	explain$/;"	e	enum:eCharFlag	file:
+find_first	first.pl	/^sub find_first{$/;"	s
+g_charFlag	from_internet.cpp	/^eCharFlag g_charFlag = noFlag;$/;"	v
+g_mapSymbol	from_internet.cpp	/^map<string, eType> g_mapSymbol;$/;"	v
+get_key_code	Key.pm	/^sub get_key_code{$/;"	s
+handle_id	scanning.pl	/^sub handle_id{$/;"	s
+id_addr	Tables.pm	/^	sub id_addr{}$/;"	s
+id_attrib	Tables.pm	/^	sub id_attrib{}$/;"	s
+id_begin	Tables.pm	/^	sub id_begin{}$/;"	s
+id_end	Tables.pm	/^	sub id_end{}$/;"	s
+id_name	Tables.pm	/^	sub id_name{}$/;"	s
+id_type	Tables.pm	/^	sub id_type{}$/;"	s
+id_value	Tables.pm	/^	sub id_value{}$/;"	s
+init1	Tables.pm	/^	sub init1{$/;"	s
+init2	Tables.pm	/^	sub init2{$/;"	s
+isTer	first.pl	/^sub isTer{$/;"	s
+main	in.c	/^int main()$/;"	f
+name	Tables.pm	/^	sub name{$/;"	s
+noFlag	from_internet.cpp	/^	noFlag,$/;"	e	enum:eCharFlag	file:
+openNT	first.pl	/^sub openNT{$/;"	s
+openS	first.pl	/^sub openS{$/;"	s
+openT	first.pl	/^sub openT{$/;"	s
+print_id_table	scanning.pl	/^sub print_id_table{$/;"	s
+scanner	scanning.pl	/^sub scanner{$/;"	s
