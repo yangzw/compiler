@@ -1,0 +1,160 @@
+first of c:0 c
+first of d:0 d
+first of S':0 c d
+first of S:0 c d
+first of C:0 c d
+S'00
+S00
+C00
+C10
+===after:The clouse is:===
+C 0 0:cd
+C 1 0:cd
+S 0 0:$
+S' 0 0:$
+===
+goto:c
+i am in
+C01
+C00
+C10
+===after:The clouse is:===
+C 0 0:cd
+C 0 1:cd
+C 1 0:cd
+===
+goto:d
+i am in
+C11
+===after:The clouse is:===
+C 1 1:cd
+===
+goto:S'
+goto:S
+i am in
+S'01
+===after:The clouse is:===
+S' 0 1:$
+===
+goto:C
+i am in
+S01
+C00
+C10
+===after:The clouse is:===
+C 0 0:$
+C 1 0:$
+S 0 1:$
+===
+goto:c
+i am in
+C01
+C00
+C10
+===after:The clouse is:===
+C 0 0:cd
+C 0 1:cd
+C 1 0:cd
+===
+goto:d
+i am in
+C11
+===after:The clouse is:===
+C 1 1:cd
+===
+goto:S'
+goto:S
+goto:C
+i am in
+C02
+===after:The clouse is:===
+C 0 2:cd
+===
+goto:c
+goto:d
+goto:S'
+goto:S
+goto:C
+goto:c
+goto:d
+goto:S'
+goto:S
+goto:C
+goto:c
+i am in
+C01
+C00
+C10
+===after:The clouse is:===
+C 0 0:$
+C 0 1:$
+C 1 0:$
+===
+goto:d
+i am in
+C11
+===after:The clouse is:===
+C 1 1:$
+===
+goto:S'
+goto:S
+goto:C
+i am in
+S02
+===after:The clouse is:===
+S 0 2:$
+===
+goto:c
+goto:d
+goto:S'
+goto:S
+goto:C
+goto:c
+goto:d
+goto:S'
+goto:S
+goto:C
+goto:c
+i am in
+C01
+C00
+C10
+===after:The clouse is:===
+C 0 0:$
+C 0 1:$
+C 1 0:$
+===
+goto:d
+i am in
+C11
+===after:The clouse is:===
+C 1 1:$
+===
+goto:S'
+goto:S
+goto:C
+i am in
+C02
+===after:The clouse is:===
+C 0 2:$
+===
+goto:c
+goto:d
+goto:S'
+goto:S
+goto:C
+goto:c
+goto:d
+goto:S'
+goto:S
+goto:C
+goto:c
+goto:d
+goto:S'
+goto:S
+goto:C
+goto:c
+goto:d
+goto:S'
+goto:S
+goto:C

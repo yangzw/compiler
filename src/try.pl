@@ -2,25 +2,35 @@
 use strict;
 use warnings;
 use 5.010;
-use Key qw/get_key_code/;
 
-open IN,"<","in.c";
-while(<IN>){
-	my $line = $_;
-	if($line =~ /\/\*/){
-		while(!($line =~ /\*\//)){
-			$line = $line . <IN>;
-		}
-	}
-	#print "a$line||\n";
-	$line =~ s/\s+/ /g;
-	$line =~ s/(\/\*.*\*\/)//g;
-	#print $line."1\n" if $line and $line ne ' ';
-	#scanner($line);
-	my @list = grep {defined $_ and $_ ne /\s/} split(/\s+|(=|<|>|\/|\*|\+|\-|\(|\)|\{|\}|\[|\]|!|&&|,|;)/, $line);
-	if(@list){
-		print $_."#" for @list;
-		print "\n";
-	}
+my $a = '0cde';
+my @b = split(//,$a);
+my $count = split(//,$a);
+print "count:$count\n";
+my $k = $b[0];
+print $_."\n" for @b;
+
+my $c = 0;
+my $d = "$a$c";
+print "$d\n";
+#$c = $c + 1;
+print "$c\n";
+
+my @e = qw /ab cd ef/;
+print "$e[$k]\n";
+
+my $n = \@b;
+my $o = \@e;
+print "wow\n" if $n eq $o;
+
+my %j;
+$j{'k'} = 'bl';
+my $b = 'c';
+$b = undef if %j;
+print "fuck ad\n" if $b;
+
+print "---\n";
+for(my $i = 0; $i <= $#e;$i++){
+	print $e[$i];
 }
-
+print "---\n";
