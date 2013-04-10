@@ -1,0 +1,88 @@
+first of INT:0 INT
+first of MAIN:0 MAIN
+first of (:0 (
+first of ):0 )
+first of {:0 {
+first of }:0 }
+first of [:0 [
+first of ]:0 ]
+first of 0:0 0
+first of ;:0 ;
+first of CONST:0 CONST
+first of ID:0 ID
+first of DIGIT:0 DIGIT
+first of ,:0 ,
+first of VOID:0 VOID
+first of RETURN:0 RETURN
+first of =:0 =
+first of SCANF:0 SCANF
+first of PRINTF:0 PRINTF
+first of IF:0 IF
+first of ELSE:0 ELSE
+first of ELSEIF:0 ELSEIF
+first of WHILE:0 WHILE
+first of DO:0 DO
+first of FOR:0 FOR
+first of +:0 +
+first of -:0 -
+first of %:0 %
+first of /:0 /
+first of *:0 *
+first of !:0 !
+first of NUM:0 NUM
+first of FLOAT:0 FLOAT
+first of OR:0 OR
+first of &&:0 &&
+first of BOOL:0 BOOL
+first of CHAR:0 CHAR
+first of LE:0 LE
+first of GE:0 GE
+first of L:0 L
+first of G:0 G
+first of EQ:0 EQ
+first of NE:0 NE
+first of INTCON:0 INTCON
+first of BOOLCON:0 BOOLCON
+first of FLOATCON:0 FLOATCON
+first of CHARCON:0 CHARCON
+first of STRINGCON:0 STRINGCON
+first of S:0 CONST BOOL INT FLOAT CHAR VOID
+first of program:0 CONST BOOL INT FLOAT CHAR VOID
+first of expstat:1 CONST BOOL INT FLOAT CHAR
+first of functionlist:1 VOID BOOL INT FLOAT CHAR
+first of mainfunction:0 INT
+first of functiondefine:0 VOID BOOL INT FLOAT CHAR
+first of block:1 CONST BOOL INT FLOAT CHAR ID SCANF PRINTF IF WHILE DO FOR
+first of wstat:1 CONST BOOL INT FLOAT CHAR ID SCANF PRINTF IF WHILE DO FOR
+first of exestat:1 ID SCANF PRINTF IF WHILE DO FOR
+first of constat:0 CONST
+first of varstat:0 BOOL INT FLOAT CHAR
+first of funstat:0 BOOL INT FLOAT CHAR
+first of type:0 BOOL INT FLOAT CHAR
+first of con:0 INTCON BOOLCON DIGIT - FLOATCON CHARCON STRINGCON
+first of idlist:0 ID
+first of arrayelement:0 ID
+first of paralist:0 BOOL INT FLOAT CHAR
+first of return:0 RETURN
+first of asstat:0 ID
+first of rstat:0 SCANF
+first of wrstat:0 PRINTF
+first of controlstat:0 IF WHILE DO FOR
+first of exp:0 ID NUM FLOAT - ( BOOL !
+first of ifstat:0 IF
+first of elseifblock:0 ELSEIF
+first of whilestat:0 WHILE
+first of dowhilestat:0 DO
+first of forstat:0 FOR
+first of calexp:0 ID NUM FLOAT - (
+first of boexp:0 BOOL ID NUM FLOAT - ( !
+first of regexp:0 ID NUM FLOAT - (
+first of item:0 ID NUM FLOAT - (
+first of factory:0 ID NUM FLOAT - (
+first of bitem:0 BOOL ID NUM FLOAT - ( !
+first of bfactory:0 BOOL ID NUM FLOAT - ( !
+first of bool:0 BOOL ID NUM FLOAT - (
+first of compare:0 LE GE L G EQ NE
+first of digit:0 DIGIT -
+first of stype:0 BOOL INT FLOAT CHAR
+first of atype:0 BOOL INT FLOAT CHAR

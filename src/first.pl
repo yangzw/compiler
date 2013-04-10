@@ -14,9 +14,7 @@ my @stack;
 
 #read terminator and not terminator
 sub openT{
-	print "input your terminator files:";
-	chomp(my $tfile = <STDIN>);
-	open INTER,"<","$tfile" or die "Could not open file";
+	open INTER,"<","T.txt0" or die "Could not open file";
 	while(<INTER>){
 		chomp;
 		push @terArray, $_;
@@ -24,9 +22,7 @@ sub openT{
 	close INTER;
 }
 sub openNT{
-	print "input your not-terminator files:";
-	chomp(my $ntfile = <STDIN>);
-	open INNTER,"<","$ntfile" or die "Could not open file";
+	open INNTER,"<","NT.txt0" or die "Could not open file";
 	while(<INNTER>){
 		chomp;
 		push @ntArray, $_;
@@ -37,25 +33,26 @@ sub openNT{
 
 #save the syntax production
 sub openS{
-	print "input your not-terminator files:";
-	chomp(my $syfile = <STDIN>);
-	open INSY,"<","$syfile" or die "Could not open file";
+	open INSY,"<","Syntax.txt" or die "Could not open file";
 	while(<INSY>){
 		chomp;
-		if(/^<([^>]*)>::(.*)/)
+		if(/^(.*)::(.*)/)
 		{
 			my $left = $1;
 			my @rights; 
-			$production{$left} = \@rights;
 			my $right = $2;
+			$production{$left} = \@rights;
+			#$left =~ s/ $//g;
 			foreach (split('\|',$right)){
 				my $sright = $_;
-				$sright =~ s/<|>/ /g;
-				$sright =~ s/ eee /eee/g;
+				#$sright =~ s/<|>/ /g;
+				#$sright =~ s/( )+/ /g;
+				$sright =~ s/ $//g;
 				push @rights, $sright;
 				#my @rights = split(' ',$sright);
 				#print $_."\n" for @rights;
 			}
+			#print "$left=>@{$production{$left}}\n";
 		}
 	}
 }
@@ -90,19 +87,18 @@ sub find_first{
 	$firstarray[0] = '0';	#初始化第0位，表示是否有空的
 	$first{$x} = \@firstarray;
 	my $type = isTer($x);
-	#print "$x-type:$type\n";
 	if($type == 1){  #终结符的first集就是它自己
 		push @firstarray,$x;
-		#print "here\n";
 	}
 	elsif($type == 2){	#非终结符
 		my $productions = $production{$x};	#产生式序列数组的引用
-		if(@$productions){
+		#print "in find_first:$x\n";
+		if(defined @$productions){
 			for(my $j = 0; $j <= $#{$productions}; $j++){
 				my $p = $productions->[$j];
 				my $flag = 1;		#若一直有为产生空的，则不变
-				#print "::$p\n";
-				if($p eq 'eee'){
+				#print "::$p\"\n";
+				if($p eq "eee"){
 					$first{$x}->[0] = '1';	#有空的产生式
 				}else{
 					my @a = split(' ',$p);
@@ -114,7 +110,7 @@ sub find_first{
 							$flag = 0;
 						}
 						for(my $k = 1; $k <= $#{$first{$a[$i]}}; $k++){
-							push @firstarray,$first{$a[$i]}->[$k];
+							push @firstarray,$first{$a[$i]}->[$k] if notIn($first{$a[$i]}->[$k],\@firstarray);
 						}
 						$i++;
 					}
@@ -124,9 +120,9 @@ sub find_first{
 				$flag = 1;
 			}
 		}
-	}
-	else{	#若出现没有产生式的非终结符，则报错
-		error("the no-terminator has not production",$x);
+		else{	#若出现没有产生式的非终结符，则报错
+			error("the no-terminator has not production",$x);
+		}
 	}
 }
 
@@ -170,7 +166,7 @@ sub closure{
 		for(my $i = $anum;$i <= $#rights and $flag;$i++){	#对于点号后面的每个
 			my $aafter = $rights[$i + 1];
 			my $after = $rights[$i];
-			#print "after:$after\n";
+			#print "after:$after and @rights and $i\n" if $aafter and not defined $first{$aafter}->[0];
 			$flag = 0 if((not defined $aafter) or ($first{$aafter}->[0] eq '0'));	#下下一个没有空的产生式，所以不再进行下一次循环
 			for(my $j = 0; $j <= $#{$production{$after}};$j++){	#对于每一个符号的每一个产生式
 				my $key = "$after $j 0";
@@ -197,6 +193,11 @@ sub closure{
 				}
 			}
 		}
+	}
+	foreach my $name(sort keys %$I){
+		print "$name:";
+		print "@{$I->{$name}}";
+		print "\n";
 	}
 }
 
@@ -262,7 +263,7 @@ sub items{
 	$C[0] = \%s;
 	for(my $i = 0; $i <= $#C;$i++){
 		foreach(@ntArray){
-			#print "goto:$_\n";
+			print "goto:$_\n";
 			my $j = my_goto($C[$i],$_);
 			if($j){
 				if(my $k = isInC($j)){		#是否转向其他的已有
@@ -274,7 +275,7 @@ sub items{
 			}
 		}
 		foreach(@terArray){
-			#print "goto:$_\n";
+			print "goto:$_\n";
 			my $j = my_goto($C[$i],$_);
 			if($j){
 				if(my $k = isInC($j)){		#是否转向其他的已有
@@ -321,9 +322,12 @@ openNT();	#打开非终结符表
 openS();	#打开语法定义表
 
 my @left = @terArray;
+#print "====ter----\n";
+#print "$_\n" for @terArray;
 push @left, @ntArray;
 #求first集 
 foreach(@left){
+	print "first:$_\n";
 	find_first($_) if not defined $first{$_};
 }
 
@@ -333,16 +337,16 @@ foreach(@left){
 }
 #求items
 items();
-print "===The clouse is:===\n";
-for(my $i = 0; $i <= $#C;$i++){
-	print "$i\n";
-	foreach my $name(sort keys %{$C[$i]}){
-		print "$name:";
-		print for @{$C[$i]->{$name}};
-		print "\n";
-	}
-	print "===\n";
-}
+#print "===The clouse is:===\n";
+#for(my $i = 0; $i <= $#C;$i++){
+#	print "$i\n";
+#	foreach my $name(sort keys %{$C[$i]}){
+#		print "$name:";
+#		print "@{$C[$i]->{$name}}";
+#		print "\n";
+#	}
+#	print "===\n";
+#}
 print "===goto===\n";
 for(my $j = 0;$j <= $#goto1;$j++){
 	my $go = $goto1[$j];
@@ -359,20 +363,26 @@ for(my $j = 0;$j <= $#action;$j++){
 		print "$j:$_:$actioni->{$_}\n";
 	}
 }
+#control();
 
 #总控程序
 sub control{
-	push @stack,'0';
-	open IN,"<","texst.txt" or die "Could not open:$!";
+	$stack[0] = '0';
+	open IN,"<","token1" or die "Could not open:$!";
 	my $s;
 	while(<IN>){
-		my $a = chomp;
-		$s= $stack[0];
+		chomp(my $a = $_);
+		$s= $stack[$#stack];
+		print "$a:$s\n";
+		print $action[$s]->{$a} // 'undef';
+		print "\n";
 		my @next = split(" ",$action[$s]->{$a});
 		if($next[0] eq '+'){			#移进
+			print "move in\n";
 			push @stack,$a;
 			push @stack,$next[1];
 		}elsif($next[0] eq '-'){		#规约
+			print "guiyue\n";
 			my $pro = $production{$next[1]}->[$next[2]];	#产生式
 			my $num = split(' ',$pro);
 			for(my $i = 0; $i < $num*2;$i++){
@@ -382,11 +392,12 @@ sub control{
 			my $s1 = $goto1[$p1]->{$next[1]};
 			push @stack,$p1;
 			push @stack,$s1;
-			print "$next[1]::$pro\n";
+			print "$next[1]::$pro end\n";
 		}elsif($next[0] eq "acc"){
 			return 1;
 		}else{
-			error2();
+			return 0;
+			#error2();
 		}
 	}
 }

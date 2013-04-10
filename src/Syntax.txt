@@ -1,0 +1,40 @@
+S::program
+program::expstat functionlist mainfunction functionlist
+functionlist::functionlist functiondefine|functiondefine|eee
+mainfunction::INT MAIN ( ) { block RETURN 0 ; }
+block::wstat block|wstat
+wstat::expstat|exestat
+expstat::constat|varstat|funstat|eee
+constat::CONST type ID = con ;
+varstat::type idlist ;
+idlist::ID , idlist|ID
+arrayelement::ID [ DIGIT ]
+funstat::type ID ( paralist ) ;
+paralist::type ID|type ID , paralist
+functiondefine::VOID ID ( paralist ) { block }|type ID ( paralist ) { block return }
+return ::RETURN con ;|RETURN ID ;
+exestat::asstat|rstat|wrstat|controlstat|eee
+asstat::ID = exp ;|arrayelement = exp ;
+rstat::SCANF ( type , ID ) ;
+wrstat::PRINTF ( idlist ) ;
+controlstat::ifstat|whilestat|dowhilestat|forstat 
+ifstat::IF ( boexp ) { block } ELSE { block }|IF ( boexp ) { block } elseifblock ELSE { block }
+elseifblock::ELSEIF ( boexp ) { block }|elseifblock ELSEIF ( boexp ) { block }
+whilestat::WHILE ( boexp ) { block }
+dowhilestat::DO { block } WHILE ( boexp )
+forstat::FOR ( asstat  boexp ;  asstat ) { block }
+exp::calexp|boexp|regexp 
+calexp::calexp + item|calexp - item|calexp % item|item
+item::item * factory|item / factory|factory 
+factory::ID|NUM|FLOAT|- factory|( exp )
+boexp::bitem OR bitem|bitem 
+bitem::bitem && bfactory|bfactory 
+bfactory::bool|! bfactory|( exp )
+bool::BOOL|ID|regexp 
+regexp::calexp compare calexp 
+compare::LE|GE|L|G|EQ|NE 
+con::INTCON|BOOLCON|digit|FLOATCON|CHARCON|STRINGCON 
+digit::DIGIT|- DIGIT 
+type::stype|atype 
+stype::BOOL|INT|FLOAT|CHAR
+atype::stype [ DIGIT ]

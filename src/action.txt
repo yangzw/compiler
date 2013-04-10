@@ -1,0 +1,10215 @@
+=====action====
+0:BOOL:+ 16
+0:CHAR:+ 17
+0:CONST:+ 13
+0:FLOAT:+ 15
+0:INT:+ 12
+0:VOID:+ 14
+1:$:acc
+2:BOOL:+ 16
+2:CHAR:+ 17
+2:FLOAT:+ 15
+2:INT:+ 12
+2:VOID:+ 14
+3:$:- program 0
+3:BOOL:+ 16
+3:CHAR:+ 17
+3:FLOAT:+ 15
+3:INT:+ 12
+3:VOID:+ 14
+4:BOOL:- functionlist 1
+4:CHAR:- functionlist 1
+4:FLOAT:- functionlist 1
+4:INT:- functionlist 1
+4:VOID:- functionlist 1
+5:RETURN:+ 22
+5:}:+ 21
+6:BOOL:- expstat 0
+6:CHAR:- expstat 0
+6:FLOAT:- expstat 0
+6:INT:- expstat 0
+6:VOID:- expstat 0
+7:BOOL:- expstat 1
+7:CHAR:- expstat 1
+7:FLOAT:- expstat 1
+7:INT:- expstat 1
+7:VOID:- expstat 1
+8:BOOL:- expstat 2
+8:CHAR:- expstat 2
+8:FLOAT:- expstat 2
+8:INT:- expstat 2
+8:VOID:- expstat 2
+9:ID:+ 25
+10:0:- type 0
+10:BOOL:- type 0
+10:CHAR:- type 0
+10:FLOAT:- type 0
+10:INT:- type 0
+10:[:+ 26
+11:0:- type 1
+11:BOOL:- type 1
+11:CHAR:- type 1
+11:FLOAT:- type 1
+11:INT:- type 1
+12:0:- stype 1
+12:BOOL:- stype 1
+12:CHAR:- stype 1
+12:FLOAT:- stype 1
+12:INT:- stype 1
+12:MAIN:+ 28
+13:BOOL:+ 16
+13:CHAR:+ 17
+13:FLOAT:+ 15
+13:INT:+ 12
+14:ID:+ 31
+15:0:- stype 2
+15:BOOL:- stype 2
+15:CHAR:- stype 2
+15:FLOAT:- stype 2
+15:INT:- stype 2
+16:0:- stype 0
+16:BOOL:- stype 0
+16:CHAR:- stype 0
+16:FLOAT:- stype 0
+16:INT:- stype 0
+17:0:- stype 3
+17:BOOL:- stype 3
+17:CHAR:- stype 3
+17:FLOAT:- stype 3
+17:INT:- stype 3
+18:BOOL:+ 16
+18:CHAR:+ 17
+18:FLOAT:+ 15
+18:INT:+ 12
+18:VOID:+ 36
+19:BOOL:- functionlist 0
+19:CHAR:- functionlist 0
+19:FLOAT:- functionlist 0
+19:INT:- functionlist 0
+19:VOID:- functionlist 0
+20:}:+ 37
+21:0:- functiondefine 0
+21:BOOL:- functiondefine 0
+21:CHAR:- functiondefine 0
+21:FLOAT:- functiondefine 0
+21:INT:- functiondefine 0
+21:VOID:- functiondefine 0
+22:-:+ 43
+22:0:+ 40
+22:BOOLCON:+ 45
+22:CHARCON:+ 47
+22:DIGIT:+ 42
+22:FLOATCON:+ 46
+22:ID:+ 41
+22:INTCON:+ 44
+22:STRINGCON:+ 48
+23:RETURN:+ 22
+24:;:+ 50
+25:(:+ 52
+25:,:+ 53
+25:0:- idlist 1
+25:ID:- idlist 1
+26:DIGIT:+ 54
+27:RETURN:+ 55
+28:(:+ 57
+29:ID:+ 58
+30:}:+ 59
+31:(:+ 61
+32:$:- program 0
+32:BOOL:+ 16
+32:CHAR:+ 17
+32:FLOAT:+ 15
+32:INT:+ 12
+32:VOID:+ 36
+33:$:- functionlist 1
+33:BOOL:- functionlist 1
+33:CHAR:- functionlist 1
+33:FLOAT:- functionlist 1
+33:INT:- functionlist 1
+33:VOID:- functionlist 1
+34:RETURN:+ 22
+34:}:+ 64
+35:ID:+ 66
+36:ID:+ 68
+37:BOOL:- functiondefine 1
+37:CHAR:- functiondefine 1
+37:FLOAT:- functiondefine 1
+37:INT:- functiondefine 1
+37:VOID:- functiondefine 1
+38:;:+ 69
+39:-:- con 2
+39:0:- con 2
+39:BOOLCON:- con 2
+39:CHARCON:- con 2
+39:DIGIT:- con 2
+39:FLOATCON:- con 2
+39:INTCON:- con 2
+39:STRINGCON:- con 2
+40:;:+ 70
+41:;:+ 71
+42:-:- digit 0
+42:0:- digit 0
+42:BOOLCON:- digit 0
+42:CHARCON:- digit 0
+42:DIGIT:- digit 0
+42:FLOATCON:- digit 0
+42:INTCON:- digit 0
+42:STRINGCON:- digit 0
+43:DIGIT:+ 72
+44:-:- con 0
+44:0:- con 0
+44:BOOLCON:- con 0
+44:CHARCON:- con 0
+44:DIGIT:- con 0
+44:FLOATCON:- con 0
+44:INTCON:- con 0
+44:STRINGCON:- con 0
+45:-:- con 1
+45:0:- con 1
+45:BOOLCON:- con 1
+45:CHARCON:- con 1
+45:DIGIT:- con 1
+45:FLOATCON:- con 1
+45:INTCON:- con 1
+45:STRINGCON:- con 1
+46:-:- con 3
+46:0:- con 3
+46:BOOLCON:- con 3
+46:CHARCON:- con 3
+46:DIGIT:- con 3
+46:FLOATCON:- con 3
+46:INTCON:- con 3
+46:STRINGCON:- con 3
+47:-:- con 4
+47:0:- con 4
+47:BOOLCON:- con 4
+47:CHARCON:- con 4
+47:DIGIT:- con 4
+47:FLOATCON:- con 4
+47:INTCON:- con 4
+47:STRINGCON:- con 4
+48:-:- con 5
+48:0:- con 5
+48:BOOLCON:- con 5
+48:CHARCON:- con 5
+48:DIGIT:- con 5
+48:FLOATCON:- con 5
+48:INTCON:- con 5
+48:STRINGCON:- con 5
+49:}:+ 73
+50:BOOL:- varstat 0
+50:CHAR:- varstat 0
+50:FLOAT:- varstat 0
+50:INT:- varstat 0
+50:VOID:- varstat 0
+51:RETURN:+ 22
+52:BOOL:+ 16
+52:CHAR:+ 17
+52:FLOAT:+ 15
+52:INT:+ 12
+53:ID:+ 78
+54:]:+ 79
+55:0:+ 80
+56:RETURN:+ 81
+57:):+ 83
+58:=:+ 84
+59:0:- functiondefine 0
+59:BOOL:- functiondefine 0
+59:CHAR:- functiondefine 0
+59:FLOAT:- functiondefine 0
+59:ID:- functiondefine 0
+59:INT:- functiondefine 0
+59:VOID:- functiondefine 0
+60:}:+ 85
+61:BOOL:+ 16
+61:CHAR:+ 17
+61:FLOAT:+ 15
+61:INT:+ 12
+62:$:- functionlist 0
+62:BOOL:- functionlist 0
+62:CHAR:- functionlist 0
+62:FLOAT:- functionlist 0
+62:INT:- functionlist 0
+62:VOID:- functionlist 0
+63:}:+ 87
+64:$:- functiondefine 0
+64:0:- functiondefine 0
+64:BOOL:- functiondefine 0
+64:CHAR:- functiondefine 0
+64:FLOAT:- functiondefine 0
+64:INT:- functiondefine 0
+64:VOID:- functiondefine 0
+65:RETURN:+ 22
+66:(:+ 90
+67:}:+ 91
+68:(:+ 93
+69:0:- return 0
+69:RETURN:- return 0
+70:}:+ 94
+71:0:- return 1
+71:ID:- return 1
+71:RETURN:- return 1
+72:-:- digit 1
+72:0:- digit 1
+72:BOOLCON:- digit 1
+72:CHARCON:- digit 1
+72:DIGIT:- digit 1
+72:FLOATCON:- digit 1
+72:INTCON:- digit 1
+72:STRINGCON:- digit 1
+73:0:- functiondefine 1
+73:BOOL:- functiondefine 1
+73:CHAR:- functiondefine 1
+73:FLOAT:- functiondefine 1
+73:ID:- functiondefine 1
+73:INT:- functiondefine 1
+73:VOID:- functiondefine 1
+74:}:+ 95
+75:ID:+ 96
+76:):+ 98
+77:,:- idlist 0
+77:0:- idlist 0
+77:ID:- idlist 0
+78:,:+ 53
+78:0:- idlist 1
+78:ID:- idlist 1
+79:0:- atype 0
+79:BOOL:- atype 0
+79:CHAR:- atype 0
+79:DIGIT:- atype 0
+79:FLOAT:- atype 0
+79:INT:- atype 0
+79:[:- atype 0
+80:;:+ 99
+81:0:+ 100
+82:RETURN:+ 101
+83:{:+ 103
+84:-:+ 43
+84:BOOLCON:+ 45
+84:CHARCON:+ 47
+84:DIGIT:+ 42
+84:FLOATCON:+ 46
+84:INTCON:+ 44
+84:STRINGCON:+ 48
+85:(:- functiondefine 0
+85:0:- functiondefine 0
+85:BOOL:- functiondefine 0
+85:CHAR:- functiondefine 0
+85:FLOAT:- functiondefine 0
+85:ID:- functiondefine 0
+85:INT:- functiondefine 0
+85:VOID:- functiondefine 0
+86:):+ 106
+87:$:- functiondefine 1
+87:BOOL:- functiondefine 1
+87:CHAR:- functiondefine 1
+87:FLOAT:- functiondefine 1
+87:INT:- functiondefine 1
+87:VOID:- functiondefine 1
+88:}:+ 107
+89:RETURN:+ 22
+90:BOOL:+ 16
+90:CHAR:+ 17
+90:FLOAT:+ 15
+90:INT:+ 12
+91:$:- functiondefine 0
+91:0:- functiondefine 0
+91:BOOL:- functiondefine 0
+91:CHAR:- functiondefine 0
+91:FLOAT:- functiondefine 0
+91:ID:- functiondefine 0
+91:INT:- functiondefine 0
+91:VOID:- functiondefine 0
+92:}:+ 110
+93:BOOL:+ 16
+93:CHAR:+ 17
+93:FLOAT:+ 15
+93:INT:+ 12
+94:$:- mainfunction 0
+94:0:- mainfunction 0
+94:;:- mainfunction 0
+94:INT:- mainfunction 0
+94:RETURN:- mainfunction 0
+95:(:- functiondefine 1
+95:0:- functiondefine 1
+95:BOOL:- functiondefine 1
+95:CHAR:- functiondefine 1
+95:FLOAT:- functiondefine 1
+95:ID:- functiondefine 1
+95:INT:- functiondefine 1
+95:VOID:- functiondefine 1
+96:,:+ 112
+96:0:- paralist 0
+96:BOOL:- paralist 0
+96:CHAR:- paralist 0
+96:FLOAT:- paralist 0
+96:INT:- paralist 0
+97:RETURN:+ 22
+98:;:+ 116
+98:{:+ 115
+99:}:+ 117
+100:;:+ 118
+101:0:+ 119
+102:RETURN:+ 120
+103:BOOL:+ 16
+103:CHAR:+ 17
+103:CONST:+ 138
+103:DO:+ 145
+103:FLOAT:+ 15
+103:FOR:+ 146
+103:ID:+ 139
+103:IF:+ 143
+103:INT:+ 12
+103:PRINTF:+ 142
+103:RETURN:+ 140
+103:SCANF:+ 141
+103:WHILE:+ 144
+104:;:+ 147
+105:}:+ 148
+106:{:+ 150
+107:$:- functiondefine 1
+107:0:- functiondefine 1
+107:BOOL:- functiondefine 1
+107:CHAR:- functiondefine 1
+107:FLOAT:- functiondefine 1
+107:ID:- functiondefine 1
+107:INT:- functiondefine 1
+107:VOID:- functiondefine 1
+108:}:+ 151
+109:):+ 153
+110:$:- functiondefine 0
+110:(:- functiondefine 0
+110:0:- functiondefine 0
+110:BOOL:- functiondefine 0
+110:CHAR:- functiondefine 0
+110:FLOAT:- functiondefine 0
+110:ID:- functiondefine 0
+110:INT:- functiondefine 0
+110:VOID:- functiondefine 0
+111:):+ 155
+112:BOOL:+ 16
+112:CHAR:+ 17
+112:FLOAT:+ 15
+112:INT:+ 12
+113:}:+ 158
+114:RETURN:+ 22
+115:BOOL:+ 16
+115:CHAR:+ 17
+115:CONST:+ 138
+115:DO:+ 145
+115:FLOAT:+ 15
+115:FOR:+ 146
+115:ID:+ 139
+115:IF:+ 143
+115:INT:+ 12
+115:PRINTF:+ 142
+115:RETURN:+ 22
+115:SCANF:+ 141
+115:WHILE:+ 144
+116:(:- funstat 0
+116:):- funstat 0
+116:0:- funstat 0
+116:BOOL:- funstat 0
+116:CHAR:- funstat 0
+116:FLOAT:- funstat 0
+116:ID:- funstat 0
+116:INT:- funstat 0
+116:VOID:- funstat 0
+117:$:- mainfunction 0
+117:0:- mainfunction 0
+117:;:- mainfunction 0
+117:INT:- mainfunction 0
+117:MAIN:- mainfunction 0
+117:RETURN:- mainfunction 0
+118:}:+ 161
+119:;:+ 162
+120:0:+ 163
+121:BOOL:- wstat 0
+121:CHAR:- wstat 0
+121:CONST:- wstat 0
+121:DO:- wstat 0
+121:FLOAT:- wstat 0
+121:FOR:- wstat 0
+121:ID:- wstat 0
+121:IF:- wstat 0
+121:INT:- wstat 0
+121:PRINTF:- wstat 0
+121:RETURN:- wstat 0
+121:SCANF:- wstat 0
+121:WHILE:- wstat 0
+122:RETURN:+ 120
+122:}:+ 165
+123:BOOL:+ 16
+123:CHAR:+ 17
+123:CONST:+ 138
+123:DO:+ 145
+123:FLOAT:+ 15
+123:FOR:+ 146
+123:ID:+ 139
+123:IF:+ 143
+123:INT:+ 12
+123:PRINTF:+ 142
+123:RETURN:- block 1
+123:SCANF:+ 141
+123:WHILE:+ 144
+124:BOOL:- wstat 1
+124:CHAR:- wstat 1
+124:CONST:- wstat 1
+124:DO:- wstat 1
+124:FLOAT:- wstat 1
+124:FOR:- wstat 1
+124:ID:- wstat 1
+124:IF:- wstat 1
+124:INT:- wstat 1
+124:PRINTF:- wstat 1
+124:RETURN:- wstat 1
+124:SCANF:- wstat 1
+124:WHILE:- wstat 1
+125:BOOL:- expstat 0
+125:CHAR:- expstat 0
+125:CONST:- expstat 0
+125:DO:- expstat 0
+125:FLOAT:- expstat 0
+125:FOR:- expstat 0
+125:ID:- expstat 0
+125:IF:- expstat 0
+125:INT:- expstat 0
+125:PRINTF:- expstat 0
+125:RETURN:- expstat 0
+125:SCANF:- expstat 0
+125:WHILE:- expstat 0
+126:BOOL:- expstat 1
+126:CHAR:- expstat 1
+126:CONST:- expstat 1
+126:DO:- expstat 1
+126:FLOAT:- expstat 1
+126:FOR:- expstat 1
+126:ID:- expstat 1
+126:IF:- expstat 1
+126:INT:- expstat 1
+126:PRINTF:- expstat 1
+126:RETURN:- expstat 1
+126:SCANF:- expstat 1
+126:WHILE:- expstat 1
+127:BOOL:- expstat 2
+127:CHAR:- expstat 2
+127:CONST:- expstat 2
+127:DO:- expstat 2
+127:FLOAT:- expstat 2
+127:FOR:- expstat 2
+127:ID:- expstat 2
+127:IF:- expstat 2
+127:INT:- expstat 2
+127:PRINTF:- expstat 2
+127:RETURN:- expstat 2
+127:SCANF:- expstat 2
+127:WHILE:- expstat 2
+128:ID:+ 167
+129:=:+ 168
+130:BOOL:- exestat 0
+130:CHAR:- exestat 0
+130:CONST:- exestat 0
+130:DO:- exestat 0
+130:FLOAT:- exestat 0
+130:FOR:- exestat 0
+130:ID:- exestat 0
+130:IF:- exestat 0
+130:INT:- exestat 0
+130:PRINTF:- exestat 0
+130:RETURN:- exestat 0
+130:SCANF:- exestat 0
+130:WHILE:- exestat 0
+131:BOOL:- exestat 1
+131:CHAR:- exestat 1
+131:CONST:- exestat 1
+131:DO:- exestat 1
+131:FLOAT:- exestat 1
+131:FOR:- exestat 1
+131:ID:- exestat 1
+131:IF:- exestat 1
+131:INT:- exestat 1
+131:PRINTF:- exestat 1
+131:RETURN:- exestat 1
+131:SCANF:- exestat 1
+131:WHILE:- exestat 1
+132:BOOL:- exestat 2
+132:CHAR:- exestat 2
+132:CONST:- exestat 2
+132:DO:- exestat 2
+132:FLOAT:- exestat 2
+132:FOR:- exestat 2
+132:ID:- exestat 2
+132:IF:- exestat 2
+132:INT:- exestat 2
+132:PRINTF:- exestat 2
+132:RETURN:- exestat 2
+132:SCANF:- exestat 2
+132:WHILE:- exestat 2
+133:BOOL:- exestat 3
+133:CHAR:- exestat 3
+133:CONST:- exestat 3
+133:DO:- exestat 3
+133:FLOAT:- exestat 3
+133:FOR:- exestat 3
+133:ID:- exestat 3
+133:IF:- exestat 3
+133:INT:- exestat 3
+133:PRINTF:- exestat 3
+133:RETURN:- exestat 3
+133:SCANF:- exestat 3
+133:WHILE:- exestat 3
+134:BOOL:- controlstat 0
+134:CHAR:- controlstat 0
+134:CONST:- controlstat 0
+134:DO:- controlstat 0
+134:FLOAT:- controlstat 0
+134:FOR:- controlstat 0
+134:ID:- controlstat 0
+134:IF:- controlstat 0
+134:INT:- controlstat 0
+134:PRINTF:- controlstat 0
+134:RETURN:- controlstat 0
+134:SCANF:- controlstat 0
+134:WHILE:- controlstat 0
+135:BOOL:- controlstat 1
+135:CHAR:- controlstat 1
+135:CONST:- controlstat 1
+135:DO:- controlstat 1
+135:FLOAT:- controlstat 1
+135:FOR:- controlstat 1
+135:ID:- controlstat 1
+135:IF:- controlstat 1
+135:INT:- controlstat 1
+135:PRINTF:- controlstat 1
+135:RETURN:- controlstat 1
+135:SCANF:- controlstat 1
+135:WHILE:- controlstat 1
+136:BOOL:- controlstat 2
+136:CHAR:- controlstat 2
+136:CONST:- controlstat 2
+136:DO:- controlstat 2
+136:FLOAT:- controlstat 2
+136:FOR:- controlstat 2
+136:ID:- controlstat 2
+136:IF:- controlstat 2
+136:INT:- controlstat 2
+136:PRINTF:- controlstat 2
+136:RETURN:- controlstat 2
+136:SCANF:- controlstat 2
+136:WHILE:- controlstat 2
+137:BOOL:- controlstat 3
+137:CHAR:- controlstat 3
+137:CONST:- controlstat 3
+137:DO:- controlstat 3
+137:FLOAT:- controlstat 3
+137:FOR:- controlstat 3
+137:ID:- controlstat 3
+137:IF:- controlstat 3
+137:INT:- controlstat 3
+137:PRINTF:- controlstat 3
+137:RETURN:- controlstat 3
+137:SCANF:- controlstat 3
+137:WHILE:- controlstat 3
+138:BOOL:+ 16
+138:CHAR:+ 17
+138:FLOAT:+ 15
+138:INT:+ 12
+139:=:+ 171
+139:[:+ 170
+140:0:+ 172
+141:(:+ 173
+142:(:+ 174
+143:(:+ 176
+144:(:+ 178
+145:{:+ 180
+146:(:+ 182
+147:0:- constat 0
+147:=:- constat 0
+147:BOOL:- constat 0
+147:CHAR:- constat 0
+147:CONST:- constat 0
+147:FLOAT:- constat 0
+147:ID:- constat 0
+147:INT:- constat 0
+147:VOID:- constat 0
+148:(:- functiondefine 0
+148:):- functiondefine 0
+148:0:- functiondefine 0
+148:BOOL:- functiondefine 0
+148:CHAR:- functiondefine 0
+148:FLOAT:- functiondefine 0
+148:ID:- functiondefine 0
+148:INT:- functiondefine 0
+148:VOID:- functiondefine 0
+149:}:+ 183
+150:BOOL:+ 16
+150:CHAR:+ 17
+150:CONST:+ 201
+150:DO:+ 207
+150:FLOAT:+ 15
+150:FOR:+ 208
+150:ID:+ 202
+150:IF:+ 205
+150:INT:+ 12
+150:PRINTF:+ 204
+150:SCANF:+ 203
+150:WHILE:+ 206
+150:}:+ 183
+151:$:- functiondefine 1
+151:(:- functiondefine 1
+151:0:- functiondefine 1
+151:BOOL:- functiondefine 1
+151:CHAR:- functiondefine 1
+151:FLOAT:- functiondefine 1
+151:ID:- functiondefine 1
+151:INT:- functiondefine 1
+151:VOID:- functiondefine 1
+152:RETURN:+ 22
+153:{:+ 211
+154:}:+ 212
+155:{:+ 214
+156:ID:+ 215
+157:,:- paralist 1
+157:0:- paralist 1
+157:BOOL:- paralist 1
+157:CHAR:- paralist 1
+157:FLOAT:- paralist 1
+157:ID:- paralist 1
+157:INT:- paralist 1
+158:(:- functiondefine 1
+158:):- functiondefine 1
+158:0:- functiondefine 1
+158:BOOL:- functiondefine 1
+158:CHAR:- functiondefine 1
+158:FLOAT:- functiondefine 1
+158:ID:- functiondefine 1
+158:INT:- functiondefine 1
+158:VOID:- functiondefine 1
+159:}:+ 216
+160:RETURN:- block 0
+160:}:+ 165
+161:$:- mainfunction 0
+161:(:- mainfunction 0
+161:0:- mainfunction 0
+161:;:- mainfunction 0
+161:INT:- mainfunction 0
+161:MAIN:- mainfunction 0
+161:RETURN:- mainfunction 0
+162:}:+ 217
+163:;:+ 218
+164:}:+ 219
+165:0:- ifstat 1
+165:BOOL:- ifstat 1
+165:CHAR:- ifstat 1
+165:CONST:- ifstat 1
+165:DO:- ifstat 1
+165:ELSE:+ 222
+165:ELSEIF:+ 223
+165:FLOAT:- ifstat 1
+165:FOR:- ifstat 1
+165:ID:- ifstat 1
+165:IF:- ifstat 1
+165:INT:- ifstat 1
+165:PRINTF:- ifstat 1
+165:RETURN:- ifstat 1
+165:SCANF:- ifstat 1
+165:WHILE:- ifstat 1
+166:;:+ 225
+167:(:+ 226
+167:,:+ 53
+167:0:- idlist 1
+167:ID:- idlist 1
+168:!:+ 239
+168:(:+ 236
+168:-:+ 238
+168:BOOL:+ 242
+168:FLOAT:+ 241
+168:ID:+ 237
+168:NUM:+ 240
+169:ID:+ 243
+170:DIGIT:+ 244
+171:!:+ 239
+171:(:+ 236
+171:-:+ 238
+171:BOOL:+ 242
+171:FLOAT:+ 241
+171:ID:+ 237
+171:NUM:+ 240
+172:;:+ 246
+173:BOOL:+ 16
+173:CHAR:+ 17
+173:FLOAT:+ 15
+173:INT:+ 12
+174:ID:+ 25
+175:}:+ 250
+176:!:+ 239
+176:(:+ 236
+176:-:+ 238
+176:BOOL:+ 242
+176:FLOAT:+ 241
+176:ID:+ 237
+176:NUM:+ 240
+177:}:+ 255
+178:!:+ 239
+178:(:+ 236
+178:-:+ 238
+178:BOOL:+ 242
+178:FLOAT:+ 241
+178:ID:+ 237
+178:NUM:+ 240
+179:}:+ 257
+180:BOOL:+ 16
+180:CHAR:+ 17
+180:CONST:+ 201
+180:DO:+ 207
+180:FLOAT:+ 15
+180:FOR:+ 208
+180:ID:+ 202
+180:IF:+ 205
+180:INT:+ 12
+180:PRINTF:+ 204
+180:SCANF:+ 203
+180:WHILE:+ 206
+180:}:+ 259
+181:}:+ 260
+182:ID:+ 263
+183:(:- functiondefine 0
+183:):- functiondefine 0
+183:0:- functiondefine 0
+183:BOOL:- functiondefine 0
+183:CHAR:- functiondefine 0
+183:FLOAT:- functiondefine 0
+183:ID:- functiondefine 0
+183:INT:- functiondefine 0
+183:VOID:- functiondefine 0
+183:{:- functiondefine 0
+184:BOOL:- wstat 0
+184:CHAR:- wstat 0
+184:CONST:- wstat 0
+184:DO:- wstat 0
+184:FLOAT:- wstat 0
+184:FOR:- wstat 0
+184:ID:- wstat 0
+184:IF:- wstat 0
+184:INT:- wstat 0
+184:PRINTF:- wstat 0
+184:SCANF:- wstat 0
+184:WHILE:- wstat 0
+184:}:- wstat 0
+185:}:+ 264
+186:BOOL:+ 16
+186:CHAR:+ 17
+186:CONST:+ 201
+186:DO:+ 207
+186:FLOAT:+ 15
+186:FOR:+ 208
+186:ID:+ 202
+186:IF:+ 205
+186:INT:+ 12
+186:PRINTF:+ 204
+186:SCANF:+ 203
+186:WHILE:+ 206
+186:}:- block 1
+187:BOOL:- wstat 1
+187:CHAR:- wstat 1
+187:CONST:- wstat 1
+187:DO:- wstat 1
+187:FLOAT:- wstat 1
+187:FOR:- wstat 1
+187:ID:- wstat 1
+187:IF:- wstat 1
+187:INT:- wstat 1
+187:PRINTF:- wstat 1
+187:SCANF:- wstat 1
+187:WHILE:- wstat 1
+187:}:- wstat 1
+188:BOOL:- expstat 0
+188:CHAR:- expstat 0
+188:CONST:- expstat 0
+188:DO:- expstat 0
+188:FLOAT:- expstat 0
+188:FOR:- expstat 0
+188:ID:- expstat 0
+188:IF:- expstat 0
+188:INT:- expstat 0
+188:PRINTF:- expstat 0
+188:SCANF:- expstat 0
+188:WHILE:- expstat 0
+188:}:- expstat 0
+189:BOOL:- expstat 1
+189:CHAR:- expstat 1
+189:CONST:- expstat 1
+189:DO:- expstat 1
+189:FLOAT:- expstat 1
+189:FOR:- expstat 1
+189:ID:- expstat 1
+189:IF:- expstat 1
+189:INT:- expstat 1
+189:PRINTF:- expstat 1
+189:SCANF:- expstat 1
+189:WHILE:- expstat 1
+189:}:- expstat 1
+190:BOOL:- expstat 2
+190:CHAR:- expstat 2
+190:CONST:- expstat 2
+190:DO:- expstat 2
+190:FLOAT:- expstat 2
+190:FOR:- expstat 2
+190:ID:- expstat 2
+190:IF:- expstat 2
+190:INT:- expstat 2
+190:PRINTF:- expstat 2
+190:SCANF:- expstat 2
+190:WHILE:- expstat 2
+190:}:- expstat 2
+191:ID:+ 266
+192:=:+ 267
+193:BOOL:- exestat 0
+193:CHAR:- exestat 0
+193:CONST:- exestat 0
+193:DO:- exestat 0
+193:FLOAT:- exestat 0
+193:FOR:- exestat 0
+193:ID:- exestat 0
+193:IF:- exestat 0
+193:INT:- exestat 0
+193:PRINTF:- exestat 0
+193:SCANF:- exestat 0
+193:WHILE:- exestat 0
+193:}:- exestat 0
+194:BOOL:- exestat 1
+194:CHAR:- exestat 1
+194:CONST:- exestat 1
+194:DO:- exestat 1
+194:FLOAT:- exestat 1
+194:FOR:- exestat 1
+194:ID:- exestat 1
+194:IF:- exestat 1
+194:INT:- exestat 1
+194:PRINTF:- exestat 1
+194:SCANF:- exestat 1
+194:WHILE:- exestat 1
+194:}:- exestat 1
+195:BOOL:- exestat 2
+195:CHAR:- exestat 2
+195:CONST:- exestat 2
+195:DO:- exestat 2
+195:FLOAT:- exestat 2
+195:FOR:- exestat 2
+195:ID:- exestat 2
+195:IF:- exestat 2
+195:INT:- exestat 2
+195:PRINTF:- exestat 2
+195:SCANF:- exestat 2
+195:WHILE:- exestat 2
+195:}:- exestat 2
+196:BOOL:- exestat 3
+196:CHAR:- exestat 3
+196:CONST:- exestat 3
+196:DO:- exestat 3
+196:FLOAT:- exestat 3
+196:FOR:- exestat 3
+196:ID:- exestat 3
+196:IF:- exestat 3
+196:INT:- exestat 3
+196:PRINTF:- exestat 3
+196:SCANF:- exestat 3
+196:WHILE:- exestat 3
+196:}:- exestat 3
+197:BOOL:- controlstat 0
+197:CHAR:- controlstat 0
+197:CONST:- controlstat 0
+197:DO:- controlstat 0
+197:FLOAT:- controlstat 0
+197:FOR:- controlstat 0
+197:ID:- controlstat 0
+197:IF:- controlstat 0
+197:INT:- controlstat 0
+197:PRINTF:- controlstat 0
+197:SCANF:- controlstat 0
+197:WHILE:- controlstat 0
+197:}:- controlstat 0
+198:BOOL:- controlstat 1
+198:CHAR:- controlstat 1
+198:CONST:- controlstat 1
+198:DO:- controlstat 1
+198:FLOAT:- controlstat 1
+198:FOR:- controlstat 1
+198:ID:- controlstat 1
+198:IF:- controlstat 1
+198:INT:- controlstat 1
+198:PRINTF:- controlstat 1
+198:SCANF:- controlstat 1
+198:WHILE:- controlstat 1
+198:}:- controlstat 1
+199:BOOL:- controlstat 2
+199:CHAR:- controlstat 2
+199:CONST:- controlstat 2
+199:DO:- controlstat 2
+199:FLOAT:- controlstat 2
+199:FOR:- controlstat 2
+199:ID:- controlstat 2
+199:IF:- controlstat 2
+199:INT:- controlstat 2
+199:PRINTF:- controlstat 2
+199:SCANF:- controlstat 2
+199:WHILE:- controlstat 2
+199:}:- controlstat 2
+200:BOOL:- controlstat 3
+200:CHAR:- controlstat 3
+200:CONST:- controlstat 3
+200:DO:- controlstat 3
+200:FLOAT:- controlstat 3
+200:FOR:- controlstat 3
+200:ID:- controlstat 3
+200:IF:- controlstat 3
+200:INT:- controlstat 3
+200:PRINTF:- controlstat 3
+200:SCANF:- controlstat 3
+200:WHILE:- controlstat 3
+200:}:- controlstat 3
+201:BOOL:+ 16
+201:CHAR:+ 17
+201:FLOAT:+ 15
+201:INT:+ 12
+202:=:+ 269
+202:[:+ 170
+203:(:+ 270
+204:(:+ 271
+205:(:+ 273
+206:(:+ 275
+207:{:+ 277
+208:(:+ 279
+209:}:+ 280
+210:RETURN:+ 22
+211:BOOL:+ 16
+211:CHAR:+ 17
+211:CONST:+ 138
+211:DO:+ 145
+211:FLOAT:+ 15
+211:FOR:+ 146
+211:ID:+ 139
+211:IF:+ 143
+211:INT:+ 12
+211:PRINTF:+ 142
+211:RETURN:+ 22
+211:SCANF:+ 141
+211:WHILE:+ 144
+212:$:- functiondefine 0
+212:(:- functiondefine 0
+212:):- functiondefine 0
+212:0:- functiondefine 0
+212:BOOL:- functiondefine 0
+212:CHAR:- functiondefine 0
+212:FLOAT:- functiondefine 0
+212:ID:- functiondefine 0
+212:INT:- functiondefine 0
+212:VOID:- functiondefine 0
+213:}:+ 283
+214:BOOL:+ 16
+214:CHAR:+ 17
+214:CONST:+ 201
+214:DO:+ 207
+214:FLOAT:+ 15
+214:FOR:+ 208
+214:ID:+ 202
+214:IF:+ 205
+214:INT:+ 12
+214:PRINTF:+ 204
+214:SCANF:+ 203
+214:WHILE:+ 206
+214:}:+ 283
+215:,:+ 112
+215:0:- paralist 0
+215:BOOL:- paralist 0
+215:CHAR:- paralist 0
+215:FLOAT:- paralist 0
+215:ID:- paralist 0
+215:INT:- paralist 0
+216:(:- functiondefine 1
+216:):- functiondefine 1
+216:0:- functiondefine 1
+216:BOOL:- functiondefine 1
+216:CHAR:- functiondefine 1
+216:FLOAT:- functiondefine 1
+216:ID:- functiondefine 1
+216:INT:- functiondefine 1
+216:VOID:- functiondefine 1
+216:{:- functiondefine 1
+217:$:- mainfunction 0
+217:(:- mainfunction 0
+217:):- mainfunction 0
+217:0:- mainfunction 0
+217:;:- mainfunction 0
+217:INT:- mainfunction 0
+217:MAIN:- mainfunction 0
+217:RETURN:- mainfunction 0
+218:}:+ 285
+219:0:- ifstat 0
+219:BOOL:- ifstat 0
+219:CHAR:- ifstat 0
+219:CONST:- ifstat 0
+219:DO:- ifstat 0
+219:FLOAT:- ifstat 0
+219:FOR:- ifstat 0
+219:ID:- ifstat 0
+219:IF:- ifstat 0
+219:INT:- ifstat 0
+219:PRINTF:- ifstat 0
+219:RETURN:- ifstat 0
+219:SCANF:- ifstat 0
+219:WHILE:- ifstat 0
+219:}:- ifstat 0
+220:}:+ 286
+221:ELSE:+ 288
+221:ELSEIF:+ 289
+222:{:+ 291
+223:(:+ 293
+224:(:+ 294
+225:BOOL:- varstat 0
+225:CHAR:- varstat 0
+225:CONST:- varstat 0
+225:DO:- varstat 0
+225:FLOAT:- varstat 0
+225:FOR:- varstat 0
+225:ID:- varstat 0
+225:IF:- varstat 0
+225:INT:- varstat 0
+225:PRINTF:- varstat 0
+225:RETURN:- varstat 0
+225:SCANF:- varstat 0
+225:WHILE:- varstat 0
+226:BOOL:+ 16
+226:CHAR:+ 17
+226:FLOAT:+ 15
+226:INT:+ 12
+227:;:+ 296
+228:!:- exp 0
+228:%:+ 300
+228:(:- exp 0
+228:+:+ 298
+228:-:- exp 0
+228:0:- exp 0
+228:BOOL:- exp 0
+228:EQ:+ 305
+228:FLOAT:- exp 0
+228:G:+ 304
+228:GE:+ 302
+228:ID:- exp 0
+228:L:+ 303
+228:LE:+ 301
+228:NE:+ 306
+228:NUM:- exp 0
+229:!:- exp 1
+229:(:- exp 1
+229:-:- exp 1
+229:0:- exp 1
+229:BOOL:- exp 1
+229:FLOAT:- exp 1
+229:ID:- exp 1
+229:NUM:- exp 1
+230:!:- exp 2
+230:(:- exp 2
+230:-:- exp 2
+230:0:- exp 2
+230:BOOL:- exp 2
+230:FLOAT:- exp 2
+230:ID:- exp 2
+230:NUM:- exp 2
+231:!:- calexp 3
+231:(:- calexp 3
+231:*:+ 308
+231:-:- calexp 3
+231:/:+ 307
+231:0:- calexp 3
+231:BOOL:- calexp 3
+231:FLOAT:- calexp 3
+231:ID:- calexp 3
+231:NUM:- calexp 3
+232:!:- item 2
+232:(:- item 2
+232:-:- item 2
+232:0:- item 2
+232:BOOL:- item 2
+232:FLOAT:- item 2
+232:ID:- item 2
+232:NUM:- item 2
+233:!:- boexp 1
+233:&&:+ 310
+233:(:- boexp 1
+233:-:- boexp 1
+233:0:- boexp 1
+233:BOOL:- boexp 1
+233:FLOAT:- boexp 1
+233:ID:- boexp 1
+233:NUM:- boexp 1
+233:OR:+ 309
+234:!:- bitem 1
+234:(:- bitem 1
+234:-:- bitem 1
+234:0:- bitem 1
+234:BOOL:- bitem 1
+234:FLOAT:- bitem 1
+234:ID:- bitem 1
+234:NUM:- bitem 1
+235:!:- bfactory 0
+235:(:- bfactory 0
+235:-:- bfactory 0
+235:0:- bfactory 0
+235:BOOL:- bfactory 0
+235:FLOAT:- bfactory 0
+235:ID:- bfactory 0
+235:NUM:- bfactory 0
+236:!:+ 239
+236:(:+ 236
+236:-:+ 238
+236:BOOL:+ 242
+236:FLOAT:+ 241
+236:ID:+ 237
+236:NUM:+ 240
+237:!:- factory 0
+237:(:- factory 0
+237:-:- factory 0
+237:0:- factory 0
+237:BOOL:- factory 0
+237:FLOAT:- factory 0
+237:ID:- factory 0
+237:NUM:- factory 0
+238:(:+ 236
+238:-:+ 238
+238:FLOAT:+ 241
+238:ID:+ 237
+238:NUM:+ 240
+239:!:+ 239
+239:(:+ 236
+239:-:+ 238
+239:BOOL:+ 242
+239:FLOAT:+ 241
+239:ID:+ 237
+239:NUM:+ 240
+240:!:- factory 1
+240:(:- factory 1
+240:-:- factory 1
+240:0:- factory 1
+240:BOOL:- factory 1
+240:FLOAT:- factory 1
+240:ID:- factory 1
+240:NUM:- factory 1
+241:!:- factory 2
+241:(:- factory 2
+241:-:- factory 2
+241:0:- factory 2
+241:BOOL:- factory 2
+241:FLOAT:- factory 2
+241:ID:- factory 2
+241:NUM:- factory 2
+242:!:- bool 0
+242:(:- bool 0
+242:-:- bool 0
+242:0:- bool 0
+242:BOOL:- bool 0
+242:FLOAT:- bool 0
+242:ID:- bool 0
+242:NUM:- bool 0
+243:=:+ 314
+244:]:+ 315
+245:;:+ 316
+246:}:+ 317
+247:,:+ 318
+248:):+ 319
+249:}:+ 320
+250:(:- ifstat 0
+250:0:- ifstat 0
+250:BOOL:- ifstat 0
+250:CHAR:- ifstat 0
+250:CONST:- ifstat 0
+250:DO:- ifstat 0
+250:ELSE:+ 323
+250:ELSEIF:+ 223
+250:FLOAT:- ifstat 0
+250:FOR:- ifstat 0
+250:ID:- ifstat 0
+250:IF:- ifstat 0
+250:INT:- ifstat 0
+250:PRINTF:- ifstat 0
+250:RETURN:- ifstat 0
+250:SCANF:- ifstat 0
+250:WHILE:- ifstat 0
+251:%:+ 326
+251:+:+ 325
+251:-:+ 299
+251:EQ:+ 305
+251:G:+ 304
+251:GE:+ 302
+251:L:+ 303
+251:LE:+ 301
+251:NE:+ 306
+252:):+ 328
+253:(:- calexp 3
+253:*:+ 330
+253:-:- calexp 3
+253:/:+ 329
+253:0:- calexp 3
+253:FLOAT:- calexp 3
+253:ID:- calexp 3
+253:NUM:- calexp 3
+254:!:- boexp 1
+254:&&:+ 310
+254:(:- boexp 1
+254:-:- boexp 1
+254:0:- boexp 1
+254:BOOL:- boexp 1
+254:FLOAT:- boexp 1
+254:ID:- boexp 1
+254:NUM:- boexp 1
+254:OR:+ 331
+255:(:- whilestat 0
+255:0:- whilestat 0
+255:BOOL:- whilestat 0
+255:CHAR:- whilestat 0
+255:CONST:- whilestat 0
+255:DO:- whilestat 0
+255:FLOAT:- whilestat 0
+255:FOR:- whilestat 0
+255:ID:- whilestat 0
+255:IF:- whilestat 0
+255:INT:- whilestat 0
+255:PRINTF:- whilestat 0
+255:RETURN:- whilestat 0
+255:SCANF:- whilestat 0
+255:WHILE:- whilestat 0
+256:):+ 333
+257:WHILE:+ 334
+258:}:+ 335
+259:WHILE:+ 336
+260:(:- forstat 0
+260:0:- forstat 0
+260:BOOL:- forstat 0
+260:CHAR:- forstat 0
+260:CONST:- forstat 0
+260:DO:- forstat 0
+260:FLOAT:- forstat 0
+260:FOR:- forstat 0
+260:ID:- forstat 0
+260:IF:- forstat 0
+260:INT:- forstat 0
+260:PRINTF:- forstat 0
+260:RETURN:- forstat 0
+260:SCANF:- forstat 0
+260:WHILE:- forstat 0
+261:=:+ 337
+262:!:+ 239
+262:(:+ 236
+262:-:+ 238
+262:BOOL:+ 242
+262:FLOAT:+ 241
+262:ID:+ 237
+262:NUM:+ 240
+263:=:+ 339
+263:[:+ 170
+264:(:- functiondefine 0
+264:):- functiondefine 0
+264:0:- ifstat 1
+264:BOOL:- ifstat 1
+264:CHAR:- ifstat 1
+264:CONST:- ifstat 1
+264:DO:- ifstat 1
+264:ELSE:+ 342
+264:ELSEIF:+ 223
+264:FLOAT:- ifstat 1
+264:FOR:- ifstat 1
+264:ID:- ifstat 1
+264:IF:- ifstat 1
+264:INT:- ifstat 1
+264:PRINTF:- ifstat 1
+264:SCANF:- ifstat 1
+264:VOID:- functiondefine 0
+264:WHILE:- ifstat 1
+264:{:- functiondefine 0
+264:}:- ifstat 1
+265:;:+ 344
+266:(:+ 345
+266:,:+ 53
+266:0:- idlist 1
+266:ID:- idlist 1
+267:!:+ 239
+267:(:+ 236
+267:-:+ 238
+267:BOOL:+ 242
+267:FLOAT:+ 241
+267:ID:+ 237
+267:NUM:+ 240
+268:ID:+ 347
+269:!:+ 239
+269:(:+ 236
+269:-:+ 238
+269:BOOL:+ 242
+269:FLOAT:+ 241
+269:ID:+ 237
+269:NUM:+ 240
+270:BOOL:+ 16
+270:CHAR:+ 17
+270:FLOAT:+ 15
+270:INT:+ 12
+271:ID:+ 25
+272:}:+ 351
+273:!:+ 239
+273:(:+ 236
+273:-:+ 238
+273:BOOL:+ 242
+273:FLOAT:+ 241
+273:ID:+ 237
+273:NUM:+ 240
+274:}:+ 353
+275:!:+ 239
+275:(:+ 236
+275:-:+ 238
+275:BOOL:+ 242
+275:FLOAT:+ 241
+275:ID:+ 237
+275:NUM:+ 240
+276:}:+ 355
+277:BOOL:+ 16
+277:CHAR:+ 17
+277:CONST:+ 201
+277:DO:+ 207
+277:FLOAT:+ 15
+277:FOR:+ 208
+277:ID:+ 202
+277:IF:+ 205
+277:INT:+ 12
+277:PRINTF:+ 204
+277:SCANF:+ 203
+277:WHILE:+ 206
+277:}:+ 259
+278:}:+ 357
+279:ID:+ 263
+280:$:- functiondefine 1
+280:(:- functiondefine 1
+280:):- functiondefine 1
+280:0:- functiondefine 1
+280:BOOL:- functiondefine 1
+280:CHAR:- functiondefine 1
+280:FLOAT:- functiondefine 1
+280:ID:- functiondefine 1
+280:INT:- functiondefine 1
+280:VOID:- functiondefine 1
+281:}:+ 359
+282:RETURN:- block 0
+282:}:+ 165
+283:$:- functiondefine 0
+283:(:- functiondefine 0
+283:):- functiondefine 0
+283:0:- functiondefine 0
+283:BOOL:- functiondefine 0
+283:CHAR:- functiondefine 0
+283:FLOAT:- functiondefine 0
+283:ID:- functiondefine 0
+283:INT:- functiondefine 0
+283:VOID:- functiondefine 0
+283:{:- functiondefine 0
+284:}:+ 360
+285:$:- mainfunction 0
+285:(:- mainfunction 0
+285:):- mainfunction 0
+285:0:- mainfunction 0
+285:;:- mainfunction 0
+285:INT:- mainfunction 0
+285:MAIN:- mainfunction 0
+285:RETURN:- mainfunction 0
+285:{:- mainfunction 0
+286:0:- elseifblock 0
+286:BOOL:- ifstat 0
+286:CHAR:- ifstat 0
+286:CONST:- ifstat 0
+286:DO:- ifstat 0
+286:ELSE:- ifstat 0
+286:ELSEIF:- elseifblock 0
+286:FLOAT:- ifstat 0
+286:FOR:- ifstat 0
+286:ID:- ifstat 0
+286:IF:- ifstat 0
+286:INT:- ifstat 0
+286:PRINTF:- ifstat 0
+286:RETURN:- ifstat 0
+286:SCANF:- ifstat 0
+286:WHILE:- ifstat 0
+286:}:- ifstat 0
+287:}:+ 361
+288:{:+ 363
+289:(:+ 365
+290:}:+ 366
+291:BOOL:+ 16
+291:CHAR:+ 17
+291:CONST:+ 201
+291:DO:+ 207
+291:FLOAT:+ 15
+291:FOR:+ 208
+291:ID:+ 202
+291:IF:+ 205
+291:INT:+ 12
+291:PRINTF:+ 204
+291:SCANF:+ 203
+291:WHILE:+ 206
+291:}:+ 366
+292:}:+ 368
+293:!:+ 239
+293:(:+ 236
+293:-:+ 238
+293:BOOL:+ 242
+293:FLOAT:+ 241
+293:ID:+ 237
+293:NUM:+ 240
+294:!:+ 239
+294:(:+ 236
+294:-:+ 238
+294:BOOL:+ 242
+294:FLOAT:+ 241
+294:ID:+ 237
+294:NUM:+ 240
+295:):+ 371
+296:0:- asstat 1
+296:=:- asstat 1
+296:BOOL:- asstat 1
+296:CHAR:- asstat 1
+296:CONST:- asstat 1
+296:DO:- asstat 1
+296:FLOAT:- asstat 1
+296:FOR:- asstat 1
+296:ID:- asstat 1
+296:IF:- asstat 1
+296:INT:- asstat 1
+296:PRINTF:- asstat 1
+296:RETURN:- asstat 1
+296:SCANF:- asstat 1
+296:WHILE:- asstat 1
+297:(:+ 236
+297:-:+ 238
+297:FLOAT:+ 241
+297:ID:+ 237
+297:NUM:+ 240
+298:(:+ 375
+298:-:+ 377
+298:FLOAT:+ 379
+298:ID:+ 376
+298:NUM:+ 378
+299:(:+ 236
+299:-:+ 238
+299:FLOAT:+ 241
+299:ID:+ 237
+299:NUM:+ 240
+300:(:+ 383
+300:-:+ 385
+300:FLOAT:+ 387
+300:ID:+ 384
+300:NUM:+ 386
+301:0:- compare 0
+301:EQ:- compare 0
+301:G:- compare 0
+301:GE:- compare 0
+301:L:- compare 0
+301:LE:- compare 0
+301:NE:- compare 0
+302:0:- compare 1
+302:EQ:- compare 1
+302:G:- compare 1
+302:GE:- compare 1
+302:L:- compare 1
+302:LE:- compare 1
+302:NE:- compare 1
+303:0:- compare 2
+303:EQ:- compare 2
+303:G:- compare 2
+303:GE:- compare 2
+303:L:- compare 2
+303:LE:- compare 2
+303:NE:- compare 2
+304:0:- compare 3
+304:EQ:- compare 3
+304:G:- compare 3
+304:GE:- compare 3
+304:L:- compare 3
+304:LE:- compare 3
+304:NE:- compare 3
+305:0:- compare 4
+305:EQ:- compare 4
+305:G:- compare 4
+305:GE:- compare 4
+305:L:- compare 4
+305:LE:- compare 4
+305:NE:- compare 4
+306:0:- compare 5
+306:EQ:- compare 5
+306:G:- compare 5
+306:GE:- compare 5
+306:L:- compare 5
+306:LE:- compare 5
+306:NE:- compare 5
+307:(:+ 389
+307:-:+ 391
+307:FLOAT:+ 393
+307:ID:+ 390
+307:NUM:+ 392
+308:(:+ 395
+308:-:+ 397
+308:FLOAT:+ 399
+308:ID:+ 396
+308:NUM:+ 398
+309:!:+ 407
+309:(:+ 405
+309:-:+ 238
+309:BOOL:+ 408
+309:FLOAT:+ 241
+309:ID:+ 406
+309:NUM:+ 240
+310:!:+ 415
+310:(:+ 413
+310:-:+ 238
+310:BOOL:+ 416
+310:FLOAT:+ 241
+310:ID:+ 414
+310:NUM:+ 240
+311:):+ 417
+312:!:- factory 3
+312:(:- factory 3
+312:-:- factory 3
+312:0:- factory 3
+312:BOOL:- factory 3
+312:FLOAT:- factory 3
+312:ID:- factory 3
+312:NUM:- factory 3
+313:!:- bfactory 1
+313:(:- bfactory 1
+313:-:- bfactory 1
+313:0:- bfactory 1
+313:BOOL:- bfactory 1
+313:FLOAT:- bfactory 1
+313:ID:- bfactory 1
+313:NUM:- bfactory 1
+314:-:+ 43
+314:BOOLCON:+ 45
+314:CHARCON:+ 47
+314:DIGIT:+ 42
+314:FLOATCON:+ 46
+314:INTCON:+ 44
+314:STRINGCON:+ 48
+315:0:- arrayelement 0
+315:DIGIT:- arrayelement 0
+315:ID:- arrayelement 0
+315:[:- arrayelement 0
+316:0:- asstat 0
+316:=:- asstat 0
+316:BOOL:- asstat 0
+316:CHAR:- asstat 0
+316:CONST:- asstat 0
+316:DO:- asstat 0
+316:FLOAT:- asstat 0
+316:FOR:- asstat 0
+316:ID:- asstat 0
+316:IF:- asstat 0
+316:INT:- asstat 0
+316:PRINTF:- asstat 0
+316:RETURN:- asstat 0
+316:SCANF:- asstat 0
+316:WHILE:- asstat 0
+317:0:- mainfunction 0
+317:;:- mainfunction 0
+317:RETURN:- mainfunction 0
+318:ID:+ 419
+319:;:+ 420
+320:(:- ifstat 0
+320:0:- ifstat 0
+320:BOOL:- ifstat 0
+320:CHAR:- ifstat 0
+320:CONST:- ifstat 0
+320:DO:- ifstat 0
+320:FLOAT:- ifstat 0
+320:FOR:- ifstat 0
+320:ID:- ifstat 0
+320:IF:- ifstat 0
+320:INT:- ifstat 0
+320:PRINTF:- ifstat 0
+320:RETURN:- ifstat 0
+320:SCANF:- ifstat 0
+320:WHILE:- ifstat 0
+320:}:- ifstat 0
+321:}:+ 421
+322:ELSE:+ 423
+322:ELSEIF:+ 289
+323:{:+ 425
+324:(:+ 429
+324:-:+ 431
+324:FLOAT:+ 433
+324:ID:+ 430
+324:NUM:+ 432
+325:(:+ 436
+325:-:+ 438
+325:FLOAT:+ 440
+325:ID:+ 437
+325:NUM:+ 439
+326:(:+ 443
+326:-:+ 445
+326:FLOAT:+ 447
+326:ID:+ 444
+326:NUM:+ 446
+327:}:+ 449
+328:{:+ 451
+329:(:+ 453
+329:-:+ 455
+329:FLOAT:+ 457
+329:ID:+ 454
+329:NUM:+ 456
+330:(:+ 459
+330:-:+ 461
+330:FLOAT:+ 463
+330:ID:+ 460
+330:NUM:+ 462
+331:!:+ 471
+331:(:+ 469
+331:-:+ 238
+331:BOOL:+ 472
+331:FLOAT:+ 241
+331:ID:+ 470
+331:NUM:+ 240
+332:}:+ 473
+333:{:+ 475
+334:(:+ 476
+335:0:- ifstat 1
+335:BOOL:- ifstat 1
+335:CHAR:- ifstat 1
+335:CONST:- ifstat 1
+335:DO:- ifstat 1
+335:ELSE:+ 342
+335:ELSEIF:+ 223
+335:FLOAT:- ifstat 1
+335:FOR:- ifstat 1
+335:ID:- ifstat 1
+335:IF:- ifstat 1
+335:INT:- ifstat 1
+335:PRINTF:- ifstat 1
+335:SCANF:- ifstat 1
+335:WHILE:- ifstat 1
+335:}:- ifstat 1
+336:(:+ 477
+337:!:+ 239
+337:(:+ 236
+337:-:+ 238
+337:BOOL:+ 242
+337:FLOAT:+ 241
+337:ID:+ 237
+337:NUM:+ 240
+338:;:+ 480
+339:!:+ 239
+339:(:+ 236
+339:-:+ 238
+339:BOOL:+ 242
+339:FLOAT:+ 241
+339:ID:+ 237
+339:NUM:+ 240
+340:}:+ 482
+341:ELSE:+ 484
+341:ELSEIF:+ 289
+342:{:+ 486
+343:(:+ 487
+344:BOOL:- varstat 0
+344:CHAR:- varstat 0
+344:CONST:- varstat 0
+344:DO:- varstat 0
+344:FLOAT:- varstat 0
+344:FOR:- varstat 0
+344:ID:- varstat 0
+344:IF:- varstat 0
+344:INT:- varstat 0
+344:PRINTF:- varstat 0
+344:SCANF:- varstat 0
+344:WHILE:- varstat 0
+344:}:- varstat 0
+345:BOOL:+ 16
+345:CHAR:+ 17
+345:FLOAT:+ 15
+345:INT:+ 12
+346:;:+ 489
+347:=:+ 490
+348:;:+ 491
+349:,:+ 492
+350:):+ 493
+351:(:- ifstat 0
+351:0:- ifstat 0
+351:BOOL:- ifstat 0
+351:CHAR:- ifstat 0
+351:CONST:- ifstat 0
+351:DO:- ifstat 0
+351:ELSE:+ 496
+351:ELSEIF:+ 223
+351:FLOAT:- ifstat 0
+351:FOR:- ifstat 0
+351:ID:- ifstat 0
+351:IF:- ifstat 0
+351:INT:- ifstat 0
+351:PRINTF:- ifstat 0
+351:SCANF:- ifstat 0
+351:WHILE:- ifstat 0
+351:}:- ifstat 0
+352:):+ 498
+353:(:- whilestat 0
+353:0:- whilestat 0
+353:BOOL:- whilestat 0
+353:CHAR:- whilestat 0
+353:CONST:- whilestat 0
+353:DO:- whilestat 0
+353:FLOAT:- whilestat 0
+353:FOR:- whilestat 0
+353:ID:- whilestat 0
+353:IF:- whilestat 0
+353:INT:- whilestat 0
+353:PRINTF:- whilestat 0
+353:SCANF:- whilestat 0
+353:WHILE:- whilestat 0
+353:}:- whilestat 0
+354:):+ 500
+355:WHILE:+ 501
+356:}:+ 502
+357:(:- forstat 0
+357:0:- forstat 0
+357:BOOL:- forstat 0
+357:CHAR:- forstat 0
+357:CONST:- forstat 0
+357:DO:- forstat 0
+357:FLOAT:- forstat 0
+357:FOR:- forstat 0
+357:ID:- forstat 0
+357:IF:- forstat 0
+357:INT:- forstat 0
+357:PRINTF:- forstat 0
+357:SCANF:- forstat 0
+357:WHILE:- forstat 0
+357:}:- forstat 0
+358:!:+ 239
+358:(:+ 236
+358:-:+ 238
+358:BOOL:+ 242
+358:FLOAT:+ 241
+358:ID:+ 237
+358:NUM:+ 240
+359:$:- functiondefine 1
+359:(:- functiondefine 1
+359:):- functiondefine 1
+359:0:- functiondefine 1
+359:BOOL:- functiondefine 1
+359:CHAR:- functiondefine 1
+359:FLOAT:- functiondefine 1
+359:ID:- functiondefine 1
+359:INT:- functiondefine 1
+359:VOID:- functiondefine 1
+359:{:- functiondefine 1
+360:$:- functiondefine 0
+360:(:- functiondefine 0
+360:):- functiondefine 0
+360:0:- ifstat 1
+360:BOOL:- ifstat 1
+360:CHAR:- ifstat 1
+360:CONST:- ifstat 1
+360:DO:- ifstat 1
+360:ELSE:+ 342
+360:ELSEIF:+ 223
+360:FLOAT:- ifstat 1
+360:FOR:- ifstat 1
+360:ID:- ifstat 1
+360:IF:- ifstat 1
+360:INT:- ifstat 1
+360:PRINTF:- ifstat 1
+360:SCANF:- ifstat 1
+360:VOID:- functiondefine 0
+360:WHILE:- ifstat 1
+360:{:- functiondefine 0
+360:}:- ifstat 1
+361:0:- elseifblock 1
+361:BOOL:- ifstat 1
+361:CHAR:- ifstat 1
+361:CONST:- ifstat 1
+361:DO:- ifstat 1
+361:ELSE:- ifstat 1
+361:ELSEIF:- elseifblock 1
+361:FLOAT:- ifstat 1
+361:FOR:- ifstat 1
+361:ID:- ifstat 1
+361:IF:- ifstat 1
+361:INT:- ifstat 1
+361:PRINTF:- ifstat 1
+361:RETURN:- ifstat 1
+361:SCANF:- ifstat 1
+361:WHILE:- ifstat 1
+361:}:- ifstat 1
+362:}:+ 504
+363:BOOL:+ 16
+363:CHAR:+ 17
+363:CONST:+ 201
+363:DO:+ 207
+363:FLOAT:+ 15
+363:FOR:+ 208
+363:ID:+ 202
+363:IF:+ 205
+363:INT:+ 12
+363:PRINTF:+ 204
+363:SCANF:+ 203
+363:WHILE:+ 206
+363:}:+ 504
+364:}:+ 506
+365:!:+ 239
+365:(:+ 236
+365:-:+ 238
+365:BOOL:+ 242
+365:FLOAT:+ 241
+365:ID:+ 237
+365:NUM:+ 240
+366:0:- ifstat 0
+366:BOOL:- ifstat 0
+366:CHAR:- ifstat 0
+366:CONST:- ifstat 0
+366:DO:- ifstat 0
+366:ELSE:- ifstat 0
+366:FLOAT:- ifstat 0
+366:FOR:- ifstat 0
+366:ID:- ifstat 0
+366:IF:- ifstat 0
+366:INT:- ifstat 0
+366:PRINTF:- ifstat 0
+366:RETURN:- ifstat 0
+366:SCANF:- ifstat 0
+366:WHILE:- ifstat 0
+366:{:- ifstat 0
+366:}:- ifstat 0
+367:}:+ 508
+368:(:- elseifblock 0
+368:0:- elseifblock 0
+368:ELSEIF:- elseifblock 0
+369:):+ 510
+370:):+ 511
+371:;:+ 512
+372:!:- regexp 0
+372:%:+ 300
+372:(:- regexp 0
+372:+:+ 298
+372:-:+ 299
+372:0:- regexp 0
+372:BOOL:- regexp 0
+372:FLOAT:- regexp 0
+372:ID:- regexp 0
+372:NUM:- regexp 0
+373:!:- calexp 0
+373:(:- calexp 0
+373:*:+ 514
+373:+:- calexp 0
+373:-:- calexp 0
+373:/:+ 513
+373:0:- calexp 0
+373:BOOL:- calexp 0
+373:FLOAT:- calexp 0
+373:ID:- calexp 0
+373:NUM:- calexp 0
+374:!:- item 2
+374:(:- item 2
+374:+:- item 2
+374:-:- item 2
+374:0:- item 2
+374:BOOL:- item 2
+374:FLOAT:- item 2
+374:ID:- item 2
+374:NUM:- item 2
+375:!:+ 239
+375:(:+ 236
+375:-:+ 238
+375:BOOL:+ 242
+375:FLOAT:+ 241
+375:ID:+ 237
+375:NUM:+ 240
+376:!:- factory 0
+376:(:- factory 0
+376:+:- factory 0
+376:-:- factory 0
+376:0:- factory 0
+376:BOOL:- factory 0
+376:FLOAT:- factory 0
+376:ID:- factory 0
+376:NUM:- factory 0
+377:(:+ 375
+377:-:+ 377
+377:FLOAT:+ 379
+377:ID:+ 376
+377:NUM:+ 378
+378:!:- factory 1
+378:(:- factory 1
+378:+:- factory 1
+378:-:- factory 1
+378:0:- factory 1
+378:BOOL:- factory 1
+378:FLOAT:- factory 1
+378:ID:- factory 1
+378:NUM:- factory 1
+379:!:- factory 2
+379:(:- factory 2
+379:+:- factory 2
+379:-:- factory 2
+379:0:- factory 2
+379:BOOL:- factory 2
+379:FLOAT:- factory 2
+379:ID:- factory 2
+379:NUM:- factory 2
+380:!:- calexp 1
+380:(:- calexp 1
+380:*:+ 308
+380:-:- calexp 1
+380:/:+ 307
+380:0:- calexp 1
+380:BOOL:- calexp 1
+380:FLOAT:- calexp 1
+380:ID:- calexp 1
+380:NUM:- calexp 1
+381:!:- calexp 2
+381:%:- calexp 2
+381:(:- calexp 2
+381:*:+ 518
+381:-:- calexp 2
+381:/:+ 517
+381:0:- calexp 2
+381:BOOL:- calexp 2
+381:FLOAT:- calexp 2
+381:ID:- calexp 2
+381:NUM:- calexp 2
+382:!:- item 2
+382:%:- item 2
+382:(:- item 2
+382:-:- item 2
+382:0:- item 2
+382:BOOL:- item 2
+382:FLOAT:- item 2
+382:ID:- item 2
+382:NUM:- item 2
+383:!:+ 239
+383:(:+ 236
+383:-:+ 238
+383:BOOL:+ 242
+383:FLOAT:+ 241
+383:ID:+ 237
+383:NUM:+ 240
+384:!:- factory 0
+384:%:- factory 0
+384:(:- factory 0
+384:-:- factory 0
+384:0:- factory 0
+384:BOOL:- factory 0
+384:FLOAT:- factory 0
+384:ID:- factory 0
+384:NUM:- factory 0
+385:(:+ 383
+385:-:+ 385
+385:FLOAT:+ 387
+385:ID:+ 384
+385:NUM:+ 386
+386:!:- factory 1
+386:%:- factory 1
+386:(:- factory 1
+386:-:- factory 1
+386:0:- factory 1
+386:BOOL:- factory 1
+386:FLOAT:- factory 1
+386:ID:- factory 1
+386:NUM:- factory 1
+387:!:- factory 2
+387:%:- factory 2
+387:(:- factory 2
+387:-:- factory 2
+387:0:- factory 2
+387:BOOL:- factory 2
+387:FLOAT:- factory 2
+387:ID:- factory 2
+387:NUM:- factory 2
+388:!:- item 1
+388:(:- item 1
+388:-:- item 1
+388:/:- item 1
+388:0:- item 1
+388:BOOL:- item 1
+388:FLOAT:- item 1
+388:ID:- item 1
+388:NUM:- item 1
+389:!:+ 239
+389:(:+ 236
+389:-:+ 238
+389:BOOL:+ 242
+389:FLOAT:+ 241
+389:ID:+ 237
+389:NUM:+ 240
+390:!:- factory 0
+390:(:- factory 0
+390:-:- factory 0
+390:/:- factory 0
+390:0:- factory 0
+390:BOOL:- factory 0
+390:FLOAT:- factory 0
+390:ID:- factory 0
+390:NUM:- factory 0
+391:(:+ 389
+391:-:+ 391
+391:FLOAT:+ 393
+391:ID:+ 390
+391:NUM:+ 392
+392:!:- factory 1
+392:(:- factory 1
+392:-:- factory 1
+392:/:- factory 1
+392:0:- factory 1
+392:BOOL:- factory 1
+392:FLOAT:- factory 1
+392:ID:- factory 1
+392:NUM:- factory 1
+393:!:- factory 2
+393:(:- factory 2
+393:-:- factory 2
+393:/:- factory 2
+393:0:- factory 2
+393:BOOL:- factory 2
+393:FLOAT:- factory 2
+393:ID:- factory 2
+393:NUM:- factory 2
+394:!:- item 0
+394:(:- item 0
+394:*:- item 0
+394:-:- item 0
+394:0:- item 0
+394:BOOL:- item 0
+394:FLOAT:- item 0
+394:ID:- item 0
+394:NUM:- item 0
+395:!:+ 239
+395:(:+ 236
+395:-:+ 238
+395:BOOL:+ 242
+395:FLOAT:+ 241
+395:ID:+ 237
+395:NUM:+ 240
+396:!:- factory 0
+396:(:- factory 0
+396:*:- factory 0
+396:-:- factory 0
+396:0:- factory 0
+396:BOOL:- factory 0
+396:FLOAT:- factory 0
+396:ID:- factory 0
+396:NUM:- factory 0
+397:(:+ 395
+397:-:+ 397
+397:FLOAT:+ 399
+397:ID:+ 396
+397:NUM:+ 398
+398:!:- factory 1
+398:(:- factory 1
+398:*:- factory 1
+398:-:- factory 1
+398:0:- factory 1
+398:BOOL:- factory 1
+398:FLOAT:- factory 1
+398:ID:- factory 1
+398:NUM:- factory 1
+399:!:- factory 2
+399:(:- factory 2
+399:*:- factory 2
+399:-:- factory 2
+399:0:- factory 2
+399:BOOL:- factory 2
+399:FLOAT:- factory 2
+399:ID:- factory 2
+399:NUM:- factory 2
+400:%:+ 326
+400:+:+ 325
+400:-:+ 299
+400:EQ:+ 305
+400:G:+ 304
+400:GE:+ 302
+400:L:+ 303
+400:LE:+ 301
+400:NE:+ 306
+401:!:- bool 2
+401:(:- bool 2
+401:-:- bool 2
+401:0:- bool 2
+401:BOOL:- bool 2
+401:FLOAT:- bool 2
+401:ID:- bool 2
+401:NUM:- bool 2
+401:OR:- bool 2
+402:!:- boexp 0
+402:&&:+ 526
+402:(:- boexp 0
+402:-:- boexp 0
+402:0:- boexp 0
+402:BOOL:- boexp 0
+402:FLOAT:- boexp 0
+402:ID:- boexp 0
+402:NUM:- boexp 0
+402:OR:- boexp 0
+403:!:- bitem 1
+403:(:- bitem 1
+403:-:- bitem 1
+403:0:- bitem 1
+403:BOOL:- bitem 1
+403:FLOAT:- bitem 1
+403:ID:- bitem 1
+403:NUM:- bitem 1
+403:OR:- bitem 1
+404:!:- bfactory 0
+404:(:- bfactory 0
+404:-:- bfactory 0
+404:0:- bfactory 0
+404:BOOL:- bfactory 0
+404:FLOAT:- bfactory 0
+404:ID:- bfactory 0
+404:NUM:- bfactory 0
+404:OR:- bfactory 0
+405:!:+ 239
+405:(:+ 236
+405:-:+ 238
+405:BOOL:+ 242
+405:FLOAT:+ 241
+405:ID:+ 237
+405:NUM:+ 240
+406:!:- bool 1
+406:(:- factory 0
+406:-:- factory 0
+406:0:- factory 0
+406:BOOL:- bool 1
+406:FLOAT:- factory 0
+406:ID:- factory 0
+406:NUM:- factory 0
+406:OR:- bool 1
+407:!:+ 407
+407:(:+ 405
+407:-:+ 238
+407:BOOL:+ 408
+407:FLOAT:+ 241
+407:ID:+ 406
+407:NUM:+ 240
+408:!:- bool 0
+408:(:- bool 0
+408:-:- bool 0
+408:0:- bool 0
+408:BOOL:- bool 0
+408:FLOAT:- bool 0
+408:ID:- bool 0
+408:NUM:- bool 0
+408:OR:- bool 0
+409:%:+ 326
+409:+:+ 325
+409:-:+ 299
+409:EQ:+ 305
+409:G:+ 304
+409:GE:+ 302
+409:L:+ 303
+409:LE:+ 301
+409:NE:+ 306
+410:!:- bool 2
+410:&&:- bool 2
+410:(:- bool 2
+410:-:- bool 2
+410:0:- bool 2
+410:BOOL:- bool 2
+410:FLOAT:- bool 2
+410:ID:- bool 2
+410:NUM:- bool 2
+411:!:- bitem 0
+411:&&:- bitem 0
+411:(:- bitem 0
+411:-:- bitem 0
+411:0:- bitem 0
+411:BOOL:- bitem 0
+411:FLOAT:- bitem 0
+411:ID:- bitem 0
+411:NUM:- bitem 0
+412:!:- bfactory 0
+412:&&:- bfactory 0
+412:(:- bfactory 0
+412:-:- bfactory 0
+412:0:- bfactory 0
+412:BOOL:- bfactory 0
+412:FLOAT:- bfactory 0
+412:ID:- bfactory 0
+412:NUM:- bfactory 0
+413:!:+ 239
+413:(:+ 236
+413:-:+ 238
+413:BOOL:+ 242
+413:FLOAT:+ 241
+413:ID:+ 237
+413:NUM:+ 240
+414:!:- bool 1
+414:&&:- bool 1
+414:(:- factory 0
+414:-:- factory 0
+414:0:- factory 0
+414:BOOL:- bool 1
+414:FLOAT:- factory 0
+414:ID:- factory 0
+414:NUM:- factory 0
+415:!:+ 415
+415:(:+ 413
+415:-:+ 238
+415:BOOL:+ 416
+415:FLOAT:+ 241
+415:ID:+ 414
+415:NUM:+ 240
+416:!:- bool 0
+416:&&:- bool 0
+416:(:- bool 0
+416:-:- bool 0
+416:0:- bool 0
+416:BOOL:- bool 0
+416:FLOAT:- bool 0
+416:ID:- bool 0
+416:NUM:- bool 0
+417:!:- factory 4
+417:(:- factory 4
+417:-:- factory 4
+417:0:- factory 4
+417:BOOL:- factory 4
+417:FLOAT:- factory 4
+417:ID:- factory 4
+417:NUM:- factory 4
+418:;:+ 532
+419:):+ 533
+420:(:- wrstat 0
+420:):- wrstat 0
+420:0:- wrstat 0
+420:BOOL:- wrstat 0
+420:CHAR:- wrstat 0
+420:CONST:- wrstat 0
+420:DO:- wrstat 0
+420:FLOAT:- wrstat 0
+420:FOR:- wrstat 0
+420:ID:- wrstat 0
+420:IF:- wrstat 0
+420:INT:- wrstat 0
+420:PRINTF:- wrstat 0
+420:RETURN:- wrstat 0
+420:SCANF:- wrstat 0
+420:WHILE:- wrstat 0
+421:(:- ifstat 0
+421:0:- elseifblock 0
+421:BOOL:- ifstat 0
+421:CHAR:- ifstat 0
+421:CONST:- ifstat 0
+421:DO:- ifstat 0
+421:ELSE:- ifstat 0
+421:ELSEIF:- elseifblock 0
+421:FLOAT:- ifstat 0
+421:FOR:- ifstat 0
+421:ID:- ifstat 0
+421:IF:- ifstat 0
+421:INT:- ifstat 0
+421:PRINTF:- ifstat 0
+421:RETURN:- ifstat 0
+421:SCANF:- ifstat 0
+421:WHILE:- ifstat 0
+421:}:- ifstat 0
+422:}:+ 534
+423:{:+ 536
+424:}:+ 537
+425:BOOL:+ 16
+425:CHAR:+ 17
+425:CONST:+ 201
+425:DO:+ 207
+425:FLOAT:+ 15
+425:FOR:+ 208
+425:ID:+ 202
+425:IF:+ 205
+425:INT:+ 12
+425:PRINTF:+ 204
+425:SCANF:+ 203
+425:WHILE:+ 206
+425:}:+ 537
+426:!:- regexp 0
+426:%:+ 541
+426:(:- regexp 0
+426:+:+ 539
+426:-:+ 540
+426:0:- regexp 0
+426:BOOL:- regexp 0
+426:FLOAT:- regexp 0
+426:ID:- regexp 0
+426:NUM:- regexp 0
+427:!:- calexp 3
+427:(:- calexp 3
+427:*:+ 543
+427:-:- calexp 3
+427:/:+ 542
+427:0:- calexp 3
+427:BOOL:- calexp 3
+427:FLOAT:- calexp 3
+427:ID:- calexp 3
+427:NUM:- calexp 3
+428:!:- item 2
+428:(:- item 2
+428:-:- item 2
+428:0:- item 2
+428:BOOL:- item 2
+428:FLOAT:- item 2
+428:ID:- item 2
+428:NUM:- item 2
+429:!:+ 239
+429:(:+ 236
+429:-:+ 238
+429:BOOL:+ 242
+429:FLOAT:+ 241
+429:ID:+ 237
+429:NUM:+ 240
+430:!:- factory 0
+430:(:- factory 0
+430:-:- factory 0
+430:0:- factory 0
+430:BOOL:- factory 0
+430:FLOAT:- factory 0
+430:ID:- factory 0
+430:NUM:- factory 0
+431:(:+ 429
+431:-:+ 431
+431:FLOAT:+ 433
+431:ID:+ 430
+431:NUM:+ 432
+432:!:- factory 1
+432:(:- factory 1
+432:-:- factory 1
+432:0:- factory 1
+432:BOOL:- factory 1
+432:FLOAT:- factory 1
+432:ID:- factory 1
+432:NUM:- factory 1
+433:!:- factory 2
+433:(:- factory 2
+433:-:- factory 2
+433:0:- factory 2
+433:BOOL:- factory 2
+433:FLOAT:- factory 2
+433:ID:- factory 2
+433:NUM:- factory 2
+434:(:- calexp 0
+434:*:+ 547
+434:+:- calexp 0
+434:-:- calexp 0
+434:/:+ 546
+434:0:- calexp 0
+434:FLOAT:- calexp 0
+434:ID:- calexp 0
+434:NUM:- calexp 0
+435:(:- item 2
+435:+:- item 2
+435:-:- item 2
+435:0:- item 2
+435:FLOAT:- item 2
+435:ID:- item 2
+435:NUM:- item 2
+436:!:+ 239
+436:(:+ 236
+436:-:+ 238
+436:BOOL:+ 242
+436:FLOAT:+ 241
+436:ID:+ 237
+436:NUM:+ 240
+437:(:- factory 0
+437:+:- factory 0
+437:-:- factory 0
+437:0:- factory 0
+437:FLOAT:- factory 0
+437:ID:- factory 0
+437:NUM:- factory 0
+438:(:+ 436
+438:-:+ 438
+438:FLOAT:+ 440
+438:ID:+ 437
+438:NUM:+ 439
+439:(:- factory 1
+439:+:- factory 1
+439:-:- factory 1
+439:0:- factory 1
+439:FLOAT:- factory 1
+439:ID:- factory 1
+439:NUM:- factory 1
+440:(:- factory 2
+440:+:- factory 2
+440:-:- factory 2
+440:0:- factory 2
+440:FLOAT:- factory 2
+440:ID:- factory 2
+440:NUM:- factory 2
+441:%:- calexp 2
+441:(:- calexp 2
+441:*:+ 551
+441:-:- calexp 2
+441:/:+ 550
+441:0:- calexp 2
+441:FLOAT:- calexp 2
+441:ID:- calexp 2
+441:NUM:- calexp 2
+442:%:- item 2
+442:(:- item 2
+442:-:- item 2
+442:0:- item 2
+442:FLOAT:- item 2
+442:ID:- item 2
+442:NUM:- item 2
+443:!:+ 239
+443:(:+ 236
+443:-:+ 238
+443:BOOL:+ 242
+443:FLOAT:+ 241
+443:ID:+ 237
+443:NUM:+ 240
+444:%:- factory 0
+444:(:- factory 0
+444:-:- factory 0
+444:0:- factory 0
+444:FLOAT:- factory 0
+444:ID:- factory 0
+444:NUM:- factory 0
+445:(:+ 443
+445:-:+ 445
+445:FLOAT:+ 447
+445:ID:+ 444
+445:NUM:+ 446
+446:%:- factory 1
+446:(:- factory 1
+446:-:- factory 1
+446:0:- factory 1
+446:FLOAT:- factory 1
+446:ID:- factory 1
+446:NUM:- factory 1
+447:%:- factory 2
+447:(:- factory 2
+447:-:- factory 2
+447:0:- factory 2
+447:FLOAT:- factory 2
+447:ID:- factory 2
+447:NUM:- factory 2
+448:}:+ 554
+449:(:- ifstat 0
+449:):- ifstat 0
+449:0:- ifstat 0
+449:BOOL:- ifstat 0
+449:CHAR:- ifstat 0
+449:CONST:- ifstat 0
+449:DO:- ifstat 0
+449:ELSE:+ 557
+449:ELSEIF:+ 223
+449:FLOAT:- ifstat 0
+449:FOR:- ifstat 0
+449:ID:- ifstat 0
+449:IF:- ifstat 0
+449:INT:- ifstat 0
+449:PRINTF:- ifstat 0
+449:RETURN:- ifstat 0
+449:SCANF:- ifstat 0
+449:WHILE:- ifstat 0
+450:}:+ 559
+451:BOOL:+ 16
+451:CHAR:+ 17
+451:CONST:+ 201
+451:DO:+ 207
+451:FLOAT:+ 15
+451:FOR:+ 208
+451:ID:+ 202
+451:IF:+ 205
+451:INT:+ 12
+451:PRINTF:+ 204
+451:SCANF:+ 203
+451:WHILE:+ 206
+451:}:+ 561
+452:(:- item 1
+452:-:- item 1
+452:/:- item 1
+452:0:- item 1
+452:FLOAT:- item 1
+452:ID:- item 1
+452:NUM:- item 1
+453:!:+ 239
+453:(:+ 236
+453:-:+ 238
+453:BOOL:+ 242
+453:FLOAT:+ 241
+453:ID:+ 237
+453:NUM:+ 240
+454:(:- factory 0
+454:-:- factory 0
+454:/:- factory 0
+454:0:- factory 0
+454:FLOAT:- factory 0
+454:ID:- factory 0
+454:NUM:- factory 0
+455:(:+ 453
+455:-:+ 455
+455:FLOAT:+ 457
+455:ID:+ 454
+455:NUM:+ 456
+456:(:- factory 1
+456:-:- factory 1
+456:/:- factory 1
+456:0:- factory 1
+456:FLOAT:- factory 1
+456:ID:- factory 1
+456:NUM:- factory 1
+457:(:- factory 2
+457:-:- factory 2
+457:/:- factory 2
+457:0:- factory 2
+457:FLOAT:- factory 2
+457:ID:- factory 2
+457:NUM:- factory 2
+458:(:- item 0
+458:*:- item 0
+458:-:- item 0
+458:0:- item 0
+458:FLOAT:- item 0
+458:ID:- item 0
+458:NUM:- item 0
+459:!:+ 239
+459:(:+ 236
+459:-:+ 238
+459:BOOL:+ 242
+459:FLOAT:+ 241
+459:ID:+ 237
+459:NUM:+ 240
+460:(:- factory 0
+460:*:- factory 0
+460:-:- factory 0
+460:0:- factory 0
+460:FLOAT:- factory 0
+460:ID:- factory 0
+460:NUM:- factory 0
+461:(:+ 459
+461:-:+ 461
+461:FLOAT:+ 463
+461:ID:+ 460
+461:NUM:+ 462
+462:(:- factory 1
+462:*:- factory 1
+462:-:- factory 1
+462:0:- factory 1
+462:FLOAT:- factory 1
+462:ID:- factory 1
+462:NUM:- factory 1
+463:(:- factory 2
+463:*:- factory 2
+463:-:- factory 2
+463:0:- factory 2
+463:FLOAT:- factory 2
+463:ID:- factory 2
+463:NUM:- factory 2
+464:%:+ 326
+464:+:+ 325
+464:-:+ 299
+464:EQ:+ 305
+464:G:+ 304
+464:GE:+ 302
+464:L:+ 303
+464:LE:+ 301
+464:NE:+ 306
+465:!:- bool 2
+465:(:- bool 2
+465:-:- bool 2
+465:0:- bool 2
+465:BOOL:- bool 2
+465:FLOAT:- bool 2
+465:ID:- bool 2
+465:NUM:- bool 2
+465:OR:- bool 2
+466:!:- boexp 0
+466:&&:+ 567
+466:(:- boexp 0
+466:-:- boexp 0
+466:0:- boexp 0
+466:BOOL:- boexp 0
+466:FLOAT:- boexp 0
+466:ID:- boexp 0
+466:NUM:- boexp 0
+466:OR:- boexp 0
+467:!:- bitem 1
+467:(:- bitem 1
+467:-:- bitem 1
+467:0:- bitem 1
+467:BOOL:- bitem 1
+467:FLOAT:- bitem 1
+467:ID:- bitem 1
+467:NUM:- bitem 1
+467:OR:- bitem 1
+468:!:- bfactory 0
+468:(:- bfactory 0
+468:-:- bfactory 0
+468:0:- bfactory 0
+468:BOOL:- bfactory 0
+468:FLOAT:- bfactory 0
+468:ID:- bfactory 0
+468:NUM:- bfactory 0
+468:OR:- bfactory 0
+469:!:+ 239
+469:(:+ 236
+469:-:+ 238
+469:BOOL:+ 242
+469:FLOAT:+ 241
+469:ID:+ 237
+469:NUM:+ 240
+470:!:- bool 1
+470:(:- factory 0
+470:-:- factory 0
+470:0:- factory 0
+470:BOOL:- bool 1
+470:FLOAT:- factory 0
+470:ID:- factory 0
+470:NUM:- factory 0
+470:OR:- bool 1
+471:!:+ 471
+471:(:+ 469
+471:-:+ 238
+471:BOOL:+ 472
+471:FLOAT:+ 241
+471:ID:+ 470
+471:NUM:+ 240
+472:!:- bool 0
+472:(:- bool 0
+472:-:- bool 0
+472:0:- bool 0
+472:BOOL:- bool 0
+472:FLOAT:- bool 0
+472:ID:- bool 0
+472:NUM:- bool 0
+472:OR:- bool 0
+473:(:- whilestat 0
+473:):- whilestat 0
+473:0:- whilestat 0
+473:BOOL:- whilestat 0
+473:CHAR:- whilestat 0
+473:CONST:- whilestat 0
+473:DO:- whilestat 0
+473:FLOAT:- whilestat 0
+473:FOR:- whilestat 0
+473:ID:- whilestat 0
+473:IF:- whilestat 0
+473:INT:- whilestat 0
+473:PRINTF:- whilestat 0
+473:RETURN:- whilestat 0
+473:SCANF:- whilestat 0
+473:WHILE:- whilestat 0
+474:}:+ 570
+475:BOOL:+ 16
+475:CHAR:+ 17
+475:CONST:+ 201
+475:DO:+ 207
+475:FLOAT:+ 15
+475:FOR:+ 208
+475:ID:+ 202
+475:IF:+ 205
+475:INT:+ 12
+475:PRINTF:+ 204
+475:SCANF:+ 203
+475:WHILE:+ 206
+475:}:+ 570
+476:!:+ 239
+476:(:+ 236
+476:-:+ 238
+476:BOOL:+ 242
+476:FLOAT:+ 241
+476:ID:+ 237
+476:NUM:+ 240
+477:!:+ 239
+477:(:+ 236
+477:-:+ 238
+477:BOOL:+ 242
+477:FLOAT:+ 241
+477:ID:+ 237
+477:NUM:+ 240
+478:;:+ 574
+479:}:+ 575
+480:ID:+ 263
+481:;:+ 577
+482:0:- elseifblock 0
+482:BOOL:- ifstat 0
+482:CHAR:- ifstat 0
+482:CONST:- ifstat 0
+482:DO:- ifstat 0
+482:ELSE:- ifstat 0
+482:ELSEIF:- elseifblock 0
+482:FLOAT:- ifstat 0
+482:FOR:- ifstat 0
+482:ID:- ifstat 0
+482:IF:- ifstat 0
+482:INT:- ifstat 0
+482:PRINTF:- ifstat 0
+482:SCANF:- ifstat 0
+482:WHILE:- ifstat 0
+482:}:- ifstat 0
+483:}:+ 578
+484:{:+ 580
+485:}:+ 581
+486:BOOL:+ 16
+486:CHAR:+ 17
+486:CONST:+ 201
+486:DO:+ 207
+486:FLOAT:+ 15
+486:FOR:+ 208
+486:ID:+ 202
+486:IF:+ 205
+486:INT:+ 12
+486:PRINTF:+ 204
+486:SCANF:+ 203
+486:WHILE:+ 206
+486:}:+ 581
+487:!:+ 239
+487:(:+ 236
+487:-:+ 238
+487:BOOL:+ 242
+487:FLOAT:+ 241
+487:ID:+ 237
+487:NUM:+ 240
+488:):+ 584
+489:0:- asstat 1
+489:=:- asstat 1
+489:BOOL:- asstat 1
+489:CHAR:- asstat 1
+489:CONST:- asstat 1
+489:DO:- asstat 1
+489:FLOAT:- asstat 1
+489:FOR:- asstat 1
+489:ID:- asstat 1
+489:IF:- asstat 1
+489:INT:- asstat 1
+489:PRINTF:- asstat 1
+489:SCANF:- asstat 1
+489:WHILE:- asstat 1
+489:}:- asstat 1
+490:-:+ 43
+490:BOOLCON:+ 45
+490:CHARCON:+ 47
+490:DIGIT:+ 42
+490:FLOATCON:+ 46
+490:INTCON:+ 44
+490:STRINGCON:+ 48
+491:0:- asstat 0
+491:=:- asstat 0
+491:BOOL:- asstat 0
+491:CHAR:- asstat 0
+491:CONST:- asstat 0
+491:DO:- asstat 0
+491:FLOAT:- asstat 0
+491:FOR:- asstat 0
+491:ID:- asstat 0
+491:IF:- asstat 0
+491:INT:- asstat 0
+491:PRINTF:- asstat 0
+491:SCANF:- asstat 0
+491:WHILE:- asstat 0
+491:}:- asstat 0
+492:ID:+ 586
+493:;:+ 587
+494:}:+ 588
+495:ELSE:+ 590
+495:ELSEIF:+ 289
+496:{:+ 592
+497:}:+ 593
+498:{:+ 595
+499:}:+ 596
+500:{:+ 598
+501:(:+ 599
+502:0:- ifstat 1
+502:BOOL:- ifstat 1
+502:CHAR:- ifstat 1
+502:CONST:- ifstat 1
+502:DO:- ifstat 1
+502:ELSE:+ 342
+502:ELSEIF:+ 223
+502:FLOAT:- ifstat 1
+502:FOR:- ifstat 1
+502:ID:- ifstat 1
+502:IF:- ifstat 1
+502:INT:- ifstat 1
+502:PRINTF:- ifstat 1
+502:SCANF:- ifstat 1
+502:WHILE:- ifstat 1
+502:}:- ifstat 1
+503:;:+ 601
+504:0:- ifstat 1
+504:BOOL:- ifstat 1
+504:CHAR:- ifstat 1
+504:CONST:- ifstat 1
+504:DO:- ifstat 1
+504:ELSE:- ifstat 1
+504:FLOAT:- ifstat 1
+504:FOR:- ifstat 1
+504:ID:- ifstat 1
+504:IF:- ifstat 1
+504:INT:- ifstat 1
+504:PRINTF:- ifstat 1
+504:RETURN:- ifstat 1
+504:SCANF:- ifstat 1
+504:WHILE:- ifstat 1
+504:{:- ifstat 1
+504:}:- ifstat 1
+505:}:+ 602
+506:(:- elseifblock 1
+506:0:- elseifblock 1
+506:ELSEIF:- elseifblock 1
+507:):+ 604
+508:0:- ifstat 1
+508:BOOL:- ifstat 1
+508:CHAR:- ifstat 1
+508:CONST:- ifstat 1
+508:DO:- ifstat 1
+508:ELSE:+ 342
+508:ELSEIF:+ 223
+508:FLOAT:- ifstat 1
+508:FOR:- ifstat 1
+508:ID:- ifstat 1
+508:IF:- ifstat 1
+508:INT:- ifstat 1
+508:PRINTF:- ifstat 1
+508:RETURN:- ifstat 0
+508:SCANF:- ifstat 1
+508:WHILE:- ifstat 1
+508:{:- ifstat 0
+508:}:- ifstat 1
+509:}:+ 605
+510:{:+ 607
+511:(:- dowhilestat 0
+511:0:- dowhilestat 0
+511:BOOL:- dowhilestat 0
+511:CHAR:- dowhilestat 0
+511:CONST:- dowhilestat 0
+511:DO:- dowhilestat 0
+511:FLOAT:- dowhilestat 0
+511:FOR:- dowhilestat 0
+511:ID:- dowhilestat 0
+511:IF:- dowhilestat 0
+511:INT:- dowhilestat 0
+511:PRINTF:- dowhilestat 0
+511:RETURN:- dowhilestat 0
+511:SCANF:- dowhilestat 0
+511:WHILE:- dowhilestat 0
+511:}:- dowhilestat 0
+512:(:- funstat 0
+512:):- funstat 0
+512:0:- funstat 0
+512:BOOL:- funstat 0
+512:CHAR:- funstat 0
+512:CONST:- funstat 0
+512:DO:- funstat 0
+512:FLOAT:- funstat 0
+512:FOR:- funstat 0
+512:ID:- funstat 0
+512:IF:- funstat 0
+512:INT:- funstat 0
+512:PRINTF:- funstat 0
+512:RETURN:- funstat 0
+512:SCANF:- funstat 0
+512:WHILE:- funstat 0
+513:(:+ 609
+513:-:+ 611
+513:FLOAT:+ 613
+513:ID:+ 610
+513:NUM:+ 612
+514:(:+ 615
+514:-:+ 617
+514:FLOAT:+ 619
+514:ID:+ 616
+514:NUM:+ 618
+515:):+ 620
+516:!:- factory 3
+516:(:- factory 3
+516:+:- factory 3
+516:-:- factory 3
+516:0:- factory 3
+516:BOOL:- factory 3
+516:FLOAT:- factory 3
+516:ID:- factory 3
+516:NUM:- factory 3
+517:(:+ 622
+517:-:+ 624
+517:FLOAT:+ 626
+517:ID:+ 623
+517:NUM:+ 625
+518:(:+ 628
+518:-:+ 630
+518:FLOAT:+ 632
+518:ID:+ 629
+518:NUM:+ 631
+519:):+ 633
+520:!:- factory 3
+520:%:- factory 3
+520:(:- factory 3
+520:-:- factory 3
+520:0:- factory 3
+520:BOOL:- factory 3
+520:FLOAT:- factory 3
+520:ID:- factory 3
+520:NUM:- factory 3
+521:):+ 634
+522:!:- factory 3
+522:(:- factory 3
+522:-:- factory 3
+522:/:- factory 3
+522:0:- factory 3
+522:BOOL:- factory 3
+522:FLOAT:- factory 3
+522:ID:- factory 3
+522:NUM:- factory 3
+523:):+ 635
+524:!:- factory 3
+524:(:- factory 3
+524:*:- factory 3
+524:-:- factory 3
+524:0:- factory 3
+524:BOOL:- factory 3
+524:FLOAT:- factory 3
+524:ID:- factory 3
+524:NUM:- factory 3
+525:(:+ 639
+525:-:+ 641
+525:FLOAT:+ 643
+525:ID:+ 640
+525:NUM:+ 642
+526:!:+ 650
+526:(:+ 648
+526:-:+ 238
+526:BOOL:+ 651
+526:FLOAT:+ 241
+526:ID:+ 649
+526:NUM:+ 240
+527:):+ 652
+528:!:- bfactory 1
+528:(:- bfactory 1
+528:-:- bfactory 1
+528:0:- bfactory 1
+528:BOOL:- bfactory 1
+528:FLOAT:- bfactory 1
+528:ID:- bfactory 1
+528:NUM:- bfactory 1
+528:OR:- bfactory 1
+529:(:+ 656
+529:-:+ 658
+529:FLOAT:+ 660
+529:ID:+ 657
+529:NUM:+ 659
+530:):+ 661
+531:!:- bfactory 1
+531:&&:- bfactory 1
+531:(:- bfactory 1
+531:-:- bfactory 1
+531:0:- bfactory 1
+531:BOOL:- bfactory 1
+531:FLOAT:- bfactory 1
+531:ID:- bfactory 1
+531:NUM:- bfactory 1
+532:0:- constat 0
+532:=:- constat 0
+532:BOOL:- constat 0
+532:CHAR:- constat 0
+532:CONST:- constat 0
+532:DO:- constat 0
+532:FLOAT:- constat 0
+532:FOR:- constat 0
+532:ID:- constat 0
+532:IF:- constat 0
+532:INT:- constat 0
+532:PRINTF:- constat 0
+532:RETURN:- constat 0
+532:SCANF:- constat 0
+532:WHILE:- constat 0
+533:;:+ 662
+534:(:- ifstat 1
+534:0:- elseifblock 1
+534:BOOL:- ifstat 1
+534:CHAR:- ifstat 1
+534:CONST:- ifstat 1
+534:DO:- ifstat 1
+534:ELSE:- ifstat 1
+534:ELSEIF:- elseifblock 1
+534:FLOAT:- ifstat 1
+534:FOR:- ifstat 1
+534:ID:- ifstat 1
+534:IF:- ifstat 1
+534:INT:- ifstat 1
+534:PRINTF:- ifstat 1
+534:RETURN:- ifstat 1
+534:SCANF:- ifstat 1
+534:WHILE:- ifstat 1
+534:}:- ifstat 1
+535:}:+ 663
+536:BOOL:+ 16
+536:CHAR:+ 17
+536:CONST:+ 201
+536:DO:+ 207
+536:FLOAT:+ 15
+536:FOR:+ 208
+536:ID:+ 202
+536:IF:+ 205
+536:INT:+ 12
+536:PRINTF:+ 204
+536:SCANF:+ 203
+536:WHILE:+ 206
+536:}:+ 663
+537:(:- ifstat 0
+537:0:- ifstat 0
+537:BOOL:- ifstat 0
+537:CHAR:- ifstat 0
+537:CONST:- ifstat 0
+537:DO:- ifstat 0
+537:ELSE:- ifstat 0
+537:FLOAT:- ifstat 0
+537:FOR:- ifstat 0
+537:ID:- ifstat 0
+537:IF:- ifstat 0
+537:INT:- ifstat 0
+537:PRINTF:- ifstat 0
+537:RETURN:- ifstat 0
+537:SCANF:- ifstat 0
+537:WHILE:- ifstat 0
+537:{:- ifstat 0
+537:}:- ifstat 0
+538:}:+ 665
+539:(:+ 668
+539:-:+ 670
+539:FLOAT:+ 672
+539:ID:+ 669
+539:NUM:+ 671
+540:(:+ 429
+540:-:+ 431
+540:FLOAT:+ 433
+540:ID:+ 430
+540:NUM:+ 432
+541:(:+ 676
+541:-:+ 678
+541:FLOAT:+ 680
+541:ID:+ 677
+541:NUM:+ 679
+542:(:+ 682
+542:-:+ 684
+542:FLOAT:+ 686
+542:ID:+ 683
+542:NUM:+ 685
+543:(:+ 688
+543:-:+ 690
+543:FLOAT:+ 692
+543:ID:+ 689
+543:NUM:+ 691
+544:):+ 693
+545:!:- factory 3
+545:(:- factory 3
+545:-:- factory 3
+545:0:- factory 3
+545:BOOL:- factory 3
+545:FLOAT:- factory 3
+545:ID:- factory 3
+545:NUM:- factory 3
+546:(:+ 695
+546:-:+ 697
+546:FLOAT:+ 699
+546:ID:+ 696
+546:NUM:+ 698
+547:(:+ 701
+547:-:+ 703
+547:FLOAT:+ 705
+547:ID:+ 702
+547:NUM:+ 704
+548:):+ 706
+549:(:- factory 3
+549:+:- factory 3
+549:-:- factory 3
+549:0:- factory 3
+549:FLOAT:- factory 3
+549:ID:- factory 3
+549:NUM:- factory 3
+550:(:+ 708
+550:-:+ 710
+550:FLOAT:+ 712
+550:ID:+ 709
+550:NUM:+ 711
+551:(:+ 714
+551:-:+ 716
+551:FLOAT:+ 718
+551:ID:+ 715
+551:NUM:+ 717
+552:):+ 719
+553:%:- factory 3
+553:(:- factory 3
+553:-:- factory 3
+553:0:- factory 3
+553:FLOAT:- factory 3
+553:ID:- factory 3
+553:NUM:- factory 3
+554:(:- ifstat 0
+554:):- ifstat 0
+554:0:- ifstat 0
+554:BOOL:- ifstat 0
+554:CHAR:- ifstat 0
+554:CONST:- ifstat 0
+554:DO:- ifstat 0
+554:FLOAT:- ifstat 0
+554:FOR:- ifstat 0
+554:ID:- ifstat 0
+554:IF:- ifstat 0
+554:INT:- ifstat 0
+554:PRINTF:- ifstat 0
+554:RETURN:- ifstat 0
+554:SCANF:- ifstat 0
+554:WHILE:- ifstat 0
+554:}:- ifstat 0
+555:}:+ 720
+556:ELSE:+ 722
+556:ELSEIF:+ 289
+557:{:+ 724
+558:}:+ 725
+559:(:- ifstat 0
+559:):- ifstat 0
+559:0:- ifstat 0
+559:BOOL:- ifstat 0
+559:CHAR:- ifstat 0
+559:CONST:- ifstat 0
+559:DO:- ifstat 0
+559:ELSE:+ 728
+559:ELSEIF:+ 223
+559:FLOAT:- ifstat 0
+559:FOR:- ifstat 0
+559:ID:- ifstat 0
+559:IF:- ifstat 0
+559:INT:- ifstat 0
+559:PRINTF:- ifstat 0
+559:RETURN:- ifstat 0
+559:SCANF:- ifstat 0
+559:WHILE:- ifstat 0
+559:{:- ifstat 0
+560:}:+ 729
+561:ELSE:+ 732
+561:ELSEIF:+ 223
+562:):+ 733
+563:(:- factory 3
+563:-:- factory 3
+563:/:- factory 3
+563:0:- factory 3
+563:FLOAT:- factory 3
+563:ID:- factory 3
+563:NUM:- factory 3
+564:):+ 734
+565:(:- factory 3
+565:*:- factory 3
+565:-:- factory 3
+565:0:- factory 3
+565:FLOAT:- factory 3
+565:ID:- factory 3
+565:NUM:- factory 3
+566:(:+ 738
+566:-:+ 740
+566:FLOAT:+ 742
+566:ID:+ 739
+566:NUM:+ 741
+567:!:+ 749
+567:(:+ 747
+567:-:+ 238
+567:BOOL:+ 750
+567:FLOAT:+ 241
+567:ID:+ 748
+567:NUM:+ 240
+568:):+ 751
+569:!:- bfactory 1
+569:(:- bfactory 1
+569:-:- bfactory 1
+569:0:- bfactory 1
+569:BOOL:- bfactory 1
+569:FLOAT:- bfactory 1
+569:ID:- bfactory 1
+569:NUM:- bfactory 1
+569:OR:- bfactory 1
+570:(:- whilestat 0
+570:):- whilestat 0
+570:0:- whilestat 0
+570:BOOL:- whilestat 0
+570:CHAR:- whilestat 0
+570:CONST:- whilestat 0
+570:DO:- whilestat 0
+570:FLOAT:- whilestat 0
+570:FOR:- whilestat 0
+570:ID:- whilestat 0
+570:IF:- whilestat 0
+570:INT:- whilestat 0
+570:PRINTF:- whilestat 0
+570:RETURN:- whilestat 0
+570:SCANF:- whilestat 0
+570:WHILE:- whilestat 0
+570:{:- whilestat 0
+571:}:+ 752
+572:):+ 753
+573:):+ 754
+574:0:- asstat 1
+574:=:- asstat 1
+574:ID:- asstat 1
+575:(:- forstat 0
+575:0:- forstat 0
+575:;:- forstat 0
+575:BOOL:- forstat 0
+575:CHAR:- forstat 0
+575:CONST:- forstat 0
+575:DO:- forstat 0
+575:FLOAT:- forstat 0
+575:FOR:- forstat 0
+575:ID:- forstat 0
+575:IF:- forstat 0
+575:INT:- forstat 0
+575:PRINTF:- forstat 0
+575:RETURN:- forstat 0
+575:SCANF:- forstat 0
+575:WHILE:- forstat 0
+576:):+ 756
+577:0:- asstat 0
+577:=:- asstat 0
+577:ID:- asstat 0
+578:0:- elseifblock 1
+578:BOOL:- ifstat 1
+578:CHAR:- ifstat 1
+578:CONST:- ifstat 1
+578:DO:- ifstat 1
+578:ELSE:- ifstat 1
+578:ELSEIF:- elseifblock 1
+578:FLOAT:- ifstat 1
+578:FOR:- ifstat 1
+578:ID:- ifstat 1
+578:IF:- ifstat 1
+578:INT:- ifstat 1
+578:PRINTF:- ifstat 1
+578:SCANF:- ifstat 1
+578:WHILE:- ifstat 1
+578:}:- ifstat 1
+579:}:+ 757
+580:BOOL:+ 16
+580:CHAR:+ 17
+580:CONST:+ 201
+580:DO:+ 207
+580:FLOAT:+ 15
+580:FOR:+ 208
+580:ID:+ 202
+580:IF:+ 205
+580:INT:+ 12
+580:PRINTF:+ 204
+580:SCANF:+ 203
+580:WHILE:+ 206
+580:}:+ 757
+581:0:- ifstat 0
+581:BOOL:- ifstat 0
+581:CHAR:- ifstat 0
+581:CONST:- ifstat 0
+581:DO:- ifstat 0
+581:ELSE:- ifstat 0
+581:FLOAT:- ifstat 0
+581:FOR:- ifstat 0
+581:ID:- ifstat 0
+581:IF:- ifstat 0
+581:INT:- ifstat 0
+581:PRINTF:- ifstat 0
+581:SCANF:- ifstat 0
+581:WHILE:- ifstat 0
+581:{:- ifstat 0
+581:}:- ifstat 0
+582:}:+ 759
+583:):+ 760
+584:;:+ 761
+585:;:+ 762
+586:):+ 763
+587:(:- wrstat 0
+587:):- wrstat 0
+587:0:- wrstat 0
+587:BOOL:- wrstat 0
+587:CHAR:- wrstat 0
+587:CONST:- wrstat 0
+587:DO:- wrstat 0
+587:FLOAT:- wrstat 0
+587:FOR:- wrstat 0
+587:ID:- wrstat 0
+587:IF:- wrstat 0
+587:INT:- wrstat 0
+587:PRINTF:- wrstat 0
+587:SCANF:- wrstat 0
+587:WHILE:- wrstat 0
+587:}:- wrstat 0
+588:(:- ifstat 0
+588:0:- elseifblock 0
+588:BOOL:- ifstat 0
+588:CHAR:- ifstat 0
+588:CONST:- ifstat 0
+588:DO:- ifstat 0
+588:ELSE:- ifstat 0
+588:ELSEIF:- elseifblock 0
+588:FLOAT:- ifstat 0
+588:FOR:- ifstat 0
+588:ID:- ifstat 0
+588:IF:- ifstat 0
+588:INT:- ifstat 0
+588:PRINTF:- ifstat 0
+588:SCANF:- ifstat 0
+588:WHILE:- ifstat 0
+588:}:- ifstat 0
+589:}:+ 764
+590:{:+ 766
+591:}:+ 767
+592:BOOL:+ 16
+592:CHAR:+ 17
+592:CONST:+ 201
+592:DO:+ 207
+592:FLOAT:+ 15
+592:FOR:+ 208
+592:ID:+ 202
+592:IF:+ 205
+592:INT:+ 12
+592:PRINTF:+ 204
+592:SCANF:+ 203
+592:WHILE:+ 206
+592:}:+ 767
+593:(:- ifstat 0
+593:):- ifstat 0
+593:0:- ifstat 0
+593:BOOL:- ifstat 0
+593:CHAR:- ifstat 0
+593:CONST:- ifstat 0
+593:DO:- ifstat 0
+593:ELSE:+ 771
+593:ELSEIF:+ 223
+593:FLOAT:- ifstat 0
+593:FOR:- ifstat 0
+593:ID:- ifstat 0
+593:IF:- ifstat 0
+593:INT:- ifstat 0
+593:PRINTF:- ifstat 0
+593:SCANF:- ifstat 0
+593:WHILE:- ifstat 0
+593:}:- ifstat 0
+594:}:+ 772
+595:BOOL:+ 16
+595:CHAR:+ 17
+595:CONST:+ 201
+595:DO:+ 207
+595:FLOAT:+ 15
+595:FOR:+ 208
+595:ID:+ 202
+595:IF:+ 205
+595:INT:+ 12
+595:PRINTF:+ 204
+595:SCANF:+ 203
+595:WHILE:+ 206
+595:}:+ 561
+596:(:- whilestat 0
+596:):- whilestat 0
+596:0:- whilestat 0
+596:BOOL:- whilestat 0
+596:CHAR:- whilestat 0
+596:CONST:- whilestat 0
+596:DO:- whilestat 0
+596:FLOAT:- whilestat 0
+596:FOR:- whilestat 0
+596:ID:- whilestat 0
+596:IF:- whilestat 0
+596:INT:- whilestat 0
+596:PRINTF:- whilestat 0
+596:SCANF:- whilestat 0
+596:WHILE:- whilestat 0
+596:}:- whilestat 0
+597:}:+ 774
+598:BOOL:+ 16
+598:CHAR:+ 17
+598:CONST:+ 201
+598:DO:+ 207
+598:FLOAT:+ 15
+598:FOR:+ 208
+598:ID:+ 202
+598:IF:+ 205
+598:INT:+ 12
+598:PRINTF:+ 204
+598:SCANF:+ 203
+598:WHILE:+ 206
+598:}:+ 774
+599:!:+ 239
+599:(:+ 236
+599:-:+ 238
+599:BOOL:+ 242
+599:FLOAT:+ 241
+599:ID:+ 237
+599:NUM:+ 240
+600:}:+ 777
+601:ID:+ 263
+602:0:- ifstat 1
+602:BOOL:- ifstat 1
+602:CHAR:- ifstat 1
+602:CONST:- ifstat 1
+602:DO:- ifstat 1
+602:ELSE:- ifstat 1
+602:ELSEIF:+ 223
+602:FLOAT:- ifstat 1
+602:FOR:- ifstat 1
+602:ID:- ifstat 1
+602:IF:- ifstat 1
+602:INT:- ifstat 1
+602:PRINTF:- ifstat 1
+602:RETURN:- ifstat 1
+602:SCANF:- ifstat 1
+602:WHILE:- ifstat 1
+602:{:- ifstat 1
+602:}:- ifstat 1
+603:}:+ 779
+604:{:+ 781
+605:(:- elseifblock 0
+605:):- elseifblock 0
+605:0:- elseifblock 0
+605:ELSEIF:- elseifblock 0
+606:}:+ 782
+607:BOOL:+ 16
+607:CHAR:+ 17
+607:CONST:+ 201
+607:DO:+ 207
+607:FLOAT:+ 15
+607:FOR:+ 208
+607:ID:+ 202
+607:IF:+ 205
+607:INT:+ 12
+607:PRINTF:+ 204
+607:SCANF:+ 203
+607:WHILE:+ 206
+607:}:+ 782
+608:!:- item 1
+608:(:- item 1
+608:+:- item 1
+608:-:- item 1
+608:/:- item 1
+608:0:- item 1
+608:BOOL:- item 1
+608:FLOAT:- item 1
+608:ID:- item 1
+608:NUM:- item 1
+609:!:+ 239
+609:(:+ 236
+609:-:+ 238
+609:BOOL:+ 242
+609:FLOAT:+ 241
+609:ID:+ 237
+609:NUM:+ 240
+610:!:- factory 0
+610:(:- factory 0
+610:+:- factory 0
+610:-:- factory 0
+610:/:- factory 0
+610:0:- factory 0
+610:BOOL:- factory 0
+610:FLOAT:- factory 0
+610:ID:- factory 0
+610:NUM:- factory 0
+611:(:+ 609
+611:-:+ 611
+611:FLOAT:+ 613
+611:ID:+ 610
+611:NUM:+ 612
+612:!:- factory 1
+612:(:- factory 1
+612:+:- factory 1
+612:-:- factory 1
+612:/:- factory 1
+612:0:- factory 1
+612:BOOL:- factory 1
+612:FLOAT:- factory 1
+612:ID:- factory 1
+612:NUM:- factory 1
+613:!:- factory 2
+613:(:- factory 2
+613:+:- factory 2
+613:-:- factory 2
+613:/:- factory 2
+613:0:- factory 2
+613:BOOL:- factory 2
+613:FLOAT:- factory 2
+613:ID:- factory 2
+613:NUM:- factory 2
+614:!:- item 0
+614:(:- item 0
+614:*:- item 0
+614:+:- item 0
+614:-:- item 0
+614:0:- item 0
+614:BOOL:- item 0
+614:FLOAT:- item 0
+614:ID:- item 0
+614:NUM:- item 0
+615:!:+ 239
+615:(:+ 236
+615:-:+ 238
+615:BOOL:+ 242
+615:FLOAT:+ 241
+615:ID:+ 237
+615:NUM:+ 240
+616:!:- factory 0
+616:(:- factory 0
+616:*:- factory 0
+616:+:- factory 0
+616:-:- factory 0
+616:0:- factory 0
+616:BOOL:- factory 0
+616:FLOAT:- factory 0
+616:ID:- factory 0
+616:NUM:- factory 0
+617:(:+ 615
+617:-:+ 617
+617:FLOAT:+ 619
+617:ID:+ 616
+617:NUM:+ 618
+618:!:- factory 1
+618:(:- factory 1
+618:*:- factory 1
+618:+:- factory 1
+618:-:- factory 1
+618:0:- factory 1
+618:BOOL:- factory 1
+618:FLOAT:- factory 1
+618:ID:- factory 1
+618:NUM:- factory 1
+619:!:- factory 2
+619:(:- factory 2
+619:*:- factory 2
+619:+:- factory 2
+619:-:- factory 2
+619:0:- factory 2
+619:BOOL:- factory 2
+619:FLOAT:- factory 2
+619:ID:- factory 2
+619:NUM:- factory 2
+620:!:- factory 4
+620:(:- factory 4
+620:+:- factory 4
+620:-:- factory 4
+620:0:- factory 4
+620:BOOL:- factory 4
+620:FLOAT:- factory 4
+620:ID:- factory 4
+620:NUM:- factory 4
+621:!:- item 1
+621:%:- item 1
+621:(:- item 1
+621:-:- item 1
+621:/:- item 1
+621:0:- item 1
+621:BOOL:- item 1
+621:FLOAT:- item 1
+621:ID:- item 1
+621:NUM:- item 1
+622:!:+ 239
+622:(:+ 236
+622:-:+ 238
+622:BOOL:+ 242
+622:FLOAT:+ 241
+622:ID:+ 237
+622:NUM:+ 240
+623:!:- factory 0
+623:%:- factory 0
+623:(:- factory 0
+623:-:- factory 0
+623:/:- factory 0
+623:0:- factory 0
+623:BOOL:- factory 0
+623:FLOAT:- factory 0
+623:ID:- factory 0
+623:NUM:- factory 0
+624:(:+ 622
+624:-:+ 624
+624:FLOAT:+ 626
+624:ID:+ 623
+624:NUM:+ 625
+625:!:- factory 1
+625:%:- factory 1
+625:(:- factory 1
+625:-:- factory 1
+625:/:- factory 1
+625:0:- factory 1
+625:BOOL:- factory 1
+625:FLOAT:- factory 1
+625:ID:- factory 1
+625:NUM:- factory 1
+626:!:- factory 2
+626:%:- factory 2
+626:(:- factory 2
+626:-:- factory 2
+626:/:- factory 2
+626:0:- factory 2
+626:BOOL:- factory 2
+626:FLOAT:- factory 2
+626:ID:- factory 2
+626:NUM:- factory 2
+627:!:- item 0
+627:%:- item 0
+627:(:- item 0
+627:*:- item 0
+627:-:- item 0
+627:0:- item 0
+627:BOOL:- item 0
+627:FLOAT:- item 0
+627:ID:- item 0
+627:NUM:- item 0
+628:!:+ 239
+628:(:+ 236
+628:-:+ 238
+628:BOOL:+ 242
+628:FLOAT:+ 241
+628:ID:+ 237
+628:NUM:+ 240
+629:!:- factory 0
+629:%:- factory 0
+629:(:- factory 0
+629:*:- factory 0
+629:-:- factory 0
+629:0:- factory 0
+629:BOOL:- factory 0
+629:FLOAT:- factory 0
+629:ID:- factory 0
+629:NUM:- factory 0
+630:(:+ 628
+630:-:+ 630
+630:FLOAT:+ 632
+630:ID:+ 629
+630:NUM:+ 631
+631:!:- factory 1
+631:%:- factory 1
+631:(:- factory 1
+631:*:- factory 1
+631:-:- factory 1
+631:0:- factory 1
+631:BOOL:- factory 1
+631:FLOAT:- factory 1
+631:ID:- factory 1
+631:NUM:- factory 1
+632:!:- factory 2
+632:%:- factory 2
+632:(:- factory 2
+632:*:- factory 2
+632:-:- factory 2
+632:0:- factory 2
+632:BOOL:- factory 2
+632:FLOAT:- factory 2
+632:ID:- factory 2
+632:NUM:- factory 2
+633:!:- factory 4
+633:%:- factory 4
+633:(:- factory 4
+633:-:- factory 4
+633:0:- factory 4
+633:BOOL:- factory 4
+633:FLOAT:- factory 4
+633:ID:- factory 4
+633:NUM:- factory 4
+634:!:- factory 4
+634:(:- factory 4
+634:-:- factory 4
+634:/:- factory 4
+634:0:- factory 4
+634:BOOL:- factory 4
+634:FLOAT:- factory 4
+634:ID:- factory 4
+634:NUM:- factory 4
+635:!:- factory 4
+635:(:- factory 4
+635:*:- factory 4
+635:-:- factory 4
+635:0:- factory 4
+635:BOOL:- factory 4
+635:FLOAT:- factory 4
+635:ID:- factory 4
+635:NUM:- factory 4
+636:!:- regexp 0
+636:%:+ 794
+636:(:- regexp 0
+636:+:+ 792
+636:-:+ 793
+636:0:- regexp 0
+636:BOOL:- regexp 0
+636:FLOAT:- regexp 0
+636:ID:- regexp 0
+636:NUM:- regexp 0
+636:OR:- regexp 0
+637:!:- calexp 3
+637:(:- calexp 3
+637:*:+ 796
+637:-:- calexp 3
+637:/:+ 795
+637:0:- calexp 3
+637:BOOL:- calexp 3
+637:FLOAT:- calexp 3
+637:ID:- calexp 3
+637:NUM:- calexp 3
+637:OR:- calexp 3
+638:!:- item 2
+638:(:- item 2
+638:-:- item 2
+638:0:- item 2
+638:BOOL:- item 2
+638:FLOAT:- item 2
+638:ID:- item 2
+638:NUM:- item 2
+638:OR:- item 2
+639:!:+ 239
+639:(:+ 236
+639:-:+ 238
+639:BOOL:+ 242
+639:FLOAT:+ 241
+639:ID:+ 237
+639:NUM:+ 240
+640:!:- factory 0
+640:(:- factory 0
+640:-:- factory 0
+640:0:- factory 0
+640:BOOL:- factory 0
+640:FLOAT:- factory 0
+640:ID:- factory 0
+640:NUM:- factory 0
+640:OR:- factory 0
+641:(:+ 639
+641:-:+ 641
+641:FLOAT:+ 643
+641:ID:+ 640
+641:NUM:+ 642
+642:!:- factory 1
+642:(:- factory 1
+642:-:- factory 1
+642:0:- factory 1
+642:BOOL:- factory 1
+642:FLOAT:- factory 1
+642:ID:- factory 1
+642:NUM:- factory 1
+642:OR:- factory 1
+643:!:- factory 2
+643:(:- factory 2
+643:-:- factory 2
+643:0:- factory 2
+643:BOOL:- factory 2
+643:FLOAT:- factory 2
+643:ID:- factory 2
+643:NUM:- factory 2
+643:OR:- factory 2
+644:%:+ 326
+644:+:+ 325
+644:-:+ 299
+644:EQ:+ 305
+644:G:+ 304
+644:GE:+ 302
+644:L:+ 303
+644:LE:+ 301
+644:NE:+ 306
+645:!:- bool 2
+645:&&:- bool 2
+645:(:- bool 2
+645:-:- bool 2
+645:0:- bool 2
+645:BOOL:- bool 2
+645:FLOAT:- bool 2
+645:ID:- bool 2
+645:NUM:- bool 2
+645:OR:- bool 2
+646:!:- bitem 0
+646:&&:- bitem 0
+646:(:- bitem 0
+646:-:- bitem 0
+646:0:- bitem 0
+646:BOOL:- bitem 0
+646:FLOAT:- bitem 0
+646:ID:- bitem 0
+646:NUM:- bitem 0
+646:OR:- bitem 0
+647:!:- bfactory 0
+647:&&:- bfactory 0
+647:(:- bfactory 0
+647:-:- bfactory 0
+647:0:- bfactory 0
+647:BOOL:- bfactory 0
+647:FLOAT:- bfactory 0
+647:ID:- bfactory 0
+647:NUM:- bfactory 0
+647:OR:- bfactory 0
+648:!:+ 239
+648:(:+ 236
+648:-:+ 238
+648:BOOL:+ 242
+648:FLOAT:+ 241
+648:ID:+ 237
+648:NUM:+ 240
+649:!:- bool 1
+649:&&:- bool 1
+649:(:- factory 0
+649:-:- factory 0
+649:0:- factory 0
+649:BOOL:- bool 1
+649:FLOAT:- factory 0
+649:ID:- factory 0
+649:NUM:- factory 0
+649:OR:- bool 1
+650:!:+ 650
+650:(:+ 648
+650:-:+ 238
+650:BOOL:+ 651
+650:FLOAT:+ 241
+650:ID:+ 649
+650:NUM:+ 240
+651:!:- bool 0
+651:&&:- bool 0
+651:(:- bool 0
+651:-:- bool 0
+651:0:- bool 0
+651:BOOL:- bool 0
+651:FLOAT:- bool 0
+651:ID:- bool 0
+651:NUM:- bool 0
+651:OR:- bool 0
+652:!:- bfactory 2
+652:(:- factory 4
+652:-:- factory 4
+652:0:- factory 4
+652:BOOL:- bfactory 2
+652:FLOAT:- factory 4
+652:ID:- factory 4
+652:NUM:- factory 4
+652:OR:- bfactory 2
+653:!:- regexp 0
+653:%:+ 804
+653:&&:- regexp 0
+653:(:- regexp 0
+653:+:+ 802
+653:-:+ 803
+653:0:- regexp 0
+653:BOOL:- regexp 0
+653:FLOAT:- regexp 0
+653:ID:- regexp 0
+653:NUM:- regexp 0
+654:!:- calexp 3
+654:&&:- calexp 3
+654:(:- calexp 3
+654:*:+ 806
+654:-:- calexp 3
+654:/:+ 805
+654:0:- calexp 3
+654:BOOL:- calexp 3
+654:FLOAT:- calexp 3
+654:ID:- calexp 3
+654:NUM:- calexp 3
+655:!:- item 2
+655:&&:- item 2
+655:(:- item 2
+655:-:- item 2
+655:0:- item 2
+655:BOOL:- item 2
+655:FLOAT:- item 2
+655:ID:- item 2
+655:NUM:- item 2
+656:!:+ 239
+656:(:+ 236
+656:-:+ 238
+656:BOOL:+ 242
+656:FLOAT:+ 241
+656:ID:+ 237
+656:NUM:+ 240
+657:!:- factory 0
+657:&&:- factory 0
+657:(:- factory 0
+657:-:- factory 0
+657:0:- factory 0
+657:BOOL:- factory 0
+657:FLOAT:- factory 0
+657:ID:- factory 0
+657:NUM:- factory 0
+658:(:+ 656
+658:-:+ 658
+658:FLOAT:+ 660
+658:ID:+ 657
+658:NUM:+ 659
+659:!:- factory 1
+659:&&:- factory 1
+659:(:- factory 1
+659:-:- factory 1
+659:0:- factory 1
+659:BOOL:- factory 1
+659:FLOAT:- factory 1
+659:ID:- factory 1
+659:NUM:- factory 1
+660:!:- factory 2
+660:&&:- factory 2
+660:(:- factory 2
+660:-:- factory 2
+660:0:- factory 2
+660:BOOL:- factory 2
+660:FLOAT:- factory 2
+660:ID:- factory 2
+660:NUM:- factory 2
+661:!:- bfactory 2
+661:&&:- bfactory 2
+661:(:- factory 4
+661:-:- factory 4
+661:0:- factory 4
+661:BOOL:- bfactory 2
+661:FLOAT:- factory 4
+661:ID:- factory 4
+661:NUM:- factory 4
+662:(:- rstat 0
+662:):- rstat 0
+662:,:- rstat 0
+662:0:- rstat 0
+662:BOOL:- rstat 0
+662:CHAR:- rstat 0
+662:CONST:- rstat 0
+662:DO:- rstat 0
+662:FLOAT:- rstat 0
+662:FOR:- rstat 0
+662:ID:- rstat 0
+662:IF:- rstat 0
+662:INT:- rstat 0
+662:PRINTF:- rstat 0
+662:RETURN:- rstat 0
+662:SCANF:- rstat 0
+662:WHILE:- rstat 0
+663:(:- ifstat 1
+663:0:- ifstat 1
+663:BOOL:- ifstat 1
+663:CHAR:- ifstat 1
+663:CONST:- ifstat 1
+663:DO:- ifstat 1
+663:ELSE:- ifstat 1
+663:FLOAT:- ifstat 1
+663:FOR:- ifstat 1
+663:ID:- ifstat 1
+663:IF:- ifstat 1
+663:INT:- ifstat 1
+663:PRINTF:- ifstat 1
+663:RETURN:- ifstat 1
+663:SCANF:- ifstat 1
+663:WHILE:- ifstat 1
+663:{:- ifstat 1
+663:}:- ifstat 1
+664:}:+ 809
+665:(:- ifstat 0
+665:0:- ifstat 1
+665:BOOL:- ifstat 1
+665:CHAR:- ifstat 1
+665:CONST:- ifstat 1
+665:DO:- ifstat 1
+665:ELSE:+ 342
+665:ELSEIF:+ 223
+665:FLOAT:- ifstat 1
+665:FOR:- ifstat 1
+665:ID:- ifstat 1
+665:IF:- ifstat 1
+665:INT:- ifstat 1
+665:PRINTF:- ifstat 1
+665:RETURN:- ifstat 0
+665:SCANF:- ifstat 1
+665:WHILE:- ifstat 1
+665:{:- ifstat 0
+665:}:- ifstat 1
+666:!:- calexp 0
+666:(:- calexp 0
+666:*:+ 811
+666:+:- calexp 0
+666:-:- calexp 0
+666:/:+ 810
+666:0:- calexp 0
+666:BOOL:- calexp 0
+666:FLOAT:- calexp 0
+666:ID:- calexp 0
+666:NUM:- calexp 0
+667:!:- item 2
+667:(:- item 2
+667:+:- item 2
+667:-:- item 2
+667:0:- item 2
+667:BOOL:- item 2
+667:FLOAT:- item 2
+667:ID:- item 2
+667:NUM:- item 2
+668:!:+ 239
+668:(:+ 236
+668:-:+ 238
+668:BOOL:+ 242
+668:FLOAT:+ 241
+668:ID:+ 237
+668:NUM:+ 240
+669:!:- factory 0
+669:(:- factory 0
+669:+:- factory 0
+669:-:- factory 0
+669:0:- factory 0
+669:BOOL:- factory 0
+669:FLOAT:- factory 0
+669:ID:- factory 0
+669:NUM:- factory 0
+670:(:+ 668
+670:-:+ 670
+670:FLOAT:+ 672
+670:ID:+ 669
+670:NUM:+ 671
+671:!:- factory 1
+671:(:- factory 1
+671:+:- factory 1
+671:-:- factory 1
+671:0:- factory 1
+671:BOOL:- factory 1
+671:FLOAT:- factory 1
+671:ID:- factory 1
+671:NUM:- factory 1
+672:!:- factory 2
+672:(:- factory 2
+672:+:- factory 2
+672:-:- factory 2
+672:0:- factory 2
+672:BOOL:- factory 2
+672:FLOAT:- factory 2
+672:ID:- factory 2
+672:NUM:- factory 2
+673:!:- calexp 1
+673:(:- calexp 1
+673:*:+ 543
+673:-:- calexp 1
+673:/:+ 542
+673:0:- calexp 1
+673:BOOL:- calexp 1
+673:FLOAT:- calexp 1
+673:ID:- calexp 1
+673:NUM:- calexp 1
+674:!:- calexp 2
+674:%:- calexp 2
+674:(:- calexp 2
+674:*:+ 815
+674:-:- calexp 2
+674:/:+ 814
+674:0:- calexp 2
+674:BOOL:- calexp 2
+674:FLOAT:- calexp 2
+674:ID:- calexp 2
+674:NUM:- calexp 2
+675:!:- item 2
+675:%:- item 2
+675:(:- item 2
+675:-:- item 2
+675:0:- item 2
+675:BOOL:- item 2
+675:FLOAT:- item 2
+675:ID:- item 2
+675:NUM:- item 2
+676:!:+ 239
+676:(:+ 236
+676:-:+ 238
+676:BOOL:+ 242
+676:FLOAT:+ 241
+676:ID:+ 237
+676:NUM:+ 240
+677:!:- factory 0
+677:%:- factory 0
+677:(:- factory 0
+677:-:- factory 0
+677:0:- factory 0
+677:BOOL:- factory 0
+677:FLOAT:- factory 0
+677:ID:- factory 0
+677:NUM:- factory 0
+678:(:+ 676
+678:-:+ 678
+678:FLOAT:+ 680
+678:ID:+ 677
+678:NUM:+ 679
+679:!:- factory 1
+679:%:- factory 1
+679:(:- factory 1
+679:-:- factory 1
+679:0:- factory 1
+679:BOOL:- factory 1
+679:FLOAT:- factory 1
+679:ID:- factory 1
+679:NUM:- factory 1
+680:!:- factory 2
+680:%:- factory 2
+680:(:- factory 2
+680:-:- factory 2
+680:0:- factory 2
+680:BOOL:- factory 2
+680:FLOAT:- factory 2
+680:ID:- factory 2
+680:NUM:- factory 2
+681:!:- item 1
+681:(:- item 1
+681:-:- item 1
+681:/:- item 1
+681:0:- item 1
+681:BOOL:- item 1
+681:FLOAT:- item 1
+681:ID:- item 1
+681:NUM:- item 1
+682:!:+ 239
+682:(:+ 236
+682:-:+ 238
+682:BOOL:+ 242
+682:FLOAT:+ 241
+682:ID:+ 237
+682:NUM:+ 240
+683:!:- factory 0
+683:(:- factory 0
+683:-:- factory 0
+683:/:- factory 0
+683:0:- factory 0
+683:BOOL:- factory 0
+683:FLOAT:- factory 0
+683:ID:- factory 0
+683:NUM:- factory 0
+684:(:+ 682
+684:-:+ 684
+684:FLOAT:+ 686
+684:ID:+ 683
+684:NUM:+ 685
+685:!:- factory 1
+685:(:- factory 1
+685:-:- factory 1
+685:/:- factory 1
+685:0:- factory 1
+685:BOOL:- factory 1
+685:FLOAT:- factory 1
+685:ID:- factory 1
+685:NUM:- factory 1
+686:!:- factory 2
+686:(:- factory 2
+686:-:- factory 2
+686:/:- factory 2
+686:0:- factory 2
+686:BOOL:- factory 2
+686:FLOAT:- factory 2
+686:ID:- factory 2
+686:NUM:- factory 2
+687:!:- item 0
+687:(:- item 0
+687:*:- item 0
+687:-:- item 0
+687:0:- item 0
+687:BOOL:- item 0
+687:FLOAT:- item 0
+687:ID:- item 0
+687:NUM:- item 0
+688:!:+ 239
+688:(:+ 236
+688:-:+ 238
+688:BOOL:+ 242
+688:FLOAT:+ 241
+688:ID:+ 237
+688:NUM:+ 240
+689:!:- factory 0
+689:(:- factory 0
+689:*:- factory 0
+689:-:- factory 0
+689:0:- factory 0
+689:BOOL:- factory 0
+689:FLOAT:- factory 0
+689:ID:- factory 0
+689:NUM:- factory 0
+690:(:+ 688
+690:-:+ 690
+690:FLOAT:+ 692
+690:ID:+ 689
+690:NUM:+ 691
+691:!:- factory 1
+691:(:- factory 1
+691:*:- factory 1
+691:-:- factory 1
+691:0:- factory 1
+691:BOOL:- factory 1
+691:FLOAT:- factory 1
+691:ID:- factory 1
+691:NUM:- factory 1
+692:!:- factory 2
+692:(:- factory 2
+692:*:- factory 2
+692:-:- factory 2
+692:0:- factory 2
+692:BOOL:- factory 2
+692:FLOAT:- factory 2
+692:ID:- factory 2
+692:NUM:- factory 2
+693:!:- factory 4
+693:(:- factory 4
+693:-:- factory 4
+693:0:- factory 4
+693:BOOL:- factory 4
+693:FLOAT:- factory 4
+693:ID:- factory 4
+693:NUM:- factory 4
+694:(:- item 1
+694:+:- item 1
+694:-:- item 1
+694:/:- item 1
+694:0:- item 1
+694:FLOAT:- item 1
+694:ID:- item 1
+694:NUM:- item 1
+695:!:+ 239
+695:(:+ 236
+695:-:+ 238
+695:BOOL:+ 242
+695:FLOAT:+ 241
+695:ID:+ 237
+695:NUM:+ 240
+696:(:- factory 0
+696:+:- factory 0
+696:-:- factory 0
+696:/:- factory 0
+696:0:- factory 0
+696:FLOAT:- factory 0
+696:ID:- factory 0
+696:NUM:- factory 0
+697:(:+ 695
+697:-:+ 697
+697:FLOAT:+ 699
+697:ID:+ 696
+697:NUM:+ 698
+698:(:- factory 1
+698:+:- factory 1
+698:-:- factory 1
+698:/:- factory 1
+698:0:- factory 1
+698:FLOAT:- factory 1
+698:ID:- factory 1
+698:NUM:- factory 1
+699:(:- factory 2
+699:+:- factory 2
+699:-:- factory 2
+699:/:- factory 2
+699:0:- factory 2
+699:FLOAT:- factory 2
+699:ID:- factory 2
+699:NUM:- factory 2
+700:(:- item 0
+700:*:- item 0
+700:+:- item 0
+700:-:- item 0
+700:0:- item 0
+700:FLOAT:- item 0
+700:ID:- item 0
+700:NUM:- item 0
+701:!:+ 239
+701:(:+ 236
+701:-:+ 238
+701:BOOL:+ 242
+701:FLOAT:+ 241
+701:ID:+ 237
+701:NUM:+ 240
+702:(:- factory 0
+702:*:- factory 0
+702:+:- factory 0
+702:-:- factory 0
+702:0:- factory 0
+702:FLOAT:- factory 0
+702:ID:- factory 0
+702:NUM:- factory 0
+703:(:+ 701
+703:-:+ 703
+703:FLOAT:+ 705
+703:ID:+ 702
+703:NUM:+ 704
+704:(:- factory 1
+704:*:- factory 1
+704:+:- factory 1
+704:-:- factory 1
+704:0:- factory 1
+704:FLOAT:- factory 1
+704:ID:- factory 1
+704:NUM:- factory 1
+705:(:- factory 2
+705:*:- factory 2
+705:+:- factory 2
+705:-:- factory 2
+705:0:- factory 2
+705:FLOAT:- factory 2
+705:ID:- factory 2
+705:NUM:- factory 2
+706:(:- factory 4
+706:+:- factory 4
+706:-:- factory 4
+706:0:- factory 4
+706:FLOAT:- factory 4
+706:ID:- factory 4
+706:NUM:- factory 4
+707:%:- item 1
+707:(:- item 1
+707:-:- item 1
+707:/:- item 1
+707:0:- item 1
+707:FLOAT:- item 1
+707:ID:- item 1
+707:NUM:- item 1
+708:!:+ 239
+708:(:+ 236
+708:-:+ 238
+708:BOOL:+ 242
+708:FLOAT:+ 241
+708:ID:+ 237
+708:NUM:+ 240
+709:%:- factory 0
+709:(:- factory 0
+709:-:- factory 0
+709:/:- factory 0
+709:0:- factory 0
+709:FLOAT:- factory 0
+709:ID:- factory 0
+709:NUM:- factory 0
+710:(:+ 708
+710:-:+ 710
+710:FLOAT:+ 712
+710:ID:+ 709
+710:NUM:+ 711
+711:%:- factory 1
+711:(:- factory 1
+711:-:- factory 1
+711:/:- factory 1
+711:0:- factory 1
+711:FLOAT:- factory 1
+711:ID:- factory 1
+711:NUM:- factory 1
+712:%:- factory 2
+712:(:- factory 2
+712:-:- factory 2
+712:/:- factory 2
+712:0:- factory 2
+712:FLOAT:- factory 2
+712:ID:- factory 2
+712:NUM:- factory 2
+713:%:- item 0
+713:(:- item 0
+713:*:- item 0
+713:-:- item 0
+713:0:- item 0
+713:FLOAT:- item 0
+713:ID:- item 0
+713:NUM:- item 0
+714:!:+ 239
+714:(:+ 236
+714:-:+ 238
+714:BOOL:+ 242
+714:FLOAT:+ 241
+714:ID:+ 237
+714:NUM:+ 240
+715:%:- factory 0
+715:(:- factory 0
+715:*:- factory 0
+715:-:- factory 0
+715:0:- factory 0
+715:FLOAT:- factory 0
+715:ID:- factory 0
+715:NUM:- factory 0
+716:(:+ 714
+716:-:+ 716
+716:FLOAT:+ 718
+716:ID:+ 715
+716:NUM:+ 717
+717:%:- factory 1
+717:(:- factory 1
+717:*:- factory 1
+717:-:- factory 1
+717:0:- factory 1
+717:FLOAT:- factory 1
+717:ID:- factory 1
+717:NUM:- factory 1
+718:%:- factory 2
+718:(:- factory 2
+718:*:- factory 2
+718:-:- factory 2
+718:0:- factory 2
+718:FLOAT:- factory 2
+718:ID:- factory 2
+718:NUM:- factory 2
+719:%:- factory 4
+719:(:- factory 4
+719:-:- factory 4
+719:0:- factory 4
+719:FLOAT:- factory 4
+719:ID:- factory 4
+719:NUM:- factory 4
+720:(:- ifstat 0
+720:):- ifstat 0
+720:0:- elseifblock 0
+720:BOOL:- ifstat 0
+720:CHAR:- ifstat 0
+720:CONST:- ifstat 0
+720:DO:- ifstat 0
+720:ELSE:- ifstat 0
+720:ELSEIF:- elseifblock 0
+720:FLOAT:- ifstat 0
+720:FOR:- ifstat 0
+720:ID:- ifstat 0
+720:IF:- ifstat 0
+720:INT:- ifstat 0
+720:PRINTF:- ifstat 0
+720:RETURN:- ifstat 0
+720:SCANF:- ifstat 0
+720:WHILE:- ifstat 0
+720:}:- ifstat 0
+721:}:+ 830
+722:{:+ 832
+723:}:+ 833
+724:BOOL:+ 16
+724:CHAR:+ 17
+724:CONST:+ 201
+724:DO:+ 207
+724:FLOAT:+ 15
+724:FOR:+ 208
+724:ID:+ 202
+724:IF:+ 205
+724:INT:+ 12
+724:PRINTF:+ 204
+724:SCANF:+ 203
+724:WHILE:+ 206
+724:}:+ 833
+725:(:- ifstat 0
+725:):- ifstat 0
+725:0:- ifstat 0
+725:BOOL:- ifstat 0
+725:CHAR:- ifstat 0
+725:CONST:- ifstat 0
+725:DO:- ifstat 0
+725:FLOAT:- ifstat 0
+725:FOR:- ifstat 0
+725:ID:- ifstat 0
+725:IF:- ifstat 0
+725:INT:- ifstat 0
+725:PRINTF:- ifstat 0
+725:RETURN:- ifstat 0
+725:SCANF:- ifstat 0
+725:WHILE:- ifstat 0
+725:{:- ifstat 0
+725:}:- ifstat 0
+726:}:+ 835
+727:ELSE:+ 837
+727:ELSEIF:+ 289
+728:{:+ 838
+729:0:- ifstat 1
+729:BOOL:- forstat 0
+729:CHAR:- forstat 0
+729:CONST:- forstat 0
+729:DO:- forstat 0
+729:ELSE:+ 728
+729:ELSEIF:+ 223
+729:FLOAT:- forstat 0
+729:FOR:- forstat 0
+729:ID:- forstat 0
+729:IF:- forstat 0
+729:INT:- forstat 0
+729:PRINTF:- forstat 0
+729:SCANF:- forstat 0
+729:WHILE:+ 343
+729:}:- ifstat 1
+730:}:+ 839
+731:ELSE:+ 841
+731:ELSEIF:+ 289
+732:{:+ 843
+733:(:- factory 4
+733:-:- factory 4
+733:/:- factory 4
+733:0:- factory 4
+733:FLOAT:- factory 4
+733:ID:- factory 4
+733:NUM:- factory 4
+734:(:- factory 4
+734:*:- factory 4
+734:-:- factory 4
+734:0:- factory 4
+734:FLOAT:- factory 4
+734:ID:- factory 4
+734:NUM:- factory 4
+735:!:- regexp 0
+735:%:+ 846
+735:(:- regexp 0
+735:+:+ 844
+735:-:+ 845
+735:0:- regexp 0
+735:BOOL:- regexp 0
+735:FLOAT:- regexp 0
+735:ID:- regexp 0
+735:NUM:- regexp 0
+735:OR:- regexp 0
+736:!:- calexp 3
+736:(:- calexp 3
+736:*:+ 848
+736:-:- calexp 3
+736:/:+ 847
+736:0:- calexp 3
+736:BOOL:- calexp 3
+736:FLOAT:- calexp 3
+736:ID:- calexp 3
+736:NUM:- calexp 3
+736:OR:- calexp 3
+737:!:- item 2
+737:(:- item 2
+737:-:- item 2
+737:0:- item 2
+737:BOOL:- item 2
+737:FLOAT:- item 2
+737:ID:- item 2
+737:NUM:- item 2
+737:OR:- item 2
+738:!:+ 239
+738:(:+ 236
+738:-:+ 238
+738:BOOL:+ 242
+738:FLOAT:+ 241
+738:ID:+ 237
+738:NUM:+ 240
+739:!:- factory 0
+739:(:- factory 0
+739:-:- factory 0
+739:0:- factory 0
+739:BOOL:- factory 0
+739:FLOAT:- factory 0
+739:ID:- factory 0
+739:NUM:- factory 0
+739:OR:- factory 0
+740:(:+ 738
+740:-:+ 740
+740:FLOAT:+ 742
+740:ID:+ 739
+740:NUM:+ 741
+741:!:- factory 1
+741:(:- factory 1
+741:-:- factory 1
+741:0:- factory 1
+741:BOOL:- factory 1
+741:FLOAT:- factory 1
+741:ID:- factory 1
+741:NUM:- factory 1
+741:OR:- factory 1
+742:!:- factory 2
+742:(:- factory 2
+742:-:- factory 2
+742:0:- factory 2
+742:BOOL:- factory 2
+742:FLOAT:- factory 2
+742:ID:- factory 2
+742:NUM:- factory 2
+742:OR:- factory 2
+743:%:+ 326
+743:+:+ 325
+743:-:+ 299
+743:EQ:+ 305
+743:G:+ 304
+743:GE:+ 302
+743:L:+ 303
+743:LE:+ 301
+743:NE:+ 306
+744:!:- bool 2
+744:&&:- bool 2
+744:(:- bool 2
+744:-:- bool 2
+744:0:- bool 2
+744:BOOL:- bool 2
+744:FLOAT:- bool 2
+744:ID:- bool 2
+744:NUM:- bool 2
+744:OR:- bool 2
+745:!:- bitem 0
+745:&&:- bitem 0
+745:(:- bitem 0
+745:-:- bitem 0
+745:0:- bitem 0
+745:BOOL:- bitem 0
+745:FLOAT:- bitem 0
+745:ID:- bitem 0
+745:NUM:- bitem 0
+745:OR:- bitem 0
+746:!:- bfactory 0
+746:&&:- bfactory 0
+746:(:- bfactory 0
+746:-:- bfactory 0
+746:0:- bfactory 0
+746:BOOL:- bfactory 0
+746:FLOAT:- bfactory 0
+746:ID:- bfactory 0
+746:NUM:- bfactory 0
+746:OR:- bfactory 0
+747:!:+ 239
+747:(:+ 236
+747:-:+ 238
+747:BOOL:+ 242
+747:FLOAT:+ 241
+747:ID:+ 237
+747:NUM:+ 240
+748:!:- bool 1
+748:&&:- bool 1
+748:(:- factory 0
+748:-:- factory 0
+748:0:- factory 0
+748:BOOL:- bool 1
+748:FLOAT:- factory 0
+748:ID:- factory 0
+748:NUM:- factory 0
+748:OR:- bool 1
+749:!:+ 749
+749:(:+ 747
+749:-:+ 238
+749:BOOL:+ 750
+749:FLOAT:+ 241
+749:ID:+ 748
+749:NUM:+ 240
+750:!:- bool 0
+750:&&:- bool 0
+750:(:- bool 0
+750:-:- bool 0
+750:0:- bool 0
+750:BOOL:- bool 0
+750:FLOAT:- bool 0
+750:ID:- bool 0
+750:NUM:- bool 0
+750:OR:- bool 0
+751:!:- bfactory 2
+751:(:- factory 4
+751:-:- factory 4
+751:0:- factory 4
+751:BOOL:- bfactory 2
+751:FLOAT:- factory 4
+751:ID:- factory 4
+751:NUM:- factory 4
+751:OR:- bfactory 2
+752:(:- whilestat 0
+752:):- whilestat 0
+752:0:- ifstat 1
+752:BOOL:- ifstat 1
+752:CHAR:- ifstat 1
+752:CONST:- ifstat 1
+752:DO:- ifstat 1
+752:ELSE:+ 342
+752:ELSEIF:+ 223
+752:FLOAT:- ifstat 1
+752:FOR:- ifstat 1
+752:ID:- ifstat 1
+752:IF:- ifstat 1
+752:INT:- ifstat 1
+752:PRINTF:- ifstat 1
+752:RETURN:- whilestat 0
+752:SCANF:- ifstat 1
+752:WHILE:- ifstat 1
+752:{:- whilestat 0
+752:}:- ifstat 1
+753:(:- dowhilestat 0
+753:0:- dowhilestat 0
+753:BOOL:- dowhilestat 0
+753:CHAR:- dowhilestat 0
+753:CONST:- dowhilestat 0
+753:DO:- dowhilestat 0
+753:FLOAT:- dowhilestat 0
+753:FOR:- dowhilestat 0
+753:ID:- dowhilestat 0
+753:IF:- dowhilestat 0
+753:INT:- dowhilestat 0
+753:PRINTF:- dowhilestat 0
+753:RETURN:- dowhilestat 0
+753:SCANF:- dowhilestat 0
+753:WHILE:- dowhilestat 0
+753:{:- dowhilestat 0
+753:}:- dowhilestat 0
+754:(:- dowhilestat 0
+754:0:- dowhilestat 0
+754:WHILE:- dowhilestat 0
+754:}:- dowhilestat 0
+755:}:+ 854
+756:{:+ 856
+757:0:- ifstat 1
+757:BOOL:- ifstat 1
+757:CHAR:- ifstat 1
+757:CONST:- ifstat 1
+757:DO:- ifstat 1
+757:ELSE:- ifstat 1
+757:FLOAT:- ifstat 1
+757:FOR:- ifstat 1
+757:ID:- ifstat 1
+757:IF:- ifstat 1
+757:INT:- ifstat 1
+757:PRINTF:- ifstat 1
+757:SCANF:- ifstat 1
+757:WHILE:- ifstat 1
+757:{:- ifstat 1
+757:}:- ifstat 1
+758:}:+ 857
+759:0:- ifstat 1
+759:BOOL:- ifstat 1
+759:CHAR:- ifstat 1
+759:CONST:- ifstat 1
+759:DO:- ifstat 1
+759:ELSE:+ 342
+759:ELSEIF:+ 223
+759:FLOAT:- ifstat 1
+759:FOR:- ifstat 1
+759:ID:- ifstat 1
+759:IF:- ifstat 1
+759:INT:- ifstat 1
+759:PRINTF:- ifstat 1
+759:SCANF:- ifstat 1
+759:WHILE:- ifstat 1
+759:{:- ifstat 0
+759:}:- ifstat 1
+760:(:- dowhilestat 0
+760:0:- dowhilestat 0
+760:BOOL:- dowhilestat 0
+760:CHAR:- dowhilestat 0
+760:CONST:- dowhilestat 0
+760:DO:- dowhilestat 0
+760:FLOAT:- dowhilestat 0
+760:FOR:- dowhilestat 0
+760:ID:- dowhilestat 0
+760:IF:- dowhilestat 0
+760:INT:- dowhilestat 0
+760:PRINTF:- dowhilestat 0
+760:SCANF:- dowhilestat 0
+760:WHILE:- dowhilestat 0
+760:}:- dowhilestat 0
+761:(:- funstat 0
+761:):- funstat 0
+761:0:- funstat 0
+761:BOOL:- funstat 0
+761:CHAR:- funstat 0
+761:CONST:- funstat 0
+761:DO:- funstat 0
+761:FLOAT:- funstat 0
+761:FOR:- funstat 0
+761:ID:- funstat 0
+761:IF:- funstat 0
+761:INT:- funstat 0
+761:PRINTF:- funstat 0
+761:SCANF:- funstat 0
+761:WHILE:- funstat 0
+761:}:- funstat 0
+762:0:- constat 0
+762:=:- constat 0
+762:BOOL:- constat 0
+762:CHAR:- constat 0
+762:CONST:- constat 0
+762:DO:- constat 0
+762:FLOAT:- constat 0
+762:FOR:- constat 0
+762:ID:- constat 0
+762:IF:- constat 0
+762:INT:- constat 0
+762:PRINTF:- constat 0
+762:SCANF:- constat 0
+762:WHILE:- constat 0
+762:}:- constat 0
+763:;:+ 858
+764:(:- ifstat 1
+764:0:- elseifblock 1
+764:BOOL:- ifstat 1
+764:CHAR:- ifstat 1
+764:CONST:- ifstat 1
+764:DO:- ifstat 1
+764:ELSE:- ifstat 1
+764:ELSEIF:- elseifblock 1
+764:FLOAT:- ifstat 1
+764:FOR:- ifstat 1
+764:ID:- ifstat 1
+764:IF:- ifstat 1
+764:INT:- ifstat 1
+764:PRINTF:- ifstat 1
+764:SCANF:- ifstat 1
+764:WHILE:- ifstat 1
+764:}:- ifstat 1
+765:}:+ 859
+766:BOOL:+ 16
+766:CHAR:+ 17
+766:CONST:+ 201
+766:DO:+ 207
+766:FLOAT:+ 15
+766:FOR:+ 208
+766:ID:+ 202
+766:IF:+ 205
+766:INT:+ 12
+766:PRINTF:+ 204
+766:SCANF:+ 203
+766:WHILE:+ 206
+766:}:+ 859
+767:(:- ifstat 0
+767:0:- ifstat 0
+767:BOOL:- ifstat 0
+767:CHAR:- ifstat 0
+767:CONST:- ifstat 0
+767:DO:- ifstat 0
+767:ELSE:- ifstat 0
+767:FLOAT:- ifstat 0
+767:FOR:- ifstat 0
+767:ID:- ifstat 0
+767:IF:- ifstat 0
+767:INT:- ifstat 0
+767:PRINTF:- ifstat 0
+767:SCANF:- ifstat 0
+767:WHILE:- ifstat 0
+767:{:- ifstat 0
+767:}:- ifstat 0
+768:}:+ 861
+769:}:+ 862
+770:ELSE:+ 864
+770:ELSEIF:+ 289
+771:{:+ 866
+772:(:- ifstat 0
+772:):- ifstat 0
+772:0:- ifstat 0
+772:BOOL:- ifstat 0
+772:CHAR:- ifstat 0
+772:CONST:- ifstat 0
+772:DO:- ifstat 0
+772:ELSE:+ 869
+772:ELSEIF:+ 223
+772:FLOAT:- ifstat 0
+772:FOR:- ifstat 0
+772:ID:- ifstat 0
+772:IF:- ifstat 0
+772:INT:- ifstat 0
+772:PRINTF:- ifstat 0
+772:SCANF:- ifstat 0
+772:WHILE:- ifstat 0
+772:{:- ifstat 0
+772:}:- ifstat 0
+773:}:+ 870
+774:(:- whilestat 0
+774:):- whilestat 0
+774:0:- whilestat 0
+774:BOOL:- whilestat 0
+774:CHAR:- whilestat 0
+774:CONST:- whilestat 0
+774:DO:- whilestat 0
+774:FLOAT:- whilestat 0
+774:FOR:- whilestat 0
+774:ID:- whilestat 0
+774:IF:- whilestat 0
+774:INT:- whilestat 0
+774:PRINTF:- whilestat 0
+774:SCANF:- whilestat 0
+774:WHILE:- whilestat 0
+774:{:- whilestat 0
+774:}:- whilestat 0
+775:}:+ 871
+776:):+ 872
+777:(:- forstat 0
+777:0:- forstat 0
+777:;:- forstat 0
+777:BOOL:- forstat 0
+777:CHAR:- forstat 0
+777:CONST:- forstat 0
+777:DO:- forstat 0
+777:FLOAT:- forstat 0
+777:FOR:- forstat 0
+777:ID:- forstat 0
+777:IF:- forstat 0
+777:INT:- forstat 0
+777:PRINTF:- forstat 0
+777:SCANF:- forstat 0
+777:WHILE:- forstat 0
+777:}:- forstat 0
+778:):+ 874
+779:(:- elseifblock 1
+779:):- elseifblock 1
+779:0:- elseifblock 1
+779:ELSEIF:- elseifblock 1
+780:}:+ 875
+781:BOOL:+ 16
+781:CHAR:+ 17
+781:CONST:+ 201
+781:DO:+ 207
+781:FLOAT:+ 15
+781:FOR:+ 208
+781:ID:+ 202
+781:IF:+ 205
+781:INT:+ 12
+781:PRINTF:+ 204
+781:SCANF:+ 203
+781:WHILE:+ 206
+781:}:+ 875
+782:(:- elseifblock 0
+782:):- elseifblock 0
+782:0:- elseifblock 0
+782:ELSEIF:- elseifblock 0
+782:{:- elseifblock 0
+783:}:+ 877
+784:):+ 878
+785:!:- factory 3
+785:(:- factory 3
+785:+:- factory 3
+785:-:- factory 3
+785:/:- factory 3
+785:0:- factory 3
+785:BOOL:- factory 3
+785:FLOAT:- factory 3
+785:ID:- factory 3
+785:NUM:- factory 3
+786:):+ 879
+787:!:- factory 3
+787:(:- factory 3
+787:*:- factory 3
+787:+:- factory 3
+787:-:- factory 3
+787:0:- factory 3
+787:BOOL:- factory 3
+787:FLOAT:- factory 3
+787:ID:- factory 3
+787:NUM:- factory 3
+788:):+ 880
+789:!:- factory 3
+789:%:- factory 3
+789:(:- factory 3
+789:-:- factory 3
+789:/:- factory 3
+789:0:- factory 3
+789:BOOL:- factory 3
+789:FLOAT:- factory 3
+789:ID:- factory 3
+789:NUM:- factory 3
+790:):+ 881
+791:!:- factory 3
+791:%:- factory 3
+791:(:- factory 3
+791:*:- factory 3
+791:-:- factory 3
+791:0:- factory 3
+791:BOOL:- factory 3
+791:FLOAT:- factory 3
+791:ID:- factory 3
+791:NUM:- factory 3
+792:(:+ 884
+792:-:+ 886
+792:FLOAT:+ 888
+792:ID:+ 885
+792:NUM:+ 887
+793:(:+ 639
+793:-:+ 641
+793:FLOAT:+ 643
+793:ID:+ 640
+793:NUM:+ 642
+794:(:+ 892
+794:-:+ 894
+794:FLOAT:+ 896
+794:ID:+ 893
+794:NUM:+ 895
+795:(:+ 898
+795:-:+ 900
+795:FLOAT:+ 902
+795:ID:+ 899
+795:NUM:+ 901
+796:(:+ 904
+796:-:+ 906
+796:FLOAT:+ 908
+796:ID:+ 905
+796:NUM:+ 907
+797:):+ 909
+798:!:- factory 3
+798:(:- factory 3
+798:-:- factory 3
+798:0:- factory 3
+798:BOOL:- factory 3
+798:FLOAT:- factory 3
+798:ID:- factory 3
+798:NUM:- factory 3
+798:OR:- factory 3
+799:(:+ 913
+799:-:+ 915
+799:FLOAT:+ 917
+799:ID:+ 914
+799:NUM:+ 916
+800:):+ 918
+801:!:- bfactory 1
+801:&&:- bfactory 1
+801:(:- bfactory 1
+801:-:- bfactory 1
+801:0:- bfactory 1
+801:BOOL:- bfactory 1
+801:FLOAT:- bfactory 1
+801:ID:- bfactory 1
+801:NUM:- bfactory 1
+801:OR:- bfactory 1
+802:(:+ 921
+802:-:+ 923
+802:FLOAT:+ 925
+802:ID:+ 922
+802:NUM:+ 924
+803:(:+ 656
+803:-:+ 658
+803:FLOAT:+ 660
+803:ID:+ 657
+803:NUM:+ 659
+804:(:+ 929
+804:-:+ 931
+804:FLOAT:+ 933
+804:ID:+ 930
+804:NUM:+ 932
+805:(:+ 935
+805:-:+ 937
+805:FLOAT:+ 939
+805:ID:+ 936
+805:NUM:+ 938
+806:(:+ 941
+806:-:+ 943
+806:FLOAT:+ 945
+806:ID:+ 942
+806:NUM:+ 944
+807:):+ 946
+808:!:- factory 3
+808:&&:- factory 3
+808:(:- factory 3
+808:-:- factory 3
+808:0:- factory 3
+808:BOOL:- factory 3
+808:FLOAT:- factory 3
+808:ID:- factory 3
+808:NUM:- factory 3
+809:(:- ifstat 1
+809:0:- ifstat 1
+809:BOOL:- ifstat 1
+809:CHAR:- ifstat 1
+809:CONST:- ifstat 1
+809:DO:- ifstat 1
+809:ELSE:- ifstat 1
+809:ELSEIF:+ 223
+809:FLOAT:- ifstat 1
+809:FOR:- ifstat 1
+809:ID:- ifstat 1
+809:IF:- ifstat 1
+809:INT:- ifstat 1
+809:PRINTF:- ifstat 1
+809:RETURN:- ifstat 1
+809:SCANF:- ifstat 1
+809:WHILE:- ifstat 1
+809:{:- ifstat 1
+809:}:- ifstat 1
+810:(:+ 948
+810:-:+ 950
+810:FLOAT:+ 952
+810:ID:+ 949
+810:NUM:+ 951
+811:(:+ 954
+811:-:+ 956
+811:FLOAT:+ 958
+811:ID:+ 955
+811:NUM:+ 957
+812:):+ 959
+813:!:- factory 3
+813:(:- factory 3
+813:+:- factory 3
+813:-:- factory 3
+813:0:- factory 3
+813:BOOL:- factory 3
+813:FLOAT:- factory 3
+813:ID:- factory 3
+813:NUM:- factory 3
+814:(:+ 961
+814:-:+ 963
+814:FLOAT:+ 965
+814:ID:+ 962
+814:NUM:+ 964
+815:(:+ 967
+815:-:+ 969
+815:FLOAT:+ 971
+815:ID:+ 968
+815:NUM:+ 970
+816:):+ 972
+817:!:- factory 3
+817:%:- factory 3
+817:(:- factory 3
+817:-:- factory 3
+817:0:- factory 3
+817:BOOL:- factory 3
+817:FLOAT:- factory 3
+817:ID:- factory 3
+817:NUM:- factory 3
+818:):+ 973
+819:!:- factory 3
+819:(:- factory 3
+819:-:- factory 3
+819:/:- factory 3
+819:0:- factory 3
+819:BOOL:- factory 3
+819:FLOAT:- factory 3
+819:ID:- factory 3
+819:NUM:- factory 3
+820:):+ 974
+821:!:- factory 3
+821:(:- factory 3
+821:*:- factory 3
+821:-:- factory 3
+821:0:- factory 3
+821:BOOL:- factory 3
+821:FLOAT:- factory 3
+821:ID:- factory 3
+821:NUM:- factory 3
+822:):+ 975
+823:(:- factory 3
+823:+:- factory 3
+823:-:- factory 3
+823:/:- factory 3
+823:0:- factory 3
+823:FLOAT:- factory 3
+823:ID:- factory 3
+823:NUM:- factory 3
+824:):+ 976
+825:(:- factory 3
+825:*:- factory 3
+825:+:- factory 3
+825:-:- factory 3
+825:0:- factory 3
+825:FLOAT:- factory 3
+825:ID:- factory 3
+825:NUM:- factory 3
+826:):+ 977
+827:%:- factory 3
+827:(:- factory 3
+827:-:- factory 3
+827:/:- factory 3
+827:0:- factory 3
+827:FLOAT:- factory 3
+827:ID:- factory 3
+827:NUM:- factory 3
+828:):+ 978
+829:%:- factory 3
+829:(:- factory 3
+829:*:- factory 3
+829:-:- factory 3
+829:0:- factory 3
+829:FLOAT:- factory 3
+829:ID:- factory 3
+829:NUM:- factory 3
+830:(:- ifstat 1
+830:):- ifstat 1
+830:0:- elseifblock 1
+830:BOOL:- ifstat 1
+830:CHAR:- ifstat 1
+830:CONST:- ifstat 1
+830:DO:- ifstat 1
+830:ELSE:- ifstat 1
+830:ELSEIF:- elseifblock 1
+830:FLOAT:- ifstat 1
+830:FOR:- ifstat 1
+830:ID:- ifstat 1
+830:IF:- ifstat 1
+830:INT:- ifstat 1
+830:PRINTF:- ifstat 1
+830:RETURN:- ifstat 1
+830:SCANF:- ifstat 1
+830:WHILE:- ifstat 1
+830:}:- ifstat 1
+831:}:+ 979
+832:BOOL:+ 16
+832:CHAR:+ 17
+832:CONST:+ 201
+832:DO:+ 207
+832:FLOAT:+ 15
+832:FOR:+ 208
+832:ID:+ 202
+832:IF:+ 205
+832:INT:+ 12
+832:PRINTF:+ 204
+832:SCANF:+ 203
+832:WHILE:+ 206
+832:}:+ 979
+833:(:- ifstat 0
+833:):- ifstat 0
+833:0:- ifstat 0
+833:BOOL:- ifstat 0
+833:CHAR:- ifstat 0
+833:CONST:- ifstat 0
+833:DO:- ifstat 0
+833:ELSE:- ifstat 0
+833:FLOAT:- ifstat 0
+833:FOR:- ifstat 0
+833:ID:- ifstat 0
+833:IF:- ifstat 0
+833:INT:- ifstat 0
+833:PRINTF:- ifstat 0
+833:RETURN:- ifstat 0
+833:SCANF:- ifstat 0
+833:WHILE:- ifstat 0
+833:{:- ifstat 0
+833:}:- ifstat 0
+834:}:+ 981
+835:(:- ifstat 0
+835:):- ifstat 0
+835:0:- elseifblock 0
+835:BOOL:- ifstat 0
+835:CHAR:- ifstat 0
+835:CONST:- ifstat 0
+835:DO:- ifstat 0
+835:ELSE:- ifstat 0
+835:ELSEIF:- elseifblock 0
+835:FLOAT:- ifstat 0
+835:FOR:- ifstat 0
+835:ID:- ifstat 0
+835:IF:- ifstat 0
+835:INT:- ifstat 0
+835:PRINTF:- ifstat 0
+835:RETURN:- ifstat 0
+835:SCANF:- ifstat 0
+835:WHILE:- ifstat 0
+835:{:- ifstat 0
+835:}:- ifstat 0
+836:}:+ 982
+837:{:+ 983
+838:BOOL:+ 16
+838:CHAR:+ 17
+838:CONST:+ 201
+838:DO:+ 207
+838:FLOAT:+ 15
+838:FOR:+ 208
+838:ID:+ 202
+838:IF:+ 205
+838:INT:+ 12
+838:PRINTF:+ 204
+838:SCANF:+ 203
+838:WHILE:+ 206
+838:}:+ 835
+839:0:- elseifblock 0
+839:ELSE:- ifstat 0
+839:ELSEIF:- elseifblock 0
+839:}:- ifstat 0
+840:}:+ 985
+841:{:+ 987
+842:}:+ 988
+843:BOOL:+ 16
+843:CHAR:+ 17
+843:CONST:+ 201
+843:DO:+ 207
+843:FLOAT:+ 15
+843:FOR:+ 208
+843:ID:+ 202
+843:IF:+ 205
+843:INT:+ 12
+843:PRINTF:+ 204
+843:SCANF:+ 203
+843:WHILE:+ 206
+843:}:+ 988
+844:(:+ 992
+844:-:+ 994
+844:FLOAT:+ 996
+844:ID:+ 993
+844:NUM:+ 995
+845:(:+ 738
+845:-:+ 740
+845:FLOAT:+ 742
+845:ID:+ 739
+845:NUM:+ 741
+846:(:+ 1000
+846:-:+ 1002
+846:FLOAT:+ 1004
+846:ID:+ 1001
+846:NUM:+ 1003
+847:(:+ 1006
+847:-:+ 1008
+847:FLOAT:+ 1010
+847:ID:+ 1007
+847:NUM:+ 1009
+848:(:+ 1012
+848:-:+ 1014
+848:FLOAT:+ 1016
+848:ID:+ 1013
+848:NUM:+ 1015
+849:):+ 1017
+850:!:- factory 3
+850:(:- factory 3
+850:-:- factory 3
+850:0:- factory 3
+850:BOOL:- factory 3
+850:FLOAT:- factory 3
+850:ID:- factory 3
+850:NUM:- factory 3
+850:OR:- factory 3
+851:(:+ 1021
+851:-:+ 1023
+851:FLOAT:+ 1025
+851:ID:+ 1022
+851:NUM:+ 1024
+852:):+ 1026
+853:!:- bfactory 1
+853:&&:- bfactory 1
+853:(:- bfactory 1
+853:-:- bfactory 1
+853:0:- bfactory 1
+853:BOOL:- bfactory 1
+853:FLOAT:- bfactory 1
+853:ID:- bfactory 1
+853:NUM:- bfactory 1
+853:OR:- bfactory 1
+854:(:- forstat 0
+854:):- forstat 0
+854:0:- forstat 0
+854:;:- forstat 0
+854:BOOL:- forstat 0
+854:CHAR:- forstat 0
+854:CONST:- forstat 0
+854:DO:- forstat 0
+854:FLOAT:- forstat 0
+854:FOR:- forstat 0
+854:ID:- forstat 0
+854:IF:- forstat 0
+854:INT:- forstat 0
+854:PRINTF:- forstat 0
+854:RETURN:- forstat 0
+854:SCANF:- forstat 0
+854:WHILE:- forstat 0
+855:}:+ 1027
+856:BOOL:+ 16
+856:CHAR:+ 17
+856:CONST:+ 201
+856:DO:+ 207
+856:FLOAT:+ 15
+856:FOR:+ 208
+856:ID:+ 202
+856:IF:+ 205
+856:INT:+ 12
+856:PRINTF:+ 204
+856:SCANF:+ 203
+856:WHILE:+ 206
+856:}:+ 1027
+857:0:- ifstat 1
+857:BOOL:- ifstat 1
+857:CHAR:- ifstat 1
+857:CONST:- ifstat 1
+857:DO:- ifstat 1
+857:ELSE:- ifstat 1
+857:ELSEIF:+ 223
+857:FLOAT:- ifstat 1
+857:FOR:- ifstat 1
+857:ID:- ifstat 1
+857:IF:- ifstat 1
+857:INT:- ifstat 1
+857:PRINTF:- ifstat 1
+857:SCANF:- ifstat 1
+857:WHILE:- ifstat 1
+857:{:- ifstat 1
+857:}:- ifstat 1
+858:(:- rstat 0
+858:):- rstat 0
+858:,:- rstat 0
+858:0:- rstat 0
+858:BOOL:- rstat 0
+858:CHAR:- rstat 0
+858:CONST:- rstat 0
+858:DO:- rstat 0
+858:FLOAT:- rstat 0
+858:FOR:- rstat 0
+858:ID:- rstat 0
+858:IF:- rstat 0
+858:INT:- rstat 0
+858:PRINTF:- rstat 0
+858:SCANF:- rstat 0
+858:WHILE:- rstat 0
+858:}:- rstat 0
+859:(:- ifstat 1
+859:0:- ifstat 1
+859:BOOL:- ifstat 1
+859:CHAR:- ifstat 1
+859:CONST:- ifstat 1
+859:DO:- ifstat 1
+859:ELSE:- ifstat 1
+859:FLOAT:- ifstat 1
+859:FOR:- ifstat 1
+859:ID:- ifstat 1
+859:IF:- ifstat 1
+859:INT:- ifstat 1
+859:PRINTF:- ifstat 1
+859:SCANF:- ifstat 1
+859:WHILE:- ifstat 1
+859:{:- ifstat 1
+859:}:- ifstat 1
+860:}:+ 1029
+861:(:- ifstat 0
+861:0:- ifstat 1
+861:BOOL:- ifstat 1
+861:CHAR:- ifstat 1
+861:CONST:- ifstat 1
+861:DO:- ifstat 1
+861:ELSE:+ 342
+861:ELSEIF:+ 223
+861:FLOAT:- ifstat 1
+861:FOR:- ifstat 1
+861:ID:- ifstat 1
+861:IF:- ifstat 1
+861:INT:- ifstat 1
+861:PRINTF:- ifstat 1
+861:SCANF:- ifstat 1
+861:WHILE:- ifstat 1
+861:{:- ifstat 0
+861:}:- ifstat 1
+862:(:- ifstat 0
+862:):- ifstat 0
+862:0:- elseifblock 0
+862:BOOL:- ifstat 0
+862:CHAR:- ifstat 0
+862:CONST:- ifstat 0
+862:DO:- ifstat 0
+862:ELSE:- ifstat 0
+862:ELSEIF:- elseifblock 0
+862:FLOAT:- ifstat 0
+862:FOR:- ifstat 0
+862:ID:- ifstat 0
+862:IF:- ifstat 0
+862:INT:- ifstat 0
+862:PRINTF:- ifstat 0
+862:SCANF:- ifstat 0
+862:WHILE:- ifstat 0
+862:}:- ifstat 0
+863:}:+ 1030
+864:{:+ 1032
+865:}:+ 1033
+866:BOOL:+ 16
+866:CHAR:+ 17
+866:CONST:+ 201
+866:DO:+ 207
+866:FLOAT:+ 15
+866:FOR:+ 208
+866:ID:+ 202
+866:IF:+ 205
+866:INT:+ 12
+866:PRINTF:+ 204
+866:SCANF:+ 203
+866:WHILE:+ 206
+866:}:+ 1033
+867:}:+ 1035
+868:ELSE:+ 1037
+868:ELSEIF:+ 289
+869:{:+ 1038
+870:0:- ifstat 1
+870:BOOL:- forstat 0
+870:CHAR:- forstat 0
+870:CONST:- forstat 0
+870:DO:- forstat 0
+870:ELSE:+ 869
+870:ELSEIF:+ 223
+870:FLOAT:- forstat 0
+870:FOR:- forstat 0
+870:ID:- forstat 0
+870:IF:- forstat 0
+870:INT:- forstat 0
+870:PRINTF:- forstat 0
+870:SCANF:- forstat 0
+870:WHILE:+ 343
+870:}:- ifstat 1
+871:(:- whilestat 0
+871:):- whilestat 0
+871:0:- ifstat 1
+871:BOOL:- ifstat 1
+871:CHAR:- ifstat 1
+871:CONST:- ifstat 1
+871:DO:- ifstat 1
+871:ELSE:+ 342
+871:ELSEIF:+ 223
+871:FLOAT:- ifstat 1
+871:FOR:- ifstat 1
+871:ID:- ifstat 1
+871:IF:- ifstat 1
+871:INT:- ifstat 1
+871:PRINTF:- ifstat 1
+871:SCANF:- ifstat 1
+871:WHILE:- ifstat 1
+871:{:- whilestat 0
+871:}:- ifstat 1
+872:(:- dowhilestat 0
+872:0:- dowhilestat 0
+872:BOOL:- dowhilestat 0
+872:CHAR:- dowhilestat 0
+872:CONST:- dowhilestat 0
+872:DO:- dowhilestat 0
+872:FLOAT:- dowhilestat 0
+872:FOR:- dowhilestat 0
+872:ID:- dowhilestat 0
+872:IF:- dowhilestat 0
+872:INT:- dowhilestat 0
+872:PRINTF:- dowhilestat 0
+872:SCANF:- dowhilestat 0
+872:WHILE:- dowhilestat 0
+872:{:- dowhilestat 0
+872:}:- dowhilestat 0
+873:}:+ 1039
+874:{:+ 1041
+875:(:- elseifblock 1
+875:):- elseifblock 1
+875:0:- elseifblock 1
+875:ELSEIF:- elseifblock 1
+875:{:- elseifblock 1
+876:}:+ 1042
+877:(:- elseifblock 0
+877:):- elseifblock 0
+877:0:- ifstat 1
+877:BOOL:- ifstat 1
+877:CHAR:- ifstat 1
+877:CONST:- ifstat 1
+877:DO:- ifstat 1
+877:ELSE:+ 342
+877:ELSEIF:+ 223
+877:FLOAT:- ifstat 1
+877:FOR:- ifstat 1
+877:ID:- ifstat 1
+877:IF:- ifstat 1
+877:INT:- ifstat 1
+877:PRINTF:- ifstat 1
+877:SCANF:- ifstat 1
+877:WHILE:- ifstat 1
+877:{:- elseifblock 0
+877:}:- ifstat 1
+878:!:- factory 4
+878:(:- factory 4
+878:+:- factory 4
+878:-:- factory 4
+878:/:- factory 4
+878:0:- factory 4
+878:BOOL:- factory 4
+878:FLOAT:- factory 4
+878:ID:- factory 4
+878:NUM:- factory 4
+879:!:- factory 4
+879:(:- factory 4
+879:*:- factory 4
+879:+:- factory 4
+879:-:- factory 4
+879:0:- factory 4
+879:BOOL:- factory 4
+879:FLOAT:- factory 4
+879:ID:- factory 4
+879:NUM:- factory 4
+880:!:- factory 4
+880:%:- factory 4
+880:(:- factory 4
+880:-:- factory 4
+880:/:- factory 4
+880:0:- factory 4
+880:BOOL:- factory 4
+880:FLOAT:- factory 4
+880:ID:- factory 4
+880:NUM:- factory 4
+881:!:- factory 4
+881:%:- factory 4
+881:(:- factory 4
+881:*:- factory 4
+881:-:- factory 4
+881:0:- factory 4
+881:BOOL:- factory 4
+881:FLOAT:- factory 4
+881:ID:- factory 4
+881:NUM:- factory 4
+882:!:- calexp 0
+882:(:- calexp 0
+882:*:+ 1044
+882:+:- calexp 0
+882:-:- calexp 0
+882:/:+ 1043
+882:0:- calexp 0
+882:BOOL:- calexp 0
+882:FLOAT:- calexp 0
+882:ID:- calexp 0
+882:NUM:- calexp 0
+882:OR:- calexp 0
+883:!:- item 2
+883:(:- item 2
+883:+:- item 2
+883:-:- item 2
+883:0:- item 2
+883:BOOL:- item 2
+883:FLOAT:- item 2
+883:ID:- item 2
+883:NUM:- item 2
+883:OR:- item 2
+884:!:+ 239
+884:(:+ 236
+884:-:+ 238
+884:BOOL:+ 242
+884:FLOAT:+ 241
+884:ID:+ 237
+884:NUM:+ 240
+885:!:- factory 0
+885:(:- factory 0
+885:+:- factory 0
+885:-:- factory 0
+885:0:- factory 0
+885:BOOL:- factory 0
+885:FLOAT:- factory 0
+885:ID:- factory 0
+885:NUM:- factory 0
+885:OR:- factory 0
+886:(:+ 884
+886:-:+ 886
+886:FLOAT:+ 888
+886:ID:+ 885
+886:NUM:+ 887
+887:!:- factory 1
+887:(:- factory 1
+887:+:- factory 1
+887:-:- factory 1
+887:0:- factory 1
+887:BOOL:- factory 1
+887:FLOAT:- factory 1
+887:ID:- factory 1
+887:NUM:- factory 1
+887:OR:- factory 1
+888:!:- factory 2
+888:(:- factory 2
+888:+:- factory 2
+888:-:- factory 2
+888:0:- factory 2
+888:BOOL:- factory 2
+888:FLOAT:- factory 2
+888:ID:- factory 2
+888:NUM:- factory 2
+888:OR:- factory 2
+889:!:- calexp 1
+889:(:- calexp 1
+889:*:+ 796
+889:-:- calexp 1
+889:/:+ 795
+889:0:- calexp 1
+889:BOOL:- calexp 1
+889:FLOAT:- calexp 1
+889:ID:- calexp 1
+889:NUM:- calexp 1
+889:OR:- calexp 1
+890:!:- calexp 2
+890:%:- calexp 2
+890:(:- calexp 2
+890:*:+ 1048
+890:-:- calexp 2
+890:/:+ 1047
+890:0:- calexp 2
+890:BOOL:- calexp 2
+890:FLOAT:- calexp 2
+890:ID:- calexp 2
+890:NUM:- calexp 2
+890:OR:- calexp 2
+891:!:- item 2
+891:%:- item 2
+891:(:- item 2
+891:-:- item 2
+891:0:- item 2
+891:BOOL:- item 2
+891:FLOAT:- item 2
+891:ID:- item 2
+891:NUM:- item 2
+891:OR:- item 2
+892:!:+ 239
+892:(:+ 236
+892:-:+ 238
+892:BOOL:+ 242
+892:FLOAT:+ 241
+892:ID:+ 237
+892:NUM:+ 240
+893:!:- factory 0
+893:%:- factory 0
+893:(:- factory 0
+893:-:- factory 0
+893:0:- factory 0
+893:BOOL:- factory 0
+893:FLOAT:- factory 0
+893:ID:- factory 0
+893:NUM:- factory 0
+893:OR:- factory 0
+894:(:+ 892
+894:-:+ 894
+894:FLOAT:+ 896
+894:ID:+ 893
+894:NUM:+ 895
+895:!:- factory 1
+895:%:- factory 1
+895:(:- factory 1
+895:-:- factory 1
+895:0:- factory 1
+895:BOOL:- factory 1
+895:FLOAT:- factory 1
+895:ID:- factory 1
+895:NUM:- factory 1
+895:OR:- factory 1
+896:!:- factory 2
+896:%:- factory 2
+896:(:- factory 2
+896:-:- factory 2
+896:0:- factory 2
+896:BOOL:- factory 2
+896:FLOAT:- factory 2
+896:ID:- factory 2
+896:NUM:- factory 2
+896:OR:- factory 2
+897:!:- item 1
+897:(:- item 1
+897:-:- item 1
+897:/:- item 1
+897:0:- item 1
+897:BOOL:- item 1
+897:FLOAT:- item 1
+897:ID:- item 1
+897:NUM:- item 1
+897:OR:- item 1
+898:!:+ 239
+898:(:+ 236
+898:-:+ 238
+898:BOOL:+ 242
+898:FLOAT:+ 241
+898:ID:+ 237
+898:NUM:+ 240
+899:!:- factory 0
+899:(:- factory 0
+899:-:- factory 0
+899:/:- factory 0
+899:0:- factory 0
+899:BOOL:- factory 0
+899:FLOAT:- factory 0
+899:ID:- factory 0
+899:NUM:- factory 0
+899:OR:- factory 0
+900:(:+ 898
+900:-:+ 900
+900:FLOAT:+ 902
+900:ID:+ 899
+900:NUM:+ 901
+901:!:- factory 1
+901:(:- factory 1
+901:-:- factory 1
+901:/:- factory 1
+901:0:- factory 1
+901:BOOL:- factory 1
+901:FLOAT:- factory 1
+901:ID:- factory 1
+901:NUM:- factory 1
+901:OR:- factory 1
+902:!:- factory 2
+902:(:- factory 2
+902:-:- factory 2
+902:/:- factory 2
+902:0:- factory 2
+902:BOOL:- factory 2
+902:FLOAT:- factory 2
+902:ID:- factory 2
+902:NUM:- factory 2
+902:OR:- factory 2
+903:!:- item 0
+903:(:- item 0
+903:*:- item 0
+903:-:- item 0
+903:0:- item 0
+903:BOOL:- item 0
+903:FLOAT:- item 0
+903:ID:- item 0
+903:NUM:- item 0
+903:OR:- item 0
+904:!:+ 239
+904:(:+ 236
+904:-:+ 238
+904:BOOL:+ 242
+904:FLOAT:+ 241
+904:ID:+ 237
+904:NUM:+ 240
+905:!:- factory 0
+905:(:- factory 0
+905:*:- factory 0
+905:-:- factory 0
+905:0:- factory 0
+905:BOOL:- factory 0
+905:FLOAT:- factory 0
+905:ID:- factory 0
+905:NUM:- factory 0
+905:OR:- factory 0
+906:(:+ 904
+906:-:+ 906
+906:FLOAT:+ 908
+906:ID:+ 905
+906:NUM:+ 907
+907:!:- factory 1
+907:(:- factory 1
+907:*:- factory 1
+907:-:- factory 1
+907:0:- factory 1
+907:BOOL:- factory 1
+907:FLOAT:- factory 1
+907:ID:- factory 1
+907:NUM:- factory 1
+907:OR:- factory 1
+908:!:- factory 2
+908:(:- factory 2
+908:*:- factory 2
+908:-:- factory 2
+908:0:- factory 2
+908:BOOL:- factory 2
+908:FLOAT:- factory 2
+908:ID:- factory 2
+908:NUM:- factory 2
+908:OR:- factory 2
+909:!:- factory 4
+909:(:- factory 4
+909:-:- factory 4
+909:0:- factory 4
+909:BOOL:- factory 4
+909:FLOAT:- factory 4
+909:ID:- factory 4
+909:NUM:- factory 4
+909:OR:- factory 4
+910:!:- regexp 0
+910:%:+ 1057
+910:&&:- regexp 0
+910:(:- regexp 0
+910:+:+ 1055
+910:-:+ 1056
+910:0:- regexp 0
+910:BOOL:- regexp 0
+910:FLOAT:- regexp 0
+910:ID:- regexp 0
+910:NUM:- regexp 0
+910:OR:- regexp 0
+911:!:- calexp 3
+911:&&:- calexp 3
+911:(:- calexp 3
+911:*:+ 1059
+911:-:- calexp 3
+911:/:+ 1058
+911:0:- calexp 3
+911:BOOL:- calexp 3
+911:FLOAT:- calexp 3
+911:ID:- calexp 3
+911:NUM:- calexp 3
+911:OR:- calexp 3
+912:!:- item 2
+912:&&:- item 2
+912:(:- item 2
+912:-:- item 2
+912:0:- item 2
+912:BOOL:- item 2
+912:FLOAT:- item 2
+912:ID:- item 2
+912:NUM:- item 2
+912:OR:- item 2
+913:!:+ 239
+913:(:+ 236
+913:-:+ 238
+913:BOOL:+ 242
+913:FLOAT:+ 241
+913:ID:+ 237
+913:NUM:+ 240
+914:!:- factory 0
+914:&&:- factory 0
+914:(:- factory 0
+914:-:- factory 0
+914:0:- factory 0
+914:BOOL:- factory 0
+914:FLOAT:- factory 0
+914:ID:- factory 0
+914:NUM:- factory 0
+914:OR:- factory 0
+915:(:+ 913
+915:-:+ 915
+915:FLOAT:+ 917
+915:ID:+ 914
+915:NUM:+ 916
+916:!:- factory 1
+916:&&:- factory 1
+916:(:- factory 1
+916:-:- factory 1
+916:0:- factory 1
+916:BOOL:- factory 1
+916:FLOAT:- factory 1
+916:ID:- factory 1
+916:NUM:- factory 1
+916:OR:- factory 1
+917:!:- factory 2
+917:&&:- factory 2
+917:(:- factory 2
+917:-:- factory 2
+917:0:- factory 2
+917:BOOL:- factory 2
+917:FLOAT:- factory 2
+917:ID:- factory 2
+917:NUM:- factory 2
+917:OR:- factory 2
+918:!:- bfactory 2
+918:&&:- bfactory 2
+918:(:- factory 4
+918:-:- factory 4
+918:0:- factory 4
+918:BOOL:- bfactory 2
+918:FLOAT:- factory 4
+918:ID:- factory 4
+918:NUM:- factory 4
+918:OR:- bfactory 2
+919:!:- calexp 0
+919:&&:- calexp 0
+919:(:- calexp 0
+919:*:+ 1063
+919:+:- calexp 0
+919:-:- calexp 0
+919:/:+ 1062
+919:0:- calexp 0
+919:BOOL:- calexp 0
+919:FLOAT:- calexp 0
+919:ID:- calexp 0
+919:NUM:- calexp 0
+920:!:- item 2
+920:&&:- item 2
+920:(:- item 2
+920:+:- item 2
+920:-:- item 2
+920:0:- item 2
+920:BOOL:- item 2
+920:FLOAT:- item 2
+920:ID:- item 2
+920:NUM:- item 2
+921:!:+ 239
+921:(:+ 236
+921:-:+ 238
+921:BOOL:+ 242
+921:FLOAT:+ 241
+921:ID:+ 237
+921:NUM:+ 240
+922:!:- factory 0
+922:&&:- factory 0
+922:(:- factory 0
+922:+:- factory 0
+922:-:- factory 0
+922:0:- factory 0
+922:BOOL:- factory 0
+922:FLOAT:- factory 0
+922:ID:- factory 0
+922:NUM:- factory 0
+923:(:+ 921
+923:-:+ 923
+923:FLOAT:+ 925
+923:ID:+ 922
+923:NUM:+ 924
+924:!:- factory 1
+924:&&:- factory 1
+924:(:- factory 1
+924:+:- factory 1
+924:-:- factory 1
+924:0:- factory 1
+924:BOOL:- factory 1
+924:FLOAT:- factory 1
+924:ID:- factory 1
+924:NUM:- factory 1
+925:!:- factory 2
+925:&&:- factory 2
+925:(:- factory 2
+925:+:- factory 2
+925:-:- factory 2
+925:0:- factory 2
+925:BOOL:- factory 2
+925:FLOAT:- factory 2
+925:ID:- factory 2
+925:NUM:- factory 2
+926:!:- calexp 1
+926:&&:- calexp 1
+926:(:- calexp 1
+926:*:+ 806
+926:-:- calexp 1
+926:/:+ 805
+926:0:- calexp 1
+926:BOOL:- calexp 1
+926:FLOAT:- calexp 1
+926:ID:- calexp 1
+926:NUM:- calexp 1
+927:!:- calexp 2
+927:%:- calexp 2
+927:&&:- calexp 2
+927:(:- calexp 2
+927:*:+ 1067
+927:-:- calexp 2
+927:/:+ 1066
+927:0:- calexp 2
+927:BOOL:- calexp 2
+927:FLOAT:- calexp 2
+927:ID:- calexp 2
+927:NUM:- calexp 2
+928:!:- item 2
+928:%:- item 2
+928:&&:- item 2
+928:(:- item 2
+928:-:- item 2
+928:0:- item 2
+928:BOOL:- item 2
+928:FLOAT:- item 2
+928:ID:- item 2
+928:NUM:- item 2
+929:!:+ 239
+929:(:+ 236
+929:-:+ 238
+929:BOOL:+ 242
+929:FLOAT:+ 241
+929:ID:+ 237
+929:NUM:+ 240
+930:!:- factory 0
+930:%:- factory 0
+930:&&:- factory 0
+930:(:- factory 0
+930:-:- factory 0
+930:0:- factory 0
+930:BOOL:- factory 0
+930:FLOAT:- factory 0
+930:ID:- factory 0
+930:NUM:- factory 0
+931:(:+ 929
+931:-:+ 931
+931:FLOAT:+ 933
+931:ID:+ 930
+931:NUM:+ 932
+932:!:- factory 1
+932:%:- factory 1
+932:&&:- factory 1
+932:(:- factory 1
+932:-:- factory 1
+932:0:- factory 1
+932:BOOL:- factory 1
+932:FLOAT:- factory 1
+932:ID:- factory 1
+932:NUM:- factory 1
+933:!:- factory 2
+933:%:- factory 2
+933:&&:- factory 2
+933:(:- factory 2
+933:-:- factory 2
+933:0:- factory 2
+933:BOOL:- factory 2
+933:FLOAT:- factory 2
+933:ID:- factory 2
+933:NUM:- factory 2
+934:!:- item 1
+934:&&:- item 1
+934:(:- item 1
+934:-:- item 1
+934:/:- item 1
+934:0:- item 1
+934:BOOL:- item 1
+934:FLOAT:- item 1
+934:ID:- item 1
+934:NUM:- item 1
+935:!:+ 239
+935:(:+ 236
+935:-:+ 238
+935:BOOL:+ 242
+935:FLOAT:+ 241
+935:ID:+ 237
+935:NUM:+ 240
+936:!:- factory 0
+936:&&:- factory 0
+936:(:- factory 0
+936:-:- factory 0
+936:/:- factory 0
+936:0:- factory 0
+936:BOOL:- factory 0
+936:FLOAT:- factory 0
+936:ID:- factory 0
+936:NUM:- factory 0
+937:(:+ 935
+937:-:+ 937
+937:FLOAT:+ 939
+937:ID:+ 936
+937:NUM:+ 938
+938:!:- factory 1
+938:&&:- factory 1
+938:(:- factory 1
+938:-:- factory 1
+938:/:- factory 1
+938:0:- factory 1
+938:BOOL:- factory 1
+938:FLOAT:- factory 1
+938:ID:- factory 1
+938:NUM:- factory 1
+939:!:- factory 2
+939:&&:- factory 2
+939:(:- factory 2
+939:-:- factory 2
+939:/:- factory 2
+939:0:- factory 2
+939:BOOL:- factory 2
+939:FLOAT:- factory 2
+939:ID:- factory 2
+939:NUM:- factory 2
+940:!:- item 0
+940:&&:- item 0
+940:(:- item 0
+940:*:- item 0
+940:-:- item 0
+940:0:- item 0
+940:BOOL:- item 0
+940:FLOAT:- item 0
+940:ID:- item 0
+940:NUM:- item 0
+941:!:+ 239
+941:(:+ 236
+941:-:+ 238
+941:BOOL:+ 242
+941:FLOAT:+ 241
+941:ID:+ 237
+941:NUM:+ 240
+942:!:- factory 0
+942:&&:- factory 0
+942:(:- factory 0
+942:*:- factory 0
+942:-:- factory 0
+942:0:- factory 0
+942:BOOL:- factory 0
+942:FLOAT:- factory 0
+942:ID:- factory 0
+942:NUM:- factory 0
+943:(:+ 941
+943:-:+ 943
+943:FLOAT:+ 945
+943:ID:+ 942
+943:NUM:+ 944
+944:!:- factory 1
+944:&&:- factory 1
+944:(:- factory 1
+944:*:- factory 1
+944:-:- factory 1
+944:0:- factory 1
+944:BOOL:- factory 1
+944:FLOAT:- factory 1
+944:ID:- factory 1
+944:NUM:- factory 1
+945:!:- factory 2
+945:&&:- factory 2
+945:(:- factory 2
+945:*:- factory 2
+945:-:- factory 2
+945:0:- factory 2
+945:BOOL:- factory 2
+945:FLOAT:- factory 2
+945:ID:- factory 2
+945:NUM:- factory 2
+946:!:- factory 4
+946:&&:- factory 4
+946:(:- factory 4
+946:-:- factory 4
+946:0:- factory 4
+946:BOOL:- factory 4
+946:FLOAT:- factory 4
+946:ID:- factory 4
+946:NUM:- factory 4
+947:!:- item 1
+947:(:- item 1
+947:+:- item 1
+947:-:- item 1
+947:/:- item 1
+947:0:- item 1
+947:BOOL:- item 1
+947:FLOAT:- item 1
+947:ID:- item 1
+947:NUM:- item 1
+948:!:+ 239
+948:(:+ 236
+948:-:+ 238
+948:BOOL:+ 242
+948:FLOAT:+ 241
+948:ID:+ 237
+948:NUM:+ 240
+949:!:- factory 0
+949:(:- factory 0
+949:+:- factory 0
+949:-:- factory 0
+949:/:- factory 0
+949:0:- factory 0
+949:BOOL:- factory 0
+949:FLOAT:- factory 0
+949:ID:- factory 0
+949:NUM:- factory 0
+950:(:+ 948
+950:-:+ 950
+950:FLOAT:+ 952
+950:ID:+ 949
+950:NUM:+ 951
+951:!:- factory 1
+951:(:- factory 1
+951:+:- factory 1
+951:-:- factory 1
+951:/:- factory 1
+951:0:- factory 1
+951:BOOL:- factory 1
+951:FLOAT:- factory 1
+951:ID:- factory 1
+951:NUM:- factory 1
+952:!:- factory 2
+952:(:- factory 2
+952:+:- factory 2
+952:-:- factory 2
+952:/:- factory 2
+952:0:- factory 2
+952:BOOL:- factory 2
+952:FLOAT:- factory 2
+952:ID:- factory 2
+952:NUM:- factory 2
+953:!:- item 0
+953:(:- item 0
+953:*:- item 0
+953:+:- item 0
+953:-:- item 0
+953:0:- item 0
+953:BOOL:- item 0
+953:FLOAT:- item 0
+953:ID:- item 0
+953:NUM:- item 0
+954:!:+ 239
+954:(:+ 236
+954:-:+ 238
+954:BOOL:+ 242
+954:FLOAT:+ 241
+954:ID:+ 237
+954:NUM:+ 240
+955:!:- factory 0
+955:(:- factory 0
+955:*:- factory 0
+955:+:- factory 0
+955:-:- factory 0
+955:0:- factory 0
+955:BOOL:- factory 0
+955:FLOAT:- factory 0
+955:ID:- factory 0
+955:NUM:- factory 0
+956:(:+ 954
+956:-:+ 956
+956:FLOAT:+ 958
+956:ID:+ 955
+956:NUM:+ 957
+957:!:- factory 1
+957:(:- factory 1
+957:*:- factory 1
+957:+:- factory 1
+957:-:- factory 1
+957:0:- factory 1
+957:BOOL:- factory 1
+957:FLOAT:- factory 1
+957:ID:- factory 1
+957:NUM:- factory 1
+958:!:- factory 2
+958:(:- factory 2
+958:*:- factory 2
+958:+:- factory 2
+958:-:- factory 2
+958:0:- factory 2
+958:BOOL:- factory 2
+958:FLOAT:- factory 2
+958:ID:- factory 2
+958:NUM:- factory 2
+959:!:- factory 4
+959:(:- factory 4
+959:+:- factory 4
+959:-:- factory 4
+959:0:- factory 4
+959:BOOL:- factory 4
+959:FLOAT:- factory 4
+959:ID:- factory 4
+959:NUM:- factory 4
+960:!:- item 1
+960:%:- item 1
+960:(:- item 1
+960:-:- item 1
+960:/:- item 1
+960:0:- item 1
+960:BOOL:- item 1
+960:FLOAT:- item 1
+960:ID:- item 1
+960:NUM:- item 1
+961:!:+ 239
+961:(:+ 236
+961:-:+ 238
+961:BOOL:+ 242
+961:FLOAT:+ 241
+961:ID:+ 237
+961:NUM:+ 240
+962:!:- factory 0
+962:%:- factory 0
+962:(:- factory 0
+962:-:- factory 0
+962:/:- factory 0
+962:0:- factory 0
+962:BOOL:- factory 0
+962:FLOAT:- factory 0
+962:ID:- factory 0
+962:NUM:- factory 0
+963:(:+ 961
+963:-:+ 963
+963:FLOAT:+ 965
+963:ID:+ 962
+963:NUM:+ 964
+964:!:- factory 1
+964:%:- factory 1
+964:(:- factory 1
+964:-:- factory 1
+964:/:- factory 1
+964:0:- factory 1
+964:BOOL:- factory 1
+964:FLOAT:- factory 1
+964:ID:- factory 1
+964:NUM:- factory 1
+965:!:- factory 2
+965:%:- factory 2
+965:(:- factory 2
+965:-:- factory 2
+965:/:- factory 2
+965:0:- factory 2
+965:BOOL:- factory 2
+965:FLOAT:- factory 2
+965:ID:- factory 2
+965:NUM:- factory 2
+966:!:- item 0
+966:%:- item 0
+966:(:- item 0
+966:*:- item 0
+966:-:- item 0
+966:0:- item 0
+966:BOOL:- item 0
+966:FLOAT:- item 0
+966:ID:- item 0
+966:NUM:- item 0
+967:!:+ 239
+967:(:+ 236
+967:-:+ 238
+967:BOOL:+ 242
+967:FLOAT:+ 241
+967:ID:+ 237
+967:NUM:+ 240
+968:!:- factory 0
+968:%:- factory 0
+968:(:- factory 0
+968:*:- factory 0
+968:-:- factory 0
+968:0:- factory 0
+968:BOOL:- factory 0
+968:FLOAT:- factory 0
+968:ID:- factory 0
+968:NUM:- factory 0
+969:(:+ 967
+969:-:+ 969
+969:FLOAT:+ 971
+969:ID:+ 968
+969:NUM:+ 970
+970:!:- factory 1
+970:%:- factory 1
+970:(:- factory 1
+970:*:- factory 1
+970:-:- factory 1
+970:0:- factory 1
+970:BOOL:- factory 1
+970:FLOAT:- factory 1
+970:ID:- factory 1
+970:NUM:- factory 1
+971:!:- factory 2
+971:%:- factory 2
+971:(:- factory 2
+971:*:- factory 2
+971:-:- factory 2
+971:0:- factory 2
+971:BOOL:- factory 2
+971:FLOAT:- factory 2
+971:ID:- factory 2
+971:NUM:- factory 2
+972:!:- factory 4
+972:%:- factory 4
+972:(:- factory 4
+972:-:- factory 4
+972:0:- factory 4
+972:BOOL:- factory 4
+972:FLOAT:- factory 4
+972:ID:- factory 4
+972:NUM:- factory 4
+973:!:- factory 4
+973:(:- factory 4
+973:-:- factory 4
+973:/:- factory 4
+973:0:- factory 4
+973:BOOL:- factory 4
+973:FLOAT:- factory 4
+973:ID:- factory 4
+973:NUM:- factory 4
+974:!:- factory 4
+974:(:- factory 4
+974:*:- factory 4
+974:-:- factory 4
+974:0:- factory 4
+974:BOOL:- factory 4
+974:FLOAT:- factory 4
+974:ID:- factory 4
+974:NUM:- factory 4
+975:(:- factory 4
+975:+:- factory 4
+975:-:- factory 4
+975:/:- factory 4
+975:0:- factory 4
+975:FLOAT:- factory 4
+975:ID:- factory 4
+975:NUM:- factory 4
+976:(:- factory 4
+976:*:- factory 4
+976:+:- factory 4
+976:-:- factory 4
+976:0:- factory 4
+976:FLOAT:- factory 4
+976:ID:- factory 4
+976:NUM:- factory 4
+977:%:- factory 4
+977:(:- factory 4
+977:-:- factory 4
+977:/:- factory 4
+977:0:- factory 4
+977:FLOAT:- factory 4
+977:ID:- factory 4
+977:NUM:- factory 4
+978:%:- factory 4
+978:(:- factory 4
+978:*:- factory 4
+978:-:- factory 4
+978:0:- factory 4
+978:FLOAT:- factory 4
+978:ID:- factory 4
+978:NUM:- factory 4
+979:(:- ifstat 1
+979:):- ifstat 1
+979:0:- ifstat 1
+979:BOOL:- ifstat 1
+979:CHAR:- ifstat 1
+979:CONST:- ifstat 1
+979:DO:- ifstat 1
+979:ELSE:- ifstat 1
+979:FLOAT:- ifstat 1
+979:FOR:- ifstat 1
+979:ID:- ifstat 1
+979:IF:- ifstat 1
+979:INT:- ifstat 1
+979:PRINTF:- ifstat 1
+979:RETURN:- ifstat 1
+979:SCANF:- ifstat 1
+979:WHILE:- ifstat 1
+979:{:- ifstat 1
+979:}:- ifstat 1
+980:}:+ 1082
+981:(:- ifstat 0
+981:):- ifstat 0
+981:0:- ifstat 1
+981:BOOL:- ifstat 1
+981:CHAR:- ifstat 1
+981:CONST:- ifstat 1
+981:DO:- ifstat 1
+981:ELSE:+ 342
+981:ELSEIF:+ 223
+981:FLOAT:- ifstat 1
+981:FOR:- ifstat 1
+981:ID:- ifstat 1
+981:IF:- ifstat 1
+981:INT:- ifstat 1
+981:PRINTF:- ifstat 1
+981:RETURN:- ifstat 0
+981:SCANF:- ifstat 1
+981:WHILE:- ifstat 1
+981:{:- ifstat 0
+981:}:- ifstat 1
+982:(:- ifstat 1
+982:):- ifstat 1
+982:0:- elseifblock 1
+982:BOOL:- ifstat 1
+982:CHAR:- ifstat 1
+982:CONST:- ifstat 1
+982:DO:- ifstat 1
+982:ELSE:- ifstat 1
+982:ELSEIF:- elseifblock 1
+982:FLOAT:- ifstat 1
+982:FOR:- ifstat 1
+982:ID:- ifstat 1
+982:IF:- ifstat 1
+982:INT:- ifstat 1
+982:PRINTF:- ifstat 1
+982:RETURN:- ifstat 1
+982:SCANF:- ifstat 1
+982:WHILE:- ifstat 1
+982:{:- ifstat 1
+982:}:- ifstat 1
+983:BOOL:+ 16
+983:CHAR:+ 17
+983:CONST:+ 201
+983:DO:+ 207
+983:FLOAT:+ 15
+983:FOR:+ 208
+983:ID:+ 202
+983:IF:+ 205
+983:INT:+ 12
+983:PRINTF:+ 204
+983:SCANF:+ 203
+983:WHILE:+ 206
+983:}:+ 982
+984:}:+ 1084
+985:0:- elseifblock 1
+985:ELSE:- ifstat 1
+985:ELSEIF:- elseifblock 1
+985:}:- ifstat 1
+986:}:+ 1085
+987:BOOL:+ 16
+987:CHAR:+ 17
+987:CONST:+ 201
+987:DO:+ 207
+987:FLOAT:+ 15
+987:FOR:+ 208
+987:ID:+ 202
+987:IF:+ 205
+987:INT:+ 12
+987:PRINTF:+ 204
+987:SCANF:+ 203
+987:WHILE:+ 206
+987:}:+ 1085
+988:0:- ifstat 0
+988:ELSE:- ifstat 0
+988:{:- ifstat 0
+988:}:- ifstat 0
+989:}:+ 1087
+990:!:- calexp 0
+990:(:- calexp 0
+990:*:+ 1089
+990:+:- calexp 0
+990:-:- calexp 0
+990:/:+ 1088
+990:0:- calexp 0
+990:BOOL:- calexp 0
+990:FLOAT:- calexp 0
+990:ID:- calexp 0
+990:NUM:- calexp 0
+990:OR:- calexp 0
+991:!:- item 2
+991:(:- item 2
+991:+:- item 2
+991:-:- item 2
+991:0:- item 2
+991:BOOL:- item 2
+991:FLOAT:- item 2
+991:ID:- item 2
+991:NUM:- item 2
+991:OR:- item 2
+992:!:+ 239
+992:(:+ 236
+992:-:+ 238
+992:BOOL:+ 242
+992:FLOAT:+ 241
+992:ID:+ 237
+992:NUM:+ 240
+993:!:- factory 0
+993:(:- factory 0
+993:+:- factory 0
+993:-:- factory 0
+993:0:- factory 0
+993:BOOL:- factory 0
+993:FLOAT:- factory 0
+993:ID:- factory 0
+993:NUM:- factory 0
+993:OR:- factory 0
+994:(:+ 992
+994:-:+ 994
+994:FLOAT:+ 996
+994:ID:+ 993
+994:NUM:+ 995
+995:!:- factory 1
+995:(:- factory 1
+995:+:- factory 1
+995:-:- factory 1
+995:0:- factory 1
+995:BOOL:- factory 1
+995:FLOAT:- factory 1
+995:ID:- factory 1
+995:NUM:- factory 1
+995:OR:- factory 1
+996:!:- factory 2
+996:(:- factory 2
+996:+:- factory 2
+996:-:- factory 2
+996:0:- factory 2
+996:BOOL:- factory 2
+996:FLOAT:- factory 2
+996:ID:- factory 2
+996:NUM:- factory 2
+996:OR:- factory 2
+997:!:- calexp 1
+997:(:- calexp 1
+997:*:+ 848
+997:-:- calexp 1
+997:/:+ 847
+997:0:- calexp 1
+997:BOOL:- calexp 1
+997:FLOAT:- calexp 1
+997:ID:- calexp 1
+997:NUM:- calexp 1
+997:OR:- calexp 1
+998:!:- calexp 2
+998:%:- calexp 2
+998:(:- calexp 2
+998:*:+ 1093
+998:-:- calexp 2
+998:/:+ 1092
+998:0:- calexp 2
+998:BOOL:- calexp 2
+998:FLOAT:- calexp 2
+998:ID:- calexp 2
+998:NUM:- calexp 2
+998:OR:- calexp 2
+999:!:- item 2
+999:%:- item 2
+999:(:- item 2
+999:-:- item 2
+999:0:- item 2
+999:BOOL:- item 2
+999:FLOAT:- item 2
+999:ID:- item 2
+999:NUM:- item 2
+999:OR:- item 2
+1000:!:+ 239
+1000:(:+ 236
+1000:-:+ 238
+1000:BOOL:+ 242
+1000:FLOAT:+ 241
+1000:ID:+ 237
+1000:NUM:+ 240
+1001:!:- factory 0
+1001:%:- factory 0
+1001:(:- factory 0
+1001:-:- factory 0
+1001:0:- factory 0
+1001:BOOL:- factory 0
+1001:FLOAT:- factory 0
+1001:ID:- factory 0
+1001:NUM:- factory 0
+1001:OR:- factory 0
+1002:(:+ 1000
+1002:-:+ 1002
+1002:FLOAT:+ 1004
+1002:ID:+ 1001
+1002:NUM:+ 1003
+1003:!:- factory 1
+1003:%:- factory 1
+1003:(:- factory 1
+1003:-:- factory 1
+1003:0:- factory 1
+1003:BOOL:- factory 1
+1003:FLOAT:- factory 1
+1003:ID:- factory 1
+1003:NUM:- factory 1
+1003:OR:- factory 1
+1004:!:- factory 2
+1004:%:- factory 2
+1004:(:- factory 2
+1004:-:- factory 2
+1004:0:- factory 2
+1004:BOOL:- factory 2
+1004:FLOAT:- factory 2
+1004:ID:- factory 2
+1004:NUM:- factory 2
+1004:OR:- factory 2
+1005:!:- item 1
+1005:(:- item 1
+1005:-:- item 1
+1005:/:- item 1
+1005:0:- item 1
+1005:BOOL:- item 1
+1005:FLOAT:- item 1
+1005:ID:- item 1
+1005:NUM:- item 1
+1005:OR:- item 1
+1006:!:+ 239
+1006:(:+ 236
+1006:-:+ 238
+1006:BOOL:+ 242
+1006:FLOAT:+ 241
+1006:ID:+ 237
+1006:NUM:+ 240
+1007:!:- factory 0
+1007:(:- factory 0
+1007:-:- factory 0
+1007:/:- factory 0
+1007:0:- factory 0
+1007:BOOL:- factory 0
+1007:FLOAT:- factory 0
+1007:ID:- factory 0
+1007:NUM:- factory 0
+1007:OR:- factory 0
+1008:(:+ 1006
+1008:-:+ 1008
+1008:FLOAT:+ 1010
+1008:ID:+ 1007
+1008:NUM:+ 1009
+1009:!:- factory 1
+1009:(:- factory 1
+1009:-:- factory 1
+1009:/:- factory 1
+1009:0:- factory 1
+1009:BOOL:- factory 1
+1009:FLOAT:- factory 1
+1009:ID:- factory 1
+1009:NUM:- factory 1
+1009:OR:- factory 1
+1010:!:- factory 2
+1010:(:- factory 2
+1010:-:- factory 2
+1010:/:- factory 2
+1010:0:- factory 2
+1010:BOOL:- factory 2
+1010:FLOAT:- factory 2
+1010:ID:- factory 2
+1010:NUM:- factory 2
+1010:OR:- factory 2
+1011:!:- item 0
+1011:(:- item 0
+1011:*:- item 0
+1011:-:- item 0
+1011:0:- item 0
+1011:BOOL:- item 0
+1011:FLOAT:- item 0
+1011:ID:- item 0
+1011:NUM:- item 0
+1011:OR:- item 0
+1012:!:+ 239
+1012:(:+ 236
+1012:-:+ 238
+1012:BOOL:+ 242
+1012:FLOAT:+ 241
+1012:ID:+ 237
+1012:NUM:+ 240
+1013:!:- factory 0
+1013:(:- factory 0
+1013:*:- factory 0
+1013:-:- factory 0
+1013:0:- factory 0
+1013:BOOL:- factory 0
+1013:FLOAT:- factory 0
+1013:ID:- factory 0
+1013:NUM:- factory 0
+1013:OR:- factory 0
+1014:(:+ 1012
+1014:-:+ 1014
+1014:FLOAT:+ 1016
+1014:ID:+ 1013
+1014:NUM:+ 1015
+1015:!:- factory 1
+1015:(:- factory 1
+1015:*:- factory 1
+1015:-:- factory 1
+1015:0:- factory 1
+1015:BOOL:- factory 1
+1015:FLOAT:- factory 1
+1015:ID:- factory 1
+1015:NUM:- factory 1
+1015:OR:- factory 1
+1016:!:- factory 2
+1016:(:- factory 2
+1016:*:- factory 2
+1016:-:- factory 2
+1016:0:- factory 2
+1016:BOOL:- factory 2
+1016:FLOAT:- factory 2
+1016:ID:- factory 2
+1016:NUM:- factory 2
+1016:OR:- factory 2
+1017:!:- factory 4
+1017:(:- factory 4
+1017:-:- factory 4
+1017:0:- factory 4
+1017:BOOL:- factory 4
+1017:FLOAT:- factory 4
+1017:ID:- factory 4
+1017:NUM:- factory 4
+1017:OR:- factory 4
+1018:!:- regexp 0
+1018:%:+ 1102
+1018:&&:- regexp 0
+1018:(:- regexp 0
+1018:+:+ 1100
+1018:-:+ 1101
+1018:0:- regexp 0
+1018:BOOL:- regexp 0
+1018:FLOAT:- regexp 0
+1018:ID:- regexp 0
+1018:NUM:- regexp 0
+1018:OR:- regexp 0
+1019:!:- calexp 3
+1019:&&:- calexp 3
+1019:(:- calexp 3
+1019:*:+ 1104
+1019:-:- calexp 3
+1019:/:+ 1103
+1019:0:- calexp 3
+1019:BOOL:- calexp 3
+1019:FLOAT:- calexp 3
+1019:ID:- calexp 3
+1019:NUM:- calexp 3
+1019:OR:- calexp 3
+1020:!:- item 2
+1020:&&:- item 2
+1020:(:- item 2
+1020:-:- item 2
+1020:0:- item 2
+1020:BOOL:- item 2
+1020:FLOAT:- item 2
+1020:ID:- item 2
+1020:NUM:- item 2
+1020:OR:- item 2
+1021:!:+ 239
+1021:(:+ 236
+1021:-:+ 238
+1021:BOOL:+ 242
+1021:FLOAT:+ 241
+1021:ID:+ 237
+1021:NUM:+ 240
+1022:!:- factory 0
+1022:&&:- factory 0
+1022:(:- factory 0
+1022:-:- factory 0
+1022:0:- factory 0
+1022:BOOL:- factory 0
+1022:FLOAT:- factory 0
+1022:ID:- factory 0
+1022:NUM:- factory 0
+1022:OR:- factory 0
+1023:(:+ 1021
+1023:-:+ 1023
+1023:FLOAT:+ 1025
+1023:ID:+ 1022
+1023:NUM:+ 1024
+1024:!:- factory 1
+1024:&&:- factory 1
+1024:(:- factory 1
+1024:-:- factory 1
+1024:0:- factory 1
+1024:BOOL:- factory 1
+1024:FLOAT:- factory 1
+1024:ID:- factory 1
+1024:NUM:- factory 1
+1024:OR:- factory 1
+1025:!:- factory 2
+1025:&&:- factory 2
+1025:(:- factory 2
+1025:-:- factory 2
+1025:0:- factory 2
+1025:BOOL:- factory 2
+1025:FLOAT:- factory 2
+1025:ID:- factory 2
+1025:NUM:- factory 2
+1025:OR:- factory 2
+1026:!:- bfactory 2
+1026:&&:- bfactory 2
+1026:(:- factory 4
+1026:-:- factory 4
+1026:0:- factory 4
+1026:BOOL:- bfactory 2
+1026:FLOAT:- factory 4
+1026:ID:- factory 4
+1026:NUM:- factory 4
+1026:OR:- bfactory 2
+1027:(:- forstat 0
+1027:):- forstat 0
+1027:0:- forstat 0
+1027:;:- forstat 0
+1027:BOOL:- forstat 0
+1027:CHAR:- forstat 0
+1027:CONST:- forstat 0
+1027:DO:- forstat 0
+1027:FLOAT:- forstat 0
+1027:FOR:- forstat 0
+1027:ID:- forstat 0
+1027:IF:- forstat 0
+1027:INT:- forstat 0
+1027:PRINTF:- forstat 0
+1027:RETURN:- forstat 0
+1027:SCANF:- forstat 0
+1027:WHILE:- forstat 0
+1027:{:- forstat 0
+1028:}:+ 1107
+1029:(:- ifstat 1
+1029:0:- ifstat 1
+1029:BOOL:- ifstat 1
+1029:CHAR:- ifstat 1
+1029:CONST:- ifstat 1
+1029:DO:- ifstat 1
+1029:ELSE:- ifstat 1
+1029:ELSEIF:+ 223
+1029:FLOAT:- ifstat 1
+1029:FOR:- ifstat 1
+1029:ID:- ifstat 1
+1029:IF:- ifstat 1
+1029:INT:- ifstat 1
+1029:PRINTF:- ifstat 1
+1029:SCANF:- ifstat 1
+1029:WHILE:- ifstat 1
+1029:{:- ifstat 1
+1029:}:- ifstat 1
+1030:(:- ifstat 1
+1030:):- ifstat 1
+1030:0:- elseifblock 1
+1030:BOOL:- ifstat 1
+1030:CHAR:- ifstat 1
+1030:CONST:- ifstat 1
+1030:DO:- ifstat 1
+1030:ELSE:- ifstat 1
+1030:ELSEIF:- elseifblock 1
+1030:FLOAT:- ifstat 1
+1030:FOR:- ifstat 1
+1030:ID:- ifstat 1
+1030:IF:- ifstat 1
+1030:INT:- ifstat 1
+1030:PRINTF:- ifstat 1
+1030:SCANF:- ifstat 1
+1030:WHILE:- ifstat 1
+1030:}:- ifstat 1
+1031:}:+ 1108
+1032:BOOL:+ 16
+1032:CHAR:+ 17
+1032:CONST:+ 201
+1032:DO:+ 207
+1032:FLOAT:+ 15
+1032:FOR:+ 208
+1032:ID:+ 202
+1032:IF:+ 205
+1032:INT:+ 12
+1032:PRINTF:+ 204
+1032:SCANF:+ 203
+1032:WHILE:+ 206
+1032:}:+ 1108
+1033:(:- ifstat 0
+1033:):- ifstat 0
+1033:0:- ifstat 0
+1033:BOOL:- ifstat 0
+1033:CHAR:- ifstat 0
+1033:CONST:- ifstat 0
+1033:DO:- ifstat 0
+1033:ELSE:- ifstat 0
+1033:FLOAT:- ifstat 0
+1033:FOR:- ifstat 0
+1033:ID:- ifstat 0
+1033:IF:- ifstat 0
+1033:INT:- ifstat 0
+1033:PRINTF:- ifstat 0
+1033:SCANF:- ifstat 0
+1033:WHILE:- ifstat 0
+1033:{:- ifstat 0
+1033:}:- ifstat 0
+1034:}:+ 1110
+1035:(:- ifstat 0
+1035:):- ifstat 0
+1035:0:- elseifblock 0
+1035:BOOL:- ifstat 0
+1035:CHAR:- ifstat 0
+1035:CONST:- ifstat 0
+1035:DO:- ifstat 0
+1035:ELSE:- ifstat 0
+1035:ELSEIF:- elseifblock 0
+1035:FLOAT:- ifstat 0
+1035:FOR:- ifstat 0
+1035:ID:- ifstat 0
+1035:IF:- ifstat 0
+1035:INT:- ifstat 0
+1035:PRINTF:- ifstat 0
+1035:SCANF:- ifstat 0
+1035:WHILE:- ifstat 0
+1035:{:- ifstat 0
+1035:}:- ifstat 0
+1036:}:+ 1111
+1037:{:+ 1112
+1038:BOOL:+ 16
+1038:CHAR:+ 17
+1038:CONST:+ 201
+1038:DO:+ 207
+1038:FLOAT:+ 15
+1038:FOR:+ 208
+1038:ID:+ 202
+1038:IF:+ 205
+1038:INT:+ 12
+1038:PRINTF:+ 204
+1038:SCANF:+ 203
+1038:WHILE:+ 206
+1038:}:+ 1035
+1039:(:- forstat 0
+1039:):- forstat 0
+1039:0:- forstat 0
+1039:;:- forstat 0
+1039:BOOL:- forstat 0
+1039:CHAR:- forstat 0
+1039:CONST:- forstat 0
+1039:DO:- forstat 0
+1039:FLOAT:- forstat 0
+1039:FOR:- forstat 0
+1039:ID:- forstat 0
+1039:IF:- forstat 0
+1039:INT:- forstat 0
+1039:PRINTF:- forstat 0
+1039:SCANF:- forstat 0
+1039:WHILE:- forstat 0
+1039:}:- forstat 0
+1040:}:+ 1114
+1041:BOOL:+ 16
+1041:CHAR:+ 17
+1041:CONST:+ 201
+1041:DO:+ 207
+1041:FLOAT:+ 15
+1041:FOR:+ 208
+1041:ID:+ 202
+1041:IF:+ 205
+1041:INT:+ 12
+1041:PRINTF:+ 204
+1041:SCANF:+ 203
+1041:WHILE:+ 206
+1041:}:+ 1114
+1042:(:- elseifblock 1
+1042:):- elseifblock 1
+1042:0:- ifstat 1
+1042:BOOL:- ifstat 1
+1042:CHAR:- ifstat 1
+1042:CONST:- ifstat 1
+1042:DO:- ifstat 1
+1042:ELSE:+ 342
+1042:ELSEIF:- elseifblock 1
+1042:FLOAT:- ifstat 1
+1042:FOR:- ifstat 1
+1042:ID:- ifstat 1
+1042:IF:- ifstat 1
+1042:INT:- ifstat 1
+1042:PRINTF:- ifstat 1
+1042:SCANF:- ifstat 1
+1042:WHILE:- ifstat 1
+1042:{:- elseifblock 1
+1042:}:- ifstat 1
+1043:(:+ 1117
+1043:-:+ 1119
+1043:FLOAT:+ 1121
+1043:ID:+ 1118
+1043:NUM:+ 1120
+1044:(:+ 1123
+1044:-:+ 1125
+1044:FLOAT:+ 1127
+1044:ID:+ 1124
+1044:NUM:+ 1126
+1045:):+ 1128
+1046:!:- factory 3
+1046:(:- factory 3
+1046:+:- factory 3
+1046:-:- factory 3
+1046:0:- factory 3
+1046:BOOL:- factory 3
+1046:FLOAT:- factory 3
+1046:ID:- factory 3
+1046:NUM:- factory 3
+1046:OR:- factory 3
+1047:(:+ 1130
+1047:-:+ 1132
+1047:FLOAT:+ 1134
+1047:ID:+ 1131
+1047:NUM:+ 1133
+1048:(:+ 1136
+1048:-:+ 1138
+1048:FLOAT:+ 1140
+1048:ID:+ 1137
+1048:NUM:+ 1139
+1049:):+ 1141
+1050:!:- factory 3
+1050:%:- factory 3
+1050:(:- factory 3
+1050:-:- factory 3
+1050:0:- factory 3
+1050:BOOL:- factory 3
+1050:FLOAT:- factory 3
+1050:ID:- factory 3
+1050:NUM:- factory 3
+1050:OR:- factory 3
+1051:):+ 1142
+1052:!:- factory 3
+1052:(:- factory 3
+1052:-:- factory 3
+1052:/:- factory 3
+1052:0:- factory 3
+1052:BOOL:- factory 3
+1052:FLOAT:- factory 3
+1052:ID:- factory 3
+1052:NUM:- factory 3
+1052:OR:- factory 3
+1053:):+ 1143
+1054:!:- factory 3
+1054:(:- factory 3
+1054:*:- factory 3
+1054:-:- factory 3
+1054:0:- factory 3
+1054:BOOL:- factory 3
+1054:FLOAT:- factory 3
+1054:ID:- factory 3
+1054:NUM:- factory 3
+1054:OR:- factory 3
+1055:(:+ 1146
+1055:-:+ 1148
+1055:FLOAT:+ 1150
+1055:ID:+ 1147
+1055:NUM:+ 1149
+1056:(:+ 913
+1056:-:+ 915
+1056:FLOAT:+ 917
+1056:ID:+ 914
+1056:NUM:+ 916
+1057:(:+ 1154
+1057:-:+ 1156
+1057:FLOAT:+ 1158
+1057:ID:+ 1155
+1057:NUM:+ 1157
+1058:(:+ 1160
+1058:-:+ 1162
+1058:FLOAT:+ 1164
+1058:ID:+ 1161
+1058:NUM:+ 1163
+1059:(:+ 1166
+1059:-:+ 1168
+1059:FLOAT:+ 1170
+1059:ID:+ 1167
+1059:NUM:+ 1169
+1060:):+ 1171
+1061:!:- factory 3
+1061:&&:- factory 3
+1061:(:- factory 3
+1061:-:- factory 3
+1061:0:- factory 3
+1061:BOOL:- factory 3
+1061:FLOAT:- factory 3
+1061:ID:- factory 3
+1061:NUM:- factory 3
+1061:OR:- factory 3
+1062:(:+ 1173
+1062:-:+ 1175
+1062:FLOAT:+ 1177
+1062:ID:+ 1174
+1062:NUM:+ 1176
+1063:(:+ 1179
+1063:-:+ 1181
+1063:FLOAT:+ 1183
+1063:ID:+ 1180
+1063:NUM:+ 1182
+1064:):+ 1184
+1065:!:- factory 3
+1065:&&:- factory 3
+1065:(:- factory 3
+1065:+:- factory 3
+1065:-:- factory 3
+1065:0:- factory 3
+1065:BOOL:- factory 3
+1065:FLOAT:- factory 3
+1065:ID:- factory 3
+1065:NUM:- factory 3
+1066:(:+ 1186
+1066:-:+ 1188
+1066:FLOAT:+ 1190
+1066:ID:+ 1187
+1066:NUM:+ 1189
+1067:(:+ 1192
+1067:-:+ 1194
+1067:FLOAT:+ 1196
+1067:ID:+ 1193
+1067:NUM:+ 1195
+1068:):+ 1197
+1069:!:- factory 3
+1069:%:- factory 3
+1069:&&:- factory 3
+1069:(:- factory 3
+1069:-:- factory 3
+1069:0:- factory 3
+1069:BOOL:- factory 3
+1069:FLOAT:- factory 3
+1069:ID:- factory 3
+1069:NUM:- factory 3
+1070:):+ 1198
+1071:!:- factory 3
+1071:&&:- factory 3
+1071:(:- factory 3
+1071:-:- factory 3
+1071:/:- factory 3
+1071:0:- factory 3
+1071:BOOL:- factory 3
+1071:FLOAT:- factory 3
+1071:ID:- factory 3
+1071:NUM:- factory 3
+1072:):+ 1199
+1073:!:- factory 3
+1073:&&:- factory 3
+1073:(:- factory 3
+1073:*:- factory 3
+1073:-:- factory 3
+1073:0:- factory 3
+1073:BOOL:- factory 3
+1073:FLOAT:- factory 3
+1073:ID:- factory 3
+1073:NUM:- factory 3
+1074:):+ 1200
+1075:!:- factory 3
+1075:(:- factory 3
+1075:+:- factory 3
+1075:-:- factory 3
+1075:/:- factory 3
+1075:0:- factory 3
+1075:BOOL:- factory 3
+1075:FLOAT:- factory 3
+1075:ID:- factory 3
+1075:NUM:- factory 3
+1076:):+ 1201
+1077:!:- factory 3
+1077:(:- factory 3
+1077:*:- factory 3
+1077:+:- factory 3
+1077:-:- factory 3
+1077:0:- factory 3
+1077:BOOL:- factory 3
+1077:FLOAT:- factory 3
+1077:ID:- factory 3
+1077:NUM:- factory 3
+1078:):+ 1202
+1079:!:- factory 3
+1079:%:- factory 3
+1079:(:- factory 3
+1079:-:- factory 3
+1079:/:- factory 3
+1079:0:- factory 3
+1079:BOOL:- factory 3
+1079:FLOAT:- factory 3
+1079:ID:- factory 3
+1079:NUM:- factory 3
+1080:):+ 1203
+1081:!:- factory 3
+1081:%:- factory 3
+1081:(:- factory 3
+1081:*:- factory 3
+1081:-:- factory 3
+1081:0:- factory 3
+1081:BOOL:- factory 3
+1081:FLOAT:- factory 3
+1081:ID:- factory 3
+1081:NUM:- factory 3
+1082:(:- ifstat 1
+1082:):- ifstat 1
+1082:0:- ifstat 1
+1082:BOOL:- ifstat 1
+1082:CHAR:- ifstat 1
+1082:CONST:- ifstat 1
+1082:DO:- ifstat 1
+1082:ELSE:- ifstat 1
+1082:ELSEIF:+ 223
+1082:FLOAT:- ifstat 1
+1082:FOR:- ifstat 1
+1082:ID:- ifstat 1
+1082:IF:- ifstat 1
+1082:INT:- ifstat 1
+1082:PRINTF:- ifstat 1
+1082:RETURN:- ifstat 1
+1082:SCANF:- ifstat 1
+1082:WHILE:- ifstat 1
+1082:{:- ifstat 1
+1082:}:- ifstat 1
+1083:}:+ 1204
+1084:(:- ifstat 0
+1084:):- ifstat 0
+1084:0:- ifstat 1
+1084:BOOL:- ifstat 1
+1084:CHAR:- ifstat 1
+1084:CONST:- ifstat 1
+1084:DO:- ifstat 1
+1084:ELSE:+ 342
+1084:ELSEIF:+ 223
+1084:FLOAT:- ifstat 1
+1084:FOR:- ifstat 1
+1084:ID:- ifstat 1
+1084:IF:- ifstat 1
+1084:INT:- ifstat 1
+1084:PRINTF:- ifstat 1
+1084:RETURN:- ifstat 0
+1084:SCANF:- ifstat 1
+1084:WHILE:- ifstat 1
+1084:{:- ifstat 0
+1084:}:- ifstat 1
+1085:0:- ifstat 1
+1085:ELSE:- ifstat 1
+1085:{:- ifstat 1
+1085:}:- ifstat 1
+1086:}:+ 1205
+1087:0:- ifstat 1
+1087:BOOL:- ifstat 1
+1087:CHAR:- ifstat 1
+1087:CONST:- ifstat 1
+1087:DO:- ifstat 1
+1087:ELSE:+ 342
+1087:ELSEIF:+ 223
+1087:FLOAT:- ifstat 1
+1087:FOR:- ifstat 1
+1087:ID:- ifstat 1
+1087:IF:- ifstat 1
+1087:INT:- ifstat 1
+1087:PRINTF:- ifstat 1
+1087:SCANF:- ifstat 1
+1087:WHILE:- ifstat 1
+1087:{:- ifstat 0
+1087:}:- ifstat 1
+1088:(:+ 1207
+1088:-:+ 1209
+1088:FLOAT:+ 1211
+1088:ID:+ 1208
+1088:NUM:+ 1210
+1089:(:+ 1213
+1089:-:+ 1215
+1089:FLOAT:+ 1217
+1089:ID:+ 1214
+1089:NUM:+ 1216
+1090:):+ 1218
+1091:!:- factory 3
+1091:(:- factory 3
+1091:+:- factory 3
+1091:-:- factory 3
+1091:0:- factory 3
+1091:BOOL:- factory 3
+1091:FLOAT:- factory 3
+1091:ID:- factory 3
+1091:NUM:- factory 3
+1091:OR:- factory 3
+1092:(:+ 1220
+1092:-:+ 1222
+1092:FLOAT:+ 1224
+1092:ID:+ 1221
+1092:NUM:+ 1223
+1093:(:+ 1226
+1093:-:+ 1228
+1093:FLOAT:+ 1230
+1093:ID:+ 1227
+1093:NUM:+ 1229
+1094:):+ 1231
+1095:!:- factory 3
+1095:%:- factory 3
+1095:(:- factory 3
+1095:-:- factory 3
+1095:0:- factory 3
+1095:BOOL:- factory 3
+1095:FLOAT:- factory 3
+1095:ID:- factory 3
+1095:NUM:- factory 3
+1095:OR:- factory 3
+1096:):+ 1232
+1097:!:- factory 3
+1097:(:- factory 3
+1097:-:- factory 3
+1097:/:- factory 3
+1097:0:- factory 3
+1097:BOOL:- factory 3
+1097:FLOAT:- factory 3
+1097:ID:- factory 3
+1097:NUM:- factory 3
+1097:OR:- factory 3
+1098:):+ 1233
+1099:!:- factory 3
+1099:(:- factory 3
+1099:*:- factory 3
+1099:-:- factory 3
+1099:0:- factory 3
+1099:BOOL:- factory 3
+1099:FLOAT:- factory 3
+1099:ID:- factory 3
+1099:NUM:- factory 3
+1099:OR:- factory 3
+1100:(:+ 1236
+1100:-:+ 1238
+1100:FLOAT:+ 1240
+1100:ID:+ 1237
+1100:NUM:+ 1239
+1101:(:+ 1021
+1101:-:+ 1023
+1101:FLOAT:+ 1025
+1101:ID:+ 1022
+1101:NUM:+ 1024
+1102:(:+ 1244
+1102:-:+ 1246
+1102:FLOAT:+ 1248
+1102:ID:+ 1245
+1102:NUM:+ 1247
+1103:(:+ 1250
+1103:-:+ 1252
+1103:FLOAT:+ 1254
+1103:ID:+ 1251
+1103:NUM:+ 1253
+1104:(:+ 1256
+1104:-:+ 1258
+1104:FLOAT:+ 1260
+1104:ID:+ 1257
+1104:NUM:+ 1259
+1105:):+ 1261
+1106:!:- factory 3
+1106:&&:- factory 3
+1106:(:- factory 3
+1106:-:- factory 3
+1106:0:- factory 3
+1106:BOOL:- factory 3
+1106:FLOAT:- factory 3
+1106:ID:- factory 3
+1106:NUM:- factory 3
+1106:OR:- factory 3
+1107:(:- forstat 0
+1107:):- forstat 0
+1107:0:- ifstat 1
+1107:;:- forstat 0
+1107:BOOL:- ifstat 1
+1107:CHAR:- ifstat 1
+1107:CONST:- ifstat 1
+1107:DO:- ifstat 1
+1107:ELSE:+ 342
+1107:ELSEIF:+ 223
+1107:FLOAT:- ifstat 1
+1107:FOR:- ifstat 1
+1107:ID:- ifstat 1
+1107:IF:- ifstat 1
+1107:INT:- ifstat 1
+1107:PRINTF:- ifstat 1
+1107:RETURN:- forstat 0
+1107:SCANF:- ifstat 1
+1107:WHILE:- ifstat 1
+1107:{:- forstat 0
+1107:}:- ifstat 1
+1108:(:- ifstat 1
+1108:):- ifstat 1
+1108:0:- ifstat 1
+1108:BOOL:- ifstat 1
+1108:CHAR:- ifstat 1
+1108:CONST:- ifstat 1
+1108:DO:- ifstat 1
+1108:ELSE:- ifstat 1
+1108:FLOAT:- ifstat 1
+1108:FOR:- ifstat 1
+1108:ID:- ifstat 1
+1108:IF:- ifstat 1
+1108:INT:- ifstat 1
+1108:PRINTF:- ifstat 1
+1108:SCANF:- ifstat 1
+1108:WHILE:- ifstat 1
+1108:{:- ifstat 1
+1108:}:- ifstat 1
+1109:}:+ 1262
+1110:(:- ifstat 0
+1110:):- ifstat 0
+1110:0:- ifstat 1
+1110:BOOL:- ifstat 1
+1110:CHAR:- ifstat 1
+1110:CONST:- ifstat 1
+1110:DO:- ifstat 1
+1110:ELSE:+ 342
+1110:ELSEIF:+ 223
+1110:FLOAT:- ifstat 1
+1110:FOR:- ifstat 1
+1110:ID:- ifstat 1
+1110:IF:- ifstat 1
+1110:INT:- ifstat 1
+1110:PRINTF:- ifstat 1
+1110:SCANF:- ifstat 1
+1110:WHILE:- ifstat 1
+1110:{:- ifstat 0
+1110:}:- ifstat 1
+1111:(:- ifstat 1
+1111:):- ifstat 1
+1111:0:- elseifblock 1
+1111:BOOL:- ifstat 1
+1111:CHAR:- ifstat 1
+1111:CONST:- ifstat 1
+1111:DO:- ifstat 1
+1111:ELSE:- ifstat 1
+1111:ELSEIF:- elseifblock 1
+1111:FLOAT:- ifstat 1
+1111:FOR:- ifstat 1
+1111:ID:- ifstat 1
+1111:IF:- ifstat 1
+1111:INT:- ifstat 1
+1111:PRINTF:- ifstat 1
+1111:SCANF:- ifstat 1
+1111:WHILE:- ifstat 1
+1111:{:- ifstat 1
+1111:}:- ifstat 1
+1112:BOOL:+ 16
+1112:CHAR:+ 17
+1112:CONST:+ 201
+1112:DO:+ 207
+1112:FLOAT:+ 15
+1112:FOR:+ 208
+1112:ID:+ 202
+1112:IF:+ 205
+1112:INT:+ 12
+1112:PRINTF:+ 204
+1112:SCANF:+ 203
+1112:WHILE:+ 206
+1112:}:+ 1111
+1113:}:+ 1264
+1114:(:- forstat 0
+1114:):- forstat 0
+1114:0:- forstat 0
+1114:;:- forstat 0
+1114:BOOL:- forstat 0
+1114:CHAR:- forstat 0
+1114:CONST:- forstat 0
+1114:DO:- forstat 0
+1114:FLOAT:- forstat 0
+1114:FOR:- forstat 0
+1114:ID:- forstat 0
+1114:IF:- forstat 0
+1114:INT:- forstat 0
+1114:PRINTF:- forstat 0
+1114:SCANF:- forstat 0
+1114:WHILE:- forstat 0
+1114:{:- forstat 0
+1114:}:- forstat 0
+1115:}:+ 1265
+1116:!:- item 1
+1116:(:- item 1
+1116:+:- item 1
+1116:-:- item 1
+1116:/:- item 1
+1116:0:- item 1
+1116:BOOL:- item 1
+1116:FLOAT:- item 1
+1116:ID:- item 1
+1116:NUM:- item 1
+1116:OR:- item 1
+1117:!:+ 239
+1117:(:+ 236
+1117:-:+ 238
+1117:BOOL:+ 242
+1117:FLOAT:+ 241
+1117:ID:+ 237
+1117:NUM:+ 240
+1118:!:- factory 0
+1118:(:- factory 0
+1118:+:- factory 0
+1118:-:- factory 0
+1118:/:- factory 0
+1118:0:- factory 0
+1118:BOOL:- factory 0
+1118:FLOAT:- factory 0
+1118:ID:- factory 0
+1118:NUM:- factory 0
+1118:OR:- factory 0
+1119:(:+ 1117
+1119:-:+ 1119
+1119:FLOAT:+ 1121
+1119:ID:+ 1118
+1119:NUM:+ 1120
+1120:!:- factory 1
+1120:(:- factory 1
+1120:+:- factory 1
+1120:-:- factory 1
+1120:/:- factory 1
+1120:0:- factory 1
+1120:BOOL:- factory 1
+1120:FLOAT:- factory 1
+1120:ID:- factory 1
+1120:NUM:- factory 1
+1120:OR:- factory 1
+1121:!:- factory 2
+1121:(:- factory 2
+1121:+:- factory 2
+1121:-:- factory 2
+1121:/:- factory 2
+1121:0:- factory 2
+1121:BOOL:- factory 2
+1121:FLOAT:- factory 2
+1121:ID:- factory 2
+1121:NUM:- factory 2
+1121:OR:- factory 2
+1122:!:- item 0
+1122:(:- item 0
+1122:*:- item 0
+1122:+:- item 0
+1122:-:- item 0
+1122:0:- item 0
+1122:BOOL:- item 0
+1122:FLOAT:- item 0
+1122:ID:- item 0
+1122:NUM:- item 0
+1122:OR:- item 0
+1123:!:+ 239
+1123:(:+ 236
+1123:-:+ 238
+1123:BOOL:+ 242
+1123:FLOAT:+ 241
+1123:ID:+ 237
+1123:NUM:+ 240
+1124:!:- factory 0
+1124:(:- factory 0
+1124:*:- factory 0
+1124:+:- factory 0
+1124:-:- factory 0
+1124:0:- factory 0
+1124:BOOL:- factory 0
+1124:FLOAT:- factory 0
+1124:ID:- factory 0
+1124:NUM:- factory 0
+1124:OR:- factory 0
+1125:(:+ 1123
+1125:-:+ 1125
+1125:FLOAT:+ 1127
+1125:ID:+ 1124
+1125:NUM:+ 1126
+1126:!:- factory 1
+1126:(:- factory 1
+1126:*:- factory 1
+1126:+:- factory 1
+1126:-:- factory 1
+1126:0:- factory 1
+1126:BOOL:- factory 1
+1126:FLOAT:- factory 1
+1126:ID:- factory 1
+1126:NUM:- factory 1
+1126:OR:- factory 1
+1127:!:- factory 2
+1127:(:- factory 2
+1127:*:- factory 2
+1127:+:- factory 2
+1127:-:- factory 2
+1127:0:- factory 2
+1127:BOOL:- factory 2
+1127:FLOAT:- factory 2
+1127:ID:- factory 2
+1127:NUM:- factory 2
+1127:OR:- factory 2
+1128:!:- factory 4
+1128:(:- factory 4
+1128:+:- factory 4
+1128:-:- factory 4
+1128:0:- factory 4
+1128:BOOL:- factory 4
+1128:FLOAT:- factory 4
+1128:ID:- factory 4
+1128:NUM:- factory 4
+1128:OR:- factory 4
+1129:!:- item 1
+1129:%:- item 1
+1129:(:- item 1
+1129:-:- item 1
+1129:/:- item 1
+1129:0:- item 1
+1129:BOOL:- item 1
+1129:FLOAT:- item 1
+1129:ID:- item 1
+1129:NUM:- item 1
+1129:OR:- item 1
+1130:!:+ 239
+1130:(:+ 236
+1130:-:+ 238
+1130:BOOL:+ 242
+1130:FLOAT:+ 241
+1130:ID:+ 237
+1130:NUM:+ 240
+1131:!:- factory 0
+1131:%:- factory 0
+1131:(:- factory 0
+1131:-:- factory 0
+1131:/:- factory 0
+1131:0:- factory 0
+1131:BOOL:- factory 0
+1131:FLOAT:- factory 0
+1131:ID:- factory 0
+1131:NUM:- factory 0
+1131:OR:- factory 0
+1132:(:+ 1130
+1132:-:+ 1132
+1132:FLOAT:+ 1134
+1132:ID:+ 1131
+1132:NUM:+ 1133
+1133:!:- factory 1
+1133:%:- factory 1
+1133:(:- factory 1
+1133:-:- factory 1
+1133:/:- factory 1
+1133:0:- factory 1
+1133:BOOL:- factory 1
+1133:FLOAT:- factory 1
+1133:ID:- factory 1
+1133:NUM:- factory 1
+1133:OR:- factory 1
+1134:!:- factory 2
+1134:%:- factory 2
+1134:(:- factory 2
+1134:-:- factory 2
+1134:/:- factory 2
+1134:0:- factory 2
+1134:BOOL:- factory 2
+1134:FLOAT:- factory 2
+1134:ID:- factory 2
+1134:NUM:- factory 2
+1134:OR:- factory 2
+1135:!:- item 0
+1135:%:- item 0
+1135:(:- item 0
+1135:*:- item 0
+1135:-:- item 0
+1135:0:- item 0
+1135:BOOL:- item 0
+1135:FLOAT:- item 0
+1135:ID:- item 0
+1135:NUM:- item 0
+1135:OR:- item 0
+1136:!:+ 239
+1136:(:+ 236
+1136:-:+ 238
+1136:BOOL:+ 242
+1136:FLOAT:+ 241
+1136:ID:+ 237
+1136:NUM:+ 240
+1137:!:- factory 0
+1137:%:- factory 0
+1137:(:- factory 0
+1137:*:- factory 0
+1137:-:- factory 0
+1137:0:- factory 0
+1137:BOOL:- factory 0
+1137:FLOAT:- factory 0
+1137:ID:- factory 0
+1137:NUM:- factory 0
+1137:OR:- factory 0
+1138:(:+ 1136
+1138:-:+ 1138
+1138:FLOAT:+ 1140
+1138:ID:+ 1137
+1138:NUM:+ 1139
+1139:!:- factory 1
+1139:%:- factory 1
+1139:(:- factory 1
+1139:*:- factory 1
+1139:-:- factory 1
+1139:0:- factory 1
+1139:BOOL:- factory 1
+1139:FLOAT:- factory 1
+1139:ID:- factory 1
+1139:NUM:- factory 1
+1139:OR:- factory 1
+1140:!:- factory 2
+1140:%:- factory 2
+1140:(:- factory 2
+1140:*:- factory 2
+1140:-:- factory 2
+1140:0:- factory 2
+1140:BOOL:- factory 2
+1140:FLOAT:- factory 2
+1140:ID:- factory 2
+1140:NUM:- factory 2
+1140:OR:- factory 2
+1141:!:- factory 4
+1141:%:- factory 4
+1141:(:- factory 4
+1141:-:- factory 4
+1141:0:- factory 4
+1141:BOOL:- factory 4
+1141:FLOAT:- factory 4
+1141:ID:- factory 4
+1141:NUM:- factory 4
+1141:OR:- factory 4
+1142:!:- factory 4
+1142:(:- factory 4
+1142:-:- factory 4
+1142:/:- factory 4
+1142:0:- factory 4
+1142:BOOL:- factory 4
+1142:FLOAT:- factory 4
+1142:ID:- factory 4
+1142:NUM:- factory 4
+1142:OR:- factory 4
+1143:!:- factory 4
+1143:(:- factory 4
+1143:*:- factory 4
+1143:-:- factory 4
+1143:0:- factory 4
+1143:BOOL:- factory 4
+1143:FLOAT:- factory 4
+1143:ID:- factory 4
+1143:NUM:- factory 4
+1143:OR:- factory 4
+1144:!:- calexp 0
+1144:&&:- calexp 0
+1144:(:- calexp 0
+1144:*:+ 1275
+1144:+:- calexp 0
+1144:-:- calexp 0
+1144:/:+ 1274
+1144:0:- calexp 0
+1144:BOOL:- calexp 0
+1144:FLOAT:- calexp 0
+1144:ID:- calexp 0
+1144:NUM:- calexp 0
+1144:OR:- calexp 0
+1145:!:- item 2
+1145:&&:- item 2
+1145:(:- item 2
+1145:+:- item 2
+1145:-:- item 2
+1145:0:- item 2
+1145:BOOL:- item 2
+1145:FLOAT:- item 2
+1145:ID:- item 2
+1145:NUM:- item 2
+1145:OR:- item 2
+1146:!:+ 239
+1146:(:+ 236
+1146:-:+ 238
+1146:BOOL:+ 242
+1146:FLOAT:+ 241
+1146:ID:+ 237
+1146:NUM:+ 240
+1147:!:- factory 0
+1147:&&:- factory 0
+1147:(:- factory 0
+1147:+:- factory 0
+1147:-:- factory 0
+1147:0:- factory 0
+1147:BOOL:- factory 0
+1147:FLOAT:- factory 0
+1147:ID:- factory 0
+1147:NUM:- factory 0
+1147:OR:- factory 0
+1148:(:+ 1146
+1148:-:+ 1148
+1148:FLOAT:+ 1150
+1148:ID:+ 1147
+1148:NUM:+ 1149
+1149:!:- factory 1
+1149:&&:- factory 1
+1149:(:- factory 1
+1149:+:- factory 1
+1149:-:- factory 1
+1149:0:- factory 1
+1149:BOOL:- factory 1
+1149:FLOAT:- factory 1
+1149:ID:- factory 1
+1149:NUM:- factory 1
+1149:OR:- factory 1
+1150:!:- factory 2
+1150:&&:- factory 2
+1150:(:- factory 2
+1150:+:- factory 2
+1150:-:- factory 2
+1150:0:- factory 2
+1150:BOOL:- factory 2
+1150:FLOAT:- factory 2
+1150:ID:- factory 2
+1150:NUM:- factory 2
+1150:OR:- factory 2
+1151:!:- calexp 1
+1151:&&:- calexp 1
+1151:(:- calexp 1
+1151:*:+ 1059
+1151:-:- calexp 1
+1151:/:+ 1058
+1151:0:- calexp 1
+1151:BOOL:- calexp 1
+1151:FLOAT:- calexp 1
+1151:ID:- calexp 1
+1151:NUM:- calexp 1
+1151:OR:- calexp 1
+1152:!:- calexp 2
+1152:%:- calexp 2
+1152:&&:- calexp 2
+1152:(:- calexp 2
+1152:*:+ 1279
+1152:-:- calexp 2
+1152:/:+ 1278
+1152:0:- calexp 2
+1152:BOOL:- calexp 2
+1152:FLOAT:- calexp 2
+1152:ID:- calexp 2
+1152:NUM:- calexp 2
+1152:OR:- calexp 2
+1153:!:- item 2
+1153:%:- item 2
+1153:&&:- item 2
+1153:(:- item 2
+1153:-:- item 2
+1153:0:- item 2
+1153:BOOL:- item 2
+1153:FLOAT:- item 2
+1153:ID:- item 2
+1153:NUM:- item 2
+1153:OR:- item 2
+1154:!:+ 239
+1154:(:+ 236
+1154:-:+ 238
+1154:BOOL:+ 242
+1154:FLOAT:+ 241
+1154:ID:+ 237
+1154:NUM:+ 240
+1155:!:- factory 0
+1155:%:- factory 0
+1155:&&:- factory 0
+1155:(:- factory 0
+1155:-:- factory 0
+1155:0:- factory 0
+1155:BOOL:- factory 0
+1155:FLOAT:- factory 0
+1155:ID:- factory 0
+1155:NUM:- factory 0
+1155:OR:- factory 0
+1156:(:+ 1154
+1156:-:+ 1156
+1156:FLOAT:+ 1158
+1156:ID:+ 1155
+1156:NUM:+ 1157
+1157:!:- factory 1
+1157:%:- factory 1
+1157:&&:- factory 1
+1157:(:- factory 1
+1157:-:- factory 1
+1157:0:- factory 1
+1157:BOOL:- factory 1
+1157:FLOAT:- factory 1
+1157:ID:- factory 1
+1157:NUM:- factory 1
+1157:OR:- factory 1
+1158:!:- factory 2
+1158:%:- factory 2
+1158:&&:- factory 2
+1158:(:- factory 2
+1158:-:- factory 2
+1158:0:- factory 2
+1158:BOOL:- factory 2
+1158:FLOAT:- factory 2
+1158:ID:- factory 2
+1158:NUM:- factory 2
+1158:OR:- factory 2
+1159:!:- item 1
+1159:&&:- item 1
+1159:(:- item 1
+1159:-:- item 1
+1159:/:- item 1
+1159:0:- item 1
+1159:BOOL:- item 1
+1159:FLOAT:- item 1
+1159:ID:- item 1
+1159:NUM:- item 1
+1159:OR:- item 1
+1160:!:+ 239
+1160:(:+ 236
+1160:-:+ 238
+1160:BOOL:+ 242
+1160:FLOAT:+ 241
+1160:ID:+ 237
+1160:NUM:+ 240
+1161:!:- factory 0
+1161:&&:- factory 0
+1161:(:- factory 0
+1161:-:- factory 0
+1161:/:- factory 0
+1161:0:- factory 0
+1161:BOOL:- factory 0
+1161:FLOAT:- factory 0
+1161:ID:- factory 0
+1161:NUM:- factory 0
+1161:OR:- factory 0
+1162:(:+ 1160
+1162:-:+ 1162
+1162:FLOAT:+ 1164
+1162:ID:+ 1161
+1162:NUM:+ 1163
+1163:!:- factory 1
+1163:&&:- factory 1
+1163:(:- factory 1
+1163:-:- factory 1
+1163:/:- factory 1
+1163:0:- factory 1
+1163:BOOL:- factory 1
+1163:FLOAT:- factory 1
+1163:ID:- factory 1
+1163:NUM:- factory 1
+1163:OR:- factory 1
+1164:!:- factory 2
+1164:&&:- factory 2
+1164:(:- factory 2
+1164:-:- factory 2
+1164:/:- factory 2
+1164:0:- factory 2
+1164:BOOL:- factory 2
+1164:FLOAT:- factory 2
+1164:ID:- factory 2
+1164:NUM:- factory 2
+1164:OR:- factory 2
+1165:!:- item 0
+1165:&&:- item 0
+1165:(:- item 0
+1165:*:- item 0
+1165:-:- item 0
+1165:0:- item 0
+1165:BOOL:- item 0
+1165:FLOAT:- item 0
+1165:ID:- item 0
+1165:NUM:- item 0
+1165:OR:- item 0
+1166:!:+ 239
+1166:(:+ 236
+1166:-:+ 238
+1166:BOOL:+ 242
+1166:FLOAT:+ 241
+1166:ID:+ 237
+1166:NUM:+ 240
+1167:!:- factory 0
+1167:&&:- factory 0
+1167:(:- factory 0
+1167:*:- factory 0
+1167:-:- factory 0
+1167:0:- factory 0
+1167:BOOL:- factory 0
+1167:FLOAT:- factory 0
+1167:ID:- factory 0
+1167:NUM:- factory 0
+1167:OR:- factory 0
+1168:(:+ 1166
+1168:-:+ 1168
+1168:FLOAT:+ 1170
+1168:ID:+ 1167
+1168:NUM:+ 1169
+1169:!:- factory 1
+1169:&&:- factory 1
+1169:(:- factory 1
+1169:*:- factory 1
+1169:-:- factory 1
+1169:0:- factory 1
+1169:BOOL:- factory 1
+1169:FLOAT:- factory 1
+1169:ID:- factory 1
+1169:NUM:- factory 1
+1169:OR:- factory 1
+1170:!:- factory 2
+1170:&&:- factory 2
+1170:(:- factory 2
+1170:*:- factory 2
+1170:-:- factory 2
+1170:0:- factory 2
+1170:BOOL:- factory 2
+1170:FLOAT:- factory 2
+1170:ID:- factory 2
+1170:NUM:- factory 2
+1170:OR:- factory 2
+1171:!:- factory 4
+1171:&&:- factory 4
+1171:(:- factory 4
+1171:-:- factory 4
+1171:0:- factory 4
+1171:BOOL:- factory 4
+1171:FLOAT:- factory 4
+1171:ID:- factory 4
+1171:NUM:- factory 4
+1171:OR:- factory 4
+1172:!:- item 1
+1172:&&:- item 1
+1172:(:- item 1
+1172:+:- item 1
+1172:-:- item 1
+1172:/:- item 1
+1172:0:- item 1
+1172:BOOL:- item 1
+1172:FLOAT:- item 1
+1172:ID:- item 1
+1172:NUM:- item 1
+1173:!:+ 239
+1173:(:+ 236
+1173:-:+ 238
+1173:BOOL:+ 242
+1173:FLOAT:+ 241
+1173:ID:+ 237
+1173:NUM:+ 240
+1174:!:- factory 0
+1174:&&:- factory 0
+1174:(:- factory 0
+1174:+:- factory 0
+1174:-:- factory 0
+1174:/:- factory 0
+1174:0:- factory 0
+1174:BOOL:- factory 0
+1174:FLOAT:- factory 0
+1174:ID:- factory 0
+1174:NUM:- factory 0
+1175:(:+ 1173
+1175:-:+ 1175
+1175:FLOAT:+ 1177
+1175:ID:+ 1174
+1175:NUM:+ 1176
+1176:!:- factory 1
+1176:&&:- factory 1
+1176:(:- factory 1
+1176:+:- factory 1
+1176:-:- factory 1
+1176:/:- factory 1
+1176:0:- factory 1
+1176:BOOL:- factory 1
+1176:FLOAT:- factory 1
+1176:ID:- factory 1
+1176:NUM:- factory 1
+1177:!:- factory 2
+1177:&&:- factory 2
+1177:(:- factory 2
+1177:+:- factory 2
+1177:-:- factory 2
+1177:/:- factory 2
+1177:0:- factory 2
+1177:BOOL:- factory 2
+1177:FLOAT:- factory 2
+1177:ID:- factory 2
+1177:NUM:- factory 2
+1178:!:- item 0
+1178:&&:- item 0
+1178:(:- item 0
+1178:*:- item 0
+1178:+:- item 0
+1178:-:- item 0
+1178:0:- item 0
+1178:BOOL:- item 0
+1178:FLOAT:- item 0
+1178:ID:- item 0
+1178:NUM:- item 0
+1179:!:+ 239
+1179:(:+ 236
+1179:-:+ 238
+1179:BOOL:+ 242
+1179:FLOAT:+ 241
+1179:ID:+ 237
+1179:NUM:+ 240
+1180:!:- factory 0
+1180:&&:- factory 0
+1180:(:- factory 0
+1180:*:- factory 0
+1180:+:- factory 0
+1180:-:- factory 0
+1180:0:- factory 0
+1180:BOOL:- factory 0
+1180:FLOAT:- factory 0
+1180:ID:- factory 0
+1180:NUM:- factory 0
+1181:(:+ 1179
+1181:-:+ 1181
+1181:FLOAT:+ 1183
+1181:ID:+ 1180
+1181:NUM:+ 1182
+1182:!:- factory 1
+1182:&&:- factory 1
+1182:(:- factory 1
+1182:*:- factory 1
+1182:+:- factory 1
+1182:-:- factory 1
+1182:0:- factory 1
+1182:BOOL:- factory 1
+1182:FLOAT:- factory 1
+1182:ID:- factory 1
+1182:NUM:- factory 1
+1183:!:- factory 2
+1183:&&:- factory 2
+1183:(:- factory 2
+1183:*:- factory 2
+1183:+:- factory 2
+1183:-:- factory 2
+1183:0:- factory 2
+1183:BOOL:- factory 2
+1183:FLOAT:- factory 2
+1183:ID:- factory 2
+1183:NUM:- factory 2
+1184:!:- factory 4
+1184:&&:- factory 4
+1184:(:- factory 4
+1184:+:- factory 4
+1184:-:- factory 4
+1184:0:- factory 4
+1184:BOOL:- factory 4
+1184:FLOAT:- factory 4
+1184:ID:- factory 4
+1184:NUM:- factory 4
+1185:!:- item 1
+1185:%:- item 1
+1185:&&:- item 1
+1185:(:- item 1
+1185:-:- item 1
+1185:/:- item 1
+1185:0:- item 1
+1185:BOOL:- item 1
+1185:FLOAT:- item 1
+1185:ID:- item 1
+1185:NUM:- item 1
+1186:!:+ 239
+1186:(:+ 236
+1186:-:+ 238
+1186:BOOL:+ 242
+1186:FLOAT:+ 241
+1186:ID:+ 237
+1186:NUM:+ 240
+1187:!:- factory 0
+1187:%:- factory 0
+1187:&&:- factory 0
+1187:(:- factory 0
+1187:-:- factory 0
+1187:/:- factory 0
+1187:0:- factory 0
+1187:BOOL:- factory 0
+1187:FLOAT:- factory 0
+1187:ID:- factory 0
+1187:NUM:- factory 0
+1188:(:+ 1186
+1188:-:+ 1188
+1188:FLOAT:+ 1190
+1188:ID:+ 1187
+1188:NUM:+ 1189
+1189:!:- factory 1
+1189:%:- factory 1
+1189:&&:- factory 1
+1189:(:- factory 1
+1189:-:- factory 1
+1189:/:- factory 1
+1189:0:- factory 1
+1189:BOOL:- factory 1
+1189:FLOAT:- factory 1
+1189:ID:- factory 1
+1189:NUM:- factory 1
+1190:!:- factory 2
+1190:%:- factory 2
+1190:&&:- factory 2
+1190:(:- factory 2
+1190:-:- factory 2
+1190:/:- factory 2
+1190:0:- factory 2
+1190:BOOL:- factory 2
+1190:FLOAT:- factory 2
+1190:ID:- factory 2
+1190:NUM:- factory 2
+1191:!:- item 0
+1191:%:- item 0
+1191:&&:- item 0
+1191:(:- item 0
+1191:*:- item 0
+1191:-:- item 0
+1191:0:- item 0
+1191:BOOL:- item 0
+1191:FLOAT:- item 0
+1191:ID:- item 0
+1191:NUM:- item 0
+1192:!:+ 239
+1192:(:+ 236
+1192:-:+ 238
+1192:BOOL:+ 242
+1192:FLOAT:+ 241
+1192:ID:+ 237
+1192:NUM:+ 240
+1193:!:- factory 0
+1193:%:- factory 0
+1193:&&:- factory 0
+1193:(:- factory 0
+1193:*:- factory 0
+1193:-:- factory 0
+1193:0:- factory 0
+1193:BOOL:- factory 0
+1193:FLOAT:- factory 0
+1193:ID:- factory 0
+1193:NUM:- factory 0
+1194:(:+ 1192
+1194:-:+ 1194
+1194:FLOAT:+ 1196
+1194:ID:+ 1193
+1194:NUM:+ 1195
+1195:!:- factory 1
+1195:%:- factory 1
+1195:&&:- factory 1
+1195:(:- factory 1
+1195:*:- factory 1
+1195:-:- factory 1
+1195:0:- factory 1
+1195:BOOL:- factory 1
+1195:FLOAT:- factory 1
+1195:ID:- factory 1
+1195:NUM:- factory 1
+1196:!:- factory 2
+1196:%:- factory 2
+1196:&&:- factory 2
+1196:(:- factory 2
+1196:*:- factory 2
+1196:-:- factory 2
+1196:0:- factory 2
+1196:BOOL:- factory 2
+1196:FLOAT:- factory 2
+1196:ID:- factory 2
+1196:NUM:- factory 2
+1197:!:- factory 4
+1197:%:- factory 4
+1197:&&:- factory 4
+1197:(:- factory 4
+1197:-:- factory 4
+1197:0:- factory 4
+1197:BOOL:- factory 4
+1197:FLOAT:- factory 4
+1197:ID:- factory 4
+1197:NUM:- factory 4
+1198:!:- factory 4
+1198:&&:- factory 4
+1198:(:- factory 4
+1198:-:- factory 4
+1198:/:- factory 4
+1198:0:- factory 4
+1198:BOOL:- factory 4
+1198:FLOAT:- factory 4
+1198:ID:- factory 4
+1198:NUM:- factory 4
+1199:!:- factory 4
+1199:&&:- factory 4
+1199:(:- factory 4
+1199:*:- factory 4
+1199:-:- factory 4
+1199:0:- factory 4
+1199:BOOL:- factory 4
+1199:FLOAT:- factory 4
+1199:ID:- factory 4
+1199:NUM:- factory 4
+1200:!:- factory 4
+1200:(:- factory 4
+1200:+:- factory 4
+1200:-:- factory 4
+1200:/:- factory 4
+1200:0:- factory 4
+1200:BOOL:- factory 4
+1200:FLOAT:- factory 4
+1200:ID:- factory 4
+1200:NUM:- factory 4
+1201:!:- factory 4
+1201:(:- factory 4
+1201:*:- factory 4
+1201:+:- factory 4
+1201:-:- factory 4
+1201:0:- factory 4
+1201:BOOL:- factory 4
+1201:FLOAT:- factory 4
+1201:ID:- factory 4
+1201:NUM:- factory 4
+1202:!:- factory 4
+1202:%:- factory 4
+1202:(:- factory 4
+1202:-:- factory 4
+1202:/:- factory 4
+1202:0:- factory 4
+1202:BOOL:- factory 4
+1202:FLOAT:- factory 4
+1202:ID:- factory 4
+1202:NUM:- factory 4
+1203:!:- factory 4
+1203:%:- factory 4
+1203:(:- factory 4
+1203:*:- factory 4
+1203:-:- factory 4
+1203:0:- factory 4
+1203:BOOL:- factory 4
+1203:FLOAT:- factory 4
+1203:ID:- factory 4
+1203:NUM:- factory 4
+1204:(:- ifstat 1
+1204:):- ifstat 1
+1204:0:- ifstat 1
+1204:BOOL:- ifstat 1
+1204:CHAR:- ifstat 1
+1204:CONST:- ifstat 1
+1204:DO:- ifstat 1
+1204:ELSE:- ifstat 1
+1204:ELSEIF:+ 223
+1204:FLOAT:- ifstat 1
+1204:FOR:- ifstat 1
+1204:ID:- ifstat 1
+1204:IF:- ifstat 1
+1204:INT:- ifstat 1
+1204:PRINTF:- ifstat 1
+1204:RETURN:- ifstat 1
+1204:SCANF:- ifstat 1
+1204:WHILE:- ifstat 1
+1204:{:- ifstat 1
+1204:}:- ifstat 1
+1205:0:- ifstat 1
+1205:BOOL:- ifstat 0
+1205:CHAR:- ifstat 0
+1205:CONST:- ifstat 0
+1205:DO:- ifstat 0
+1205:ELSE:- ifstat 1
+1205:ELSEIF:+ 223
+1205:FLOAT:- ifstat 0
+1205:FOR:- ifstat 0
+1205:ID:- ifstat 0
+1205:IF:- ifstat 0
+1205:INT:- ifstat 0
+1205:PRINTF:- ifstat 0
+1205:SCANF:- ifstat 0
+1205:WHILE:+ 343
+1205:{:- ifstat 1
+1205:}:- ifstat 1
+1206:!:- item 1
+1206:(:- item 1
+1206:+:- item 1
+1206:-:- item 1
+1206:/:- item 1
+1206:0:- item 1
+1206:BOOL:- item 1
+1206:FLOAT:- item 1
+1206:ID:- item 1
+1206:NUM:- item 1
+1206:OR:- item 1
+1207:!:+ 239
+1207:(:+ 236
+1207:-:+ 238
+1207:BOOL:+ 242
+1207:FLOAT:+ 241
+1207:ID:+ 237
+1207:NUM:+ 240
+1208:!:- factory 0
+1208:(:- factory 0
+1208:+:- factory 0
+1208:-:- factory 0
+1208:/:- factory 0
+1208:0:- factory 0
+1208:BOOL:- factory 0
+1208:FLOAT:- factory 0
+1208:ID:- factory 0
+1208:NUM:- factory 0
+1208:OR:- factory 0
+1209:(:+ 1207
+1209:-:+ 1209
+1209:FLOAT:+ 1211
+1209:ID:+ 1208
+1209:NUM:+ 1210
+1210:!:- factory 1
+1210:(:- factory 1
+1210:+:- factory 1
+1210:-:- factory 1
+1210:/:- factory 1
+1210:0:- factory 1
+1210:BOOL:- factory 1
+1210:FLOAT:- factory 1
+1210:ID:- factory 1
+1210:NUM:- factory 1
+1210:OR:- factory 1
+1211:!:- factory 2
+1211:(:- factory 2
+1211:+:- factory 2
+1211:-:- factory 2
+1211:/:- factory 2
+1211:0:- factory 2
+1211:BOOL:- factory 2
+1211:FLOAT:- factory 2
+1211:ID:- factory 2
+1211:NUM:- factory 2
+1211:OR:- factory 2
+1212:!:- item 0
+1212:(:- item 0
+1212:*:- item 0
+1212:+:- item 0
+1212:-:- item 0
+1212:0:- item 0
+1212:BOOL:- item 0
+1212:FLOAT:- item 0
+1212:ID:- item 0
+1212:NUM:- item 0
+1212:OR:- item 0
+1213:!:+ 239
+1213:(:+ 236
+1213:-:+ 238
+1213:BOOL:+ 242
+1213:FLOAT:+ 241
+1213:ID:+ 237
+1213:NUM:+ 240
+1214:!:- factory 0
+1214:(:- factory 0
+1214:*:- factory 0
+1214:+:- factory 0
+1214:-:- factory 0
+1214:0:- factory 0
+1214:BOOL:- factory 0
+1214:FLOAT:- factory 0
+1214:ID:- factory 0
+1214:NUM:- factory 0
+1214:OR:- factory 0
+1215:(:+ 1213
+1215:-:+ 1215
+1215:FLOAT:+ 1217
+1215:ID:+ 1214
+1215:NUM:+ 1216
+1216:!:- factory 1
+1216:(:- factory 1
+1216:*:- factory 1
+1216:+:- factory 1
+1216:-:- factory 1
+1216:0:- factory 1
+1216:BOOL:- factory 1
+1216:FLOAT:- factory 1
+1216:ID:- factory 1
+1216:NUM:- factory 1
+1216:OR:- factory 1
+1217:!:- factory 2
+1217:(:- factory 2
+1217:*:- factory 2
+1217:+:- factory 2
+1217:-:- factory 2
+1217:0:- factory 2
+1217:BOOL:- factory 2
+1217:FLOAT:- factory 2
+1217:ID:- factory 2
+1217:NUM:- factory 2
+1217:OR:- factory 2
+1218:!:- factory 4
+1218:(:- factory 4
+1218:+:- factory 4
+1218:-:- factory 4
+1218:0:- factory 4
+1218:BOOL:- factory 4
+1218:FLOAT:- factory 4
+1218:ID:- factory 4
+1218:NUM:- factory 4
+1218:OR:- factory 4
+1219:!:- item 1
+1219:%:- item 1
+1219:(:- item 1
+1219:-:- item 1
+1219:/:- item 1
+1219:0:- item 1
+1219:BOOL:- item 1
+1219:FLOAT:- item 1
+1219:ID:- item 1
+1219:NUM:- item 1
+1219:OR:- item 1
+1220:!:+ 239
+1220:(:+ 236
+1220:-:+ 238
+1220:BOOL:+ 242
+1220:FLOAT:+ 241
+1220:ID:+ 237
+1220:NUM:+ 240
+1221:!:- factory 0
+1221:%:- factory 0
+1221:(:- factory 0
+1221:-:- factory 0
+1221:/:- factory 0
+1221:0:- factory 0
+1221:BOOL:- factory 0
+1221:FLOAT:- factory 0
+1221:ID:- factory 0
+1221:NUM:- factory 0
+1221:OR:- factory 0
+1222:(:+ 1220
+1222:-:+ 1222
+1222:FLOAT:+ 1224
+1222:ID:+ 1221
+1222:NUM:+ 1223
+1223:!:- factory 1
+1223:%:- factory 1
+1223:(:- factory 1
+1223:-:- factory 1
+1223:/:- factory 1
+1223:0:- factory 1
+1223:BOOL:- factory 1
+1223:FLOAT:- factory 1
+1223:ID:- factory 1
+1223:NUM:- factory 1
+1223:OR:- factory 1
+1224:!:- factory 2
+1224:%:- factory 2
+1224:(:- factory 2
+1224:-:- factory 2
+1224:/:- factory 2
+1224:0:- factory 2
+1224:BOOL:- factory 2
+1224:FLOAT:- factory 2
+1224:ID:- factory 2
+1224:NUM:- factory 2
+1224:OR:- factory 2
+1225:!:- item 0
+1225:%:- item 0
+1225:(:- item 0
+1225:*:- item 0
+1225:-:- item 0
+1225:0:- item 0
+1225:BOOL:- item 0
+1225:FLOAT:- item 0
+1225:ID:- item 0
+1225:NUM:- item 0
+1225:OR:- item 0
+1226:!:+ 239
+1226:(:+ 236
+1226:-:+ 238
+1226:BOOL:+ 242
+1226:FLOAT:+ 241
+1226:ID:+ 237
+1226:NUM:+ 240
+1227:!:- factory 0
+1227:%:- factory 0
+1227:(:- factory 0
+1227:*:- factory 0
+1227:-:- factory 0
+1227:0:- factory 0
+1227:BOOL:- factory 0
+1227:FLOAT:- factory 0
+1227:ID:- factory 0
+1227:NUM:- factory 0
+1227:OR:- factory 0
+1228:(:+ 1226
+1228:-:+ 1228
+1228:FLOAT:+ 1230
+1228:ID:+ 1227
+1228:NUM:+ 1229
+1229:!:- factory 1
+1229:%:- factory 1
+1229:(:- factory 1
+1229:*:- factory 1
+1229:-:- factory 1
+1229:0:- factory 1
+1229:BOOL:- factory 1
+1229:FLOAT:- factory 1
+1229:ID:- factory 1
+1229:NUM:- factory 1
+1229:OR:- factory 1
+1230:!:- factory 2
+1230:%:- factory 2
+1230:(:- factory 2
+1230:*:- factory 2
+1230:-:- factory 2
+1230:0:- factory 2
+1230:BOOL:- factory 2
+1230:FLOAT:- factory 2
+1230:ID:- factory 2
+1230:NUM:- factory 2
+1230:OR:- factory 2
+1231:!:- factory 4
+1231:%:- factory 4
+1231:(:- factory 4
+1231:-:- factory 4
+1231:0:- factory 4
+1231:BOOL:- factory 4
+1231:FLOAT:- factory 4
+1231:ID:- factory 4
+1231:NUM:- factory 4
+1231:OR:- factory 4
+1232:!:- factory 4
+1232:(:- factory 4
+1232:-:- factory 4
+1232:/:- factory 4
+1232:0:- factory 4
+1232:BOOL:- factory 4
+1232:FLOAT:- factory 4
+1232:ID:- factory 4
+1232:NUM:- factory 4
+1232:OR:- factory 4
+1233:!:- factory 4
+1233:(:- factory 4
+1233:*:- factory 4
+1233:-:- factory 4
+1233:0:- factory 4
+1233:BOOL:- factory 4
+1233:FLOAT:- factory 4
+1233:ID:- factory 4
+1233:NUM:- factory 4
+1233:OR:- factory 4
+1234:!:- calexp 0
+1234:&&:- calexp 0
+1234:(:- calexp 0
+1234:*:+ 1303
+1234:+:- calexp 0
+1234:-:- calexp 0
+1234:/:+ 1302
+1234:0:- calexp 0
+1234:BOOL:- calexp 0
+1234:FLOAT:- calexp 0
+1234:ID:- calexp 0
+1234:NUM:- calexp 0
+1234:OR:- calexp 0
+1235:!:- item 2
+1235:&&:- item 2
+1235:(:- item 2
+1235:+:- item 2
+1235:-:- item 2
+1235:0:- item 2
+1235:BOOL:- item 2
+1235:FLOAT:- item 2
+1235:ID:- item 2
+1235:NUM:- item 2
+1235:OR:- item 2
+1236:!:+ 239
+1236:(:+ 236
+1236:-:+ 238
+1236:BOOL:+ 242
+1236:FLOAT:+ 241
+1236:ID:+ 237
+1236:NUM:+ 240
+1237:!:- factory 0
+1237:&&:- factory 0
+1237:(:- factory 0
+1237:+:- factory 0
+1237:-:- factory 0
+1237:0:- factory 0
+1237:BOOL:- factory 0
+1237:FLOAT:- factory 0
+1237:ID:- factory 0
+1237:NUM:- factory 0
+1237:OR:- factory 0
+1238:(:+ 1236
+1238:-:+ 1238
+1238:FLOAT:+ 1240
+1238:ID:+ 1237
+1238:NUM:+ 1239
+1239:!:- factory 1
+1239:&&:- factory 1
+1239:(:- factory 1
+1239:+:- factory 1
+1239:-:- factory 1
+1239:0:- factory 1
+1239:BOOL:- factory 1
+1239:FLOAT:- factory 1
+1239:ID:- factory 1
+1239:NUM:- factory 1
+1239:OR:- factory 1
+1240:!:- factory 2
+1240:&&:- factory 2
+1240:(:- factory 2
+1240:+:- factory 2
+1240:-:- factory 2
+1240:0:- factory 2
+1240:BOOL:- factory 2
+1240:FLOAT:- factory 2
+1240:ID:- factory 2
+1240:NUM:- factory 2
+1240:OR:- factory 2
+1241:!:- calexp 1
+1241:&&:- calexp 1
+1241:(:- calexp 1
+1241:*:+ 1104
+1241:-:- calexp 1
+1241:/:+ 1103
+1241:0:- calexp 1
+1241:BOOL:- calexp 1
+1241:FLOAT:- calexp 1
+1241:ID:- calexp 1
+1241:NUM:- calexp 1
+1241:OR:- calexp 1
+1242:!:- calexp 2
+1242:%:- calexp 2
+1242:&&:- calexp 2
+1242:(:- calexp 2
+1242:*:+ 1307
+1242:-:- calexp 2
+1242:/:+ 1306
+1242:0:- calexp 2
+1242:BOOL:- calexp 2
+1242:FLOAT:- calexp 2
+1242:ID:- calexp 2
+1242:NUM:- calexp 2
+1242:OR:- calexp 2
+1243:!:- item 2
+1243:%:- item 2
+1243:&&:- item 2
+1243:(:- item 2
+1243:-:- item 2
+1243:0:- item 2
+1243:BOOL:- item 2
+1243:FLOAT:- item 2
+1243:ID:- item 2
+1243:NUM:- item 2
+1243:OR:- item 2
+1244:!:+ 239
+1244:(:+ 236
+1244:-:+ 238
+1244:BOOL:+ 242
+1244:FLOAT:+ 241
+1244:ID:+ 237
+1244:NUM:+ 240
+1245:!:- factory 0
+1245:%:- factory 0
+1245:&&:- factory 0
+1245:(:- factory 0
+1245:-:- factory 0
+1245:0:- factory 0
+1245:BOOL:- factory 0
+1245:FLOAT:- factory 0
+1245:ID:- factory 0
+1245:NUM:- factory 0
+1245:OR:- factory 0
+1246:(:+ 1244
+1246:-:+ 1246
+1246:FLOAT:+ 1248
+1246:ID:+ 1245
+1246:NUM:+ 1247
+1247:!:- factory 1
+1247:%:- factory 1
+1247:&&:- factory 1
+1247:(:- factory 1
+1247:-:- factory 1
+1247:0:- factory 1
+1247:BOOL:- factory 1
+1247:FLOAT:- factory 1
+1247:ID:- factory 1
+1247:NUM:- factory 1
+1247:OR:- factory 1
+1248:!:- factory 2
+1248:%:- factory 2
+1248:&&:- factory 2
+1248:(:- factory 2
+1248:-:- factory 2
+1248:0:- factory 2
+1248:BOOL:- factory 2
+1248:FLOAT:- factory 2
+1248:ID:- factory 2
+1248:NUM:- factory 2
+1248:OR:- factory 2
+1249:!:- item 1
+1249:&&:- item 1
+1249:(:- item 1
+1249:-:- item 1
+1249:/:- item 1
+1249:0:- item 1
+1249:BOOL:- item 1
+1249:FLOAT:- item 1
+1249:ID:- item 1
+1249:NUM:- item 1
+1249:OR:- item 1
+1250:!:+ 239
+1250:(:+ 236
+1250:-:+ 238
+1250:BOOL:+ 242
+1250:FLOAT:+ 241
+1250:ID:+ 237
+1250:NUM:+ 240
+1251:!:- factory 0
+1251:&&:- factory 0
+1251:(:- factory 0
+1251:-:- factory 0
+1251:/:- factory 0
+1251:0:- factory 0
+1251:BOOL:- factory 0
+1251:FLOAT:- factory 0
+1251:ID:- factory 0
+1251:NUM:- factory 0
+1251:OR:- factory 0
+1252:(:+ 1250
+1252:-:+ 1252
+1252:FLOAT:+ 1254
+1252:ID:+ 1251
+1252:NUM:+ 1253
+1253:!:- factory 1
+1253:&&:- factory 1
+1253:(:- factory 1
+1253:-:- factory 1
+1253:/:- factory 1
+1253:0:- factory 1
+1253:BOOL:- factory 1
+1253:FLOAT:- factory 1
+1253:ID:- factory 1
+1253:NUM:- factory 1
+1253:OR:- factory 1
+1254:!:- factory 2
+1254:&&:- factory 2
+1254:(:- factory 2
+1254:-:- factory 2
+1254:/:- factory 2
+1254:0:- factory 2
+1254:BOOL:- factory 2
+1254:FLOAT:- factory 2
+1254:ID:- factory 2
+1254:NUM:- factory 2
+1254:OR:- factory 2
+1255:!:- item 0
+1255:&&:- item 0
+1255:(:- item 0
+1255:*:- item 0
+1255:-:- item 0
+1255:0:- item 0
+1255:BOOL:- item 0
+1255:FLOAT:- item 0
+1255:ID:- item 0
+1255:NUM:- item 0
+1255:OR:- item 0
+1256:!:+ 239
+1256:(:+ 236
+1256:-:+ 238
+1256:BOOL:+ 242
+1256:FLOAT:+ 241
+1256:ID:+ 237
+1256:NUM:+ 240
+1257:!:- factory 0
+1257:&&:- factory 0
+1257:(:- factory 0
+1257:*:- factory 0
+1257:-:- factory 0
+1257:0:- factory 0
+1257:BOOL:- factory 0
+1257:FLOAT:- factory 0
+1257:ID:- factory 0
+1257:NUM:- factory 0
+1257:OR:- factory 0
+1258:(:+ 1256
+1258:-:+ 1258
+1258:FLOAT:+ 1260
+1258:ID:+ 1257
+1258:NUM:+ 1259
+1259:!:- factory 1
+1259:&&:- factory 1
+1259:(:- factory 1
+1259:*:- factory 1
+1259:-:- factory 1
+1259:0:- factory 1
+1259:BOOL:- factory 1
+1259:FLOAT:- factory 1
+1259:ID:- factory 1
+1259:NUM:- factory 1
+1259:OR:- factory 1
+1260:!:- factory 2
+1260:&&:- factory 2
+1260:(:- factory 2
+1260:*:- factory 2
+1260:-:- factory 2
+1260:0:- factory 2
+1260:BOOL:- factory 2
+1260:FLOAT:- factory 2
+1260:ID:- factory 2
+1260:NUM:- factory 2
+1260:OR:- factory 2
+1261:!:- factory 4
+1261:&&:- factory 4
+1261:(:- factory 4
+1261:-:- factory 4
+1261:0:- factory 4
+1261:BOOL:- factory 4
+1261:FLOAT:- factory 4
+1261:ID:- factory 4
+1261:NUM:- factory 4
+1261:OR:- factory 4
+1262:(:- ifstat 1
+1262:):- ifstat 1
+1262:0:- ifstat 1
+1262:BOOL:- ifstat 1
+1262:CHAR:- ifstat 1
+1262:CONST:- ifstat 1
+1262:DO:- ifstat 1
+1262:ELSE:- ifstat 1
+1262:ELSEIF:+ 223
+1262:FLOAT:- ifstat 1
+1262:FOR:- ifstat 1
+1262:ID:- ifstat 1
+1262:IF:- ifstat 1
+1262:INT:- ifstat 1
+1262:PRINTF:- ifstat 1
+1262:SCANF:- ifstat 1
+1262:WHILE:- ifstat 1
+1262:{:- ifstat 1
+1262:}:- ifstat 1
+1263:}:+ 1314
+1264:(:- ifstat 0
+1264:):- ifstat 0
+1264:0:- ifstat 1
+1264:BOOL:- ifstat 1
+1264:CHAR:- ifstat 1
+1264:CONST:- ifstat 1
+1264:DO:- ifstat 1
+1264:ELSE:+ 342
+1264:ELSEIF:+ 223
+1264:FLOAT:- ifstat 1
+1264:FOR:- ifstat 1
+1264:ID:- ifstat 1
+1264:IF:- ifstat 1
+1264:INT:- ifstat 1
+1264:PRINTF:- ifstat 1
+1264:SCANF:- ifstat 1
+1264:WHILE:- ifstat 1
+1264:{:- ifstat 0
+1264:}:- ifstat 1
+1265:(:- forstat 0
+1265:):- forstat 0
+1265:0:- ifstat 1
+1265:;:- forstat 0
+1265:BOOL:- ifstat 1
+1265:CHAR:- ifstat 1
+1265:CONST:- ifstat 1
+1265:DO:- ifstat 1
+1265:ELSE:+ 342
+1265:ELSEIF:+ 223
+1265:FLOAT:- ifstat 1
+1265:FOR:- ifstat 1
+1265:ID:- ifstat 1
+1265:IF:- ifstat 1
+1265:INT:- ifstat 1
+1265:PRINTF:- ifstat 1
+1265:SCANF:- ifstat 1
+1265:WHILE:- ifstat 1
+1265:{:- forstat 0
+1265:}:- ifstat 1
+1266:):+ 1315
+1267:!:- factory 3
+1267:(:- factory 3
+1267:+:- factory 3
+1267:-:- factory 3
+1267:/:- factory 3
+1267:0:- factory 3
+1267:BOOL:- factory 3
+1267:FLOAT:- factory 3
+1267:ID:- factory 3
+1267:NUM:- factory 3
+1267:OR:- factory 3
+1268:):+ 1316
+1269:!:- factory 3
+1269:(:- factory 3
+1269:*:- factory 3
+1269:+:- factory 3
+1269:-:- factory 3
+1269:0:- factory 3
+1269:BOOL:- factory 3
+1269:FLOAT:- factory 3
+1269:ID:- factory 3
+1269:NUM:- factory 3
+1269:OR:- factory 3
+1270:):+ 1317
+1271:!:- factory 3
+1271:%:- factory 3
+1271:(:- factory 3
+1271:-:- factory 3
+1271:/:- factory 3
+1271:0:- factory 3
+1271:BOOL:- factory 3
+1271:FLOAT:- factory 3
+1271:ID:- factory 3
+1271:NUM:- factory 3
+1271:OR:- factory 3
+1272:):+ 1318
+1273:!:- factory 3
+1273:%:- factory 3
+1273:(:- factory 3
+1273:*:- factory 3
+1273:-:- factory 3
+1273:0:- factory 3
+1273:BOOL:- factory 3
+1273:FLOAT:- factory 3
+1273:ID:- factory 3
+1273:NUM:- factory 3
+1273:OR:- factory 3
+1274:(:+ 1320
+1274:-:+ 1322
+1274:FLOAT:+ 1324
+1274:ID:+ 1321
+1274:NUM:+ 1323
+1275:(:+ 1326
+1275:-:+ 1328
+1275:FLOAT:+ 1330
+1275:ID:+ 1327
+1275:NUM:+ 1329
+1276:):+ 1331
+1277:!:- factory 3
+1277:&&:- factory 3
+1277:(:- factory 3
+1277:+:- factory 3
+1277:-:- factory 3
+1277:0:- factory 3
+1277:BOOL:- factory 3
+1277:FLOAT:- factory 3
+1277:ID:- factory 3
+1277:NUM:- factory 3
+1277:OR:- factory 3
+1278:(:+ 1333
+1278:-:+ 1335
+1278:FLOAT:+ 1337
+1278:ID:+ 1334
+1278:NUM:+ 1336
+1279:(:+ 1339
+1279:-:+ 1341
+1279:FLOAT:+ 1343
+1279:ID:+ 1340
+1279:NUM:+ 1342
+1280:):+ 1344
+1281:!:- factory 3
+1281:%:- factory 3
+1281:&&:- factory 3
+1281:(:- factory 3
+1281:-:- factory 3
+1281:0:- factory 3
+1281:BOOL:- factory 3
+1281:FLOAT:- factory 3
+1281:ID:- factory 3
+1281:NUM:- factory 3
+1281:OR:- factory 3
+1282:):+ 1345
+1283:!:- factory 3
+1283:&&:- factory 3
+1283:(:- factory 3
+1283:-:- factory 3
+1283:/:- factory 3
+1283:0:- factory 3
+1283:BOOL:- factory 3
+1283:FLOAT:- factory 3
+1283:ID:- factory 3
+1283:NUM:- factory 3
+1283:OR:- factory 3
+1284:):+ 1346
+1285:!:- factory 3
+1285:&&:- factory 3
+1285:(:- factory 3
+1285:*:- factory 3
+1285:-:- factory 3
+1285:0:- factory 3
+1285:BOOL:- factory 3
+1285:FLOAT:- factory 3
+1285:ID:- factory 3
+1285:NUM:- factory 3
+1285:OR:- factory 3
+1286:):+ 1347
+1287:!:- factory 3
+1287:&&:- factory 3
+1287:(:- factory 3
+1287:+:- factory 3
+1287:-:- factory 3
+1287:/:- factory 3
+1287:0:- factory 3
+1287:BOOL:- factory 3
+1287:FLOAT:- factory 3
+1287:ID:- factory 3
+1287:NUM:- factory 3
+1288:):+ 1348
+1289:!:- factory 3
+1289:&&:- factory 3
+1289:(:- factory 3
+1289:*:- factory 3
+1289:+:- factory 3
+1289:-:- factory 3
+1289:0:- factory 3
+1289:BOOL:- factory 3
+1289:FLOAT:- factory 3
+1289:ID:- factory 3
+1289:NUM:- factory 3
+1290:):+ 1349
+1291:!:- factory 3
+1291:%:- factory 3
+1291:&&:- factory 3
+1291:(:- factory 3
+1291:-:- factory 3
+1291:/:- factory 3
+1291:0:- factory 3
+1291:BOOL:- factory 3
+1291:FLOAT:- factory 3
+1291:ID:- factory 3
+1291:NUM:- factory 3
+1292:):+ 1350
+1293:!:- factory 3
+1293:%:- factory 3
+1293:&&:- factory 3
+1293:(:- factory 3
+1293:*:- factory 3
+1293:-:- factory 3
+1293:0:- factory 3
+1293:BOOL:- factory 3
+1293:FLOAT:- factory 3
+1293:ID:- factory 3
+1293:NUM:- factory 3
+1294:):+ 1351
+1295:!:- factory 3
+1295:(:- factory 3
+1295:+:- factory 3
+1295:-:- factory 3
+1295:/:- factory 3
+1295:0:- factory 3
+1295:BOOL:- factory 3
+1295:FLOAT:- factory 3
+1295:ID:- factory 3
+1295:NUM:- factory 3
+1295:OR:- factory 3
+1296:):+ 1352
+1297:!:- factory 3
+1297:(:- factory 3
+1297:*:- factory 3
+1297:+:- factory 3
+1297:-:- factory 3
+1297:0:- factory 3
+1297:BOOL:- factory 3
+1297:FLOAT:- factory 3
+1297:ID:- factory 3
+1297:NUM:- factory 3
+1297:OR:- factory 3
+1298:):+ 1353
+1299:!:- factory 3
+1299:%:- factory 3
+1299:(:- factory 3
+1299:-:- factory 3
+1299:/:- factory 3
+1299:0:- factory 3
+1299:BOOL:- factory 3
+1299:FLOAT:- factory 3
+1299:ID:- factory 3
+1299:NUM:- factory 3
+1299:OR:- factory 3
+1300:):+ 1354
+1301:!:- factory 3
+1301:%:- factory 3
+1301:(:- factory 3
+1301:*:- factory 3
+1301:-:- factory 3
+1301:0:- factory 3
+1301:BOOL:- factory 3
+1301:FLOAT:- factory 3
+1301:ID:- factory 3
+1301:NUM:- factory 3
+1301:OR:- factory 3
+1302:(:+ 1356
+1302:-:+ 1358
+1302:FLOAT:+ 1360
+1302:ID:+ 1357
+1302:NUM:+ 1359
+1303:(:+ 1362
+1303:-:+ 1364
+1303:FLOAT:+ 1366
+1303:ID:+ 1363
+1303:NUM:+ 1365
+1304:):+ 1367
+1305:!:- factory 3
+1305:&&:- factory 3
+1305:(:- factory 3
+1305:+:- factory 3
+1305:-:- factory 3
+1305:0:- factory 3
+1305:BOOL:- factory 3
+1305:FLOAT:- factory 3
+1305:ID:- factory 3
+1305:NUM:- factory 3
+1305:OR:- factory 3
+1306:(:+ 1369
+1306:-:+ 1371
+1306:FLOAT:+ 1373
+1306:ID:+ 1370
+1306:NUM:+ 1372
+1307:(:+ 1375
+1307:-:+ 1377
+1307:FLOAT:+ 1379
+1307:ID:+ 1376
+1307:NUM:+ 1378
+1308:):+ 1380
+1309:!:- factory 3
+1309:%:- factory 3
+1309:&&:- factory 3
+1309:(:- factory 3
+1309:-:- factory 3
+1309:0:- factory 3
+1309:BOOL:- factory 3
+1309:FLOAT:- factory 3
+1309:ID:- factory 3
+1309:NUM:- factory 3
+1309:OR:- factory 3
+1310:):+ 1381
+1311:!:- factory 3
+1311:&&:- factory 3
+1311:(:- factory 3
+1311:-:- factory 3
+1311:/:- factory 3
+1311:0:- factory 3
+1311:BOOL:- factory 3
+1311:FLOAT:- factory 3
+1311:ID:- factory 3
+1311:NUM:- factory 3
+1311:OR:- factory 3
+1312:):+ 1382
+1313:!:- factory 3
+1313:&&:- factory 3
+1313:(:- factory 3
+1313:*:- factory 3
+1313:-:- factory 3
+1313:0:- factory 3
+1313:BOOL:- factory 3
+1313:FLOAT:- factory 3
+1313:ID:- factory 3
+1313:NUM:- factory 3
+1313:OR:- factory 3
+1314:(:- ifstat 1
+1314:):- ifstat 1
+1314:0:- ifstat 1
+1314:BOOL:- ifstat 1
+1314:CHAR:- ifstat 1
+1314:CONST:- ifstat 1
+1314:DO:- ifstat 1
+1314:ELSE:- ifstat 1
+1314:ELSEIF:+ 223
+1314:FLOAT:- ifstat 1
+1314:FOR:- ifstat 1
+1314:ID:- ifstat 1
+1314:IF:- ifstat 1
+1314:INT:- ifstat 1
+1314:PRINTF:- ifstat 1
+1314:SCANF:- ifstat 1
+1314:WHILE:- ifstat 1
+1314:{:- ifstat 1
+1314:}:- ifstat 1
+1315:!:- factory 4
+1315:(:- factory 4
+1315:+:- factory 4
+1315:-:- factory 4
+1315:/:- factory 4
+1315:0:- factory 4
+1315:BOOL:- factory 4
+1315:FLOAT:- factory 4
+1315:ID:- factory 4
+1315:NUM:- factory 4
+1315:OR:- factory 4
+1316:!:- factory 4
+1316:(:- factory 4
+1316:*:- factory 4
+1316:+:- factory 4
+1316:-:- factory 4
+1316:0:- factory 4
+1316:BOOL:- factory 4
+1316:FLOAT:- factory 4
+1316:ID:- factory 4
+1316:NUM:- factory 4
+1316:OR:- factory 4
+1317:!:- factory 4
+1317:%:- factory 4
+1317:(:- factory 4
+1317:-:- factory 4
+1317:/:- factory 4
+1317:0:- factory 4
+1317:BOOL:- factory 4
+1317:FLOAT:- factory 4
+1317:ID:- factory 4
+1317:NUM:- factory 4
+1317:OR:- factory 4
+1318:!:- factory 4
+1318:%:- factory 4
+1318:(:- factory 4
+1318:*:- factory 4
+1318:-:- factory 4
+1318:0:- factory 4
+1318:BOOL:- factory 4
+1318:FLOAT:- factory 4
+1318:ID:- factory 4
+1318:NUM:- factory 4
+1318:OR:- factory 4
+1319:!:- item 1
+1319:&&:- item 1
+1319:(:- item 1
+1319:+:- item 1
+1319:-:- item 1
+1319:/:- item 1
+1319:0:- item 1
+1319:BOOL:- item 1
+1319:FLOAT:- item 1
+1319:ID:- item 1
+1319:NUM:- item 1
+1319:OR:- item 1
+1320:!:+ 239
+1320:(:+ 236
+1320:-:+ 238
+1320:BOOL:+ 242
+1320:FLOAT:+ 241
+1320:ID:+ 237
+1320:NUM:+ 240
+1321:!:- factory 0
+1321:&&:- factory 0
+1321:(:- factory 0
+1321:+:- factory 0
+1321:-:- factory 0
+1321:/:- factory 0
+1321:0:- factory 0
+1321:BOOL:- factory 0
+1321:FLOAT:- factory 0
+1321:ID:- factory 0
+1321:NUM:- factory 0
+1321:OR:- factory 0
+1322:(:+ 1320
+1322:-:+ 1322
+1322:FLOAT:+ 1324
+1322:ID:+ 1321
+1322:NUM:+ 1323
+1323:!:- factory 1
+1323:&&:- factory 1
+1323:(:- factory 1
+1323:+:- factory 1
+1323:-:- factory 1
+1323:/:- factory 1
+1323:0:- factory 1
+1323:BOOL:- factory 1
+1323:FLOAT:- factory 1
+1323:ID:- factory 1
+1323:NUM:- factory 1
+1323:OR:- factory 1
+1324:!:- factory 2
+1324:&&:- factory 2
+1324:(:- factory 2
+1324:+:- factory 2
+1324:-:- factory 2
+1324:/:- factory 2
+1324:0:- factory 2
+1324:BOOL:- factory 2
+1324:FLOAT:- factory 2
+1324:ID:- factory 2
+1324:NUM:- factory 2
+1324:OR:- factory 2
+1325:!:- item 0
+1325:&&:- item 0
+1325:(:- item 0
+1325:*:- item 0
+1325:+:- item 0
+1325:-:- item 0
+1325:0:- item 0
+1325:BOOL:- item 0
+1325:FLOAT:- item 0
+1325:ID:- item 0
+1325:NUM:- item 0
+1325:OR:- item 0
+1326:!:+ 239
+1326:(:+ 236
+1326:-:+ 238
+1326:BOOL:+ 242
+1326:FLOAT:+ 241
+1326:ID:+ 237
+1326:NUM:+ 240
+1327:!:- factory 0
+1327:&&:- factory 0
+1327:(:- factory 0
+1327:*:- factory 0
+1327:+:- factory 0
+1327:-:- factory 0
+1327:0:- factory 0
+1327:BOOL:- factory 0
+1327:FLOAT:- factory 0
+1327:ID:- factory 0
+1327:NUM:- factory 0
+1327:OR:- factory 0
+1328:(:+ 1326
+1328:-:+ 1328
+1328:FLOAT:+ 1330
+1328:ID:+ 1327
+1328:NUM:+ 1329
+1329:!:- factory 1
+1329:&&:- factory 1
+1329:(:- factory 1
+1329:*:- factory 1
+1329:+:- factory 1
+1329:-:- factory 1
+1329:0:- factory 1
+1329:BOOL:- factory 1
+1329:FLOAT:- factory 1
+1329:ID:- factory 1
+1329:NUM:- factory 1
+1329:OR:- factory 1
+1330:!:- factory 2
+1330:&&:- factory 2
+1330:(:- factory 2
+1330:*:- factory 2
+1330:+:- factory 2
+1330:-:- factory 2
+1330:0:- factory 2
+1330:BOOL:- factory 2
+1330:FLOAT:- factory 2
+1330:ID:- factory 2
+1330:NUM:- factory 2
+1330:OR:- factory 2
+1331:!:- factory 4
+1331:&&:- factory 4
+1331:(:- factory 4
+1331:+:- factory 4
+1331:-:- factory 4
+1331:0:- factory 4
+1331:BOOL:- factory 4
+1331:FLOAT:- factory 4
+1331:ID:- factory 4
+1331:NUM:- factory 4
+1331:OR:- factory 4
+1332:!:- item 1
+1332:%:- item 1
+1332:&&:- item 1
+1332:(:- item 1
+1332:-:- item 1
+1332:/:- item 1
+1332:0:- item 1
+1332:BOOL:- item 1
+1332:FLOAT:- item 1
+1332:ID:- item 1
+1332:NUM:- item 1
+1332:OR:- item 1
+1333:!:+ 239
+1333:(:+ 236
+1333:-:+ 238
+1333:BOOL:+ 242
+1333:FLOAT:+ 241
+1333:ID:+ 237
+1333:NUM:+ 240
+1334:!:- factory 0
+1334:%:- factory 0
+1334:&&:- factory 0
+1334:(:- factory 0
+1334:-:- factory 0
+1334:/:- factory 0
+1334:0:- factory 0
+1334:BOOL:- factory 0
+1334:FLOAT:- factory 0
+1334:ID:- factory 0
+1334:NUM:- factory 0
+1334:OR:- factory 0
+1335:(:+ 1333
+1335:-:+ 1335
+1335:FLOAT:+ 1337
+1335:ID:+ 1334
+1335:NUM:+ 1336
+1336:!:- factory 1
+1336:%:- factory 1
+1336:&&:- factory 1
+1336:(:- factory 1
+1336:-:- factory 1
+1336:/:- factory 1
+1336:0:- factory 1
+1336:BOOL:- factory 1
+1336:FLOAT:- factory 1
+1336:ID:- factory 1
+1336:NUM:- factory 1
+1336:OR:- factory 1
+1337:!:- factory 2
+1337:%:- factory 2
+1337:&&:- factory 2
+1337:(:- factory 2
+1337:-:- factory 2
+1337:/:- factory 2
+1337:0:- factory 2
+1337:BOOL:- factory 2
+1337:FLOAT:- factory 2
+1337:ID:- factory 2
+1337:NUM:- factory 2
+1337:OR:- factory 2
+1338:!:- item 0
+1338:%:- item 0
+1338:&&:- item 0
+1338:(:- item 0
+1338:*:- item 0
+1338:-:- item 0
+1338:0:- item 0
+1338:BOOL:- item 0
+1338:FLOAT:- item 0
+1338:ID:- item 0
+1338:NUM:- item 0
+1338:OR:- item 0
+1339:!:+ 239
+1339:(:+ 236
+1339:-:+ 238
+1339:BOOL:+ 242
+1339:FLOAT:+ 241
+1339:ID:+ 237
+1339:NUM:+ 240
+1340:!:- factory 0
+1340:%:- factory 0
+1340:&&:- factory 0
+1340:(:- factory 0
+1340:*:- factory 0
+1340:-:- factory 0
+1340:0:- factory 0
+1340:BOOL:- factory 0
+1340:FLOAT:- factory 0
+1340:ID:- factory 0
+1340:NUM:- factory 0
+1340:OR:- factory 0
+1341:(:+ 1339
+1341:-:+ 1341
+1341:FLOAT:+ 1343
+1341:ID:+ 1340
+1341:NUM:+ 1342
+1342:!:- factory 1
+1342:%:- factory 1
+1342:&&:- factory 1
+1342:(:- factory 1
+1342:*:- factory 1
+1342:-:- factory 1
+1342:0:- factory 1
+1342:BOOL:- factory 1
+1342:FLOAT:- factory 1
+1342:ID:- factory 1
+1342:NUM:- factory 1
+1342:OR:- factory 1
+1343:!:- factory 2
+1343:%:- factory 2
+1343:&&:- factory 2
+1343:(:- factory 2
+1343:*:- factory 2
+1343:-:- factory 2
+1343:0:- factory 2
+1343:BOOL:- factory 2
+1343:FLOAT:- factory 2
+1343:ID:- factory 2
+1343:NUM:- factory 2
+1343:OR:- factory 2
+1344:!:- factory 4
+1344:%:- factory 4
+1344:&&:- factory 4
+1344:(:- factory 4
+1344:-:- factory 4
+1344:0:- factory 4
+1344:BOOL:- factory 4
+1344:FLOAT:- factory 4
+1344:ID:- factory 4
+1344:NUM:- factory 4
+1344:OR:- factory 4
+1345:!:- factory 4
+1345:&&:- factory 4
+1345:(:- factory 4
+1345:-:- factory 4
+1345:/:- factory 4
+1345:0:- factory 4
+1345:BOOL:- factory 4
+1345:FLOAT:- factory 4
+1345:ID:- factory 4
+1345:NUM:- factory 4
+1345:OR:- factory 4
+1346:!:- factory 4
+1346:&&:- factory 4
+1346:(:- factory 4
+1346:*:- factory 4
+1346:-:- factory 4
+1346:0:- factory 4
+1346:BOOL:- factory 4
+1346:FLOAT:- factory 4
+1346:ID:- factory 4
+1346:NUM:- factory 4
+1346:OR:- factory 4
+1347:!:- factory 4
+1347:&&:- factory 4
+1347:(:- factory 4
+1347:+:- factory 4
+1347:-:- factory 4
+1347:/:- factory 4
+1347:0:- factory 4
+1347:BOOL:- factory 4
+1347:FLOAT:- factory 4
+1347:ID:- factory 4
+1347:NUM:- factory 4
+1348:!:- factory 4
+1348:&&:- factory 4
+1348:(:- factory 4
+1348:*:- factory 4
+1348:+:- factory 4
+1348:-:- factory 4
+1348:0:- factory 4
+1348:BOOL:- factory 4
+1348:FLOAT:- factory 4
+1348:ID:- factory 4
+1348:NUM:- factory 4
+1349:!:- factory 4
+1349:%:- factory 4
+1349:&&:- factory 4
+1349:(:- factory 4
+1349:-:- factory 4
+1349:/:- factory 4
+1349:0:- factory 4
+1349:BOOL:- factory 4
+1349:FLOAT:- factory 4
+1349:ID:- factory 4
+1349:NUM:- factory 4
+1350:!:- factory 4
+1350:%:- factory 4
+1350:&&:- factory 4
+1350:(:- factory 4
+1350:*:- factory 4
+1350:-:- factory 4
+1350:0:- factory 4
+1350:BOOL:- factory 4
+1350:FLOAT:- factory 4
+1350:ID:- factory 4
+1350:NUM:- factory 4
+1351:!:- factory 4
+1351:(:- factory 4
+1351:+:- factory 4
+1351:-:- factory 4
+1351:/:- factory 4
+1351:0:- factory 4
+1351:BOOL:- factory 4
+1351:FLOAT:- factory 4
+1351:ID:- factory 4
+1351:NUM:- factory 4
+1351:OR:- factory 4
+1352:!:- factory 4
+1352:(:- factory 4
+1352:*:- factory 4
+1352:+:- factory 4
+1352:-:- factory 4
+1352:0:- factory 4
+1352:BOOL:- factory 4
+1352:FLOAT:- factory 4
+1352:ID:- factory 4
+1352:NUM:- factory 4
+1352:OR:- factory 4
+1353:!:- factory 4
+1353:%:- factory 4
+1353:(:- factory 4
+1353:-:- factory 4
+1353:/:- factory 4
+1353:0:- factory 4
+1353:BOOL:- factory 4
+1353:FLOAT:- factory 4
+1353:ID:- factory 4
+1353:NUM:- factory 4
+1353:OR:- factory 4
+1354:!:- factory 4
+1354:%:- factory 4
+1354:(:- factory 4
+1354:*:- factory 4
+1354:-:- factory 4
+1354:0:- factory 4
+1354:BOOL:- factory 4
+1354:FLOAT:- factory 4
+1354:ID:- factory 4
+1354:NUM:- factory 4
+1354:OR:- factory 4
+1355:!:- item 1
+1355:&&:- item 1
+1355:(:- item 1
+1355:+:- item 1
+1355:-:- item 1
+1355:/:- item 1
+1355:0:- item 1
+1355:BOOL:- item 1
+1355:FLOAT:- item 1
+1355:ID:- item 1
+1355:NUM:- item 1
+1355:OR:- item 1
+1356:!:+ 239
+1356:(:+ 236
+1356:-:+ 238
+1356:BOOL:+ 242
+1356:FLOAT:+ 241
+1356:ID:+ 237
+1356:NUM:+ 240
+1357:!:- factory 0
+1357:&&:- factory 0
+1357:(:- factory 0
+1357:+:- factory 0
+1357:-:- factory 0
+1357:/:- factory 0
+1357:0:- factory 0
+1357:BOOL:- factory 0
+1357:FLOAT:- factory 0
+1357:ID:- factory 0
+1357:NUM:- factory 0
+1357:OR:- factory 0
+1358:(:+ 1356
+1358:-:+ 1358
+1358:FLOAT:+ 1360
+1358:ID:+ 1357
+1358:NUM:+ 1359
+1359:!:- factory 1
+1359:&&:- factory 1
+1359:(:- factory 1
+1359:+:- factory 1
+1359:-:- factory 1
+1359:/:- factory 1
+1359:0:- factory 1
+1359:BOOL:- factory 1
+1359:FLOAT:- factory 1
+1359:ID:- factory 1
+1359:NUM:- factory 1
+1359:OR:- factory 1
+1360:!:- factory 2
+1360:&&:- factory 2
+1360:(:- factory 2
+1360:+:- factory 2
+1360:-:- factory 2
+1360:/:- factory 2
+1360:0:- factory 2
+1360:BOOL:- factory 2
+1360:FLOAT:- factory 2
+1360:ID:- factory 2
+1360:NUM:- factory 2
+1360:OR:- factory 2
+1361:!:- item 0
+1361:&&:- item 0
+1361:(:- item 0
+1361:*:- item 0
+1361:+:- item 0
+1361:-:- item 0
+1361:0:- item 0
+1361:BOOL:- item 0
+1361:FLOAT:- item 0
+1361:ID:- item 0
+1361:NUM:- item 0
+1361:OR:- item 0
+1362:!:+ 239
+1362:(:+ 236
+1362:-:+ 238
+1362:BOOL:+ 242
+1362:FLOAT:+ 241
+1362:ID:+ 237
+1362:NUM:+ 240
+1363:!:- factory 0
+1363:&&:- factory 0
+1363:(:- factory 0
+1363:*:- factory 0
+1363:+:- factory 0
+1363:-:- factory 0
+1363:0:- factory 0
+1363:BOOL:- factory 0
+1363:FLOAT:- factory 0
+1363:ID:- factory 0
+1363:NUM:- factory 0
+1363:OR:- factory 0
+1364:(:+ 1362
+1364:-:+ 1364
+1364:FLOAT:+ 1366
+1364:ID:+ 1363
+1364:NUM:+ 1365
+1365:!:- factory 1
+1365:&&:- factory 1
+1365:(:- factory 1
+1365:*:- factory 1
+1365:+:- factory 1
+1365:-:- factory 1
+1365:0:- factory 1
+1365:BOOL:- factory 1
+1365:FLOAT:- factory 1
+1365:ID:- factory 1
+1365:NUM:- factory 1
+1365:OR:- factory 1
+1366:!:- factory 2
+1366:&&:- factory 2
+1366:(:- factory 2
+1366:*:- factory 2
+1366:+:- factory 2
+1366:-:- factory 2
+1366:0:- factory 2
+1366:BOOL:- factory 2
+1366:FLOAT:- factory 2
+1366:ID:- factory 2
+1366:NUM:- factory 2
+1366:OR:- factory 2
+1367:!:- factory 4
+1367:&&:- factory 4
+1367:(:- factory 4
+1367:+:- factory 4
+1367:-:- factory 4
+1367:0:- factory 4
+1367:BOOL:- factory 4
+1367:FLOAT:- factory 4
+1367:ID:- factory 4
+1367:NUM:- factory 4
+1367:OR:- factory 4
+1368:!:- item 1
+1368:%:- item 1
+1368:&&:- item 1
+1368:(:- item 1
+1368:-:- item 1
+1368:/:- item 1
+1368:0:- item 1
+1368:BOOL:- item 1
+1368:FLOAT:- item 1
+1368:ID:- item 1
+1368:NUM:- item 1
+1368:OR:- item 1
+1369:!:+ 239
+1369:(:+ 236
+1369:-:+ 238
+1369:BOOL:+ 242
+1369:FLOAT:+ 241
+1369:ID:+ 237
+1369:NUM:+ 240
+1370:!:- factory 0
+1370:%:- factory 0
+1370:&&:- factory 0
+1370:(:- factory 0
+1370:-:- factory 0
+1370:/:- factory 0
+1370:0:- factory 0
+1370:BOOL:- factory 0
+1370:FLOAT:- factory 0
+1370:ID:- factory 0
+1370:NUM:- factory 0
+1370:OR:- factory 0
+1371:(:+ 1369
+1371:-:+ 1371
+1371:FLOAT:+ 1373
+1371:ID:+ 1370
+1371:NUM:+ 1372
+1372:!:- factory 1
+1372:%:- factory 1
+1372:&&:- factory 1
+1372:(:- factory 1
+1372:-:- factory 1
+1372:/:- factory 1
+1372:0:- factory 1
+1372:BOOL:- factory 1
+1372:FLOAT:- factory 1
+1372:ID:- factory 1
+1372:NUM:- factory 1
+1372:OR:- factory 1
+1373:!:- factory 2
+1373:%:- factory 2
+1373:&&:- factory 2
+1373:(:- factory 2
+1373:-:- factory 2
+1373:/:- factory 2
+1373:0:- factory 2
+1373:BOOL:- factory 2
+1373:FLOAT:- factory 2
+1373:ID:- factory 2
+1373:NUM:- factory 2
+1373:OR:- factory 2
+1374:!:- item 0
+1374:%:- item 0
+1374:&&:- item 0
+1374:(:- item 0
+1374:*:- item 0
+1374:-:- item 0
+1374:0:- item 0
+1374:BOOL:- item 0
+1374:FLOAT:- item 0
+1374:ID:- item 0
+1374:NUM:- item 0
+1374:OR:- item 0
+1375:!:+ 239
+1375:(:+ 236
+1375:-:+ 238
+1375:BOOL:+ 242
+1375:FLOAT:+ 241
+1375:ID:+ 237
+1375:NUM:+ 240
+1376:!:- factory 0
+1376:%:- factory 0
+1376:&&:- factory 0
+1376:(:- factory 0
+1376:*:- factory 0
+1376:-:- factory 0
+1376:0:- factory 0
+1376:BOOL:- factory 0
+1376:FLOAT:- factory 0
+1376:ID:- factory 0
+1376:NUM:- factory 0
+1376:OR:- factory 0
+1377:(:+ 1375
+1377:-:+ 1377
+1377:FLOAT:+ 1379
+1377:ID:+ 1376
+1377:NUM:+ 1378
+1378:!:- factory 1
+1378:%:- factory 1
+1378:&&:- factory 1
+1378:(:- factory 1
+1378:*:- factory 1
+1378:-:- factory 1
+1378:0:- factory 1
+1378:BOOL:- factory 1
+1378:FLOAT:- factory 1
+1378:ID:- factory 1
+1378:NUM:- factory 1
+1378:OR:- factory 1
+1379:!:- factory 2
+1379:%:- factory 2
+1379:&&:- factory 2
+1379:(:- factory 2
+1379:*:- factory 2
+1379:-:- factory 2
+1379:0:- factory 2
+1379:BOOL:- factory 2
+1379:FLOAT:- factory 2
+1379:ID:- factory 2
+1379:NUM:- factory 2
+1379:OR:- factory 2
+1380:!:- factory 4
+1380:%:- factory 4
+1380:&&:- factory 4
+1380:(:- factory 4
+1380:-:- factory 4
+1380:0:- factory 4
+1380:BOOL:- factory 4
+1380:FLOAT:- factory 4
+1380:ID:- factory 4
+1380:NUM:- factory 4
+1380:OR:- factory 4
+1381:!:- factory 4
+1381:&&:- factory 4
+1381:(:- factory 4
+1381:-:- factory 4
+1381:/:- factory 4
+1381:0:- factory 4
+1381:BOOL:- factory 4
+1381:FLOAT:- factory 4
+1381:ID:- factory 4
+1381:NUM:- factory 4
+1381:OR:- factory 4
+1382:!:- factory 4
+1382:&&:- factory 4
+1382:(:- factory 4
+1382:*:- factory 4
+1382:-:- factory 4
+1382:0:- factory 4
+1382:BOOL:- factory 4
+1382:FLOAT:- factory 4
+1382:ID:- factory 4
+1382:NUM:- factory 4
+1382:OR:- factory 4
+1383:):+ 1399
+1384:!:- factory 3
+1384:&&:- factory 3
+1384:(:- factory 3
+1384:+:- factory 3
+1384:-:- factory 3
+1384:/:- factory 3
+1384:0:- factory 3
+1384:BOOL:- factory 3
+1384:FLOAT:- factory 3
+1384:ID:- factory 3
+1384:NUM:- factory 3
+1384:OR:- factory 3
+1385:):+ 1400
+1386:!:- factory 3
+1386:&&:- factory 3
+1386:(:- factory 3
+1386:*:- factory 3
+1386:+:- factory 3
+1386:-:- factory 3
+1386:0:- factory 3
+1386:BOOL:- factory 3
+1386:FLOAT:- factory 3
+1386:ID:- factory 3
+1386:NUM:- factory 3
+1386:OR:- factory 3
+1387:):+ 1401
+1388:!:- factory 3
+1388:%:- factory 3
+1388:&&:- factory 3
+1388:(:- factory 3
+1388:-:- factory 3
+1388:/:- factory 3
+1388:0:- factory 3
+1388:BOOL:- factory 3
+1388:FLOAT:- factory 3
+1388:ID:- factory 3
+1388:NUM:- factory 3
+1388:OR:- factory 3
+1389:):+ 1402
+1390:!:- factory 3
+1390:%:- factory 3
+1390:&&:- factory 3
+1390:(:- factory 3
+1390:*:- factory 3
+1390:-:- factory 3
+1390:0:- factory 3
+1390:BOOL:- factory 3
+1390:FLOAT:- factory 3
+1390:ID:- factory 3
+1390:NUM:- factory 3
+1390:OR:- factory 3
+1391:):+ 1403
+1392:!:- factory 3
+1392:&&:- factory 3
+1392:(:- factory 3
+1392:+:- factory 3
+1392:-:- factory 3
+1392:/:- factory 3
+1392:0:- factory 3
+1392:BOOL:- factory 3
+1392:FLOAT:- factory 3
+1392:ID:- factory 3
+1392:NUM:- factory 3
+1392:OR:- factory 3
+1393:):+ 1404
+1394:!:- factory 3
+1394:&&:- factory 3
+1394:(:- factory 3
+1394:*:- factory 3
+1394:+:- factory 3
+1394:-:- factory 3
+1394:0:- factory 3
+1394:BOOL:- factory 3
+1394:FLOAT:- factory 3
+1394:ID:- factory 3
+1394:NUM:- factory 3
+1394:OR:- factory 3
+1395:):+ 1405
+1396:!:- factory 3
+1396:%:- factory 3
+1396:&&:- factory 3
+1396:(:- factory 3
+1396:-:- factory 3
+1396:/:- factory 3
+1396:0:- factory 3
+1396:BOOL:- factory 3
+1396:FLOAT:- factory 3
+1396:ID:- factory 3
+1396:NUM:- factory 3
+1396:OR:- factory 3
+1397:):+ 1406
+1398:!:- factory 3
+1398:%:- factory 3
+1398:&&:- factory 3
+1398:(:- factory 3
+1398:*:- factory 3
+1398:-:- factory 3
+1398:0:- factory 3
+1398:BOOL:- factory 3
+1398:FLOAT:- factory 3
+1398:ID:- factory 3
+1398:NUM:- factory 3
+1398:OR:- factory 3
+1399:!:- factory 4
+1399:&&:- factory 4
+1399:(:- factory 4
+1399:+:- factory 4
+1399:-:- factory 4
+1399:/:- factory 4
+1399:0:- factory 4
+1399:BOOL:- factory 4
+1399:FLOAT:- factory 4
+1399:ID:- factory 4
+1399:NUM:- factory 4
+1399:OR:- factory 4
+1400:!:- factory 4
+1400:&&:- factory 4
+1400:(:- factory 4
+1400:*:- factory 4
+1400:+:- factory 4
+1400:-:- factory 4
+1400:0:- factory 4
+1400:BOOL:- factory 4
+1400:FLOAT:- factory 4
+1400:ID:- factory 4
+1400:NUM:- factory 4
+1400:OR:- factory 4
+1401:!:- factory 4
+1401:%:- factory 4
+1401:&&:- factory 4
+1401:(:- factory 4
+1401:-:- factory 4
+1401:/:- factory 4
+1401:0:- factory 4
+1401:BOOL:- factory 4
+1401:FLOAT:- factory 4
+1401:ID:- factory 4
+1401:NUM:- factory 4
+1401:OR:- factory 4
+1402:!:- factory 4
+1402:%:- factory 4
+1402:&&:- factory 4
+1402:(:- factory 4
+1402:*:- factory 4
+1402:-:- factory 4
+1402:0:- factory 4
+1402:BOOL:- factory 4
+1402:FLOAT:- factory 4
+1402:ID:- factory 4
+1402:NUM:- factory 4
+1402:OR:- factory 4
+1403:!:- factory 4
+1403:&&:- factory 4
+1403:(:- factory 4
+1403:+:- factory 4
+1403:-:- factory 4
+1403:/:- factory 4
+1403:0:- factory 4
+1403:BOOL:- factory 4
+1403:FLOAT:- factory 4
+1403:ID:- factory 4
+1403:NUM:- factory 4
+1403:OR:- factory 4
+1404:!:- factory 4
+1404:&&:- factory 4
+1404:(:- factory 4
+1404:*:- factory 4
+1404:+:- factory 4
+1404:-:- factory 4
+1404:0:- factory 4
+1404:BOOL:- factory 4
+1404:FLOAT:- factory 4
+1404:ID:- factory 4
+1404:NUM:- factory 4
+1404:OR:- factory 4
+1405:!:- factory 4
+1405:%:- factory 4
+1405:&&:- factory 4
+1405:(:- factory 4
+1405:-:- factory 4
+1405:/:- factory 4
+1405:0:- factory 4
+1405:BOOL:- factory 4
+1405:FLOAT:- factory 4
+1405:ID:- factory 4
+1405:NUM:- factory 4
+1405:OR:- factory 4
+1406:!:- factory 4
+1406:%:- factory 4
+1406:&&:- factory 4
+1406:(:- factory 4
+1406:*:- factory 4
+1406:-:- factory 4
+1406:0:- factory 4
+1406:BOOL:- factory 4
+1406:FLOAT:- factory 4
+1406:ID:- factory 4
+1406:NUM:- factory 4
+1406:OR:- factory 4
