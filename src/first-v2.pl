@@ -162,115 +162,81 @@ sub closure{
 			next;
 		}
 		$flag = 1;
-		for(my $i = $anum;$i <= $#rights;$i++){	#对于点号后面的每个
+		for(my $i = $anum;$i <= $#rights;$i++){	#对于点号后面的
 				my $after = $rights[$i];
+				last if isTer($after) == 1;	#如果后面的是终结符，则停止
 				my $aafter = $rights[$i + 1];
 				my @array;
-				last if not defined $first{$after}; #是空产生式
-				if($first{$after}->[0] eq '0'){	#下一个不能产生空或者是终结符
+				if($first{$after}->[0] eq '0'){	#下一个不能产生空
 					$flag = 0;
 					#下下一个无
 					$flag = 2 if $i == $#rights;
 				}
-				#后面不能产生空
-				if($flag == 0){
-					#向后遍历
-					print "1:flag = 0\n";
-					$flag = 2;
-					#将first集压入
-					for(my $k = 0; $k <= $#{$first{$after}}; $k++){	
-						push @array,$first{$after}->[$k];
+				if($flag == 1){
+					my $b = $i + 1;
+					my $akey = "$left $right $b";
+					my @aends;
+					print "afnoterm:$akey\n";
+					print "afarray:@{$I->{$akey}}\n" if defined $I->{$akey};
+					if(not defined $I->{$akey}){
+						$I->{$akey} = \@aends;	#假如还没有该项目，则生成
+						push @keys,$akey;
+						print "afnotterm:i am pushing now $akey\n";
 					}
-					for(my $j = $i + 1;$j <= $#rights;$j++){
-						$aafter = $rights[$j];
-						#如果aafter没有空的产生式，则停止
-						if($first{$aafter}->[0] eq '0'){
-							$flag = 0;
-							last;
+					for(my $k = 0; $k <= $#{$end}; $k++){	
+						if(notIn($end->[$k],$I->{$akey})){
+							print "afno-term:$end->[$k] add\n";
+							push @{$I->{$akey}},$end->[$k];
 						}
 					}
 				}
-				#到了最末尾,则把end集加入
-				if($flag == 2){
-					print "2:flag = 2\n";
-					push @array,@$end;
-					$flag = 0;
-				}
-				if($flag == 1){
-					print "3:flag = 1\n";
-					#将后面的first集求出
+				#但下下一个不为空
+				my $tmp = 0;
+				if($flag == 0 or $flag == 1){
+					$tmp = 2;
+					#向后遍历
+					print "push first\n";
+					#将first集压入
 					for(my $j = $i + 1;$j <= $#rights;$j++){
 						$aafter = $rights[$j];
-						#将first集压入
 						for(my $k = 1; $k <= $#{$first{$aafter}}; $k++){	
 							push @array,$first{$aafter}->[$k];
 						}
 						#如果aafter没有空的产生式，则停止
 						if($first{$aafter}->[0] eq '0'){
-							$flag = 0;
+							$tmp = 0;
 							last;
 						}
 					}
-					#到了最末尾,则把end集加入
-					if($flag == 1){
-						push @array,@$end;
-					}
-					$flag = 1;
 				}
-				#是终结符
-				if(isTer($after) == 1){
-					my $tkey = "$left $right $i";
-					my @tends;
-					#print "$tkey\n";
-					print "isterm:$tkey\n";
-					print "array:@{$I->{$tkey}}" if defined $I->{$tkey};
-					if(not defined $I->{$tkey}){
-						$I->{$tkey} = \@tends;	#假如还没有该项目，则生成
-						push @keys,$tkey;
-						print "term:i am pushing now $tkey\n";
+				#到了最末尾,则把end集加入
+				if($tmp == 2 or $flag == 2){
+					print "add end flag:$flag\n";
+					push @array,@$end;
+				}
+				for(my $j = 0; $j <= $#{$production{$after}};$j++){	#对于每一个符号的每一个产生式
+					next if $production{$after}->[$j] eq 'eee'; #空的跳过
+					my $ntkey = "$after $j 0";
+					#print "$ntkey\n";
+					my @ntends;
+					print "noterm:$ntkey and production:$production{$after}->[$j]\n";
+					print "array:@{$I->{$ntkey}}\n" if defined $I->{$ntkey};
+					if(not defined $I->{$ntkey}){
+						$I->{$ntkey} = \@ntends;	#假如还没有该项目，则生成
+						push @keys,$ntkey;
+						print "notterm:i am pushing now $ntkey\n";
 					}
 					for(my $k = 0; $k <= $#array; $k++){	
-						if(notIn($array[$k],$I->{$tkey})){
-							print "term:add\n";
-							push @{$I->{$tkey}},$array[$k];
-						}
-					}
-				}elsif(isTer($after) == 2){ #not terminator
-					for(my $j = 0; $j <= $#{$production{$after}};$j++){	#对于每一个符号的每一个产生式
-						next if $production{$after}->[$j] eq 'eee'; #空的跳过
-						my $ntkey = "$after $j 0";
-						#print "$ntkey\n";
-						my @ntends;
-						print "noterm:$ntkey\n";
-						print "array:@{$I->{$ntkey}}\n" if defined $I->{$ntkey};
-						if(not defined $I->{$ntkey}){
-							$I->{$ntkey} = \@ntends;	#假如还没有该项目，则生成
-							push @keys,$ntkey;
-							print "notterm:i am pushing now $ntkey\n";
-						}
-						#若是第二次的话
-						if($flag == 1){
-							push @array,@$end;
-						}
-						for(my $k = 0; $k <= $#array; $k++){	
-							if(notIn($array[$k],$I->{$ntkey})){
-								print "no-term:$array[$k] add\n";
-								push @{$I->{$ntkey}},$array[$k];
-							}
+						if(notIn($array[$k],$I->{$ntkey})){
+							print "no-term:$array[$k] add\n";
+							push @{$I->{$ntkey}},$array[$k];
 						}
 					}
 				}
-				print "$flag\n";
-				last if $flag == 0;
-			}
+				next if $flag == 1;
+				last if $flag == 0 or $flag == 2;
 		}
-#	print "=====closure====\n";
-#	foreach my $name(sort keys %$I){
-#		print "$name:";
-#		print "@{$I->{$name}}";
-#		print "\n";
-#	}
-#	print "==========\n";
+	}
 }
 
 sub my_goto{
@@ -478,27 +444,38 @@ sub control{
 	$stack[0] = '0';
 	open IN,"<","token1" or die "Could not open:$!";
 	my $s;
+	my @array;
 	while(<IN>){
-		chomp(my $a = $_);
+		chomp;
+		push @array, $_;
+	}
+	print "@array\n";
+	my $i = 0;
+	my $a;
+	while(@array){
+		$a = $array[$i];
 		$s= $stack[$#stack];
 		print "$a:$s\n";
 		print $action[$s]->{$a} // 'undef';
 		print "\n";
 		my @next = split(" ",$action[$s]->{$a});
 		if($next[0] eq '+'){			#移进
-			print "move in\n";
+			print "move in:$a $next[1]\n";
 			push @stack,$a;
 			push @stack,$next[1];
+			$i++;
 		}elsif($next[0] eq '-'){		#规约
 			print "guiyue\n";
 			my $pro = $production{$next[1]}->[$next[2]];	#产生式
 			my $num = split(' ',$pro);
+			print "stack now:@stack..$num\n";
 			for(my $i = 0; $i < $num*2;$i++){
 				pop @stack;
 			}
 			my $p1 = $stack[$#stack];
 			my $s1 = $goto1[$p1]->{$next[1]};
-			push @stack,$p1;
+			print "$p1:$next[1]:$s1\n";
+			push @stack,$next[1];
 			push @stack,$s1;
 			print "$next[1]::$pro end\n";
 		}elsif($next[0] eq "acc"){
@@ -508,4 +485,5 @@ sub control{
 			#error2();
 		}
 	}
+	print "stack:@stack\n";
 }

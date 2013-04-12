@@ -1,6 +1,7 @@
-<E>::<T><E'>
-<E'>::+<T><E>|<eee>
-<T>::<F><T'>
-<T'>::*<F><T'>|<eee>
-<F>::(<E>)|id
+S::E
+E::T E'
+E'::+ T E|eee
+T:: F T'
+T'::* F T'|eee
+F::( E )|id
 
