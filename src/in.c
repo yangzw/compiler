@@ -1,27 +1,29 @@
 /*you are a 
  * ding shit
 */
-
+const int b = 3;
 int main()
 {
-	int a = 1;
-	int b=c;	/*fuchd*/
-	char d='\n';
+	int a;
+	int b;	/*fuchd*/
+	char d;
 	a++;
-	float __Des = 3.2;
-	float 4des = 3.33;
-	int c = #;
+	double __Des;
+	/*double 4des;*/
 	char[10] b;
-	char[] b = "you are so great\n";
-	int kd = 2.0e-2;
-	int n = 2.1e-1;
-	int jed = 2.3*(1-2) ;
-	for(int i=1;i<2;i++){
+	/*char[] b = "you are so great\n";*/
+	int kd;
+       	kd = 2.0e-2;
+	int jed;
+       	jed = 2.3*(1-2) ;
+	int i;
+	for(i=1;i<2;i++){
 		i = i&&i;
 		printf("\"'efd\n");/*fucd
 				   sek*/
 	}
-	while(a = b; b++;c++){
-		print "a b c\n";
+	for(a = b;b<4;c++){
+		printf("a b c\n");
 	}
+	return 2;
 }

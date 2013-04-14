@@ -1,40 +1,42 @@
 S::program
-program::expstat functionlist mainfunction|functionlist mainfunction|mainfunction|expstat mainfunction
+program::expstatlist functionlist mainfunction|functionlist mainfunction|mainfunction|expstatlist mainfunction
 functionlist::functionlist functiondefine|functiondefine
-mainfunction::INT MAIN ( ) { block RETURN 0 ; }| INT MAIN ( ) { RETURN 0 ; }
+mainfunction::INT MAIN ( ) { block RETURN INTCON ; }| INT MAIN ( ) { RETURN INTCON ; }
 block::block wstat|wstat
 wstat::expstat|exestat
+expstatlist::expstatlist expstat|expstat
 expstat::constat|varstat|funstat
 constat::CONST type ID = con ;
 varstat::type idlist ;
 idlist::ID , idlist|ID
-arrayelement::ID [ DIGIT ]
+arrayelement::ID [ INTCON ]
 funstat::type ID ( paralist ) ;
 paralist::type ID|paralist , type ID
 functiondefine::VOID ID ( paralist ) { block }|type ID ( paralist ) { block return }
 return ::RETURN con ;|RETURN ID ;
-exestat::asstat|rstat|wrstat|controlstat
-asstat::ID = exp ;|arrayelement = exp ;
+exestat::asstat ;|rstat|wrstat|controlstat
+asstat::ID = exp|arrayelement = exp|ID ++|ID --
 rstat::SCANF ( type , ID ) ;
-wrstat::PRINTF ( idlist ) ;
+wrstat::PRINTF ( printcontent ) ;
+printcontent::printcontent , idlist|printcontent , con |con|idlist
 controlstat::ifstat|whilestat|dowhilestat|forstat 
-ifstat::IF ( boexp ) { block } ELSE { block }|IF ( boexp ) { block } elseifblock ELSE { block }
+ifstat::IF ( boexp ) { block } ELSE { block }|IF ( boexp ) { block } elseifblock ELSE { block }|IF ( boexp ) { block }
 elseifblock::ELSEIF ( boexp ) { block }|elseifblock ELSEIF ( boexp ) { block }
 whilestat::WHILE ( boexp ) { block }
 dowhilestat::DO { block } WHILE ( boexp )
-forstat::FOR ( asstat  boexp ;  asstat ) { block }
-exp::calexp|boexp|regexp 
+forstat::FOR ( asstat ; boexp ; asstat ) { block }
+exp::calexp|boexp
 calexp::calexp + item|calexp - item|calexp % item|item
 item::item * factory|item / factory|factory 
-factory::ID|NUM|FLOAT|- factory|( exp )
+factory::ID|INTCON|DOUBLECON|- factory|( exp )
 boexp::bitem OR bitem|bitem 
 bitem::bitem && bfactory|bfactory 
 bfactory::bool|! bfactory|( exp )
-bool::BOOL|ID|regexp 
-regexp::calexp compare calexp 
-compare::LE|GE|L|G|EQ|NE 
-con::INTCON|BOOLCON|digit|FLOATCON|CHARCON|STRINGCON 
-digit::DIGIT|- DIGIT 
+bool::BOOL|ID|regexp
+regexp::calexp compare calexp
+compare::LE|GE|L|G|EQ|NE
+con::INTCON|BOOLCON|digit|DOUBLECON|' CHARCON '|" STRINGCON "
+digit::DIGIT|- DIGIT
 type::stype|atype 
-stype::BOOL|INT|FLOAT|CHAR
-atype::stype [ DIGIT ]
+stype::BOOL|INT|DOUBLE|CHAR
+atype::stype [ INTCON ]

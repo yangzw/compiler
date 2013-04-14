@@ -6,7 +6,6 @@ MAIN
 }
 [
 ]
-0
 ;
 CONST
 ID
@@ -29,8 +28,10 @@ FOR
 /
 *
 !
+++
+--
 NUM
-FLOAT
+DOUBLE
 OR
 &&
 BOOL
@@ -43,6 +44,8 @@ EQ
 NE
 INTCON
 BOOLCON
-FLOATCON
+DOUBLECON
 CHARCON
 STRINGCON
+'
+"

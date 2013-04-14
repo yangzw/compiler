@@ -1,124 +1,110 @@
-4 int
-67	main
-40 (
-41 )
-42 {
-4 int
-67	a
-25 =
-63 1
-46 ;
-4 int
-67	b
-25 =
-67	c
-46 ;
-6 char
-67	d
-25 =
-53 '
-65 \n
-53 '
-46 ;
-67	a
-28 ++
-46 ;
-67	float
-67	__Des
-25 =
-64 3.2
-46 ;
-67	float
-64 4des
-25 =
-64 3.33
-46 ;
-4 int
-67	c
-25 =
-46 ;
-6 char
-44 [
-63 10
-45 ]
-67	b
-46 ;
-6 char
-44 [
-45 ]
-67	b
-25 =
-54 "
-68 you are so great\n
-54 "
-46 ;
-4 int
-67	kd
-25 =
-64 2.0e-2
-46 ;
-4 int
-67	n
-25 =
-64 2.1e-1
-46 ;
-4 int
-67	jed
-25 =
-64 2.3
-21 *
-40 (
-63 1
-20 -
-63 2
-41 )
-46 ;
-10 for
-40 (
-4 int
-67	i
-25 =
-63 1
-46 ;
-67	i
-27 <
-63 2
-46 ;
-67	i
-28 ++
-41 )
-42 {
-67	i
-25 =
-67	i
-34 &&
-67	i
-46 ;
-15 printf
-40 (
-54 "
-68 \"'efd\n
-54 "
-41 )
-46 ;
-43 }
-11 while
-40 (
-67	a
-25 =
-67	b
-46 ;
-67	b
-28 ++
-46 ;
-67	c
-28 ++
-41 )
-42 {
-67	print
-54 "
-68 a b c\n
-54 "
-46 ;
-43 }
-43 }
+CONST const 4
+INT int 4
+ID b 4
+= = 4
+INTCON 3 4
+; ; 4
+INT int 5
+MAIN main 5
+( ( 5
+) ) 5
+{ { 6
+INT int 7
+ID a 7
+; ; 7
+INT int 8
+ID b 8
+; ; 8
+CHAR char 9
+ID d 9
+; ; 9
+ID a 10
+++ ++ 10
+; ; 10
+DOUBLE double 11
+ID __Des 11
+; ; 11
+CHAR char 13
+[ [ 13
+INTCON 10 13
+] ] 13
+ID b 13
+; ; 13
+INT int 15
+ID kd 15
+; ; 15
+ID kd 16
+= = 16
+DOUBLECON 2.0e-2 16
+; ; 16
+INT int 17
+ID jed 17
+; ; 17
+ID jed 18
+= = 18
+DOUBLECON 2.3 18
+* * 18
+( ( 18
+INTCON 1 18
+- - 18
+INTCON 2 18
+) ) 18
+; ; 18
+INT int 19
+ID i 19
+; ; 19
+FOR for 20
+( ( 20
+ID i 20
+= = 20
+INTCON 1 20
+; ; 20
+ID i 20
+L < 20
+INTCON 2 20
+; ; 20
+ID i 20
+++ ++ 20
+) ) 20
+{ { 20
+ID i 21
+= = 21
+ID i 21
+&& && 21
+ID i 21
+; ; 21
+PRINTF printf 23
+( ( 23
+" " 23
+STRINGCON \"'efd\n 23
+" " 23
+) ) 23
+; ; 23
+} } 24
+FOR for 25
+( ( 25
+ID a 25
+= = 25
+ID b 25
+; ; 25
+ID b 25
+L < 25
+INTCON 4 25
+; ; 25
+ID c 25
+++ ++ 25
+) ) 25
+{ { 25
+PRINTF printf 26
+( ( 26
+" " 26
+STRINGCON a b c\n 26
+" " 26
+) ) 26
+; ; 26
+} } 27
+RETURN return 28
+INTCON 2 28
+; ; 28
+} } 29
+$ 0 0

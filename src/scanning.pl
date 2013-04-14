@@ -28,8 +28,9 @@ while(<IN>){
 		my $list_ref = \@list;
 	#print "@list";
 	scanner($list_ref,$line_count);
+	}
 }
-}
+print OUT "\$ 0 0\n";
 close IN;
 close OUT;
 print "=======================\n";
@@ -44,7 +45,7 @@ sub scanner{
 	my $i = 0;
 	while($i < $length){
 		my $code =get_key_code($list->[$i]);
-		if($code > -1){ #关键字
+		if(defined $code){ #关键字
 			if($list->[$i] =~ /(\+|-|\*|\\|>|<|!|=)/){
 				if($list->[$i+1] eq "="){
 					$list->[$i+1] = $list->[$i] . $list->[$i+1];
@@ -63,15 +64,15 @@ sub scanner{
 				}
 
 			}
-			print OUT "$code $list->[$i]\n";
+			print OUT "$code $list->[$i] $count\n";
 		}
 		else{	
 			if($list->[$i] =~ /^[_A-Za-z]\w*$/){#变量
-				print OUT "67	$list->[$i]\n";
+				print OUT "ID $list->[$i] $count\n";
 				handle_id($list->[$i]);
 			}
 			elsif($list->[$i] =~ /^'(.{0,3})'$/){#字符常量
-				print OUT "53 '\n65 $1\n53 '\n";
+				print OUT "' ' $count\nCHARCON $1 $count\n' ' $count\n";
 			}
 			elsif($list->[$i] =~ /^"/){#字符串常量
 				my $string;
@@ -87,10 +88,10 @@ sub scanner{
 					$list->[$i] =~ /^"(.*)"$/;
 					$string = $1;
 				}
-				print OUT "54 \"\n68 $string\n54 \"\n";
+				print OUT "\" \" $count\nSTRINGCON $string $count\n\" \" $count\n";
 			}
 			elsif($list->[$i] =~ /^[0-9]+$/){#整型常数
-				print OUT "63 $list->[$i]\n";
+				print OUT "INTCON $list->[$i] $count\n";
 			}
 			elsif($list->[$i] =~ /(^[0-9]+(\.[0-9])*e?.*$)/){#实数常数
 				if($list->[$i] =~ /e/){
@@ -100,12 +101,13 @@ sub scanner{
 					}else{
 						error($count);
 					}}
-				print OUT "64 $list->[$i]\n";
+				print OUT "DOUBLECON $list->[$i] $count\n";
 			}
 			elsif($list->[$i] eq "true" or $list->[$i] eq "false"){#布尔常数
-				print OUT "66 $list->[$i]\n";
+				print OUT "BOOLCON $list->[$i] $count\n";
 			}
 			else{
+				print OUT "0 0 $count\n";
 				error($count);
 			}
 		}

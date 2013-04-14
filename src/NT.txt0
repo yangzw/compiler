@@ -1,11 +1,12 @@
 S
 program
-expstat
+expstatlist
 functionlist
 mainfunction
 functiondefine
 block
 wstat
+expstat
 exestat
 constat
 varstat
@@ -19,6 +20,7 @@ return
 asstat
 rstat
 wrstat
+printcontent
 controlstat
 exp
 ifstat
