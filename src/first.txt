@@ -51,11 +51,11 @@ first of ':0 '
 first of ":0 "
 first of S:0 CONST BOOL INT DOUBLE CHAR VOID
 first of program:0 CONST BOOL INT DOUBLE CHAR VOID
-first of expstatlist:0 CONST BOOL INT DOUBLE CHAR
-first of functionlist:0 VOID BOOL INT DOUBLE CHAR
+first of expstatlist:1 CONST BOOL INT DOUBLE CHAR
+first of functionlist:1 VOID BOOL INT DOUBLE CHAR
 first of mainfunction:0 INT
 first of functiondefine:0 VOID BOOL INT DOUBLE CHAR
-first of block:0 CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR
+first of block:1 CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR
 first of wstat:0 CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR
 first of expstat:0 CONST BOOL INT DOUBLE CHAR
 first of exestat:0 ID SCANF PRINTF IF WHILE DO FOR

@@ -148,93 +148,64 @@ sub closure{
 	my $anum;
 	my $end;
 	my $pro;
-	my $flag;
 	my @keys = keys %$I;	#每个项目集是一个哈希表,键为其在项目的特殊编号
 	#print "===============\n";
-	foreach my $item (@keys){
-		#	print "i am finding a closure $item\n";
+	for(my $m = 0; $m <= $#keys;$m++){
+		my $item = $keys[$m];
+#	foreach my $item (@keys){
 		($left,$right,$anum) = split(/ /,$item);
+		print "$item\n";
 		$end = $$I{$item};
 		#print "The end is:@{$end}\n";
 		$pro = $production{$left}->[$right];
 		my @rights = split(' ',$pro);
-		if($anum eq ($#rights+1)){		#如果是到达产生式的结尾,则跳过
-			next;
+		next if not defined $rights[$anum];
+		my $after = $rights[$anum];
+		next if isTer($after) == 1;	#如果后面的是终结符，则停止
+		my @array;
+		#但下下一个不为空
+		my $tmp = 2;
+		my $j;
+		#将first集压入
+		for($j = $anum + 1;$j <= $#rights;$j++){
+			my $aafter = $rights[$j];
+			for(my $k = 1; $k <= $#{$first{$aafter}}; $k++){	
+				push @array,$first{$aafter}->[$k];
+			}
+			#如果aafter没有空的产生式，则停止
+			if($first{$aafter}->[0] eq '0'){
+				$tmp = 0;
+				last;
+			}
 		}
-		$flag = 1;
-		for(my $i = $anum;$i <= $#rights;$i++){	#对于点号后面的
-				my $after = $rights[$i];
-				last if isTer($after) == 1;	#如果后面的是终结符，则停止
-				my $aafter = $rights[$i + 1];
-				my @array;
-				if($first{$after}->[0] eq '0'){	#下一个不能产生空
-					$flag = 0;
-					#下下一个无
-					$flag = 2 if $i == $#rights;
+		#到了最末尾,则把end集加入
+		if($tmp == 2){
+			#	print "add end flag:$flag\n";
+			push @array,@$end;
+		}
+		for($j = 0; $j <= $#{$production{$after}};$j++){	#对于每一个符号的每一个产生式
+			my $ntkey;
+			if($production{$after}->[$j] eq 'eee'){ #空的
+				$ntkey = "$after $j 1";
+			}else{
+				$ntkey = "$after $j 0";
+			}
+			#print "$ntkey\n";
+			my @ntends;
+			#print "noterm:$ntkey and production:$production{$after}->[$j]\n";
+			#print "array:@{$I->{$ntkey}}\n" if defined $I->{$ntkey};
+			if(not defined $I->{$ntkey}){
+				$I->{$ntkey} = \@ntends;	#假如还没有该项目，则生成
+				my $length = @keys;
+				$keys[$length+1] = $ntkey;
+				#	print "notterm:i am pushing now $ntkey\n";
+			}
+			for(my $k = 0; $k <= $#array; $k++){	
+				if(notIn($array[$k],$I->{$ntkey})){
+					#	print "no-term:$array[$k] add\n";
+					push @{$I->{$ntkey}},$array[$k];
 				}
-				if($flag == 1){
-					my $b = $i + 1;
-					my $akey = "$left $right $b";
-					my @aends;
-					#	print "afnoterm:$akey\n";
-					#print "afarray:@{$I->{$akey}}\n" if defined $I->{$akey};
-					if(not defined $I->{$akey}){
-						$I->{$akey} = \@aends;	#假如还没有该项目，则生成
-						push @keys,$akey;
-						#	print "afnotterm:i am pushing now $akey\n";
-					}
-					for(my $k = 0; $k <= $#{$end}; $k++){	
-						if(notIn($end->[$k],$I->{$akey})){
-							#	print "afno-term:$end->[$k] add\n";
-							push @{$I->{$akey}},$end->[$k];
-						}
-					}
-				}
-				#但下下一个不为空
-				my $tmp = 0;
-				if($flag == 0 or $flag == 1){
-					$tmp = 2;
-					#向后遍历
-#					print "push first\n";
-					#将first集压入
-					for(my $j = $i + 1;$j <= $#rights;$j++){
-						$aafter = $rights[$j];
-						for(my $k = 1; $k <= $#{$first{$aafter}}; $k++){	
-							push @array,$first{$aafter}->[$k];
-						}
-						#如果aafter没有空的产生式，则停止
-						if($first{$aafter}->[0] eq '0'){
-							$tmp = 0;
-							last;
-						}
-					}
-				}
-				#到了最末尾,则把end集加入
-				if($tmp == 2 or $flag == 2){
-					#	print "add end flag:$flag\n";
-					push @array,@$end;
-				}
-				for(my $j = 0; $j <= $#{$production{$after}};$j++){	#对于每一个符号的每一个产生式
-					next if $production{$after}->[$j] eq 'eee'; #空的跳过
-					my $ntkey = "$after $j 0";
-					#print "$ntkey\n";
-					my @ntends;
-					#print "noterm:$ntkey and production:$production{$after}->[$j]\n";
-					#print "array:@{$I->{$ntkey}}\n" if defined $I->{$ntkey};
-					if(not defined $I->{$ntkey}){
-						$I->{$ntkey} = \@ntends;	#假如还没有该项目，则生成
-						push @keys,$ntkey;
-						#	print "notterm:i am pushing now $ntkey\n";
-					}
-					for(my $k = 0; $k <= $#array; $k++){	
-						if(notIn($array[$k],$I->{$ntkey})){
-							#	print "no-term:$array[$k] add\n";
-							push @{$I->{$ntkey}},$array[$k];
-						}
-					}
-				}
-				next if $flag == 1;
-				last if $flag == 0 or $flag == 2;
+			}
 		}
 	}
 }
@@ -247,24 +218,7 @@ sub my_goto{
 		#print "$item>>goto>>$x\n";
 		my ($left,$right,$anum) = split(/ /,$item);	#获得编号信息
 		my @pro = split(' ',$production{$left}->[$right]);
-		next if(not defined $pro[$anum]);	#假如已经到末尾了
-		my $flag = 0;
-		while($pro[$anum] ne $x and $first{$pro[$anum]}->[0] eq '1'){	#假设后面的不等,但可以为空
-			$anum = $anum + 1;
-			last if(not defined $pro[$anum]);
-			if($pro[$anum] eq $x){
-				$flag = 1;
-				my $key = "$left $right $anum";
-				#	print "tmp:$key\n";
-				my $num = $i->{$item};
-				my @array;
-				for(my $j = 0 ; $j <= $#{$num};$j++){
-					push  @array,$num->[$j];
-				}
-				$j{$key} = \@array;
-			}
-		}
-		next if ($flag == 1) or (not defined $pro[$anum]) or ($pro[$anum] ne $x);
+		next if(not defined $pro[$anum] or $pro[$anum] ne $x);	#假如已经到末尾了或者末尾不等
 		my $num = $i->{$item};		#如果是，则就创建
 		$anum = $anum + 1;
 		my $key = "$left $right $anum";
@@ -482,17 +436,18 @@ sub control{
 		}elsif($next[0] eq '-'){		#规约
 			print "guiyue\n";
 			my $pro = $production{$next[1]}->[$next[2]];	#产生式
-			my $num = split(' ',$pro);
-			print "stack now:@stack..$num\n";
-			for(my $i = 0; $i < $num*2;$i++){
-				pop @stack;
+			if($pro ne 'eee'){
+				my $num = split(' ',$pro);
+				print "stack now:@stack..$num\n";
+				for(my $i = 0; $i < $num*2;$i++){
+					pop @stack;
+				}
 			}
 			my $p1 = $stack[$#stack];
 			my $s1 = $goto1[$p1]->{$next[1]};
-			print "$p1:$next[1]:$s1\n";
+			print "$p1:$next[1]:$s1:$pro\n";
 			push @stack,$next[1];
 			push @stack,$s1;
-			print "$next[1]::$pro end\n";
 		}elsif($next[0] eq "acc"){
 			select STDOUT;
 			close CONTROL;
@@ -500,6 +455,7 @@ sub control{
 		}else{
 			last;
 		}
+		print "stack now:@stack\n";
 	}
 	#print "stack:@stack\n";
 	select STDOUT;
