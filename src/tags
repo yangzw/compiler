@@ -10,14 +10,23 @@ Num_table	Tables.pm	/^	package Num_table$/;"	p
 Symbol	from_internet.cpp	/^	Symbol$/;"	e	enum:eType	file:
 Type	Tables.pm	/^	sub Type{$/;"	s
 _tmain	from_internet.cpp	/^int _tmain(int argc, _TCHAR* argv[])$/;"	f
+canEmp	first-v2.pl	/^sub canEmp{$/;"	s
 canEmp	first.pl	/^sub canEmp{$/;"	s
+closure	first-v2.pl	/^sub closure{$/;"	s
+closure	first.pl	/^sub closure{$/;"	s
+control	first-v2.pl	/^sub control{$/;"	s
+control	first.pl	/^sub control{$/;"	s
+createTable	first-v2.pl	/^sub createTable{$/;"	s
+createTable	first.pl	/^sub createTable{$/;"	s
 default_name	Tables.pm	/^	sub default_name{' '}$/;"	s
 default_type	Tables.pm	/^	sub default_type{'int'}$/;"	s
 eCharFlag	from_internet.cpp	/^enum eCharFlag$/;"	g	file:
 eType	from_internet.cpp	/^enum eType$/;"	g	file:
+error	first-v2.pl	/^sub error{$/;"	s
 error	first.pl	/^sub error{$/;"	s
 error	scanning.pl	/^sub error{$/;"	s
 explain	from_internet.cpp	/^	explain$/;"	e	enum:eCharFlag	file:
+find_first	first-v2.pl	/^sub find_first{$/;"	s
 find_first	first.pl	/^sub find_first{$/;"	s
 g_charFlag	from_internet.cpp	/^eCharFlag g_charFlag = noFlag;$/;"	v
 g_mapSymbol	from_internet.cpp	/^map<string, eType> g_mapSymbol;$/;"	v
@@ -32,12 +41,26 @@ id_type	Tables.pm	/^	sub id_type{}$/;"	s
 id_value	Tables.pm	/^	sub id_value{}$/;"	s
 init1	Tables.pm	/^	sub init1{$/;"	s
 init2	Tables.pm	/^	sub init2{$/;"	s
+isInC	first-v2.pl	/^sub isInC{$/;"	s
+isInC	first.pl	/^sub isInC{$/;"	s
+isTer	first-v2.pl	/^sub isTer{$/;"	s
 isTer	first.pl	/^sub isTer{$/;"	s
+istheSame	first-v2.pl	/^sub istheSame{$/;"	s
+istheSame	first.pl	/^sub istheSame{$/;"	s
+items	first-v2.pl	/^sub items{$/;"	s
+items	first.pl	/^sub items{$/;"	s
 main	in.c	/^int main()$/;"	f
+my_goto	first-v2.pl	/^sub my_goto{$/;"	s
+my_goto	first.pl	/^sub my_goto{$/;"	s
 name	Tables.pm	/^	sub name{$/;"	s
 noFlag	from_internet.cpp	/^	noFlag,$/;"	e	enum:eCharFlag	file:
+notIn	first-v2.pl	/^sub notIn{$/;"	s
+notIn	first.pl	/^sub notIn{$/;"	s
+openNT	first-v2.pl	/^sub openNT{$/;"	s
 openNT	first.pl	/^sub openNT{$/;"	s
+openS	first-v2.pl	/^sub openS{$/;"	s
 openS	first.pl	/^sub openS{$/;"	s
+openT	first-v2.pl	/^sub openT{$/;"	s
 openT	first.pl	/^sub openT{$/;"	s
 print_id_table	scanning.pl	/^sub print_id_table{$/;"	s
 scanner	scanning.pl	/^sub scanner{$/;"	s

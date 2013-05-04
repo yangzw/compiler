@@ -49,45 +49,39 @@ first of CHARCON:0 CHARCON
 first of STRINGCON:0 STRINGCON
 first of ':0 '
 first of ":0 "
-first of S:0 CONST BOOL INT DOUBLE CHAR VOID
-first of program:0 CONST BOOL INT DOUBLE CHAR VOID
-first of expstatlist:1 CONST BOOL INT DOUBLE CHAR
-first of functionlist:1 VOID BOOL INT DOUBLE CHAR
-first of mainfunction:0 INT
-first of functiondefine:0 VOID BOOL INT DOUBLE CHAR
+first of S:0 INT
+first of program:0 INT
 first of block:1 CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR
 first of wstat:0 CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR
 first of expstat:0 CONST BOOL INT DOUBLE CHAR
-first of exestat:0 ID SCANF PRINTF IF WHILE DO FOR
 first of constat:0 CONST
 first of varstat:0 BOOL INT DOUBLE CHAR
-first of funstat:0 BOOL INT DOUBLE CHAR
-first of type:0 BOOL INT DOUBLE CHAR
-first of con:0 INTCON BOOLCON DIGIT - DOUBLECON ' "
 first of idlist:0 ID
 first of arrayelement:0 ID
 first of paralist:0 BOOL INT DOUBLE CHAR
-first of return:0 RETURN
+first of exestat:0 ID SCANF PRINTF IF WHILE DO FOR
 first of asstat:0 ID
 first of rstat:0 SCANF
 first of wrstat:0 PRINTF
 first of printcontent:0 INTCON BOOLCON DIGIT - DOUBLECON ' " ID
 first of controlstat:0 IF WHILE DO FOR
-first of exp:0 ID INTCON DOUBLECON - ( BOOL !
 first of ifstat:0 IF
 first of elseifblock:0 ELSEIF
 first of whilestat:0 WHILE
 first of dowhilestat:0 DO
 first of forstat:0 FOR
+first of exp:0 ID INTCON DOUBLECON - ( BOOL !
 first of calexp:0 ID INTCON DOUBLECON - (
-first of boexp:0 BOOL ID INTCON DOUBLECON - ( !
-first of regexp:0 ID INTCON DOUBLECON - (
 first of item:0 ID INTCON DOUBLECON - (
 first of factory:0 ID INTCON DOUBLECON - (
+first of boexp:0 BOOL ID INTCON DOUBLECON - ( !
 first of bitem:0 BOOL ID INTCON DOUBLECON - ( !
 first of bfactory:0 BOOL ID INTCON DOUBLECON - ( !
 first of bool:0 BOOL ID INTCON DOUBLECON - (
+first of regexp:0 ID INTCON DOUBLECON - (
 first of compare:0 LE GE L G EQ NE
+first of con:0 INTCON BOOLCON DIGIT - DOUBLECON ' "
 first of digit:0 DIGIT -
+first of type:0 BOOL INT DOUBLE CHAR
 first of stype:0 BOOL INT DOUBLE CHAR
 first of atype:0 BOOL INT DOUBLE CHAR

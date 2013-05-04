@@ -1,6 +1,8 @@
 #! /usr/bin/perl
 use strict;
 use warnings;
+use Key;
+use Scan(qw /handle/);
 
 my @terArray;
 my @ntArray;
@@ -152,9 +154,8 @@ sub closure{
 	#print "===============\n";
 	for(my $m = 0; $m <= $#keys;$m++){
 		my $item = $keys[$m];
-#	foreach my $item (@keys){
 		($left,$right,$anum) = split(/ /,$item);
-		print "$item\n";
+		#print "$item\n";
 		$end = $$I{$item};
 		#print "The end is:@{$end}\n";
 		$pro = $production{$left}->[$right];
@@ -180,7 +181,7 @@ sub closure{
 		}
 		#到了最末尾,则把end集加入
 		if($tmp == 2){
-			#	print "add end flag:$flag\n";
+			#print "add end flag:$flag\n";
 			push @array,@$end;
 		}
 		for($j = 0; $j <= $#{$production{$after}};$j++){	#对于每一个符号的每一个产生式
@@ -196,13 +197,13 @@ sub closure{
 			#print "array:@{$I->{$ntkey}}\n" if defined $I->{$ntkey};
 			if(not defined $I->{$ntkey}){
 				$I->{$ntkey} = \@ntends;	#假如还没有该项目，则生成
-				my $length = @keys;
+				my $length = $#keys;
 				$keys[$length+1] = $ntkey;
-				#	print "notterm:i am pushing now $ntkey\n";
+				#print "notterm:i am pushing now $ntkey\n";
 			}
 			for(my $k = 0; $k <= $#array; $k++){	
 				if(notIn($array[$k],$I->{$ntkey})){
-					#	print "no-term:$array[$k] add\n";
+					#print "no-term:$array[$k] add\n";
 					push @{$I->{$ntkey}},$array[$k];
 				}
 			}
@@ -326,7 +327,70 @@ sub createTable{
 		}
 	}
 }
+#总控程序
+sub control{
+	$stack[0] = '0';
+	open IN,"<","token" or die "Could not open:$!";
+	my $s;
+	my @array;
+	while(<IN>){
+		chomp;
+		my @a = split(" ",$_);
+		push @array, @a[0,2];
+	}
+	close IN;
+	print "control write to control.txt\n";
+	open CONTROL,">","control.txt";
+	select CONTROL;
+	print "@array\n";
+	my $i = 0;
+	my $a;
+	while(@array){
+		$a = $array[$i];
+		$s= $stack[$#stack];
+		print "$a:$s\n";
+		print $action[$s]->{$a} // 'undef';
+		print "\n";
+		last if not defined $action[$s]->{$a};
+		my @next = split(" ",$action[$s]->{$a});
+		#last if not defined @next;
+		if($next[0] eq '+'){			#移进
+			print "move in:$a $next[1]\n";
+			push @stack,$a;
+			push @stack,$next[1];
+			$i = $i + 2;
+		}elsif($next[0] eq '-'){		#规约
+			print "guiyue\n";
+			my $pro = $production{$next[1]}->[$next[2]];	#产生式
+			if($pro ne 'eee'){
+				my $num = split(' ',$pro);
+				print "stack now:@stack..$num\n";
+				for(my $i = 0; $i < $num*2;$i++){
+					pop @stack;
+				}
+			}
+			my $p1 = $stack[$#stack];
+			my $s1 = $goto1[$p1]->{$next[1]};
+			print "$p1:$next[1]:$s1:$pro\n";
+			push @stack,$next[1];
+			push @stack,$s1;
+		}elsif($next[0] eq "acc"){
+			select STDOUT;
+			close CONTROL;
+			return 1;
+		}else{
+			last;
+		}
+		print "stack now:@stack\n";
+	}
+	#print "stack:@stack\n";
+	select STDOUT;
+	close CONTROL;
+	print "wrong in line $array[$i+1]\n";
+	return 0;
+}
 
+Scan::handle();
 openT();	#打开终结符表
 openNT();	#打开非终结符表
 openS();	#打开语法定义表
@@ -400,66 +464,3 @@ print "now, i am scanning\n";
 my $i = control();
 print "succed\n" if $i == 1;
 print "failed\n" if $i == 0;
-
-#总控程序
-sub control{
-	$stack[0] = '0';
-	open IN,"<","token" or die "Could not open:$!";
-	my $s;
-	my @array;
-	while(<IN>){
-		chomp;
-		my @a = split(" ",$_);
-		push @array, @a[0,2];
-	}
-	close IN;
-	print "control write to control.txt\n";
-	open CONTROL,">","control.txt";
-	select CONTROL;
-	print "@array\n";
-	my $i = 0;
-	my $a;
-	while(@array){
-		$a = $array[$i];
-		$s= $stack[$#stack];
-		print "$a:$s\n";
-		print $action[$s]->{$a} // 'undef';
-		print "\n";
-		last if not defined $action[$s]->{$a};
-		my @next = split(" ",$action[$s]->{$a});
-		#last if not defined @next;
-		if($next[0] eq '+'){			#移进
-			print "move in:$a $next[1]\n";
-			push @stack,$a;
-			push @stack,$next[1];
-			$i = $i + 2;
-		}elsif($next[0] eq '-'){		#规约
-			print "guiyue\n";
-			my $pro = $production{$next[1]}->[$next[2]];	#产生式
-			if($pro ne 'eee'){
-				my $num = split(' ',$pro);
-				print "stack now:@stack..$num\n";
-				for(my $i = 0; $i < $num*2;$i++){
-					pop @stack;
-				}
-			}
-			my $p1 = $stack[$#stack];
-			my $s1 = $goto1[$p1]->{$next[1]};
-			print "$p1:$next[1]:$s1:$pro\n";
-			push @stack,$next[1];
-			push @stack,$s1;
-		}elsif($next[0] eq "acc"){
-			select STDOUT;
-			close CONTROL;
-			return 1;
-		}else{
-			last;
-		}
-		print "stack now:@stack\n";
-	}
-	#print "stack:@stack\n";
-	select STDOUT;
-	close CONTROL;
-	print "wrong in line $array[$i+1]\n";
-	return 0;
-}

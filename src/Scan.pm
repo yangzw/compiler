@@ -1,40 +1,42 @@
-#! /usr/bin/perl
+package Scan;
 use strict;
-use warnings;
+use base qw /Exporter/;
+our @EXPORT = qw /handle/;
 use 5.010;
-use Key qw/get_key_code/;
+use Key( qw / get_key_code print_id_table /);
 
-my %id_table;
-my $line_count = 0;
-my $flag = 0;	#字符串标记
-my $flag1 = 0;
-open IN,"<","in.c" or die "Could not open file";
-open OUT,">","token" or die "Could not open file";
-while(<IN>){
-	$line_count++;
-	my $line = $_;
-	if($line =~ /\/\*/){
-		while(!($line =~ /\*\//)){
-			my $in = <IN>;
-			error($line_count) and last unless $in;
-			$line = $line .$in;
-			$line_count++;
+sub handle{
+	my $line_count = 0;
+	my $flag = 0;	#字符串标记
+	my $flag1 = 0;
+	open IN,"<","in.c" or die "Could not open file";
+	open OUT,">","token" or die "Could not open file";
+	while(<IN>){
+		$line_count++;
+		my $line = $_;
+		if($line =~ /\/\*/){
+			while(!($line =~ /\*\//)){
+				my $in = <IN>;
+				error($line_count) and last unless $in;
+				$line = $line .$in;
+				$line_count++;
+			}
+		}
+		$line =~ s/\s+/ /g;
+		$line =~ s/(\/\*.*\*\/)//g;
+		my @list = grep {defined $_ and $_ ne /\s/} split(/\s+|(=|<|>|\/|\*|\+|\-|\(|\)|\{|\}|\[|\]|!|&&|\|\||,|;)/, $line);
+		if(@list){
+			my $list_ref = \@list;
+			#print "@list";
+			scanner($list_ref,$line_count);
 		}
 	}
-	$line =~ s/\s+/ /g;
-	$line =~ s/(\/\*.*\*\/)//g;
-	my @list = grep {defined $_ and $_ ne /\s/} split(/\s+|(=|<|>|\/|\*|\+|\-|\(|\)|\{|\}|\[|\]|!|&&|\|\||,|;)/, $line);
-	if(@list){
-		my $list_ref = \@list;
-	#print "@list";
-	scanner($list_ref,$line_count);
-	}
+	print OUT "\$ 0 0\n";
+	close IN;
+	close OUT;
+	print "=======================\n";
+	print_id_table();
 }
-print OUT "\$ 0 0\n";
-close IN;
-close OUT;
-print "=======================\n";
-print_id_table();
 
 sub scanner{
 #	print "1\n";
@@ -123,8 +125,9 @@ sub error{
 sub handle_id{
 #	print "2\n";
 	my $id = shift;
-	my $count = keys %id_table;
-	$id_table{$id} = {
+	my $count = keys %Key::id_table;
+	my $keyref = \%Key::id_table;
+	$keyref->{$id} = {
 		id_name => $id,
 		id_address => $count+1,
 		id_type => undef,
@@ -133,17 +136,4 @@ sub handle_id{
 		id_end => undef,
 		id_value => undef,
 	};
-}
-
-sub print_id_table{
-	printf "%10s %10s %10s %10s %10s %10s %10s\n",qw /id_name id_address id_type id_attrib id_beg id_end id_value/; 
-	foreach my $id_name (sort keys %id_table){
-		printf "%10s",$id_table{$id_name}->{id_name} // "undefined";
-		printf " %10s",$id_table{$id_name}->{id_address} // "undefined";
-		printf " %10s",$id_table{$id_name}->{id_type} // "undefined";
-		printf " %10s",$id_table{$id_name}->{id_attrib} // "undefined";
-		printf " %10s",$id_table{$id_name}->{id_beg} // "undefined";
-		printf " %10s",$id_table{$id_name}->{id_end} // "undefined";
-		printf " %10s\n",$id_table{$id_name}->{id_value} // "undefined";
-	}
 }

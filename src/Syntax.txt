@@ -1,19 +1,13 @@
 S::program
-program::expstatlist functionlist mainfunction functionlist
-functionlist::functiondefine functionlist|eee
-mainfunction::INT MAIN ( ) { block RETURN INTCON ; }
+program::INT MAIN ( ) { block RETURN INTCON ; }
 block::wstat block|eee
 wstat::expstat|exestat
-expstatlist::expstat expstatlist|eee
-expstat::constat|varstat|funstat
+expstat::constat|varstat
 constat::CONST type ID = con ;
 varstat::type idlist ;
 idlist::ID , idlist|ID
 arrayelement::ID [ INTCON ]
-funstat::type ID ( paralist ) ;
 paralist::type ID|paralist , type ID
-functiondefine::VOID ID ( paralist ) { block }|type ID ( paralist ) { block return }
-return ::RETURN con ;|RETURN ID ;
 exestat::asstat ;|rstat|wrstat|controlstat
 asstat::ID = exp|arrayelement = exp|ID ++|ID --
 rstat::SCANF ( type , ID ) ;

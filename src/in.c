@@ -1,7 +1,6 @@
 /*you are a 
  * ding shit
 */
-const int b = 3;
 int main()
 {
 	int a;
@@ -24,6 +23,8 @@ int main()
 	}
 	for(a = b;b<4;c++){
 		printf("a b c\n");
+	}
+	for(b=c;b<2;b++){
 	}
 	return 2;
 }
