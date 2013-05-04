@@ -3,16 +3,19 @@ use strict;
 use warnings;
 use Key;
 use Scan(qw /handle/);
+use Semantic(qw /trans/);
 
 my @terArray;
 my @ntArray;
-my %production;
 my %first;
 my @goto1;
 my @C;
 my @action;
 my @goto;
 my @stack;
+my @valstack;
+my $productionref = \%Key::production;
+my $offset = -1;
 
 #read terminator and not terminator
 sub openT{
@@ -44,7 +47,7 @@ sub openS{
 			my @rights; 
 			my $right = $2;
 			$left =~ s/^ | $//g;
-			$production{$left} = \@rights;
+			$productionref->{$left} = \@rights;
 			foreach (split('\|',$right)){
 				my $sright = $_;
 				#$sright =~ s/<|>/ /g;
@@ -72,7 +75,7 @@ sub isTer{
 #某个非终结符是否可以产生空
 sub canEmp{
 	my $x = shift;
-	my $p = $production{$x};
+	my $p = $productionref->{$x};
 	foreach(@$p){
 		if($_ eq 'eee'){
 			return 1;
@@ -91,7 +94,7 @@ sub find_first{
 		push @firstarray,$x;
 	}
 	elsif($type == 2){	#非终结符
-		my $productions = $production{$x};	#产生式序列数组的引用
+		my $productions = $productionref->{$x};	#产生式序列数组的引用
 		#print "in find_first:$x\n";
 		if(defined @$productions){
 			for(my $j = 0; $j <= $#{$productions}; $j++){
@@ -158,7 +161,7 @@ sub closure{
 		#print "$item\n";
 		$end = $$I{$item};
 		#print "The end is:@{$end}\n";
-		$pro = $production{$left}->[$right];
+		$pro = $productionref->{$left}->[$right];
 		my @rights = split(' ',$pro);
 		next if not defined $rights[$anum];
 		my $after = $rights[$anum];
@@ -184,9 +187,9 @@ sub closure{
 			#print "add end flag:$flag\n";
 			push @array,@$end;
 		}
-		for($j = 0; $j <= $#{$production{$after}};$j++){	#对于每一个符号的每一个产生式
+		for($j = 0; $j <= $#{$productionref->{$after}};$j++){	#对于每一个符号的每一个产生式
 			my $ntkey;
-			if($production{$after}->[$j] eq 'eee'){ #空的
+			if($productionref->{$after}->[$j] eq 'eee'){ #空的
 				$ntkey = "$after $j 1";
 			}else{
 				$ntkey = "$after $j 0";
@@ -218,7 +221,7 @@ sub my_goto{
 	foreach my $item (sort keys %$i){
 		#print "$item>>goto>>$x\n";
 		my ($left,$right,$anum) = split(/ /,$item);	#获得编号信息
-		my @pro = split(' ',$production{$left}->[$right]);
+		my @pro = split(' ',$productionref->{$left}->[$right]);
 		next if(not defined $pro[$anum] or $pro[$anum] ne $x);	#假如已经到末尾了或者末尾不等
 		my $num = $i->{$item};		#如果是，则就创建
 		$anum = $anum + 1;
@@ -307,7 +310,7 @@ sub createTable{
 		my $I = $C[$i];
 		foreach my $item(keys $I){
 			my ($left,$right,$anum) = split(/ /,$item);
-			my $pro = $production{$left}->[$right];
+			my $pro = $productionref->{$left}->[$right];
 			my $after = (split(" ",$pro))[$anum];
 			#print "after:$after\n" if $after;
 			if(not defined $after){		
@@ -333,10 +336,14 @@ sub control{
 	open IN,"<","token" or die "Could not open:$!";
 	my $s;
 	my @array;
+	my @tandnt;
+	my @line;
 	while(<IN>){
 		chomp;
 		my @a = split(" ",$_);
-		push @array, @a[0,2];
+		push @array, $a[0];
+		push @value, $a[1];
+		push @line,$a[2];
 	}
 	close IN;
 	print "control write to control.txt\n";
@@ -358,20 +365,22 @@ sub control{
 			print "move in:$a $next[1]\n";
 			push @stack,$a;
 			push @stack,$next[1];
-			$i = $i + 2;
+			$i = $i + 1;
 		}elsif($next[0] eq '-'){		#规约
 			print "guiyue\n";
-			my $pro = $production{$next[1]}->[$next[2]];	#产生式
+			my $pro = $productionref->{$next[1]}->[$next[2]];	#产生式
 			if($pro ne 'eee'){
 				my $num = split(' ',$pro);
 				print "stack now:@stack..$num\n";
-				for(my $i = 0; $i < $num*2;$i++){
+				for(my $j = 0; $j < $num*2;$j++){
 					pop @stack;
 				}
 			}
 			my $p1 = $stack[$#stack];
 			my $s1 = $goto1[$p1]->{$next[1]};
 			print "$p1:$next[1]:$s1:$pro\n";
+			$offset = trans($next[1],$next[2],$offset,\@valstack,\@value);
+			print "offset:$offset\n";
 			push @stack,$next[1];
 			push @stack,$s1;
 		}elsif($next[0] eq "acc"){
@@ -381,12 +390,12 @@ sub control{
 		}else{
 			last;
 		}
-		print "stack now:@stack\n";
+		print "stack now:@stack\n================\n";
 	}
 	#print "stack:@stack\n";
 	select STDOUT;
 	close CONTROL;
-	print "wrong in line $array[$i+1]\n";
+	print "wrong in line $line[$i]\n";
 	return 0;
 }
 

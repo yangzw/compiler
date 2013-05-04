@@ -51,6 +51,7 @@ first of ':0 '
 first of ":0 "
 first of S:0 INT
 first of program:0 INT
+first of M:1
 first of block:1 CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR
 first of wstat:0 CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR
 first of expstat:0 CONST BOOL INT DOUBLE CHAR

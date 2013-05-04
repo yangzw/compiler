@@ -1,5 +1,6 @@
 S::program
-program::INT MAIN ( ) { block RETURN INTCON ; }
+program::M INT MAIN ( ) { block RETURN INTCON ; }
+M::eee
 block::wstat block|eee
 wstat::expstat|exestat
 expstat::constat|varstat
