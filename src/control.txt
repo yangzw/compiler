@@ -1,9 +1,9 @@
-INT MAIN ( ) { INT ID ; INT ID ; CHAR ID ; ID ++ ; DOUBLE ID ; CHAR [ INTCON ] ID ; INT ID ; ID = DOUBLECON ; INT ID ; ID = DOUBLECON * ( INTCON - INTCON ) ; INT ID ; FOR ( ID = INTCON ; ID L INTCON ; ID ++ ) { ID = ID && ID ; PRINTF ( " STRINGCON " ) ; } FOR ( ID = ID ; ID L INTCON ; ID ++ ) { PRINTF ( " STRINGCON " ) ; } FOR ( ID = ID ; ID L INTCON ; ID ++ ) { } RETURN INTCON ; } $
+INT int MAIN main ( ( ) ) { { INT int ID a , , ID kk ; ; CHAR char ID d ; ; ID a = = INTCON 0 ; ; ID a ++ ++ ; ; ID kk = = ID a - - ID a * * INTCON 2 + + INTCON 3 * * INTCON 5 ; ; DOUBLE double ID __Des ; ; ID __Des = = - - DOUBLECON 3.1 ; ; INT int [ [ INTCON 10 ] ] ID b ; ; ID b [ [ INTCON 2 ] ] = = INTCON 3 ; ; INT int ID kd ; ; ID kd = = INTCON 2 ; ; INT int ID jed ; ; ID jed = = DOUBLECON 2.3 * * ( ( INTCON 1 + + INTCON 2 ) ) ; ; INT int ID i ; ; IF if ( ( ID a G > ID kd ) ) { { ID a = = ID kd ; ; } } ID a ++ ++ ; ; RETURN return INTCON 2 ; ; } } $ 0
 INT:0
 - M 0
 guiyue
-0:M:2:eee
 offset:0
+0:M:2:eee
 stack now:0 M 2
 ================
 INT:2
@@ -39,17 +39,17 @@ stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 INT 26
 ID:26
 - stype 1
 guiyue
+offset:0
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 INT 26..1
 7:stype:24:INT
-offset:0
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 stype 24
 ================
 ID:24
 - type 0
 guiyue
+offset:0
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 stype 24..1
 7:type:23:stype
-offset:0
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 type 23
 ================
 ID:23
@@ -57,62 +57,82 @@ ID:23
 move in:ID 43
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 type 23 ID 43
 ================
-;:43
+,:43
 - idlist 1
 guiyue
+#
+offset:4
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 type 23 ID 43..1
 23:idlist:42:ID
-offset:0
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 type 23 idlist 42
+================
+,:42
++ 66
+move in:, 66
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 type 23 idlist 42 , 66
+================
+ID:66
++ 139
+move in:ID 139
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 type 23 idlist 42 , 66 ID 139
+================
+;:139
+- idlist 0
+guiyue
+,
+offset:8
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 type 23 idlist 42 , 66 ID 139..3
+23:idlist:42:idlist , ID
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 type 23 idlist 42
 ================
 ;:42
-+ 73
-move in:; 73
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 type 23 idlist 42 ; 73
++ 65
+move in:; 65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 type 23 idlist 42 ; 65
 ================
-INT:73
+CHAR:65
 - varstat 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 type 23 idlist 42 ; 73..3
+offset:8
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 type 23 idlist 42 ; 65..3
 7:varstat:12:type idlist ;
-offset:0
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 varstat 12
 ================
-INT:12
+CHAR:12
 - expstat 1
 guiyue
+offset:8
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 varstat 12..1
 7:expstat:10:varstat
-offset:0
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 expstat 10
 ================
-INT:10
+CHAR:10
 - wstat 0
 guiyue
+offset:8
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 expstat 10..1
 7:wstat:9:expstat
-offset:0
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9
 ================
-INT:9
-+ 26
-move in:INT 26
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 INT 26
+CHAR:9
++ 37
+move in:CHAR 37
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 CHAR 37
 ================
-ID:26
-- stype 1
+ID:37
+- stype 3
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 INT 26..1
-9:stype:24:INT
-offset:0
+offset:8
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 CHAR 37..1
+9:stype:24:CHAR
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 stype 24
 ================
 ID:24
 - type 0
 guiyue
+offset:8
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 stype 24..1
 9:type:23:stype
-offset:0
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 type 23
 ================
 ID:23
@@ -123,101 +143,109 @@ stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 type 23 ID 43
 ;:43
 - idlist 1
 guiyue
+#
+offset:9
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 type 23 ID 43..1
 23:idlist:42:ID
-offset:0
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 type 23 idlist 42
 ================
 ;:42
-+ 73
-move in:; 73
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 type 23 idlist 42 ; 73
++ 65
+move in:; 65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 type 23 idlist 42 ; 65
 ================
-CHAR:73
+ID:65
 - varstat 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 type 23 idlist 42 ; 73..3
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 type 23 idlist 42 ; 65..3
 9:varstat:12:type idlist ;
-offset:0
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 varstat 12
-================
-CHAR:12
-- expstat 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 varstat 12..1
-9:expstat:10:varstat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 expstat 10
-================
-CHAR:10
-- wstat 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 expstat 10..1
-9:wstat:9:expstat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9
-================
-CHAR:9
-+ 37
-move in:CHAR 37
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 CHAR 37
-================
-ID:37
-- stype 3
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 CHAR 37..1
-9:stype:24:CHAR
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 stype 24
-================
-ID:24
-- type 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 stype 24..1
-9:type:23:stype
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 type 23
-================
-ID:23
-+ 43
-move in:ID 43
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 type 23 ID 43
-================
-;:43
-- idlist 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 type 23 ID 43..1
-23:idlist:42:ID
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 type 23 idlist 42
-================
-;:42
-+ 73
-move in:; 73
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 type 23 idlist 42 ; 73
-================
-ID:73
-- varstat 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 type 23 idlist 42 ; 73..3
-9:varstat:12:type idlist ;
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 varstat 12
 ================
 ID:12
 - expstat 1
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 varstat 12..1
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 varstat 12..1
 9:expstat:10:varstat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 expstat 10
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 expstat 10
 ================
 ID:10
 - wstat 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 expstat 10..1
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 expstat 10..1
 9:wstat:9:expstat
-offset:0
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9
+================
+ID:9
++ 28
+move in:ID 28
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 ID 28
+================
+=:28
++ 47
+move in:= 47
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 ID 28 = 47
+================
+INTCON:47
++ 63
+move in:INTCON 63
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 ID 28 = 47 INTCON 63
+================
+;:63
+- factory 1
+guiyue
+value:0
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 ID 28 = 47 INTCON 63..1
+47:factory:59:INTCON
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 ID 28 = 47 factory 59
+================
+;:59
+- item 2
+guiyue
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 ID 28 = 47 factory 59..1
+47:item:58:factory
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 ID 28 = 47 item 58
+================
+;:58
+- calexp 3
+guiyue
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 ID 28 = 47 item 58..1
+47:calexp:70:item
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 ID 28 = 47 calexp 70
+================
+;:70
+- asstat 0
+guiyue
+value:a
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 ID 28 = 47 calexp 70..3
+9:asstat:15:ID = calexp
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 asstat 15
+================
+;:15
++ 41
+move in:; 41
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 asstat 15 ; 41
+================
+ID:41
+- exestat 0
+guiyue
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 asstat 15 ; 41..2
+9:exestat:14:asstat ;
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 exestat 14
+================
+ID:14
+- wstat 1
+guiyue
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 exestat 14..1
+9:wstat:9:exestat
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9
 ================
 ID:9
@@ -233,9 +261,9 @@ stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 ID 28 ++ 48
 ;:48
 - asstat 2
 guiyue
+value:aoffset:9
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 ID 28 ++ 48..2
 9:asstat:15:ID ++
-offset:0
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 asstat 15
 ================
 ;:15
@@ -243,127 +271,235 @@ stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 asstat 15
 move in:; 41
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 asstat 15 ; 41
 ================
+ID:41
+- exestat 0
+guiyue
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 asstat 15 ; 41..2
+9:exestat:14:asstat ;
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 exestat 14
+================
+ID:14
+- wstat 1
+guiyue
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 exestat 14..1
+9:wstat:9:exestat
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9
+================
+ID:9
++ 28
+move in:ID 28
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28
+================
+=:28
++ 47
+move in:= 47
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47
+================
+ID:47
++ 61
+move in:ID 61
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 ID 61
+================
+-:61
+- factory 0
+guiyue
+name:a
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 ID 61..1
+47:factory:59:ID
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 factory 59
+================
+-:59
+- item 2
+guiyue
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 factory 59..1
+47:item:58:factory
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58
+================
+-:58
+- calexp 3
+guiyue
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58..1
+47:calexp:70:item
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70
+================
+-:70
++ 126
+move in:- 126
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 - 126
+================
+ID:126
++ 61
+move in:ID 61
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 - 126 ID 61
+================
+*:61
+- factory 0
+guiyue
+name:a
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 - 126 ID 61..1
+126:factory:59:ID
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 - 126 factory 59
+================
+*:59
+- item 2
+guiyue
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 - 126 factory 59..1
+126:item:182:factory
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 - 126 item 182
+================
+*:182
++ 129
+move in:* 129
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 - 126 item 182 * 129
+================
+INTCON:129
++ 63
+move in:INTCON 63
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 - 126 item 182 * 129 INTCON 63
+================
++:63
+- factory 1
+guiyue
+value:2
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 - 126 item 182 * 129 INTCON 63..1
+129:factory:185:INTCON
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 - 126 item 182 * 129 factory 185
+================
++:185
+- item 0
+guiyue
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 - 126 item 182 * 129 factory 185..3
+126:item:182:item * factory
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 - 126 item 182
+================
++:182
+- calexp 1
+guiyue
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 - 126 item 182..3
+47:calexp:70:calexp - item
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70
+================
++:70
++ 125
+move in:+ 125
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 + 125
+================
+INTCON:125
++ 63
+move in:INTCON 63
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 + 125 INTCON 63
+================
+*:63
+- factory 1
+guiyue
+value:3
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 + 125 INTCON 63..1
+125:factory:59:INTCON
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 + 125 factory 59
+================
+*:59
+- item 2
+guiyue
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 + 125 factory 59..1
+125:item:181:factory
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 + 125 item 181
+================
+*:181
++ 129
+move in:* 129
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 + 125 item 181 * 129
+================
+INTCON:129
++ 63
+move in:INTCON 63
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 + 125 item 181 * 129 INTCON 63
+================
+;:63
+- factory 1
+guiyue
+value:5
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 + 125 item 181 * 129 INTCON 63..1
+129:factory:185:INTCON
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 + 125 item 181 * 129 factory 185
+================
+;:185
+- item 0
+guiyue
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 + 125 item 181 * 129 factory 185..3
+125:item:181:item * factory
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 + 125 item 181
+================
+;:181
+- calexp 0
+guiyue
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70 + 125 item 181..3
+47:calexp:70:calexp + item
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70
+================
+;:70
+- asstat 0
+guiyue
+value:kk
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70..3
+9:asstat:15:ID = calexp
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15
+================
+;:15
++ 41
+move in:; 41
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15 ; 41
+================
 DOUBLE:41
 - exestat 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 asstat 15 ; 41..2
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15 ; 41..2
 9:exestat:14:asstat ;
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 exestat 14
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 exestat 14
 ================
 DOUBLE:14
 - wstat 1
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 exestat 14..1
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 exestat 14..1
 9:wstat:9:exestat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
 ================
 DOUBLE:9
 + 35
 move in:DOUBLE 35
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 DOUBLE 35
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 DOUBLE 35
 ================
 ID:35
 - stype 2
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 DOUBLE 35..1
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 DOUBLE 35..1
 9:stype:24:DOUBLE
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 stype 24
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24
 ================
 ID:24
 - type 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 stype 24..1
+offset:9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24..1
 9:type:23:stype
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 type 23
-================
-ID:23
-+ 43
-move in:ID 43
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 type 23 ID 43
-================
-;:43
-- idlist 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 type 23 ID 43..1
-23:idlist:42:ID
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42
-================
-;:42
-+ 73
-move in:; 73
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 73
-================
-CHAR:73
-- varstat 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 73..3
-9:varstat:12:type idlist ;
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 varstat 12
-================
-CHAR:12
-- expstat 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 varstat 12..1
-9:expstat:10:varstat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 expstat 10
-================
-CHAR:10
-- wstat 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 expstat 10..1
-9:wstat:9:expstat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
-================
-CHAR:9
-+ 37
-move in:CHAR 37
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 CHAR 37
-================
-[:37
-- stype 3
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 CHAR 37..1
-9:stype:24:CHAR
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24
-================
-[:24
-+ 44
-move in:[ 44
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24 [ 44
-================
-INTCON:44
-+ 75
-move in:INTCON 75
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24 [ 44 INTCON 75
-================
-]:75
-+ 168
-move in:] 168
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24 [ 44 INTCON 75 ] 168
-================
-ID:168
-- atype 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24 [ 44 INTCON 75 ] 168..4
-9:atype:25:stype [ INTCON ]
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 atype 25
-================
-ID:25
-- type 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 atype 25..1
-9:type:23:atype
-offset:0
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23
 ================
 ID:23
@@ -374,1695 +510,934 @@ stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
 ;:43
 - idlist 1
 guiyue
+#
+offset:17
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 ID 43..1
 23:idlist:42:ID
-offset:0
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42
 ================
 ;:42
-+ 73
-move in:; 73
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 73
++ 65
+move in:; 65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 65
 ================
-INT:73
+ID:65
 - varstat 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 73..3
+offset:17
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 65..3
 9:varstat:12:type idlist ;
-offset:0
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 varstat 12
 ================
-INT:12
+ID:12
 - expstat 1
 guiyue
+offset:17
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 varstat 12..1
 9:expstat:10:varstat
-offset:0
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 expstat 10
 ================
-INT:10
+ID:10
 - wstat 0
 guiyue
+offset:17
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 expstat 10..1
 9:wstat:9:expstat
-offset:0
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
 ================
-INT:9
-+ 26
-move in:INT 26
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 INT 26
+ID:9
++ 28
+move in:ID 28
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28
 ================
-ID:26
-- stype 1
+=:28
++ 47
+move in:= 47
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47
+================
+-:47
++ 62
+move in:- 62
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 - 62
+================
+DOUBLECON:62
++ 64
+move in:DOUBLECON 64
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 - 62 DOUBLECON 64
+================
+;:64
+- factory 2
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 INT 26..1
-9:stype:24:INT
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24
+value:3.1
+offset:17
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 - 62 DOUBLECON 64..1
+62:factory:138:DOUBLECON
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 - 62 factory 138
 ================
-ID:24
-- type 0
+;:138
+- factory 3
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24..1
-9:type:23:stype
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23
+id:#tmp7
+offset:17
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 - 62 factory 138..2
+47:factory:59:- factory
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 factory 59
 ================
-ID:23
-+ 43
-move in:ID 43
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 ID 43
-================
-;:43
-- idlist 1
+;:59
+- item 2
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 ID 43..1
-23:idlist:42:ID
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42
+offset:17
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 factory 59..1
+47:item:58:factory
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58
 ================
-;:42
-+ 73
-move in:; 73
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 73
-================
-ID:73
-- varstat 0
+;:58
+- calexp 3
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 73..3
-9:varstat:12:type idlist ;
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 varstat 12
+offset:17
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58..1
+47:calexp:70:item
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70
 ================
-ID:12
-- expstat 1
+;:70
+- asstat 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 varstat 12..1
-9:expstat:10:varstat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 expstat 10
+value:__Des
+offset:17
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70..3
+9:asstat:15:ID = calexp
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15
 ================
-ID:10
-- wstat 0
+;:15
++ 41
+move in:; 41
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15 ; 41
+================
+INT:41
+- exestat 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 expstat 10..1
-9:wstat:9:expstat
-offset:0
+offset:17
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15 ; 41..2
+9:exestat:14:asstat ;
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 exestat 14
+================
+INT:14
+- wstat 1
+guiyue
+offset:17
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 exestat 14..1
+9:wstat:9:exestat
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
 ================
-ID:9
-+ 28
-move in:ID 28
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28
-================
-=:28
-+ 47
-move in:= 47
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47
-================
-DOUBLECON:47
-+ 72
-move in:DOUBLECON 72
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 DOUBLECON 72
-================
-;:72
-- factory 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 DOUBLECON 72..1
-47:factory:60:DOUBLECON
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 factory 60
-================
-;:60
-- item 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 factory 60..1
-47:item:59:factory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59
-================
-;:59
-- calexp 3
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59..1
-47:calexp:58:item
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 58
-================
-;:58
-- exp 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 58..1
-47:exp:78:calexp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 exp 78
-================
-;:78
-- asstat 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 exp 78..3
-9:asstat:15:ID = exp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15
-================
-;:15
-+ 41
-move in:; 41
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15 ; 41
-================
-INT:41
-- exestat 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15 ; 41..2
-9:exestat:14:asstat ;
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 exestat 14
-================
-INT:14
-- wstat 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 exestat 14..1
-9:wstat:9:exestat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
-================
 INT:9
 + 26
 move in:INT 26
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 INT 26
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 INT 26
 ================
-ID:26
+[:26
 - stype 1
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 INT 26..1
+offset:17
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 INT 26..1
 9:stype:24:INT
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24
 ================
-ID:24
-- type 0
+[:24
++ 44
+move in:[ 44
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24 [ 44
+================
+INTCON:44
++ 67
+move in:INTCON 67
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24 [ 44 INTCON 67
+================
+]:67
++ 140
+move in:] 140
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24 [ 44 INTCON 67 ] 140
+================
+ID:140
+- atype 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24..1
-9:type:23:stype
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23
+long:10 type:INT
+offset:17
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24 [ 44 INTCON 67 ] 140..4
+9:atype:25:stype [ INTCON ]
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 atype 25
+================
+ID:25
+- type 1
+guiyue
+offset:17
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 atype 25..1
+9:type:23:atype
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23
 ================
 ID:23
 + 43
 move in:ID 43
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 ID 43
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 ID 43
 ================
 ;:43
 - idlist 1
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 ID 43..1
+#
+offset:57
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 ID 43..1
 23:idlist:42:ID
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42
 ================
 ;:42
-+ 73
-move in:; 73
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 73
++ 65
+move in:; 65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 65
 ================
-ID:73
+ID:65
 - varstat 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 73..3
+offset:57
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 65..3
 9:varstat:12:type idlist ;
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 varstat 12
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 varstat 12
 ================
 ID:12
 - expstat 1
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 varstat 12..1
+offset:57
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 varstat 12..1
 9:expstat:10:varstat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 expstat 10
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 expstat 10
 ================
 ID:10
 - wstat 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 expstat 10..1
+offset:57
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 expstat 10..1
 9:wstat:9:expstat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
 ================
 ID:9
 + 28
 move in:ID 28
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28
 ================
-=:28
-+ 47
-move in:= 47
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47
+[:28
++ 46
+move in:[ 46
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 [ 46
 ================
-DOUBLECON:47
-+ 72
-move in:DOUBLECON 72
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 DOUBLECON 72
+INTCON:46
++ 69
+move in:INTCON 69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 [ 46 INTCON 69
 ================
-*:72
-- factory 2
+]:69
++ 142
+move in:] 142
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 [ 46 INTCON 69 ] 142
+================
+=:142
+- arrayelement 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 DOUBLECON 72..1
-47:factory:60:DOUBLECON
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 factory 60
+value:b position:2
+offset:57
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 [ 46 INTCON 69 ] 142..4
+9:arrayelement:13:ID [ INTCON ]
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 arrayelement 13
 ================
-*:60
-- item 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 factory 60..1
-47:item:59:factory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59
+=:13
++ 40
+move in:= 40
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 arrayelement 13 = 40
 ================
-*:59
-+ 149
-move in:* 149
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149
+INTCON:40
++ 63
+move in:INTCON 63
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 arrayelement 13 = 40 INTCON 63
 ================
-(:149
-+ 66
-move in:( 66
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66
-================
-INTCON:66
-+ 160
-move in:INTCON 160
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 INTCON 160
-================
--:160
+;:63
 - factory 1
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 INTCON 160..1
-66:factory:155:INTCON
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 factory 155
-================
--:155
-- item 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 factory 155..1
-66:item:154:factory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 item 154
-================
--:154
-- calexp 3
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 item 154..1
-66:calexp:153:item
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 calexp 153
-================
--:153
-+ 236
-move in:- 236
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 calexp 153 - 236
-================
-INTCON:236
-+ 316
-move in:INTCON 316
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 calexp 153 - 236 INTCON 316
-================
-):316
-- factory 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 calexp 153 - 236 INTCON 316..1
-236:factory:312:INTCON
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 calexp 153 - 236 factory 312
-================
-):312
-- item 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 calexp 153 - 236 factory 312..1
-236:item:318:factory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 calexp 153 - 236 item 318
-================
-):318
-- calexp 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 calexp 153 - 236 item 318..3
-66:calexp:153:calexp - item
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 calexp 153
-================
-):153
-- exp 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 calexp 153..1
-66:exp:152:calexp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 exp 152
-================
-):152
-+ 234
-move in:) 234
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 exp 152 ) 234
-================
-;:234
-- factory 4
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 ( 66 exp 152 ) 234..3
-149:factory:223:( exp )
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 factory 223
-================
-;:223
-- item 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59 * 149 factory 223..3
-47:item:59:item * factory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59
+value:3
+offset:57
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 arrayelement 13 = 40 INTCON 63..1
+40:factory:59:INTCON
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 arrayelement 13 = 40 factory 59
 ================
 ;:59
-- calexp 3
+- item 2
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 59..1
-47:calexp:58:item
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 58
+offset:57
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 arrayelement 13 = 40 factory 59..1
+40:item:58:factory
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 arrayelement 13 = 40 item 58
 ================
 ;:58
-- exp 0
+- calexp 3
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 58..1
-47:exp:78:calexp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 exp 78
+offset:57
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 arrayelement 13 = 40 item 58..1
+40:calexp:57:item
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 arrayelement 13 = 40 calexp 57
 ================
-;:78
-- asstat 0
+;:57
+- asstat 1
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 exp 78..3
-9:asstat:15:ID = exp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15
+id:#tmp8 arrayel:$b 2
+offset:57
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 arrayelement 13 = 40 calexp 57..3
+9:asstat:15:arrayelement = calexp
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15
 ================
 ;:15
 + 41
 move in:; 41
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15 ; 41
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15 ; 41
 ================
 INT:41
 - exestat 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15 ; 41..2
+offset:57
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15 ; 41..2
 9:exestat:14:asstat ;
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 exestat 14
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 exestat 14
 ================
 INT:14
 - wstat 1
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 exestat 14..1
+offset:57
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 exestat 14..1
 9:wstat:9:exestat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
 ================
 INT:9
 + 26
 move in:INT 26
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 INT 26
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 INT 26
 ================
 ID:26
 - stype 1
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 INT 26..1
+offset:57
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 INT 26..1
 9:stype:24:INT
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24
 ================
 ID:24
 - type 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24..1
+offset:57
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24..1
 9:type:23:stype
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23
 ================
 ID:23
 + 43
 move in:ID 43
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 ID 43
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 ID 43
 ================
 ;:43
 - idlist 1
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 ID 43..1
+#
+offset:61
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 ID 43..1
 23:idlist:42:ID
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42
 ================
 ;:42
-+ 73
-move in:; 73
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 73
++ 65
+move in:; 65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 65
 ================
-FOR:73
+ID:65
 - varstat 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 73..3
+offset:61
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 65..3
 9:varstat:12:type idlist ;
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 varstat 12
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 varstat 12
 ================
-FOR:12
+ID:12
 - expstat 1
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 varstat 12..1
+offset:61
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 varstat 12..1
 9:expstat:10:varstat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 expstat 10
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 expstat 10
 ================
-FOR:10
+ID:10
 - wstat 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 expstat 10..1
+offset:61
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 expstat 10..1
 9:wstat:9:expstat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
 ================
-FOR:9
-+ 34
-move in:FOR 34
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34
-================
-(:34
-+ 55
-move in:( 55
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55
-================
-ID:55
+ID:9
 + 28
 move in:ID 28
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28
 ================
 =:28
 + 47
 move in:= 47
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47
 ================
 INTCON:47
-+ 71
-move in:INTCON 71
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 INTCON 71
-================
-;:71
-- factory 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 INTCON 71..1
-47:factory:60:INTCON
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 factory 60
-================
-;:60
-- item 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 factory 60..1
-47:item:59:factory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 item 59
-================
-;:59
-- calexp 3
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 item 59..1
-47:calexp:58:item
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 calexp 58
-================
-;:58
-- exp 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 calexp 58..1
-47:exp:78:calexp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 exp 78
-================
-;:78
-- asstat 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 exp 78..3
-55:asstat:136:ID = exp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136
-================
-;:136
-+ 203
-move in:; 203
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203
-================
-ID:203
-+ 166
-move in:ID 166
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 ID 166
-================
-L:166
-- factory 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 ID 166..1
-203:factory:100:ID
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 factory 100
-================
-L:100
-- item 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 factory 100..1
-203:item:99:factory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 item 99
-================
-L:99
-- calexp 3
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 item 99..1
-203:calexp:163:item
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163
-================
-L:163
-+ 144
-move in:L 144
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 L 144
-================
-INTCON:144
-- compare 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 L 144..1
-163:compare:138:L
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138
-================
-INTCON:138
-+ 211
-move in:INTCON 211
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 INTCON 211
-================
-;:211
-- factory 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 INTCON 211..1
-138:factory:207:INTCON
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 factory 207
-================
-;:207
-- item 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 factory 207..1
-138:item:206:factory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 item 206
-================
-;:206
-- calexp 3
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 item 206..1
-138:calexp:205:item
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 calexp 205
-================
-;:205
-- regexp 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 calexp 205..3
-203:regexp:65:calexp compare calexp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 regexp 65
-================
-;:65
-- bool 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 regexp 65..1
-203:bool:64:regexp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 bool 64
-================
-;:64
-- bfactory 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 bool 64..1
-203:bfactory:63:bool
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 bfactory 63
++ 63
+move in:INTCON 63
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 INTCON 63
 ================
 ;:63
-- bitem 1
+- factory 1
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 bfactory 63..1
-203:bitem:62:bfactory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 bitem 62
+value:2
+offset:61
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 INTCON 63..1
+47:factory:59:INTCON
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 factory 59
 ================
-;:62
-- boexp 1
+;:59
+- item 2
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 bitem 62..1
-203:boexp:295:bitem
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295
+offset:61
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 factory 59..1
+47:item:58:factory
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58
 ================
-;:295
-+ 351
-move in:; 351
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351
-================
-ID:351
-+ 406
-move in:ID 406
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 ID 406
-================
-++:406
-+ 437
-move in:++ 437
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 ID 406 ++ 437
-================
-):437
-- asstat 2
+;:58
+- calexp 3
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 ID 406 ++ 437..2
-351:asstat:405:ID ++
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405
+offset:61
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58..1
+47:calexp:70:item
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70
 ================
-):405
-+ 435
-move in:) 435
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435
-================
-{:435
-+ 461
-move in:{ 461
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461
-================
-ID:461
-+ 28
-move in:ID 28
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28
-================
-=:28
-+ 47
-move in:= 47
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47
-================
-ID:47
-+ 67
-move in:ID 67
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 ID 67
-================
-&&:67
-- bool 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 ID 67..1
-47:bool:64:ID
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 bool 64
-================
-&&:64
-- bfactory 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 bool 64..1
-47:bfactory:63:bool
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 bfactory 63
-================
-&&:63
-- bitem 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 bfactory 63..1
-47:bitem:62:bfactory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 bitem 62
-================
-&&:62
-+ 151
-move in:&& 151
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 bitem 62 && 151
-================
-ID:151
-+ 166
-move in:ID 166
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 bitem 62 && 151 ID 166
-================
-;:166
-- bool 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 bitem 62 && 151 ID 166..1
-151:bool:64:ID
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 bitem 62 && 151 bool 64
-================
-;:64
-- bfactory 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 bitem 62 && 151 bool 64..1
-151:bfactory:233:bool
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 bitem 62 && 151 bfactory 233
-================
-;:233
-- bitem 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 bitem 62 && 151 bfactory 233..3
-47:bitem:62:bitem && bfactory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 bitem 62
-================
-;:62
-- boexp 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 bitem 62..1
-47:boexp:61:bitem
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 boexp 61
-================
-;:61
-- exp 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 boexp 61..1
-47:exp:78:boexp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 exp 78
-================
-;:78
+;:70
 - asstat 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 ID 28 = 47 exp 78..3
-461:asstat:120:ID = exp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 asstat 120
+value:kd
+offset:61
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70..3
+9:asstat:15:ID = calexp
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15
 ================
-;:120
-+ 194
-move in:; 194
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 asstat 120 ; 194
+;:15
++ 41
+move in:; 41
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15 ; 41
 ================
-PRINTF:194
+INT:41
 - exestat 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 asstat 120 ; 194..2
-461:exestat:119:asstat ;
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 exestat 119
+offset:61
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15 ; 41..2
+9:exestat:14:asstat ;
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 exestat 14
 ================
-PRINTF:119
+INT:14
 - wstat 1
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 exestat 119..1
-461:wstat:115:exestat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115
-================
-PRINTF:115
-+ 131
-move in:PRINTF 131
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 PRINTF 131
-================
-(:131
-+ 198
-move in:( 198
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 PRINTF 131 ( 198
-================
-":198
-+ 97
-move in:" 97
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 PRINTF 131 ( 198 " 97
-================
-STRINGCON:97
-+ 178
-move in:STRINGCON 178
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 PRINTF 131 ( 198 " 97 STRINGCON 178
-================
-":178
-+ 259
-move in:" 259
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 PRINTF 131 ( 198 " 97 STRINGCON 178 " 259
-================
-):259
-- con 5
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 PRINTF 131 ( 198 " 97 STRINGCON 178 " 259..3
-198:con:88:" STRINGCON "
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 PRINTF 131 ( 198 con 88
-================
-):88
-- printcontent 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 PRINTF 131 ( 198 con 88..1
-198:printcontent:290:con
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 PRINTF 131 ( 198 printcontent 290
-================
-):290
-+ 346
-move in:) 346
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 PRINTF 131 ( 198 printcontent 290 ) 346
-================
-;:346
-+ 399
-move in:; 399
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 PRINTF 131 ( 198 printcontent 290 ) 346 ; 399
-================
-}:399
-- wrstat 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 PRINTF 131 ( 198 printcontent 290 ) 346 ; 399..5
-115:wrstat:122:PRINTF ( printcontent ) ;
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 wrstat 122
-================
-}:122
-- exestat 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 wrstat 122..1
-115:exestat:119:wrstat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 exestat 119
-================
-}:119
-- wstat 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 exestat 119..1
-115:wstat:115:exestat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 wstat 115
-================
-}:115
-- block 1
-guiyue
-115:block:193:eee
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 wstat 115 block 193
-================
-}:193
-- block 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 wstat 115 block 193..2
-115:block:193:wstat block
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 block 193
-================
-}:193
-- block 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 block 193..2
-461:block:471:wstat block
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 block 471
-================
-}:471
-+ 479
-move in:} 479
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 block 471 } 479
-================
-FOR:479
-- forstat 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 block 471 } 479..11
-9:forstat:22:FOR ( asstat ; boexp ; asstat ) { block }
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 forstat 22
-================
-FOR:22
-- controlstat 3
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 forstat 22..1
-9:controlstat:18:forstat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 controlstat 18
-================
-FOR:18
-- exestat 3
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 controlstat 18..1
-9:exestat:14:controlstat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 exestat 14
-================
-FOR:14
-- wstat 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 exestat 14..1
+offset:61
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 exestat 14..1
 9:wstat:9:exestat
-offset:0
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
+================
+INT:9
++ 26
+move in:INT 26
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 INT 26
+================
+ID:26
+- stype 1
+guiyue
+offset:61
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 INT 26..1
+9:stype:24:INT
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24
+================
+ID:24
+- type 0
+guiyue
+offset:61
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24..1
+9:type:23:stype
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23
+================
+ID:23
++ 43
+move in:ID 43
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 ID 43
+================
+;:43
+- idlist 1
+guiyue
+#
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 ID 43..1
+23:idlist:42:ID
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42
+================
+;:42
++ 65
+move in:; 65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 65
+================
+ID:65
+- varstat 0
+guiyue
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 65..3
+9:varstat:12:type idlist ;
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 varstat 12
+================
+ID:12
+- expstat 1
+guiyue
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 varstat 12..1
+9:expstat:10:varstat
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 expstat 10
+================
+ID:10
+- wstat 0
+guiyue
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 expstat 10..1
+9:wstat:9:expstat
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
 ================
-FOR:9
-+ 34
-move in:FOR 34
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34
-================
-(:34
-+ 55
-move in:( 55
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55
-================
-ID:55
+ID:9
 + 28
 move in:ID 28
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28
 ================
 =:28
 + 47
 move in:= 47
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47
 ================
-ID:47
-+ 67
-move in:ID 67
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 ID 67
+DOUBLECON:47
++ 64
+move in:DOUBLECON 64
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 DOUBLECON 64
 ================
-;:67
-- factory 0
+*:64
+- factory 2
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 ID 67..1
-47:factory:60:ID
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 factory 60
+value:2.3
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 DOUBLECON 64..1
+47:factory:59:DOUBLECON
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 factory 59
 ================
-;:60
+*:59
 - item 2
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 factory 60..1
-47:item:59:factory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 item 59
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 factory 59..1
+47:item:58:factory
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58
 ================
-;:59
-- calexp 3
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 item 59..1
-47:calexp:58:item
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 calexp 58
+*:58
++ 129
+move in:* 129
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129
 ================
-;:58
-- exp 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 calexp 58..1
-47:exp:78:calexp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 exp 78
+(:129
++ 60
+move in:( 60
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 ( 60
 ================
-;:78
-- asstat 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 exp 78..3
-55:asstat:136:ID = exp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136
+INTCON:60
++ 136
+move in:INTCON 136
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 ( 60 INTCON 136
 ================
-;:136
-+ 203
-move in:; 203
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203
-================
-ID:203
-+ 166
-move in:ID 166
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 ID 166
-================
-L:166
-- factory 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 ID 166..1
-203:factory:100:ID
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 factory 100
-================
-L:100
-- item 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 factory 100..1
-203:item:99:factory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 item 99
-================
-L:99
-- calexp 3
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 item 99..1
-203:calexp:163:item
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163
-================
-L:163
-+ 144
-move in:L 144
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 L 144
-================
-INTCON:144
-- compare 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 L 144..1
-163:compare:138:L
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138
-================
-INTCON:138
-+ 211
-move in:INTCON 211
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 INTCON 211
-================
-;:211
++:136
 - factory 1
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 INTCON 211..1
-138:factory:207:INTCON
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 factory 207
+value:1
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 ( 60 INTCON 136..1
+60:factory:132:INTCON
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 ( 60 factory 132
 ================
-;:207
++:132
 - item 2
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 factory 207..1
-138:item:206:factory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 item 206
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 ( 60 factory 132..1
+60:item:131:factory
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 ( 60 item 131
 ================
-;:206
++:131
 - calexp 3
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 item 206..1
-138:calexp:205:item
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 calexp 205
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 ( 60 item 131..1
+60:calexp:130:item
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 ( 60 calexp 130
 ================
-;:205
-- regexp 0
++:130
++ 187
+move in:+ 187
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 ( 60 calexp 130 + 187
+================
+INTCON:187
++ 136
+move in:INTCON 136
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 ( 60 calexp 130 + 187 INTCON 136
+================
+):136
+- factory 1
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 calexp 205..3
-203:regexp:65:calexp compare calexp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 regexp 65
+value:2
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 ( 60 calexp 130 + 187 INTCON 136..1
+187:factory:132:INTCON
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 ( 60 calexp 130 + 187 factory 132
 ================
-;:65
-- bool 2
+):132
+- item 2
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 regexp 65..1
-203:bool:64:regexp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 bool 64
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 ( 60 calexp 130 + 187 factory 132..1
+187:item:242:factory
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 ( 60 calexp 130 + 187 item 242
 ================
-;:64
-- bfactory 0
+):242
+- calexp 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 bool 64..1
-203:bfactory:63:bool
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 bfactory 63
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 ( 60 calexp 130 + 187 item 242..3
+60:calexp:130:calexp + item
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 ( 60 calexp 130
 ================
-;:63
-- bitem 1
+):130
++ 186
+move in:) 186
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 ( 60 calexp 130 ) 186
+================
+;:186
+- factory 4
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 bfactory 63..1
-203:bitem:62:bfactory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 bitem 62
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 ( 60 calexp 130 ) 186..3
+129:factory:185:( calexp )
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 factory 185
 ================
-;:62
-- boexp 1
+;:185
+- item 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 bitem 62..1
-203:boexp:295:bitem
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58 * 129 factory 185..3
+47:item:58:item * factory
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58
 ================
-;:295
-+ 351
-move in:; 351
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351
-================
-ID:351
-+ 406
-move in:ID 406
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 ID 406
-================
-++:406
-+ 437
-move in:++ 437
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 ID 406 ++ 437
-================
-):437
-- asstat 2
+;:58
+- calexp 3
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 ID 406 ++ 437..2
-351:asstat:405:ID ++
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 item 58..1
+47:calexp:70:item
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70
 ================
-):405
-+ 435
-move in:) 435
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435
-================
-{:435
-+ 461
-move in:{ 461
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461
-================
-PRINTF:461
-+ 131
-move in:PRINTF 131
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 PRINTF 131
-================
-(:131
-+ 198
-move in:( 198
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 PRINTF 131 ( 198
-================
-":198
-+ 97
-move in:" 97
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 PRINTF 131 ( 198 " 97
-================
-STRINGCON:97
-+ 178
-move in:STRINGCON 178
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 PRINTF 131 ( 198 " 97 STRINGCON 178
-================
-":178
-+ 259
-move in:" 259
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 PRINTF 131 ( 198 " 97 STRINGCON 178 " 259
-================
-):259
-- con 5
+;:70
+- asstat 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 PRINTF 131 ( 198 " 97 STRINGCON 178 " 259..3
-198:con:88:" STRINGCON "
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 PRINTF 131 ( 198 con 88
+value:jed
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 28 = 47 calexp 70..3
+9:asstat:15:ID = calexp
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15
 ================
-):88
-- printcontent 2
+;:15
++ 41
+move in:; 41
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15 ; 41
+================
+INT:41
+- exestat 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 PRINTF 131 ( 198 con 88..1
-198:printcontent:290:con
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 PRINTF 131 ( 198 printcontent 290
-================
-):290
-+ 346
-move in:) 346
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 PRINTF 131 ( 198 printcontent 290 ) 346
-================
-;:346
-+ 399
-move in:; 399
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 PRINTF 131 ( 198 printcontent 290 ) 346 ; 399
-================
-}:399
-- wrstat 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 PRINTF 131 ( 198 printcontent 290 ) 346 ; 399..5
-461:wrstat:122:PRINTF ( printcontent ) ;
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wrstat 122
-================
-}:122
-- exestat 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wrstat 122..1
-461:exestat:119:wrstat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 exestat 119
-================
-}:119
-- wstat 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 exestat 119..1
-461:wstat:115:exestat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115
-================
-}:115
-- block 1
-guiyue
-115:block:193:eee
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 block 193
-================
-}:193
-- block 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 wstat 115 block 193..2
-461:block:471:wstat block
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 block 471
-================
-}:471
-+ 479
-move in:} 479
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 block 471 } 479
-================
-FOR:479
-- forstat 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 block 471 } 479..11
-9:forstat:22:FOR ( asstat ; boexp ; asstat ) { block }
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 forstat 22
-================
-FOR:22
-- controlstat 3
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 forstat 22..1
-9:controlstat:18:forstat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 controlstat 18
-================
-FOR:18
-- exestat 3
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 controlstat 18..1
-9:exestat:14:controlstat
-offset:0
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 asstat 15 ; 41..2
+9:exestat:14:asstat ;
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 exestat 14
 ================
-FOR:14
+INT:14
 - wstat 1
 guiyue
+offset:65
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 exestat 14..1
 9:wstat:9:exestat
-offset:0
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
 ================
-FOR:9
-+ 34
-move in:FOR 34
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34
+INT:9
++ 26
+move in:INT 26
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 INT 26
 ================
-(:34
-+ 55
-move in:( 55
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55
+ID:26
+- stype 1
+guiyue
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 INT 26..1
+9:stype:24:INT
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24
 ================
-ID:55
+ID:24
+- type 0
+guiyue
+offset:65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 stype 24..1
+9:type:23:stype
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23
+================
+ID:23
++ 43
+move in:ID 43
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 ID 43
+================
+;:43
+- idlist 1
+guiyue
+#
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 ID 43..1
+23:idlist:42:ID
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42
+================
+;:42
++ 65
+move in:; 65
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 65
+================
+IF:65
+- varstat 0
+guiyue
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 type 23 idlist 42 ; 65..3
+9:varstat:12:type idlist ;
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 varstat 12
+================
+IF:12
+- expstat 1
+guiyue
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 varstat 12..1
+9:expstat:10:varstat
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 expstat 10
+================
+IF:10
+- wstat 0
+guiyue
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 expstat 10..1
+9:wstat:9:expstat
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
+================
+IF:9
++ 31
+move in:IF 31
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31
+================
+(:31
++ 52
+move in:( 52
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52
+================
+ID:52
++ 96
+move in:ID 96
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 ID 96
+================
+G:96
+- factory 0
+guiyue
+name:a
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 ID 96..1
+52:factory:92:ID
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 factory 92
+================
+G:92
+- item 2
+guiyue
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 factory 92..1
+52:item:91:factory
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 item 91
+================
+G:91
+- calexp 3
+guiyue
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 item 91..1
+52:calexp:90:item
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 calexp 90
+================
+G:90
++ 158
+move in:G 158
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 calexp 90 G 158
+================
+ID:158
+- compare 3
+guiyue
+value:>
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 calexp 90 G 158..1
+90:compare:151:G
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 calexp 90 compare 151
+================
+ID:151
++ 215
+move in:ID 215
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 calexp 90 compare 151 ID 215
+================
+):215
+- factory 0
+guiyue
+name:kd
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 calexp 90 compare 151 ID 215..1
+151:factory:213:ID
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 calexp 90 compare 151 factory 213
+================
+):213
+- item 2
+guiyue
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 calexp 90 compare 151 factory 213..1
+151:item:212:factory
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 calexp 90 compare 151 item 212
+================
+):212
+- calexp 3
+guiyue
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 calexp 90 compare 151 item 212..1
+151:calexp:211:item
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 calexp 90 compare 151 calexp 211
+================
+):211
+- regexp 0
+guiyue
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 calexp 90 compare 151 calexp 211..3
+52:regexp:94:calexp compare calexp
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 regexp 94
+================
+):94
+- boexp 1
+guiyue
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 regexp 94..1
+52:boexp:93:regexp
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93
+================
+):93
++ 163
+move in:) 163
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163
+================
+{:163
++ 225
+move in:{ 225
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225
+================
+ID:225
 + 28
 move in:ID 28
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 ID 28
 ================
 =:28
 + 47
 move in:= 47
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 ID 28 = 47
 ================
 ID:47
-+ 67
-move in:ID 67
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 ID 67
++ 61
+move in:ID 61
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 ID 28 = 47 ID 61
 ================
-;:67
+;:61
 - factory 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 ID 67..1
-47:factory:60:ID
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 factory 60
-================
-;:60
-- item 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 factory 60..1
-47:item:59:factory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 item 59
+name:kd
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 ID 28 = 47 ID 61..1
+47:factory:59:ID
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 ID 28 = 47 factory 59
 ================
 ;:59
-- calexp 3
+- item 2
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 item 59..1
-47:calexp:58:item
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 calexp 58
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 ID 28 = 47 factory 59..1
+47:item:58:factory
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 ID 28 = 47 item 58
 ================
 ;:58
-- exp 0
+- calexp 3
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 calexp 58..1
-47:exp:78:calexp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 exp 78
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 ID 28 = 47 item 58..1
+47:calexp:70:item
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 ID 28 = 47 calexp 70
 ================
-;:78
+;:70
 - asstat 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 ID 28 = 47 exp 78..3
-55:asstat:136:ID = exp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136
+value:a
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 ID 28 = 47 calexp 70..3
+225:asstat:107:ID = calexp
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 asstat 107
 ================
-;:136
-+ 203
-move in:; 203
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203
+;:107
++ 170
+move in:; 170
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 asstat 107 ; 170
 ================
-ID:203
-+ 166
-move in:ID 166
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 ID 166
-================
-L:166
-- factory 0
+}:170
+- exestat 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 ID 166..1
-203:factory:100:ID
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 factory 100
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 asstat 107 ; 170..2
+225:exestat:106:asstat ;
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 exestat 106
 ================
-L:100
-- item 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 factory 100..1
-203:item:99:factory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 item 99
-================
-L:99
-- calexp 3
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 item 99..1
-203:calexp:163:item
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163
-================
-L:163
-+ 144
-move in:L 144
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 L 144
-================
-INTCON:144
-- compare 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 L 144..1
-163:compare:138:L
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138
-================
-INTCON:138
-+ 211
-move in:INTCON 211
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 INTCON 211
-================
-;:211
-- factory 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 INTCON 211..1
-138:factory:207:INTCON
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 factory 207
-================
-;:207
-- item 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 factory 207..1
-138:item:206:factory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 item 206
-================
-;:206
-- calexp 3
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 item 206..1
-138:calexp:205:item
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 calexp 205
-================
-;:205
-- regexp 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 calexp 163 compare 138 calexp 205..3
-203:regexp:65:calexp compare calexp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 regexp 65
-================
-;:65
-- bool 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 regexp 65..1
-203:bool:64:regexp
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 bool 64
-================
-;:64
-- bfactory 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 bool 64..1
-203:bfactory:63:bool
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 bfactory 63
-================
-;:63
-- bitem 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 bfactory 63..1
-203:bitem:62:bfactory
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 bitem 62
-================
-;:62
-- boexp 1
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 bitem 62..1
-203:boexp:295:bitem
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295
-================
-;:295
-+ 351
-move in:; 351
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351
-================
-ID:351
-+ 406
-move in:ID 406
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 ID 406
-================
-++:406
-+ 437
-move in:++ 437
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 ID 406 ++ 437
-================
-):437
-- asstat 2
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 ID 406 ++ 437..2
-351:asstat:405:ID ++
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405
-================
-):405
-+ 435
-move in:) 435
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435
-================
-{:435
-+ 461
-move in:{ 461
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461
-================
-}:461
-- block 1
-guiyue
-461:block:471:eee
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 block 471
-================
-}:471
-+ 479
-move in:} 479
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 block 471 } 479
-================
-RETURN:479
-- forstat 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 FOR 34 ( 55 asstat 136 ; 203 boexp 295 ; 351 asstat 405 ) 435 { 461 block 471 } 479..11
-9:forstat:22:FOR ( asstat ; boexp ; asstat ) { block }
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 forstat 22
-================
-RETURN:22
-- controlstat 3
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 forstat 22..1
-9:controlstat:18:forstat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 controlstat 18
-================
-RETURN:18
-- exestat 3
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 controlstat 18..1
-9:exestat:14:controlstat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 exestat 14
-================
-RETURN:14
+}:106
 - wstat 1
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 exestat 14..1
-9:wstat:9:exestat
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 exestat 106..1
+225:wstat:102:exestat
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 wstat 102
 ================
-RETURN:9
+}:102
 - block 1
 guiyue
-9:block:39:eee
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39
+offset:69
+102:block:169:eee
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 wstat 102 block 169
 ================
-RETURN:39
+}:169
 - block 0
 guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39..2
-9:block:39:wstat block
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39
+offset:69
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 wstat 102 block 169..2
+225:block:262:wstat block
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 block 262
 ================
-RETURN:39
-- block 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39..2
-9:block:39:wstat block
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39
+}:262
++ 286
+move in:} 286
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 boexp 93 ) 163 { 225 block 262 } 286
 ================
-RETURN:39
-- block 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39..2
-9:block:39:wstat block
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39
-================
-RETURN:39
-- block 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39..2
-9:block:39:wstat block
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39
-================
-RETURN:39
-- block 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39..2
-9:block:39:wstat block
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39
-================
-RETURN:39
-- block 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39..2
-9:block:39:wstat block
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39
-================
-RETURN:39
-- block 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39..2
-9:block:39:wstat block
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39
-================
-RETURN:39
-- block 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39..2
-9:block:39:wstat block
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39
-================
-RETURN:39
-- block 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39..2
-9:block:39:wstat block
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39
-================
-RETURN:39
-- block 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 block 39..2
-9:block:39:wstat block
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 block 39
-================
-RETURN:39
-- block 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 block 39..2
-9:block:39:wstat block
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 block 39
-================
-RETURN:39
-- block 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 block 39..2
-9:block:39:wstat block
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 block 39
-================
-RETURN:39
-- block 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 block 39..2
-9:block:39:wstat block
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 block 39
-================
-RETURN:39
-- block 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 block 39..2
-7:block:8:wstat block
-offset:0
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 block 8
-================
-RETURN:8
-+ 38
-move in:RETURN 38
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 block 8 RETURN 38
-================
-INTCON:38
-+ 56
-move in:INTCON 56
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 block 8 RETURN 38 INTCON 56
-================
-;:56
-+ 137
-move in:; 137
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 block 8 RETURN 38 INTCON 56 ; 137
-================
-}:137
-+ 204
-move in:} 204
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 block 8 RETURN 38 INTCON 56 ; 137 } 204
-================
-$:204
-- program 0
-guiyue
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 block 8 RETURN 38 INTCON 56 ; 137 } 204..11
-0:program:1:M INT MAIN ( ) { block RETURN INTCON ; }
-offset:0
-stack now:0 program 1
-================
-$:1
-acc
+ID:286
+undef

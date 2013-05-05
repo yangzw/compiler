@@ -1,0 +1,6 @@
+++ a : a
+* a #tmp1 #tmp2
+- a #tmp2 #tmp3
++ #tmp3 #tmp5 #tmp6
+= #tmp6 : kk
+= kd : a

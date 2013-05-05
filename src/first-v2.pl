@@ -336,13 +336,13 @@ sub control{
 	open IN,"<","token" or die "Could not open:$!";
 	my $s;
 	my @array;
-	my @tandnt;
+	my @value;
+	$value[0] = '0';
 	my @line;
 	while(<IN>){
 		chomp;
 		my @a = split(" ",$_);
-		push @array, $a[0];
-		push @value, $a[1];
+		push @array, @a[0,1];
 		push @line,$a[2];
 	}
 	close IN;
@@ -351,6 +351,7 @@ sub control{
 	select CONTROL;
 	print "@array\n";
 	my $i = 0;
+	my $j = 0;
 	my $a;
 	while(@array){
 		$a = $array[$i];
@@ -364,24 +365,29 @@ sub control{
 		if($next[0] eq '+'){			#移进
 			print "move in:$a $next[1]\n";
 			push @stack,$a;
+			push @value,$array[$i+1];
 			push @stack,$next[1];
-			$i = $i + 1;
+			$i = $i + 2;
+			$j = $j + 1;
 		}elsif($next[0] eq '-'){		#规约
 			print "guiyue\n";
 			my $pro = $productionref->{$next[1]}->[$next[2]];	#产生式
+			$offset = trans($next[1],$next[2],$offset,\@valstack,\@value,$line[$j]);
+			print "offset:$offset\n";
+			last if($offset == -1);
 			if($pro ne 'eee'){
 				my $num = split(' ',$pro);
 				print "stack now:@stack..$num\n";
 				for(my $j = 0; $j < $num*2;$j++){
 					pop @stack;
+					pop @value if $j % 2 == 0;
 				}
 			}
 			my $p1 = $stack[$#stack];
 			my $s1 = $goto1[$p1]->{$next[1]};
 			print "$p1:$next[1]:$s1:$pro\n";
-			$offset = trans($next[1],$next[2],$offset,\@valstack,\@value);
-			print "offset:$offset\n";
 			push @stack,$next[1];
+			push @value,"#";
 			push @stack,$s1;
 		}elsif($next[0] eq "acc"){
 			select STDOUT;
@@ -395,7 +401,7 @@ sub control{
 	#print "stack:@stack\n";
 	select STDOUT;
 	close CONTROL;
-	print "wrong in line $line[$i]\n";
+	print "wrong in line $line[$j]\n";
 	return 0;
 }
 
@@ -473,3 +479,4 @@ print "now, i am scanning\n";
 my $i = control();
 print "succed\n" if $i == 1;
 print "failed\n" if $i == 0;
+print_id_table();

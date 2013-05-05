@@ -143,8 +143,8 @@ controlstat 2 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETUR
 controlstat 3 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
 23
-idlist 0 0:;
-idlist 1 0:;
+idlist 0 0:; ,
+idlist 1 0:; ,
 varstat 0 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
 24
@@ -210,22 +210,10 @@ block 0 2:RETURN
 ===
 40
 asstat 1 2:;
-bfactory 0 0:OR ; &&
-bfactory 1 0:OR ; &&
-bfactory 2 0:OR ; &&
-bitem 0 0:OR ; &&
-bitem 1 0:OR ; &&
-boexp 0 0:;
-boexp 1 0:;
-bool 0 0:OR ; &&
-bool 1 0:OR ; &&
-bool 2 0:OR ; &&
-calexp 0 0:; + - % LE GE L G EQ NE
-calexp 1 0:; + - % LE GE L G EQ NE
-calexp 2 0:; + - % LE GE L G EQ NE
-calexp 3 0:; + - % LE GE L G EQ NE
-exp 0 0:;
-exp 1 0:;
+calexp 0 0:; + - %
+calexp 1 0:; + - %
+calexp 2 0:; + - %
+calexp 3 0:; + - %
 factory 0 0:; + - % * /
 factory 1 0:; + - % * /
 factory 2 0:; + - % * /
@@ -234,17 +222,16 @@ factory 4 0:; + - % * /
 item 0 0:; + - % * /
 item 1 0:; + - % * /
 item 2 0:; + - % * /
-regexp 0 0:OR ; &&
 ===
 41
 exestat 0 2:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
 42
+idlist 0 1:; ,
 varstat 0 2:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
 43
-idlist 0 1:;
-idlist 1 1:;
+idlist 1 1:; ,
 ===
 44
 atype 0 2:ID
@@ -257,22 +244,10 @@ arrayelement 0 2:=
 ===
 47
 asstat 0 2:;
-bfactory 0 0:OR ; &&
-bfactory 1 0:OR ; &&
-bfactory 2 0:OR ; &&
-bitem 0 0:OR ; &&
-bitem 1 0:OR ; &&
-boexp 0 0:;
-boexp 1 0:;
-bool 0 0:OR ; &&
-bool 1 0:OR ; &&
-bool 2 0:OR ; &&
-calexp 0 0:; + - % LE GE L G EQ NE
-calexp 1 0:; + - % LE GE L G EQ NE
-calexp 2 0:; + - % LE GE L G EQ NE
-calexp 3 0:; + - % LE GE L G EQ NE
-exp 0 0:;
-exp 1 0:;
+calexp 0 0:; + - %
+calexp 1 0:; + - %
+calexp 2 0:; + - %
+calexp 3 0:; + - %
 factory 0 0:; + - % * /
 factory 1 0:; + - % * /
 factory 2 0:; + - % * /
@@ -281,7 +256,6 @@ factory 4 0:; + - % * /
 item 0 0:; + - % * /
 item 1 0:; + - % * /
 item 2 0:; + - % * /
-regexp 0 0:OR ; &&
 ===
 48
 asstat 2 2:;
@@ -317,16 +291,8 @@ printcontent 3 0:) ,
 wrstat 0 2:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
 52
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
 boexp 0 0:)
 boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
 calexp 0 0:LE GE L G EQ NE + - %
 calexp 1 0:LE GE L G EQ NE + - %
 calexp 2 0:LE GE L G EQ NE + - %
@@ -342,19 +308,11 @@ ifstat 2 2:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 item 0 0:LE GE L G EQ NE + - % * /
 item 1 0:LE GE L G EQ NE + - % * /
 item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:OR ) &&
+regexp 0 0:&& )
 ===
 53
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
 boexp 0 0:)
 boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
 calexp 0 0:LE GE L G EQ NE + - %
 calexp 1 0:LE GE L G EQ NE + - %
 calexp 2 0:LE GE L G EQ NE + - %
@@ -367,7 +325,7 @@ factory 4 0:LE GE L G EQ NE + - % * /
 item 0 0:LE GE L G EQ NE + - % * /
 item 1 0:LE GE L G EQ NE + - % * /
 item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:OR ) &&
+regexp 0 0:&& )
 whilestat 0 2:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
 54
@@ -422,63 +380,23 @@ program 0 9:$
 ===
 57
 asstat 1 3:;
+calexp 0 1:; + - %
+calexp 1 1:; + - %
+calexp 2 1:; + - %
 ===
 58
-calexp 0 1:; + - % LE GE L G EQ NE
-calexp 1 1:; + - % LE GE L G EQ NE
-calexp 2 1:; + - % LE GE L G EQ NE
-compare 0 0:ID INTCON DOUBLECON - (
-compare 1 0:ID INTCON DOUBLECON - (
-compare 2 0:ID INTCON DOUBLECON - (
-compare 3 0:ID INTCON DOUBLECON - (
-compare 4 0:ID INTCON DOUBLECON - (
-compare 5 0:ID INTCON DOUBLECON - (
-exp 0 1:;
-regexp 0 1:OR ; &&
-===
-59
-calexp 3 1:; + - % LE GE L G EQ NE
+calexp 3 1:; + - %
 item 0 1:; + - % * /
 item 1 1:; + - % * /
 ===
-60
+59
 item 2 1:; + - % * /
 ===
-61
-exp 1 1:;
-===
-62
-bitem 0 1:OR ; &&
-boexp 0 1:;
-boexp 1 1:;
-===
-63
-bitem 1 1:OR ; &&
-===
-64
-bfactory 0 1:OR ; &&
-===
-65
-bool 2 1:OR ; &&
-===
-66
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bfactory 2 1:OR ; &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
-boexp 0 0:)
-boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
-calexp 0 0:) + - % LE GE L G EQ NE
-calexp 1 0:) + - % LE GE L G EQ NE
-calexp 2 0:) + - % LE GE L G EQ NE
-calexp 3 0:) + - % LE GE L G EQ NE
-exp 0 0:)
-exp 1 0:)
+60
+calexp 0 0:) + - %
+calexp 1 0:) + - %
+calexp 2 0:) + - %
+calexp 3 0:) + - %
 factory 0 0:) + - % * /
 factory 1 0:) + - % * /
 factory 2 0:) + - % * /
@@ -488,13 +406,11 @@ factory 4 1:; + - % * /
 item 0 0:) + - % * /
 item 1 0:) + - % * /
 item 2 0:) + - % * /
-regexp 0 0:OR ) &&
 ===
-67
-bool 1 1:OR ; &&
+61
 factory 0 1:; + - % * /
 ===
-68
+62
 factory 0 0:; + - % * /
 factory 1 0:; + - % * /
 factory 2 0:; + - % * /
@@ -502,119 +418,95 @@ factory 3 0:; + - % * /
 factory 3 1:; + - % * /
 factory 4 0:; + - % * /
 ===
-69
-bfactory 0 0:OR ; &&
-bfactory 1 0:OR ; &&
-bfactory 1 1:OR ; &&
-bfactory 2 0:OR ; &&
-bool 0 0:OR ; &&
-bool 1 0:OR ; &&
-bool 2 0:OR ; &&
-calexp 0 0:LE GE L G EQ NE + - %
-calexp 1 0:LE GE L G EQ NE + - %
-calexp 2 0:LE GE L G EQ NE + - %
-calexp 3 0:LE GE L G EQ NE + - %
-factory 0 0:LE GE L G EQ NE + - % * /
-factory 1 0:LE GE L G EQ NE + - % * /
-factory 2 0:LE GE L G EQ NE + - % * /
-factory 3 0:LE GE L G EQ NE + - % * /
-factory 4 0:LE GE L G EQ NE + - % * /
-item 0 0:LE GE L G EQ NE + - % * /
-item 1 0:LE GE L G EQ NE + - % * /
-item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:OR ; &&
-===
-70
-bool 0 1:OR ; &&
-===
-71
+63
 factory 1 1:; + - % * /
 ===
-72
+64
 factory 2 1:; + - % * /
 ===
-73
+65
 varstat 0 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-74
-idlist 0 0:;
-idlist 0 2:;
-idlist 1 0:;
+66
+idlist 0 2:; ,
 ===
-75
+67
 atype 0 3:ID
 ===
-76
+68
 constat 0 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-77
+69
 arrayelement 0 3:=
 ===
-78
+70
 asstat 0 3:;
+calexp 0 1:; + - %
+calexp 1 1:; + - %
+calexp 2 1:; + - %
 ===
-79
+71
 rstat 0 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-80
+72
 atype 0 1:,
 type 0 1:,
 ===
-81
+73
 type 1 1:,
 ===
-82
+74
 stype 1 1:, [
 ===
-83
+75
 stype 2 1:, [
 ===
-84
+76
 stype 0 1:, [
 ===
-85
+77
 stype 3 1:, [
 ===
-86
+78
+idlist 0 1:) ,
 printcontent 3 1:) ,
 ===
-87
+79
 printcontent 0 1:) ,
 printcontent 1 1:) ,
 wrstat 0 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-88
+80
 printcontent 2 1:) ,
 ===
-89
+81
 con 2 1:) ,
 ===
-90
-idlist 0 1:) ,
+82
 idlist 1 1:) ,
 ===
-91
+83
 digit 0 1:) ,
 ===
-92
+84
 digit 1 1:) ,
 ===
-93
+85
 con 0 1:) ,
 ===
-94
+86
 con 1 1:) ,
 ===
-95
+87
 con 3 1:) ,
 ===
-96
+88
 con 4 1:) ,
 ===
-97
+89
 con 5 1:) ,
 ===
-98
+90
 calexp 0 1:LE GE L G EQ NE + - %
 calexp 1 1:LE GE L G EQ NE + - %
 calexp 2 1:LE GE L G EQ NE + - %
@@ -624,53 +516,30 @@ compare 2 0:ID INTCON DOUBLECON - (
 compare 3 0:ID INTCON DOUBLECON - (
 compare 4 0:ID INTCON DOUBLECON - (
 compare 5 0:ID INTCON DOUBLECON - (
-regexp 0 1:OR ) &&
+regexp 0 1:&& )
 ===
-99
+91
 calexp 3 1:LE GE L G EQ NE + - %
 item 0 1:LE GE L G EQ NE + - % * /
 item 1 1:LE GE L G EQ NE + - % * /
 ===
-100
+92
 item 2 1:LE GE L G EQ NE + - % * /
 ===
-101
+93
 ifstat 0 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ifstat 1 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ifstat 2 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-102
-bitem 0 1:OR ) &&
+94
 boexp 0 1:)
 boexp 1 1:)
 ===
-103
-bitem 1 1:OR ) &&
-===
-104
-bfactory 0 1:OR ) &&
-===
-105
-bool 2 1:OR ) &&
-===
-106
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bfactory 2 1:OR ) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
-boexp 0 0:)
-boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
-calexp 0 0:) + - % LE GE L G EQ NE
-calexp 1 0:) + - % LE GE L G EQ NE
-calexp 2 0:) + - % LE GE L G EQ NE
-calexp 3 0:) + - % LE GE L G EQ NE
-exp 0 0:)
-exp 1 0:)
+95
+calexp 0 0:) + - %
+calexp 1 0:) + - %
+calexp 2 0:) + - %
+calexp 3 0:) + - %
 factory 0 0:) + - % * /
 factory 1 0:) + - % * /
 factory 2 0:) + - % * /
@@ -680,13 +549,11 @@ factory 4 1:LE GE L G EQ NE + - % * /
 item 0 0:) + - % * /
 item 1 0:) + - % * /
 item 2 0:) + - % * /
-regexp 0 0:OR ) &&
 ===
-107
-bool 1 1:OR ) &&
+96
 factory 0 1:LE GE L G EQ NE + - % * /
 ===
-108
+97
 factory 0 0:LE GE L G EQ NE + - % * /
 factory 1 0:LE GE L G EQ NE + - % * /
 factory 2 0:LE GE L G EQ NE + - % * /
@@ -694,44 +561,19 @@ factory 3 0:LE GE L G EQ NE + - % * /
 factory 3 1:LE GE L G EQ NE + - % * /
 factory 4 0:LE GE L G EQ NE + - % * /
 ===
-109
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 1 1:OR ) &&
-bfactory 2 0:OR ) &&
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
-calexp 0 0:LE GE L G EQ NE + - %
-calexp 1 0:LE GE L G EQ NE + - %
-calexp 2 0:LE GE L G EQ NE + - %
-calexp 3 0:LE GE L G EQ NE + - %
-factory 0 0:LE GE L G EQ NE + - % * /
-factory 1 0:LE GE L G EQ NE + - % * /
-factory 2 0:LE GE L G EQ NE + - % * /
-factory 3 0:LE GE L G EQ NE + - % * /
-factory 4 0:LE GE L G EQ NE + - % * /
-item 0 0:LE GE L G EQ NE + - % * /
-item 1 0:LE GE L G EQ NE + - % * /
-item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:OR ) &&
-===
-110
-bool 0 1:OR ) &&
-===
-111
+98
 factory 1 1:LE GE L G EQ NE + - % * /
 ===
-112
+99
 factory 2 1:LE GE L G EQ NE + - % * /
 ===
-113
+100
 whilestat 0 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-114
+101
 dowhilestat 0 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-115
+102
 arrayelement 0 0:=
 asstat 0 0:;
 asstat 1 0:;
@@ -770,48 +612,48 @@ wrstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-116
+103
 wstat 0 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-117
+104
 expstat 0 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-118
+105
 expstat 1 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-119
+106
 wstat 1 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-120
+107
 exestat 0 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-121
+108
 exestat 1 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-122
+109
 exestat 2 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-123
+110
 exestat 3 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-124
+111
 controlstat 0 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-125
+112
 controlstat 1 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-126
+113
 controlstat 2 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-127
+114
 controlstat 3 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-128
-idlist 0 0:;
-idlist 1 0:;
+115
+idlist 0 0:; ,
+idlist 1 0:; ,
 varstat 0 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-129
+116
 atype 0 0:ID
 constat 0 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 stype 0 0:ID [
@@ -821,99 +663,66 @@ stype 3 0:ID [
 type 0 0:ID
 type 1 0:ID
 ===
-130
+117
 rstat 0 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-131
+118
 wrstat 0 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-132
+119
 ifstat 0 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ifstat 1 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ifstat 2 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-133
+120
 whilestat 0 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-134
+121
 dowhilestat 0 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-135
+122
 forstat 0 1:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-136
+123
 forstat 0 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-137
+124
 program 0 10:$
 ===
-138
-calexp 0 0:OR ; && + - %
-calexp 1 0:OR ; && + - %
-calexp 2 0:OR ; && + - %
-calexp 3 0:OR ; && + - %
-factory 0 0:OR ; && + - % * /
-factory 1 0:OR ; && + - % * /
-factory 2 0:OR ; && + - % * /
-factory 3 0:OR ; && + - % * /
-factory 4 0:OR ; && + - % * /
-item 0 0:OR ; && + - % * /
-item 1 0:OR ; && + - % * /
-item 2 0:OR ; && + - % * /
-regexp 0 2:OR ; &&
+125
+calexp 0 2:; + - %
+factory 0 0:; + - % * /
+factory 1 0:; + - % * /
+factory 2 0:; + - % * /
+factory 3 0:; + - % * /
+factory 4 0:; + - % * /
+item 0 0:; + - % * /
+item 1 0:; + - % * /
+item 2 0:; + - % * /
 ===
-139
-calexp 0 2:; + - % LE GE L G EQ NE
-factory 0 0:; + - % LE GE L G EQ NE * /
-factory 1 0:; + - % LE GE L G EQ NE * /
-factory 2 0:; + - % LE GE L G EQ NE * /
-factory 3 0:; + - % LE GE L G EQ NE * /
-factory 4 0:; + - % LE GE L G EQ NE * /
-item 0 0:; + - % LE GE L G EQ NE * /
-item 1 0:; + - % LE GE L G EQ NE * /
-item 2 0:; + - % LE GE L G EQ NE * /
+126
+calexp 1 2:; + - %
+factory 0 0:; + - % * /
+factory 1 0:; + - % * /
+factory 2 0:; + - % * /
+factory 3 0:; + - % * /
+factory 4 0:; + - % * /
+item 0 0:; + - % * /
+item 1 0:; + - % * /
+item 2 0:; + - % * /
 ===
-140
-calexp 1 2:; + - % LE GE L G EQ NE
-factory 0 0:; + - % LE GE L G EQ NE * /
-factory 1 0:; + - % LE GE L G EQ NE * /
-factory 2 0:; + - % LE GE L G EQ NE * /
-factory 3 0:; + - % LE GE L G EQ NE * /
-factory 4 0:; + - % LE GE L G EQ NE * /
-item 0 0:; + - % LE GE L G EQ NE * /
-item 1 0:; + - % LE GE L G EQ NE * /
-item 2 0:; + - % LE GE L G EQ NE * /
+127
+calexp 2 2:; + - %
+factory 0 0:; + - % * /
+factory 1 0:; + - % * /
+factory 2 0:; + - % * /
+factory 3 0:; + - % * /
+factory 4 0:; + - % * /
+item 0 0:; + - % * /
+item 1 0:; + - % * /
+item 2 0:; + - % * /
 ===
-141
-calexp 2 2:; + - % LE GE L G EQ NE
-factory 0 0:; + - % LE GE L G EQ NE * /
-factory 1 0:; + - % LE GE L G EQ NE * /
-factory 2 0:; + - % LE GE L G EQ NE * /
-factory 3 0:; + - % LE GE L G EQ NE * /
-factory 4 0:; + - % LE GE L G EQ NE * /
-item 0 0:; + - % LE GE L G EQ NE * /
-item 1 0:; + - % LE GE L G EQ NE * /
-item 2 0:; + - % LE GE L G EQ NE * /
-===
-142
-compare 0 1:ID INTCON DOUBLECON - (
-===
-143
-compare 1 1:ID INTCON DOUBLECON - (
-===
-144
-compare 2 1:ID INTCON DOUBLECON - (
-===
-145
-compare 3 1:ID INTCON DOUBLECON - (
-===
-146
-compare 4 1:ID INTCON DOUBLECON - (
-===
-147
-compare 5 1:ID INTCON DOUBLECON - (
-===
-148
+128
 factory 0 0:; + - % * /
 factory 1 0:; + - % * /
 factory 2 0:; + - % * /
@@ -921,7 +730,7 @@ factory 3 0:; + - % * /
 factory 4 0:; + - % * /
 item 1 2:; + - % * /
 ===
-149
+129
 factory 0 0:; + - % * /
 factory 1 0:; + - % * /
 factory 2 0:; + - % * /
@@ -929,98 +738,25 @@ factory 3 0:; + - % * /
 factory 4 0:; + - % * /
 item 0 2:; + - % * /
 ===
-150
-bfactory 0 0:; &&
-bfactory 1 0:; &&
-bfactory 2 0:; &&
-bitem 0 0:; &&
-bitem 1 0:; &&
-boexp 0 2:;
-bool 0 0:; &&
-bool 1 0:; &&
-bool 2 0:; &&
-calexp 0 0:LE GE L G EQ NE + - %
-calexp 1 0:LE GE L G EQ NE + - %
-calexp 2 0:LE GE L G EQ NE + - %
-calexp 3 0:LE GE L G EQ NE + - %
-factory 0 0:LE GE L G EQ NE + - % * /
-factory 1 0:LE GE L G EQ NE + - % * /
-factory 2 0:LE GE L G EQ NE + - % * /
-factory 3 0:LE GE L G EQ NE + - % * /
-factory 4 0:LE GE L G EQ NE + - % * /
-item 0 0:LE GE L G EQ NE + - % * /
-item 1 0:LE GE L G EQ NE + - % * /
-item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:; &&
-===
-151
-bfactory 0 0:OR ; &&
-bfactory 1 0:OR ; &&
-bfactory 2 0:OR ; &&
-bitem 0 2:OR ; &&
-bool 0 0:OR ; &&
-bool 1 0:OR ; &&
-bool 2 0:OR ; &&
-calexp 0 0:LE GE L G EQ NE + - %
-calexp 1 0:LE GE L G EQ NE + - %
-calexp 2 0:LE GE L G EQ NE + - %
-calexp 3 0:LE GE L G EQ NE + - %
-factory 0 0:LE GE L G EQ NE + - % * /
-factory 1 0:LE GE L G EQ NE + - % * /
-factory 2 0:LE GE L G EQ NE + - % * /
-factory 3 0:LE GE L G EQ NE + - % * /
-factory 4 0:LE GE L G EQ NE + - % * /
-item 0 0:LE GE L G EQ NE + - % * /
-item 1 0:LE GE L G EQ NE + - % * /
-item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:OR ; &&
-===
-152
-bfactory 2 2:OR ; &&
+130
+calexp 0 1:) + - %
+calexp 1 1:) + - %
+calexp 2 1:) + - %
 factory 4 2:; + - % * /
 ===
-153
-calexp 0 1:) + - % LE GE L G EQ NE
-calexp 1 1:) + - % LE GE L G EQ NE
-calexp 2 1:) + - % LE GE L G EQ NE
-compare 0 0:ID INTCON DOUBLECON - (
-compare 1 0:ID INTCON DOUBLECON - (
-compare 2 0:ID INTCON DOUBLECON - (
-compare 3 0:ID INTCON DOUBLECON - (
-compare 4 0:ID INTCON DOUBLECON - (
-compare 5 0:ID INTCON DOUBLECON - (
-exp 0 1:)
-regexp 0 1:OR ) &&
-===
-154
-calexp 3 1:) + - % LE GE L G EQ NE
+131
+calexp 3 1:) + - %
 item 0 1:) + - % * /
 item 1 1:) + - % * /
 ===
-155
+132
 item 2 1:) + - % * /
 ===
-156
-exp 1 1:)
-===
-157
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bfactory 2 1:OR ) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
-boexp 0 0:)
-boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
-calexp 0 0:) + - % LE GE L G EQ NE
-calexp 1 0:) + - % LE GE L G EQ NE
-calexp 2 0:) + - % LE GE L G EQ NE
-calexp 3 0:) + - % LE GE L G EQ NE
-exp 0 0:)
-exp 1 0:)
+133
+calexp 0 0:) + - %
+calexp 1 0:) + - %
+calexp 2 0:) + - %
+calexp 3 0:) + - %
 factory 0 0:) + - % * /
 factory 1 0:) + - % * /
 factory 2 0:) + - % * /
@@ -1030,13 +766,11 @@ factory 4 1:) + - % * /
 item 0 0:) + - % * /
 item 1 0:) + - % * /
 item 2 0:) + - % * /
-regexp 0 0:OR ) &&
 ===
-158
-bool 1 1:OR ) &&
+134
 factory 0 1:) + - % * /
 ===
-159
+135
 factory 0 0:) + - % * /
 factory 1 0:) + - % * /
 factory 2 0:) + - % * /
@@ -1044,70 +778,22 @@ factory 3 0:) + - % * /
 factory 3 1:) + - % * /
 factory 4 0:) + - % * /
 ===
-160
+136
 factory 1 1:) + - % * /
 ===
-161
+137
 factory 2 1:) + - % * /
 ===
-162
+138
 factory 3 2:; + - % * /
 ===
-163
-calexp 0 1:LE GE L G EQ NE + - %
-calexp 1 1:LE GE L G EQ NE + - %
-calexp 2 1:LE GE L G EQ NE + - %
-compare 0 0:ID INTCON DOUBLECON - (
-compare 1 0:ID INTCON DOUBLECON - (
-compare 2 0:ID INTCON DOUBLECON - (
-compare 3 0:ID INTCON DOUBLECON - (
-compare 4 0:ID INTCON DOUBLECON - (
-compare 5 0:ID INTCON DOUBLECON - (
-regexp 0 1:OR ; &&
+139
+idlist 0 3:; ,
 ===
-164
-bfactory 1 2:OR ; &&
-===
-165
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bfactory 2 1:OR ; &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
-boexp 0 0:)
-boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
-calexp 0 0:) + - % LE GE L G EQ NE
-calexp 1 0:) + - % LE GE L G EQ NE
-calexp 2 0:) + - % LE GE L G EQ NE
-calexp 3 0:) + - % LE GE L G EQ NE
-exp 0 0:)
-exp 1 0:)
-factory 0 0:) + - % * /
-factory 1 0:) + - % * /
-factory 2 0:) + - % * /
-factory 3 0:) + - % * /
-factory 4 0:) + - % * /
-factory 4 1:LE GE L G EQ NE + - % * /
-item 0 0:) + - % * /
-item 1 0:) + - % * /
-item 2 0:) + - % * /
-regexp 0 0:OR ) &&
-===
-166
-bool 1 1:OR ; &&
-factory 0 1:LE GE L G EQ NE + - % * /
-===
-167
-idlist 0 3:;
-===
-168
+140
 atype 0 4:ID
 ===
-169
+141
 con 0 0:;
 con 1 0:;
 con 2 0:;
@@ -1118,19 +804,22 @@ constat 0 4:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 digit 0 0:;
 digit 1 0:;
 ===
-170
+142
 arrayelement 0 4:=
 ===
-171
+143
 rstat 0 4:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-172
+144
 atype 0 2:,
 ===
-173
+145
+idlist 0 2:) ,
+===
+146
 wrstat 0 4:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-174
+147
 con 0 0:) ,
 con 1 0:) ,
 con 2 0:) ,
@@ -1144,36 +833,31 @@ idlist 1 0:) ,
 printcontent 0 2:) ,
 printcontent 1 2:) ,
 ===
-175
-idlist 0 0:) ,
-idlist 0 2:) ,
-idlist 1 0:) ,
-===
-176
+148
 digit 1 2:) ,
 ===
-177
+149
 con 4 2:) ,
 ===
-178
+150
 con 5 2:) ,
 ===
-179
-calexp 0 0:OR ) && + - %
-calexp 1 0:OR ) && + - %
-calexp 2 0:OR ) && + - %
-calexp 3 0:OR ) && + - %
-factory 0 0:OR ) && + - % * /
-factory 1 0:OR ) && + - % * /
-factory 2 0:OR ) && + - % * /
-factory 3 0:OR ) && + - % * /
-factory 4 0:OR ) && + - % * /
-item 0 0:OR ) && + - % * /
-item 1 0:OR ) && + - % * /
-item 2 0:OR ) && + - % * /
-regexp 0 2:OR ) &&
+151
+calexp 0 0:&& ) + - %
+calexp 1 0:&& ) + - %
+calexp 2 0:&& ) + - %
+calexp 3 0:&& ) + - %
+factory 0 0:&& ) + - % * /
+factory 1 0:&& ) + - % * /
+factory 2 0:&& ) + - % * /
+factory 3 0:&& ) + - % * /
+factory 4 0:&& ) + - % * /
+item 0 0:&& ) + - % * /
+item 1 0:&& ) + - % * /
+item 2 0:&& ) + - % * /
+regexp 0 2:&& )
 ===
-180
+152
 calexp 0 2:LE GE L G EQ NE + - %
 factory 0 0:LE GE L G EQ NE + - % * /
 factory 1 0:LE GE L G EQ NE + - % * /
@@ -1184,7 +868,7 @@ item 0 0:LE GE L G EQ NE + - % * /
 item 1 0:LE GE L G EQ NE + - % * /
 item 2 0:LE GE L G EQ NE + - % * /
 ===
-181
+153
 calexp 1 2:LE GE L G EQ NE + - %
 factory 0 0:LE GE L G EQ NE + - % * /
 factory 1 0:LE GE L G EQ NE + - % * /
@@ -1195,7 +879,7 @@ item 0 0:LE GE L G EQ NE + - % * /
 item 1 0:LE GE L G EQ NE + - % * /
 item 2 0:LE GE L G EQ NE + - % * /
 ===
-182
+154
 calexp 2 2:LE GE L G EQ NE + - %
 factory 0 0:LE GE L G EQ NE + - % * /
 factory 1 0:LE GE L G EQ NE + - % * /
@@ -1206,7 +890,25 @@ item 0 0:LE GE L G EQ NE + - % * /
 item 1 0:LE GE L G EQ NE + - % * /
 item 2 0:LE GE L G EQ NE + - % * /
 ===
-183
+155
+compare 0 1:ID INTCON DOUBLECON - (
+===
+156
+compare 1 1:ID INTCON DOUBLECON - (
+===
+157
+compare 2 1:ID INTCON DOUBLECON - (
+===
+158
+compare 3 1:ID INTCON DOUBLECON - (
+===
+159
+compare 4 1:ID INTCON DOUBLECON - (
+===
+160
+compare 5 1:ID INTCON DOUBLECON - (
+===
+161
 factory 0 0:LE GE L G EQ NE + - % * /
 factory 1 0:LE GE L G EQ NE + - % * /
 factory 2 0:LE GE L G EQ NE + - % * /
@@ -1214,7 +916,7 @@ factory 3 0:LE GE L G EQ NE + - % * /
 factory 4 0:LE GE L G EQ NE + - % * /
 item 1 2:LE GE L G EQ NE + - % * /
 ===
-184
+162
 factory 0 0:LE GE L G EQ NE + - % * /
 factory 1 0:LE GE L G EQ NE + - % * /
 factory 2 0:LE GE L G EQ NE + - % * /
@@ -1222,21 +924,14 @@ factory 3 0:LE GE L G EQ NE + - % * /
 factory 4 0:LE GE L G EQ NE + - % * /
 item 0 2:LE GE L G EQ NE + - % * /
 ===
-185
+163
+IM 0 1:{
 ifstat 0 4:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ifstat 1 4:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ifstat 2 4:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-186
-bfactory 0 0:) &&
-bfactory 1 0:) &&
-bfactory 2 0:) &&
-bitem 0 0:) &&
-bitem 1 0:) &&
+164
 boexp 0 2:)
-bool 0 0:) &&
-bool 1 0:) &&
-bool 2 0:) &&
 calexp 0 0:LE GE L G EQ NE + - %
 calexp 1 0:LE GE L G EQ NE + - %
 calexp 2 0:LE GE L G EQ NE + - %
@@ -1249,59 +944,37 @@ factory 4 0:LE GE L G EQ NE + - % * /
 item 0 0:LE GE L G EQ NE + - % * /
 item 1 0:LE GE L G EQ NE + - % * /
 item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:) &&
+regexp 0 0:)
 ===
-187
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bitem 0 2:OR ) &&
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
-calexp 0 0:LE GE L G EQ NE + - %
-calexp 1 0:LE GE L G EQ NE + - %
-calexp 2 0:LE GE L G EQ NE + - %
-calexp 3 0:LE GE L G EQ NE + - %
-factory 0 0:LE GE L G EQ NE + - % * /
-factory 1 0:LE GE L G EQ NE + - % * /
-factory 2 0:LE GE L G EQ NE + - % * /
-factory 3 0:LE GE L G EQ NE + - % * /
-factory 4 0:LE GE L G EQ NE + - % * /
-item 0 0:LE GE L G EQ NE + - % * /
-item 1 0:LE GE L G EQ NE + - % * /
-item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:OR ) &&
-===
-188
-bfactory 2 2:OR ) &&
+165
+calexp 0 1:) + - %
+calexp 1 1:) + - %
+calexp 2 1:) + - %
 factory 4 2:LE GE L G EQ NE + - % * /
 ===
-189
+166
 factory 3 2:LE GE L G EQ NE + - % * /
 ===
-190
-bfactory 1 2:OR ) &&
-===
-191
+167
 whilestat 0 4:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-192
+168
 dowhilestat 0 4:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-193
+169
 block 0 2:}
 ===
-194
+170
 exestat 0 2:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-195
+171
+idlist 0 1:; ,
 varstat 0 2:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-196
+172
 constat 0 2:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-197
+173
 atype 0 0:,
 rstat 0 2:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 stype 0 0:, [
@@ -1311,7 +984,7 @@ stype 3 0:, [
 type 0 0:,
 type 1 0:,
 ===
-198
+174
 con 0 0:) ,
 con 1 0:) ,
 con 2 0:) ,
@@ -1328,17 +1001,9 @@ printcontent 2 0:) ,
 printcontent 3 0:) ,
 wrstat 0 2:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-199
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
+175
 boexp 0 0:)
 boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
 calexp 0 0:LE GE L G EQ NE + - %
 calexp 1 0:LE GE L G EQ NE + - %
 calexp 2 0:LE GE L G EQ NE + - %
@@ -1354,19 +1019,11 @@ ifstat 2 2:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 item 0 0:LE GE L G EQ NE + - % * /
 item 1 0:LE GE L G EQ NE + - % * /
 item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:OR ) &&
+regexp 0 0:&& )
 ===
-200
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
+176
 boexp 0 0:)
 boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
 calexp 0 0:LE GE L G EQ NE + - %
 calexp 1 0:LE GE L G EQ NE + - %
 calexp 2 0:LE GE L G EQ NE + - %
@@ -1379,10 +1036,10 @@ factory 4 0:LE GE L G EQ NE + - % * /
 item 0 0:LE GE L G EQ NE + - % * /
 item 1 0:LE GE L G EQ NE + - % * /
 item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:OR ) &&
+regexp 0 0:&& )
 whilestat 0 2:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-201
+177
 arrayelement 0 0:=
 asstat 0 0:;
 asstat 1 0:;
@@ -1421,7 +1078,7 @@ wrstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-202
+178
 arrayelement 0 0:=
 asstat 0 0:;
 asstat 1 0:;
@@ -1429,17 +1086,9 @@ asstat 2 0:;
 asstat 3 0:;
 forstat 0 2:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-203
-bfactory 0 0:OR ; &&
-bfactory 1 0:OR ; &&
-bfactory 2 0:OR ; &&
-bitem 0 0:OR ; &&
-bitem 1 0:OR ; &&
+179
 boexp 0 0:;
 boexp 1 0:;
-bool 0 0:OR ; &&
-bool 1 0:OR ; &&
-bool 2 0:OR ; &&
 calexp 0 0:LE GE L G EQ NE + - %
 calexp 1 0:LE GE L G EQ NE + - %
 calexp 2 0:LE GE L G EQ NE + - %
@@ -1453,263 +1102,69 @@ forstat 0 4:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 item 0 0:LE GE L G EQ NE + - % * /
 item 1 0:LE GE L G EQ NE + - % * /
 item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:OR ; &&
+regexp 0 0:&& ;
 ===
-204
+180
 program 0 11:$
 ===
-205
-calexp 0 1:OR ; && + - %
-calexp 1 1:OR ; && + - %
-calexp 2 1:OR ; && + - %
-regexp 0 3:OR ; &&
+181
+calexp 0 3:; + - %
+item 0 1:; + - % * /
+item 1 1:; + - % * /
 ===
-206
-calexp 3 1:OR ; && + - %
-item 0 1:OR ; && + - % * /
-item 1 1:OR ; && + - % * /
+182
+calexp 1 3:; + - %
+item 0 1:; + - % * /
+item 1 1:; + - % * /
 ===
-207
-item 2 1:OR ; && + - % * /
+183
+calexp 2 3:; + - %
+item 0 1:; + - % * /
+item 1 1:; + - % * /
 ===
-208
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
-boexp 0 0:)
-boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
-calexp 0 0:) + - % LE GE L G EQ NE
-calexp 1 0:) + - % LE GE L G EQ NE
-calexp 2 0:) + - % LE GE L G EQ NE
-calexp 3 0:) + - % LE GE L G EQ NE
-exp 0 0:)
-exp 1 0:)
-factory 0 0:) + - % * /
-factory 1 0:) + - % * /
-factory 2 0:) + - % * /
-factory 3 0:) + - % * /
-factory 4 0:) + - % * /
-factory 4 1:OR ; && + - % * /
-item 0 0:) + - % * /
-item 1 0:) + - % * /
-item 2 0:) + - % * /
-regexp 0 0:OR ) &&
-===
-209
-factory 0 1:OR ; && + - % * /
-===
-210
-factory 0 0:OR ; && + - % * /
-factory 1 0:OR ; && + - % * /
-factory 2 0:OR ; && + - % * /
-factory 3 0:OR ; && + - % * /
-factory 3 1:OR ; && + - % * /
-factory 4 0:OR ; && + - % * /
-===
-211
-factory 1 1:OR ; && + - % * /
-===
-212
-factory 2 1:OR ; && + - % * /
-===
-213
-calexp 0 3:; + - % LE GE L G EQ NE
-item 0 1:; + - % LE GE L G EQ NE * /
-item 1 1:; + - % LE GE L G EQ NE * /
-===
-214
-item 2 1:; + - % LE GE L G EQ NE * /
-===
-215
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
-boexp 0 0:)
-boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
-calexp 0 0:) + - % LE GE L G EQ NE
-calexp 1 0:) + - % LE GE L G EQ NE
-calexp 2 0:) + - % LE GE L G EQ NE
-calexp 3 0:) + - % LE GE L G EQ NE
-exp 0 0:)
-exp 1 0:)
-factory 0 0:) + - % * /
-factory 1 0:) + - % * /
-factory 2 0:) + - % * /
-factory 3 0:) + - % * /
-factory 4 0:) + - % * /
-factory 4 1:; + - % LE GE L G EQ NE * /
-item 0 0:) + - % * /
-item 1 0:) + - % * /
-item 2 0:) + - % * /
-regexp 0 0:OR ) &&
-===
-216
-factory 0 1:; + - % LE GE L G EQ NE * /
-===
-217
-factory 0 0:; + - % LE GE L G EQ NE * /
-factory 1 0:; + - % LE GE L G EQ NE * /
-factory 2 0:; + - % LE GE L G EQ NE * /
-factory 3 0:; + - % LE GE L G EQ NE * /
-factory 3 1:; + - % LE GE L G EQ NE * /
-factory 4 0:; + - % LE GE L G EQ NE * /
-===
-218
-factory 1 1:; + - % LE GE L G EQ NE * /
-===
-219
-factory 2 1:; + - % LE GE L G EQ NE * /
-===
-220
-calexp 1 3:; + - % LE GE L G EQ NE
-item 0 1:; + - % LE GE L G EQ NE * /
-item 1 1:; + - % LE GE L G EQ NE * /
-===
-221
-calexp 2 3:; + - % LE GE L G EQ NE
-item 0 1:; + - % LE GE L G EQ NE * /
-item 1 1:; + - % LE GE L G EQ NE * /
-===
-222
+184
 item 1 3:; + - % * /
 ===
-223
+185
 item 0 3:; + - % * /
 ===
-224
-calexp 0 1:LE GE L G EQ NE + - %
-calexp 1 1:LE GE L G EQ NE + - %
-calexp 2 1:LE GE L G EQ NE + - %
-compare 0 0:ID INTCON DOUBLECON - (
-compare 1 0:ID INTCON DOUBLECON - (
-compare 2 0:ID INTCON DOUBLECON - (
-compare 3 0:ID INTCON DOUBLECON - (
-compare 4 0:ID INTCON DOUBLECON - (
-compare 5 0:ID INTCON DOUBLECON - (
-regexp 0 1:; &&
+186
+factory 4 3:; + - % * /
 ===
-225
-bitem 0 1:; &&
-boexp 0 3:;
-===
-226
-bitem 1 1:; &&
-===
-227
-bfactory 0 1:; &&
-===
-228
-bool 2 1:; &&
-===
-229
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bfactory 2 1:; &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
-boexp 0 0:)
-boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
-calexp 0 0:) + - % LE GE L G EQ NE
-calexp 1 0:) + - % LE GE L G EQ NE
-calexp 2 0:) + - % LE GE L G EQ NE
-calexp 3 0:) + - % LE GE L G EQ NE
-exp 0 0:)
-exp 1 0:)
+187
+calexp 0 2:) + - %
 factory 0 0:) + - % * /
 factory 1 0:) + - % * /
 factory 2 0:) + - % * /
 factory 3 0:) + - % * /
 factory 4 0:) + - % * /
-factory 4 1:LE GE L G EQ NE + - % * /
 item 0 0:) + - % * /
 item 1 0:) + - % * /
 item 2 0:) + - % * /
-regexp 0 0:OR ) &&
 ===
-230
-bool 1 1:; &&
-factory 0 1:LE GE L G EQ NE + - % * /
+188
+calexp 1 2:) + - %
+factory 0 0:) + - % * /
+factory 1 0:) + - % * /
+factory 2 0:) + - % * /
+factory 3 0:) + - % * /
+factory 4 0:) + - % * /
+item 0 0:) + - % * /
+item 1 0:) + - % * /
+item 2 0:) + - % * /
 ===
-231
-bfactory 0 0:; &&
-bfactory 1 0:; &&
-bfactory 1 1:; &&
-bfactory 2 0:; &&
-bool 0 0:; &&
-bool 1 0:; &&
-bool 2 0:; &&
-calexp 0 0:LE GE L G EQ NE + - %
-calexp 1 0:LE GE L G EQ NE + - %
-calexp 2 0:LE GE L G EQ NE + - %
-calexp 3 0:LE GE L G EQ NE + - %
-factory 0 0:LE GE L G EQ NE + - % * /
-factory 1 0:LE GE L G EQ NE + - % * /
-factory 2 0:LE GE L G EQ NE + - % * /
-factory 3 0:LE GE L G EQ NE + - % * /
-factory 4 0:LE GE L G EQ NE + - % * /
-item 0 0:LE GE L G EQ NE + - % * /
-item 1 0:LE GE L G EQ NE + - % * /
-item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:; &&
+189
+calexp 2 2:) + - %
+factory 0 0:) + - % * /
+factory 1 0:) + - % * /
+factory 2 0:) + - % * /
+factory 3 0:) + - % * /
+factory 4 0:) + - % * /
+item 0 0:) + - % * /
+item 1 0:) + - % * /
+item 2 0:) + - % * /
 ===
-232
-bool 0 1:; &&
-===
-233
-bitem 0 3:OR ; &&
-===
-234
-bfactory 2 3:OR ; &&
-factory 4 3:; + - % * /
-===
-235
-calexp 0 2:) + - % LE GE L G EQ NE
-factory 0 0:) + - % LE GE L G EQ NE * /
-factory 1 0:) + - % LE GE L G EQ NE * /
-factory 2 0:) + - % LE GE L G EQ NE * /
-factory 3 0:) + - % LE GE L G EQ NE * /
-factory 4 0:) + - % LE GE L G EQ NE * /
-item 0 0:) + - % LE GE L G EQ NE * /
-item 1 0:) + - % LE GE L G EQ NE * /
-item 2 0:) + - % LE GE L G EQ NE * /
-===
-236
-calexp 1 2:) + - % LE GE L G EQ NE
-factory 0 0:) + - % LE GE L G EQ NE * /
-factory 1 0:) + - % LE GE L G EQ NE * /
-factory 2 0:) + - % LE GE L G EQ NE * /
-factory 3 0:) + - % LE GE L G EQ NE * /
-factory 4 0:) + - % LE GE L G EQ NE * /
-item 0 0:) + - % LE GE L G EQ NE * /
-item 1 0:) + - % LE GE L G EQ NE * /
-item 2 0:) + - % LE GE L G EQ NE * /
-===
-237
-calexp 2 2:) + - % LE GE L G EQ NE
-factory 0 0:) + - % LE GE L G EQ NE * /
-factory 1 0:) + - % LE GE L G EQ NE * /
-factory 2 0:) + - % LE GE L G EQ NE * /
-factory 3 0:) + - % LE GE L G EQ NE * /
-factory 4 0:) + - % LE GE L G EQ NE * /
-item 0 0:) + - % LE GE L G EQ NE * /
-item 1 0:) + - % LE GE L G EQ NE * /
-item 2 0:) + - % LE GE L G EQ NE * /
-===
-238
+190
 factory 0 0:) + - % * /
 factory 1 0:) + - % * /
 factory 2 0:) + - % * /
@@ -1717,7 +1172,7 @@ factory 3 0:) + - % * /
 factory 4 0:) + - % * /
 item 1 2:) + - % * /
 ===
-239
+191
 factory 0 0:) + - % * /
 factory 1 0:) + - % * /
 factory 2 0:) + - % * /
@@ -1725,149 +1180,138 @@ factory 3 0:) + - % * /
 factory 4 0:) + - % * /
 item 0 2:) + - % * /
 ===
-240
-bfactory 2 2:OR ) &&
+192
+calexp 0 1:) + - %
+calexp 1 1:) + - %
+calexp 2 1:) + - %
 factory 4 2:) + - % * /
 ===
-241
+193
 factory 3 2:) + - % * /
 ===
-242
-bfactory 2 2:OR ; &&
-factory 4 2:LE GE L G EQ NE + - % * /
-===
-243
+194
 constat 0 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-244
+195
 con 2 1:;
 ===
-245
+196
 digit 0 1:;
 ===
-246
+197
 digit 1 1:;
 ===
-247
+198
 con 0 1:;
 ===
-248
+199
 con 1 1:;
 ===
-249
+200
 con 3 1:;
 ===
-250
+201
 con 4 1:;
 ===
-251
+202
 con 5 1:;
 ===
-252
+203
 rstat 0 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-253
+204
 atype 0 3:,
 ===
-254
-wrstat 0 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
-===
-255
-printcontent 0 3:) ,
-===
-256
-printcontent 1 3:) ,
-===
-257
+205
 idlist 0 3:) ,
 ===
-258
+206
+wrstat 0 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
+===
+207
+idlist 0 1:) ,
+printcontent 0 3:) ,
+===
+208
+printcontent 1 3:) ,
+===
+209
 con 4 3:) ,
 ===
-259
+210
 con 5 3:) ,
 ===
-260
-calexp 0 1:OR ) && + - %
-calexp 1 1:OR ) && + - %
-calexp 2 1:OR ) && + - %
-regexp 0 3:OR ) &&
+211
+calexp 0 1:&& ) + - %
+calexp 1 1:&& ) + - %
+calexp 2 1:&& ) + - %
+regexp 0 3:&& )
 ===
-261
-calexp 3 1:OR ) && + - %
-item 0 1:OR ) && + - % * /
-item 1 1:OR ) && + - % * /
+212
+calexp 3 1:&& ) + - %
+item 0 1:&& ) + - % * /
+item 1 1:&& ) + - % * /
 ===
-262
-item 2 1:OR ) && + - % * /
+213
+item 2 1:&& ) + - % * /
 ===
-263
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
-boexp 0 0:)
-boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
-calexp 0 0:) + - % LE GE L G EQ NE
-calexp 1 0:) + - % LE GE L G EQ NE
-calexp 2 0:) + - % LE GE L G EQ NE
-calexp 3 0:) + - % LE GE L G EQ NE
-exp 0 0:)
-exp 1 0:)
+214
+calexp 0 0:) + - %
+calexp 1 0:) + - %
+calexp 2 0:) + - %
+calexp 3 0:) + - %
 factory 0 0:) + - % * /
 factory 1 0:) + - % * /
 factory 2 0:) + - % * /
 factory 3 0:) + - % * /
 factory 4 0:) + - % * /
-factory 4 1:OR ) && + - % * /
+factory 4 1:&& ) + - % * /
 item 0 0:) + - % * /
 item 1 0:) + - % * /
 item 2 0:) + - % * /
-regexp 0 0:OR ) &&
 ===
-264
-factory 0 1:OR ) && + - % * /
+215
+factory 0 1:&& ) + - % * /
 ===
-265
-factory 0 0:OR ) && + - % * /
-factory 1 0:OR ) && + - % * /
-factory 2 0:OR ) && + - % * /
-factory 3 0:OR ) && + - % * /
-factory 3 1:OR ) && + - % * /
-factory 4 0:OR ) && + - % * /
+216
+factory 0 0:&& ) + - % * /
+factory 1 0:&& ) + - % * /
+factory 2 0:&& ) + - % * /
+factory 3 0:&& ) + - % * /
+factory 3 1:&& ) + - % * /
+factory 4 0:&& ) + - % * /
 ===
-266
-factory 1 1:OR ) && + - % * /
+217
+factory 1 1:&& ) + - % * /
 ===
-267
-factory 2 1:OR ) && + - % * /
+218
+factory 2 1:&& ) + - % * /
 ===
-268
+219
 calexp 0 3:LE GE L G EQ NE + - %
 item 0 1:LE GE L G EQ NE + - % * /
 item 1 1:LE GE L G EQ NE + - % * /
 ===
-269
+220
 calexp 1 3:LE GE L G EQ NE + - %
 item 0 1:LE GE L G EQ NE + - % * /
 item 1 1:LE GE L G EQ NE + - % * /
 ===
-270
+221
 calexp 2 3:LE GE L G EQ NE + - %
 item 0 1:LE GE L G EQ NE + - % * /
 item 1 1:LE GE L G EQ NE + - % * /
 ===
-271
+222
 item 1 3:LE GE L G EQ NE + - % * /
 ===
-272
+223
 item 0 3:LE GE L G EQ NE + - % * /
 ===
-273
+224
+ifstat 2 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
+===
+225
 arrayelement 0 0:=
 asstat 0 0:;
 asstat 1 0:;
@@ -1894,7 +1338,6 @@ ifstat 0 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ifstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ifstat 1 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ifstat 2 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
-ifstat 2 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 rstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 stype 0 0:ID [
 stype 1 0:ID [
@@ -1908,7 +1351,7 @@ wrstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-274
+226
 calexp 0 1:LE GE L G EQ NE + - %
 calexp 1 1:LE GE L G EQ NE + - %
 calexp 2 1:LE GE L G EQ NE + - %
@@ -1918,87 +1361,15 @@ compare 2 0:ID INTCON DOUBLECON - (
 compare 3 0:ID INTCON DOUBLECON - (
 compare 4 0:ID INTCON DOUBLECON - (
 compare 5 0:ID INTCON DOUBLECON - (
-regexp 0 1:) &&
+regexp 0 1:)
 ===
-275
-bitem 0 1:) &&
+227
 boexp 0 3:)
 ===
-276
-bitem 1 1:) &&
-===
-277
-bfactory 0 1:) &&
-===
-278
-bool 2 1:) &&
-===
-279
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bfactory 2 1:) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
-boexp 0 0:)
-boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
-calexp 0 0:) + - % LE GE L G EQ NE
-calexp 1 0:) + - % LE GE L G EQ NE
-calexp 2 0:) + - % LE GE L G EQ NE
-calexp 3 0:) + - % LE GE L G EQ NE
-exp 0 0:)
-exp 1 0:)
-factory 0 0:) + - % * /
-factory 1 0:) + - % * /
-factory 2 0:) + - % * /
-factory 3 0:) + - % * /
-factory 4 0:) + - % * /
-factory 4 1:LE GE L G EQ NE + - % * /
-item 0 0:) + - % * /
-item 1 0:) + - % * /
-item 2 0:) + - % * /
-regexp 0 0:OR ) &&
-===
-280
-bool 1 1:) &&
-factory 0 1:LE GE L G EQ NE + - % * /
-===
-281
-bfactory 0 0:) &&
-bfactory 1 0:) &&
-bfactory 1 1:) &&
-bfactory 2 0:) &&
-bool 0 0:) &&
-bool 1 0:) &&
-bool 2 0:) &&
-calexp 0 0:LE GE L G EQ NE + - %
-calexp 1 0:LE GE L G EQ NE + - %
-calexp 2 0:LE GE L G EQ NE + - %
-calexp 3 0:LE GE L G EQ NE + - %
-factory 0 0:LE GE L G EQ NE + - % * /
-factory 1 0:LE GE L G EQ NE + - % * /
-factory 2 0:LE GE L G EQ NE + - % * /
-factory 3 0:LE GE L G EQ NE + - % * /
-factory 4 0:LE GE L G EQ NE + - % * /
-item 0 0:LE GE L G EQ NE + - % * /
-item 1 0:LE GE L G EQ NE + - % * /
-item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:) &&
-===
-282
-bool 0 1:) &&
-===
-283
-bitem 0 3:OR ) &&
-===
-284
-bfactory 2 3:OR ) &&
+228
 factory 4 3:LE GE L G EQ NE + - % * /
 ===
-285
+229
 arrayelement 0 0:=
 asstat 0 0:;
 asstat 1 0:;
@@ -2037,374 +1408,220 @@ wrstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-286
+230
 dowhilestat 0 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-287
+231
 varstat 0 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-288
+232
 constat 0 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-289
+233
 rstat 0 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-290
+234
 printcontent 0 1:) ,
 printcontent 1 1:) ,
 wrstat 0 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-291
+235
 ifstat 0 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ifstat 1 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ifstat 2 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-292
+236
 whilestat 0 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-293
+237
 dowhilestat 0 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-294
+238
 forstat 0 3:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-295
+239
+calexp 0 1:LE GE L G EQ NE + - %
+calexp 1 1:LE GE L G EQ NE + - %
+calexp 2 1:LE GE L G EQ NE + - %
+compare 0 0:ID INTCON DOUBLECON - (
+compare 1 0:ID INTCON DOUBLECON - (
+compare 2 0:ID INTCON DOUBLECON - (
+compare 3 0:ID INTCON DOUBLECON - (
+compare 4 0:ID INTCON DOUBLECON - (
+compare 5 0:ID INTCON DOUBLECON - (
+regexp 0 1:&& ;
+===
+240
 forstat 0 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-296
-calexp 0 2:OR ; && + - %
-factory 0 0:OR ; && + - % * /
-factory 1 0:OR ; && + - % * /
-factory 2 0:OR ; && + - % * /
-factory 3 0:OR ; && + - % * /
-factory 4 0:OR ; && + - % * /
-item 0 0:OR ; && + - % * /
-item 1 0:OR ; && + - % * /
-item 2 0:OR ; && + - % * /
+241
+boexp 0 1:;
+boexp 1 1:;
 ===
-297
-calexp 1 2:OR ; && + - %
-factory 0 0:OR ; && + - % * /
-factory 1 0:OR ; && + - % * /
-factory 2 0:OR ; && + - % * /
-factory 3 0:OR ; && + - % * /
-factory 4 0:OR ; && + - % * /
-item 0 0:OR ; && + - % * /
-item 1 0:OR ; && + - % * /
-item 2 0:OR ; && + - % * /
+242
+calexp 0 3:) + - %
+item 0 1:) + - % * /
+item 1 1:) + - % * /
 ===
-298
-calexp 2 2:OR ; && + - %
-factory 0 0:OR ; && + - % * /
-factory 1 0:OR ; && + - % * /
-factory 2 0:OR ; && + - % * /
-factory 3 0:OR ; && + - % * /
-factory 4 0:OR ; && + - % * /
-item 0 0:OR ; && + - % * /
-item 1 0:OR ; && + - % * /
-item 2 0:OR ; && + - % * /
+243
+calexp 1 3:) + - %
+item 0 1:) + - % * /
+item 1 1:) + - % * /
 ===
-299
-factory 0 0:OR ; && + - % * /
-factory 1 0:OR ; && + - % * /
-factory 2 0:OR ; && + - % * /
-factory 3 0:OR ; && + - % * /
-factory 4 0:OR ; && + - % * /
-item 1 2:OR ; && + - % * /
+244
+calexp 2 3:) + - %
+item 0 1:) + - % * /
+item 1 1:) + - % * /
 ===
-300
-factory 0 0:OR ; && + - % * /
-factory 1 0:OR ; && + - % * /
-factory 2 0:OR ; && + - % * /
-factory 3 0:OR ; && + - % * /
-factory 4 0:OR ; && + - % * /
-item 0 2:OR ; && + - % * /
+245
+item 1 3:) + - % * /
 ===
-301
-factory 4 2:OR ; && + - % * /
+246
+item 0 3:) + - % * /
 ===
-302
-factory 3 2:OR ; && + - % * /
+247
+factory 4 3:) + - % * /
 ===
-303
-factory 0 0:; + - % LE GE L G EQ NE * /
-factory 1 0:; + - % LE GE L G EQ NE * /
-factory 2 0:; + - % LE GE L G EQ NE * /
-factory 3 0:; + - % LE GE L G EQ NE * /
-factory 4 0:; + - % LE GE L G EQ NE * /
-item 1 2:; + - % LE GE L G EQ NE * /
+248
+constat 0 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-304
-factory 0 0:; + - % LE GE L G EQ NE * /
-factory 1 0:; + - % LE GE L G EQ NE * /
-factory 2 0:; + - % LE GE L G EQ NE * /
-factory 3 0:; + - % LE GE L G EQ NE * /
-factory 4 0:; + - % LE GE L G EQ NE * /
-item 0 2:; + - % LE GE L G EQ NE * /
+249
+digit 1 2:;
 ===
-305
-factory 4 2:; + - % LE GE L G EQ NE * /
+250
+con 4 2:;
 ===
-306
-factory 3 2:; + - % LE GE L G EQ NE * /
+251
+con 5 2:;
 ===
-307
-calexp 0 0:; && + - %
-calexp 1 0:; && + - %
-calexp 2 0:; && + - %
-calexp 3 0:; && + - %
-factory 0 0:; && + - % * /
-factory 1 0:; && + - % * /
-factory 2 0:; && + - % * /
-factory 3 0:; && + - % * /
-factory 4 0:; && + - % * /
-item 0 0:; && + - % * /
-item 1 0:; && + - % * /
-item 2 0:; && + - % * /
-regexp 0 2:; &&
+252
+rstat 0 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-308
-bfactory 0 0:; &&
-bfactory 1 0:; &&
-bfactory 2 0:; &&
-bitem 0 2:; &&
-bool 0 0:; &&
-bool 1 0:; &&
-bool 2 0:; &&
-calexp 0 0:LE GE L G EQ NE + - %
-calexp 1 0:LE GE L G EQ NE + - %
-calexp 2 0:LE GE L G EQ NE + - %
-calexp 3 0:LE GE L G EQ NE + - %
-factory 0 0:LE GE L G EQ NE + - % * /
-factory 1 0:LE GE L G EQ NE + - % * /
-factory 2 0:LE GE L G EQ NE + - % * /
-factory 3 0:LE GE L G EQ NE + - % * /
-factory 4 0:LE GE L G EQ NE + - % * /
-item 0 0:LE GE L G EQ NE + - % * /
-item 1 0:LE GE L G EQ NE + - % * /
-item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:; &&
+253
+atype 0 4:,
 ===
-309
-bfactory 2 2:; &&
-factory 4 2:LE GE L G EQ NE + - % * /
+254
+calexp 0 2:&& ) + - %
+factory 0 0:&& ) + - % * /
+factory 1 0:&& ) + - % * /
+factory 2 0:&& ) + - % * /
+factory 3 0:&& ) + - % * /
+factory 4 0:&& ) + - % * /
+item 0 0:&& ) + - % * /
+item 1 0:&& ) + - % * /
+item 2 0:&& ) + - % * /
 ===
-310
-bfactory 1 2:; &&
+255
+calexp 1 2:&& ) + - %
+factory 0 0:&& ) + - % * /
+factory 1 0:&& ) + - % * /
+factory 2 0:&& ) + - % * /
+factory 3 0:&& ) + - % * /
+factory 4 0:&& ) + - % * /
+item 0 0:&& ) + - % * /
+item 1 0:&& ) + - % * /
+item 2 0:&& ) + - % * /
 ===
-311
-calexp 0 3:) + - % LE GE L G EQ NE
-item 0 1:) + - % LE GE L G EQ NE * /
-item 1 1:) + - % LE GE L G EQ NE * /
+256
+calexp 2 2:&& ) + - %
+factory 0 0:&& ) + - % * /
+factory 1 0:&& ) + - % * /
+factory 2 0:&& ) + - % * /
+factory 3 0:&& ) + - % * /
+factory 4 0:&& ) + - % * /
+item 0 0:&& ) + - % * /
+item 1 0:&& ) + - % * /
+item 2 0:&& ) + - % * /
 ===
-312
-item 2 1:) + - % LE GE L G EQ NE * /
+257
+factory 0 0:&& ) + - % * /
+factory 1 0:&& ) + - % * /
+factory 2 0:&& ) + - % * /
+factory 3 0:&& ) + - % * /
+factory 4 0:&& ) + - % * /
+item 1 2:&& ) + - % * /
 ===
-313
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
-boexp 0 0:)
-boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
-calexp 0 0:) + - % LE GE L G EQ NE
-calexp 1 0:) + - % LE GE L G EQ NE
-calexp 2 0:) + - % LE GE L G EQ NE
-calexp 3 0:) + - % LE GE L G EQ NE
-exp 0 0:)
-exp 1 0:)
+258
+factory 0 0:&& ) + - % * /
+factory 1 0:&& ) + - % * /
+factory 2 0:&& ) + - % * /
+factory 3 0:&& ) + - % * /
+factory 4 0:&& ) + - % * /
+item 0 2:&& ) + - % * /
+===
+259
+calexp 0 1:) + - %
+calexp 1 1:) + - %
+calexp 2 1:) + - %
+factory 4 2:&& ) + - % * /
+===
+260
+factory 3 2:&& ) + - % * /
+===
+261
+arrayelement 0 0:=
+asstat 0 0:;
+asstat 1 0:;
+asstat 2 0:;
+asstat 3 0:;
+atype 0 0:ID
+block 0 0:}
+block 1 1:}
+constat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+controlstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+controlstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+controlstat 2 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+controlstat 3 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+dowhilestat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+exestat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+exestat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+exestat 2 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+exestat 3 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+expstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+expstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+forstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+ifstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+ifstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+ifstat 2 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+ifstat 2 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
+rstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+stype 0 0:ID [
+stype 1 0:ID [
+stype 2 0:ID [
+stype 3 0:ID [
+type 0 0:ID
+type 1 0:ID
+varstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+whilestat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+wrstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+wstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+wstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+===
+262
+ifstat 0 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
+ifstat 1 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
+===
+263
+calexp 0 0:) + - %
+calexp 1 0:) + - %
+calexp 2 0:) + - %
+calexp 3 0:) + - %
 factory 0 0:) + - % * /
 factory 1 0:) + - % * /
 factory 2 0:) + - % * /
 factory 3 0:) + - % * /
 factory 4 0:) + - % * /
-factory 4 1:) + - % LE GE L G EQ NE * /
 item 0 0:) + - % * /
 item 1 0:) + - % * /
 item 2 0:) + - % * /
-regexp 0 0:OR ) &&
+regexp 0 2:)
 ===
-314
-factory 0 1:) + - % LE GE L G EQ NE * /
-===
-315
-factory 0 0:) + - % LE GE L G EQ NE * /
-factory 1 0:) + - % LE GE L G EQ NE * /
-factory 2 0:) + - % LE GE L G EQ NE * /
-factory 3 0:) + - % LE GE L G EQ NE * /
-factory 3 1:) + - % LE GE L G EQ NE * /
-factory 4 0:) + - % LE GE L G EQ NE * /
-===
-316
-factory 1 1:) + - % LE GE L G EQ NE * /
-===
-317
-factory 2 1:) + - % LE GE L G EQ NE * /
-===
-318
-calexp 1 3:) + - % LE GE L G EQ NE
-item 0 1:) + - % LE GE L G EQ NE * /
-item 1 1:) + - % LE GE L G EQ NE * /
-===
-319
-calexp 2 3:) + - % LE GE L G EQ NE
-item 0 1:) + - % LE GE L G EQ NE * /
-item 1 1:) + - % LE GE L G EQ NE * /
-===
-320
-item 1 3:) + - % * /
-===
-321
-item 0 3:) + - % * /
-===
-322
-bfactory 2 3:OR ) &&
-factory 4 3:) + - % * /
-===
-323
-bfactory 2 3:OR ; &&
-factory 4 3:LE GE L G EQ NE + - % * /
-===
-324
-constat 0 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
-===
-325
-digit 1 2:;
-===
-326
-con 4 2:;
-===
-327
-con 5 2:;
-===
-328
-rstat 0 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
-===
-329
-atype 0 4:,
-===
-330
-calexp 0 2:OR ) && + - %
-factory 0 0:OR ) && + - % * /
-factory 1 0:OR ) && + - % * /
-factory 2 0:OR ) && + - % * /
-factory 3 0:OR ) && + - % * /
-factory 4 0:OR ) && + - % * /
-item 0 0:OR ) && + - % * /
-item 1 0:OR ) && + - % * /
-item 2 0:OR ) && + - % * /
-===
-331
-calexp 1 2:OR ) && + - %
-factory 0 0:OR ) && + - % * /
-factory 1 0:OR ) && + - % * /
-factory 2 0:OR ) && + - % * /
-factory 3 0:OR ) && + - % * /
-factory 4 0:OR ) && + - % * /
-item 0 0:OR ) && + - % * /
-item 1 0:OR ) && + - % * /
-item 2 0:OR ) && + - % * /
-===
-332
-calexp 2 2:OR ) && + - %
-factory 0 0:OR ) && + - % * /
-factory 1 0:OR ) && + - % * /
-factory 2 0:OR ) && + - % * /
-factory 3 0:OR ) && + - % * /
-factory 4 0:OR ) && + - % * /
-item 0 0:OR ) && + - % * /
-item 1 0:OR ) && + - % * /
-item 2 0:OR ) && + - % * /
-===
-333
-factory 0 0:OR ) && + - % * /
-factory 1 0:OR ) && + - % * /
-factory 2 0:OR ) && + - % * /
-factory 3 0:OR ) && + - % * /
-factory 4 0:OR ) && + - % * /
-item 1 2:OR ) && + - % * /
-===
-334
-factory 0 0:OR ) && + - % * /
-factory 1 0:OR ) && + - % * /
-factory 2 0:OR ) && + - % * /
-factory 3 0:OR ) && + - % * /
-factory 4 0:OR ) && + - % * /
-item 0 2:OR ) && + - % * /
-===
-335
-factory 4 2:OR ) && + - % * /
-===
-336
-factory 3 2:OR ) && + - % * /
-===
-337
-ifstat 0 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
-ifstat 1 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
-ifstat 2 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
-===
-338
-calexp 0 0:) && + - %
-calexp 1 0:) && + - %
-calexp 2 0:) && + - %
-calexp 3 0:) && + - %
-factory 0 0:) && + - % * /
-factory 1 0:) && + - % * /
-factory 2 0:) && + - % * /
-factory 3 0:) && + - % * /
-factory 4 0:) && + - % * /
-item 0 0:) && + - % * /
-item 1 0:) && + - % * /
-item 2 0:) && + - % * /
-regexp 0 2:) &&
-===
-339
-bfactory 0 0:) &&
-bfactory 1 0:) &&
-bfactory 2 0:) &&
-bitem 0 2:) &&
-bool 0 0:) &&
-bool 1 0:) &&
-bool 2 0:) &&
-calexp 0 0:LE GE L G EQ NE + - %
-calexp 1 0:LE GE L G EQ NE + - %
-calexp 2 0:LE GE L G EQ NE + - %
-calexp 3 0:LE GE L G EQ NE + - %
-factory 0 0:LE GE L G EQ NE + - % * /
-factory 1 0:LE GE L G EQ NE + - % * /
-factory 2 0:LE GE L G EQ NE + - % * /
-factory 3 0:LE GE L G EQ NE + - % * /
-factory 4 0:LE GE L G EQ NE + - % * /
-item 0 0:LE GE L G EQ NE + - % * /
-item 1 0:LE GE L G EQ NE + - % * /
-item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:) &&
-===
-340
-bfactory 2 2:) &&
-factory 4 2:LE GE L G EQ NE + - % * /
-===
-341
-bfactory 1 2:) &&
-===
-342
+264
 whilestat 0 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-343
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
+265
 boexp 0 0:)
 boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
 calexp 0 0:LE GE L G EQ NE + - %
 calexp 1 0:LE GE L G EQ NE + - %
 calexp 2 0:LE GE L G EQ NE + - %
@@ -2418,9 +1635,9 @@ factory 4 0:LE GE L G EQ NE + - % * /
 item 0 0:LE GE L G EQ NE + - % * /
 item 1 0:LE GE L G EQ NE + - % * /
 item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:OR ) &&
+regexp 0 0:&& )
 ===
-344
+266
 con 0 0:;
 con 1 0:;
 con 2 0:;
@@ -2431,34 +1648,27 @@ constat 0 4:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 digit 0 0:;
 digit 1 0:;
 ===
-345
+267
 rstat 0 4:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-346
+268
 wrstat 0 4:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-347
+269
+IM 0 1:{
 ifstat 0 4:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ifstat 1 4:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ifstat 2 4:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-348
+270
 whilestat 0 4:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-349
+271
 dowhilestat 0 4:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-350
-bfactory 0 0:OR ; &&
-bfactory 1 0:OR ; &&
-bfactory 2 0:OR ; &&
-bitem 0 0:OR ; &&
-bitem 1 0:OR ; &&
+272
 boexp 0 0:;
 boexp 1 0:;
-bool 0 0:OR ; &&
-bool 1 0:OR ; &&
-bool 2 0:OR ; &&
 calexp 0 0:LE GE L G EQ NE + - %
 calexp 1 0:LE GE L G EQ NE + - %
 calexp 2 0:LE GE L G EQ NE + - %
@@ -2472,9 +1682,24 @@ forstat 0 4:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 item 0 0:LE GE L G EQ NE + - % * /
 item 1 0:LE GE L G EQ NE + - % * /
 item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:OR ; &&
+regexp 0 0:&& ;
 ===
-351
+273
+calexp 0 0:&& ; + - %
+calexp 1 0:&& ; + - %
+calexp 2 0:&& ; + - %
+calexp 3 0:&& ; + - %
+factory 0 0:&& ; + - % * /
+factory 1 0:&& ; + - % * /
+factory 2 0:&& ; + - % * /
+factory 3 0:&& ; + - % * /
+factory 4 0:&& ; + - % * /
+item 0 0:&& ; + - % * /
+item 1 0:&& ; + - % * /
+item 2 0:&& ; + - % * /
+regexp 0 2:&& ;
+===
+274
 arrayelement 0 0:=
 asstat 0 0:)
 asstat 1 0:)
@@ -2482,249 +1707,90 @@ asstat 2 0:)
 asstat 3 0:)
 forstat 0 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-352
-calexp 0 3:OR ; && + - %
-item 0 1:OR ; && + - % * /
-item 1 1:OR ; && + - % * /
+275
+boexp 0 2:;
+calexp 0 0:LE GE L G EQ NE + - %
+calexp 1 0:LE GE L G EQ NE + - %
+calexp 2 0:LE GE L G EQ NE + - %
+calexp 3 0:LE GE L G EQ NE + - %
+factory 0 0:LE GE L G EQ NE + - % * /
+factory 1 0:LE GE L G EQ NE + - % * /
+factory 2 0:LE GE L G EQ NE + - % * /
+factory 3 0:LE GE L G EQ NE + - % * /
+factory 4 0:LE GE L G EQ NE + - % * /
+item 0 0:LE GE L G EQ NE + - % * /
+item 1 0:LE GE L G EQ NE + - % * /
+item 2 0:LE GE L G EQ NE + - % * /
+regexp 0 0:;
 ===
-353
-calexp 1 3:OR ; && + - %
-item 0 1:OR ; && + - % * /
-item 1 1:OR ; && + - % * /
-===
-354
-calexp 2 3:OR ; && + - %
-item 0 1:OR ; && + - % * /
-item 1 1:OR ; && + - % * /
-===
-355
-item 1 3:OR ; && + - % * /
-===
-356
-item 0 3:OR ; && + - % * /
-===
-357
-factory 4 3:OR ; && + - % * /
-===
-358
-item 1 3:; + - % LE GE L G EQ NE * /
-===
-359
-item 0 3:; + - % LE GE L G EQ NE * /
-===
-360
-factory 4 3:; + - % LE GE L G EQ NE * /
-===
-361
-calexp 0 1:; && + - %
-calexp 1 1:; && + - %
-calexp 2 1:; && + - %
-regexp 0 3:; &&
-===
-362
-calexp 3 1:; && + - %
-item 0 1:; && + - % * /
-item 1 1:; && + - % * /
-===
-363
-item 2 1:; && + - % * /
-===
-364
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
-boexp 0 0:)
-boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
-calexp 0 0:) + - % LE GE L G EQ NE
-calexp 1 0:) + - % LE GE L G EQ NE
-calexp 2 0:) + - % LE GE L G EQ NE
-calexp 3 0:) + - % LE GE L G EQ NE
-exp 0 0:)
-exp 1 0:)
-factory 0 0:) + - % * /
-factory 1 0:) + - % * /
-factory 2 0:) + - % * /
-factory 3 0:) + - % * /
-factory 4 0:) + - % * /
-factory 4 1:; && + - % * /
-item 0 0:) + - % * /
-item 1 0:) + - % * /
-item 2 0:) + - % * /
-regexp 0 0:OR ) &&
-===
-365
-factory 0 1:; && + - % * /
-===
-366
-factory 0 0:; && + - % * /
-factory 1 0:; && + - % * /
-factory 2 0:; && + - % * /
-factory 3 0:; && + - % * /
-factory 3 1:; && + - % * /
-factory 4 0:; && + - % * /
-===
-367
-factory 1 1:; && + - % * /
-===
-368
-factory 2 1:; && + - % * /
-===
-369
-bitem 0 3:; &&
-===
-370
-bfactory 2 3:; &&
-factory 4 3:LE GE L G EQ NE + - % * /
-===
-371
-factory 0 0:) + - % LE GE L G EQ NE * /
-factory 1 0:) + - % LE GE L G EQ NE * /
-factory 2 0:) + - % LE GE L G EQ NE * /
-factory 3 0:) + - % LE GE L G EQ NE * /
-factory 4 0:) + - % LE GE L G EQ NE * /
-item 1 2:) + - % LE GE L G EQ NE * /
-===
-372
-factory 0 0:) + - % LE GE L G EQ NE * /
-factory 1 0:) + - % LE GE L G EQ NE * /
-factory 2 0:) + - % LE GE L G EQ NE * /
-factory 3 0:) + - % LE GE L G EQ NE * /
-factory 4 0:) + - % LE GE L G EQ NE * /
-item 0 2:) + - % LE GE L G EQ NE * /
-===
-373
-factory 4 2:) + - % LE GE L G EQ NE * /
-===
-374
-factory 3 2:) + - % LE GE L G EQ NE * /
-===
-375
+276
 con 4 3:;
 ===
-376
+277
 con 5 3:;
 ===
-377
+278
 rstat 0 7:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-378
-calexp 0 3:OR ) && + - %
-item 0 1:OR ) && + - % * /
-item 1 1:OR ) && + - % * /
+279
+calexp 0 3:&& ) + - %
+item 0 1:&& ) + - % * /
+item 1 1:&& ) + - % * /
 ===
-379
-calexp 1 3:OR ) && + - %
-item 0 1:OR ) && + - % * /
-item 1 1:OR ) && + - % * /
+280
+calexp 1 3:&& ) + - %
+item 0 1:&& ) + - % * /
+item 1 1:&& ) + - % * /
 ===
-380
-calexp 2 3:OR ) && + - %
-item 0 1:OR ) && + - % * /
-item 1 1:OR ) && + - % * /
+281
+calexp 2 3:&& ) + - %
+item 0 1:&& ) + - % * /
+item 1 1:&& ) + - % * /
 ===
-381
-item 1 3:OR ) && + - % * /
+282
+item 1 3:&& ) + - % * /
 ===
-382
-item 0 3:OR ) && + - % * /
+283
+item 0 3:&& ) + - % * /
 ===
-383
-factory 4 3:OR ) && + - % * /
+284
+factory 4 3:&& ) + - % * /
 ===
-384
+285
+IME 0 1:}
+ifstat 2 7:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
+===
+286
 elseifblock 0 0:ELSE ELSEIF
 elseifblock 1 0:ELSE ELSEIF
 ifstat 0 7:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ifstat 1 7:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
-ifstat 2 7:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-385
-calexp 0 1:) && + - %
-calexp 1 1:) && + - %
-calexp 2 1:) && + - %
-regexp 0 3:) &&
+287
+calexp 0 1:) + - %
+calexp 1 1:) + - %
+calexp 2 1:) + - %
+regexp 0 3:)
 ===
-386
-calexp 3 1:) && + - %
-item 0 1:) && + - % * /
-item 1 1:) && + - % * /
-===
-387
-item 2 1:) && + - % * /
-===
-388
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
-boexp 0 0:)
-boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
-calexp 0 0:) + - % LE GE L G EQ NE
-calexp 1 0:) + - % LE GE L G EQ NE
-calexp 2 0:) + - % LE GE L G EQ NE
-calexp 3 0:) + - % LE GE L G EQ NE
-exp 0 0:)
-exp 1 0:)
-factory 0 0:) + - % * /
-factory 1 0:) + - % * /
-factory 2 0:) + - % * /
-factory 3 0:) + - % * /
-factory 4 0:) + - % * /
-factory 4 1:) && + - % * /
-item 0 0:) + - % * /
-item 1 0:) + - % * /
-item 2 0:) + - % * /
-regexp 0 0:OR ) &&
-===
-389
-factory 0 1:) && + - % * /
-===
-390
-factory 0 0:) && + - % * /
-factory 1 0:) && + - % * /
-factory 2 0:) && + - % * /
-factory 3 0:) && + - % * /
-factory 3 1:) && + - % * /
-factory 4 0:) && + - % * /
-===
-391
-factory 1 1:) && + - % * /
-===
-392
-factory 2 1:) && + - % * /
-===
-393
-bitem 0 3:) &&
-===
-394
-bfactory 2 3:) &&
-factory 4 3:LE GE L G EQ NE + - % * /
-===
-395
+288
 whilestat 0 7:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-396
+289
 dowhilestat 0 7:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-397
+290
 constat 0 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-398
+291
 rstat 0 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-399
+292
 wrstat 0 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-400
+293
+ifstat 2 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+===
+294
 arrayelement 0 0:=
 asstat 0 0:;
 asstat 1 0:;
@@ -2751,7 +1817,6 @@ ifstat 0 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ifstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ifstat 1 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ifstat 2 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
-ifstat 2 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 rstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 stype 0 0:ID [
 stype 1 0:ID [
@@ -2765,7 +1830,7 @@ wrstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-401
+295
 arrayelement 0 0:=
 asstat 0 0:;
 asstat 1 0:;
@@ -2804,181 +1869,156 @@ wrstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-402
+296
 dowhilestat 0 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-403
+297
 forstat 0 5:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-404
+298
+calexp 0 1:&& ; + - %
+calexp 1 1:&& ; + - %
+calexp 2 1:&& ; + - %
+regexp 0 3:&& ;
+===
+299
+calexp 3 1:&& ; + - %
+item 0 1:&& ; + - % * /
+item 1 1:&& ; + - % * /
+===
+300
+item 2 1:&& ; + - % * /
+===
+301
+calexp 0 0:) + - %
+calexp 1 0:) + - %
+calexp 2 0:) + - %
+calexp 3 0:) + - %
+factory 0 0:) + - % * /
+factory 1 0:) + - % * /
+factory 2 0:) + - % * /
+factory 3 0:) + - % * /
+factory 4 0:) + - % * /
+factory 4 1:&& ; + - % * /
+item 0 0:) + - % * /
+item 1 0:) + - % * /
+item 2 0:) + - % * /
+===
+302
+factory 0 1:&& ; + - % * /
+===
+303
+factory 0 0:&& ; + - % * /
+factory 1 0:&& ; + - % * /
+factory 2 0:&& ; + - % * /
+factory 3 0:&& ; + - % * /
+factory 3 1:&& ; + - % * /
+factory 4 0:&& ; + - % * /
+===
+304
+factory 1 1:&& ; + - % * /
+===
+305
+factory 2 1:&& ; + - % * /
+===
+306
 asstat 1 1:)
 ===
-405
+307
 forstat 0 7:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-406
+308
 arrayelement 0 1:=
 asstat 0 1:)
 asstat 2 1:)
 asstat 3 1:)
 ===
-407
-calexp 0 2:; && + - %
-factory 0 0:; && + - % * /
-factory 1 0:; && + - % * /
-factory 2 0:; && + - % * /
-factory 3 0:; && + - % * /
-factory 4 0:; && + - % * /
-item 0 0:; && + - % * /
-item 1 0:; && + - % * /
-item 2 0:; && + - % * /
+309
+calexp 0 1:LE GE L G EQ NE + - %
+calexp 1 1:LE GE L G EQ NE + - %
+calexp 2 1:LE GE L G EQ NE + - %
+compare 0 0:ID INTCON DOUBLECON - (
+compare 1 0:ID INTCON DOUBLECON - (
+compare 2 0:ID INTCON DOUBLECON - (
+compare 3 0:ID INTCON DOUBLECON - (
+compare 4 0:ID INTCON DOUBLECON - (
+compare 5 0:ID INTCON DOUBLECON - (
+regexp 0 1:;
 ===
-408
-calexp 1 2:; && + - %
-factory 0 0:; && + - % * /
-factory 1 0:; && + - % * /
-factory 2 0:; && + - % * /
-factory 3 0:; && + - % * /
-factory 4 0:; && + - % * /
-item 0 0:; && + - % * /
-item 1 0:; && + - % * /
-item 2 0:; && + - % * /
+310
+boexp 0 3:;
 ===
-409
-calexp 2 2:; && + - %
-factory 0 0:; && + - % * /
-factory 1 0:; && + - % * /
-factory 2 0:; && + - % * /
-factory 3 0:; && + - % * /
-factory 4 0:; && + - % * /
-item 0 0:; && + - % * /
-item 1 0:; && + - % * /
-item 2 0:; && + - % * /
+311
+ifstat 2 8:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-410
-factory 0 0:; && + - % * /
-factory 1 0:; && + - % * /
-factory 2 0:; && + - % * /
-factory 3 0:; && + - % * /
-factory 4 0:; && + - % * /
-item 1 2:; && + - % * /
-===
-411
-factory 0 0:; && + - % * /
-factory 1 0:; && + - % * /
-factory 2 0:; && + - % * /
-factory 3 0:; && + - % * /
-factory 4 0:; && + - % * /
-item 0 2:; && + - % * /
-===
-412
-factory 4 2:; && + - % * /
-===
-413
-factory 3 2:; && + - % * /
-===
-414
-item 1 3:) + - % LE GE L G EQ NE * /
-===
-415
-item 0 3:) + - % LE GE L G EQ NE * /
-===
-416
-factory 4 3:) + - % LE GE L G EQ NE * /
-===
-417
+312
 elseifblock 1 1:ELSE ELSEIF
 ifstat 1 8:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-418
+313
 ifstat 0 8:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-419
+314
 elseifblock 0 1:ELSE ELSEIF
 ===
-420
-calexp 0 2:) && + - %
-factory 0 0:) && + - % * /
-factory 1 0:) && + - % * /
-factory 2 0:) && + - % * /
-factory 3 0:) && + - % * /
-factory 4 0:) && + - % * /
-item 0 0:) && + - % * /
-item 1 0:) && + - % * /
-item 2 0:) && + - % * /
-===
-421
-calexp 1 2:) && + - %
-factory 0 0:) && + - % * /
-factory 1 0:) && + - % * /
-factory 2 0:) && + - % * /
-factory 3 0:) && + - % * /
-factory 4 0:) && + - % * /
-item 0 0:) && + - % * /
-item 1 0:) && + - % * /
-item 2 0:) && + - % * /
-===
-422
-calexp 2 2:) && + - %
-factory 0 0:) && + - % * /
-factory 1 0:) && + - % * /
-factory 2 0:) && + - % * /
-factory 3 0:) && + - % * /
-factory 4 0:) && + - % * /
-item 0 0:) && + - % * /
-item 1 0:) && + - % * /
-item 2 0:) && + - % * /
-===
-423
-factory 0 0:) && + - % * /
-factory 1 0:) && + - % * /
-factory 2 0:) && + - % * /
-factory 3 0:) && + - % * /
-factory 4 0:) && + - % * /
-item 1 2:) && + - % * /
-===
-424
-factory 0 0:) && + - % * /
-factory 1 0:) && + - % * /
-factory 2 0:) && + - % * /
-factory 3 0:) && + - % * /
-factory 4 0:) && + - % * /
-item 0 2:) && + - % * /
-===
-425
-factory 4 2:) && + - % * /
-===
-426
-factory 3 2:) && + - % * /
-===
-427
+315
 dowhilestat 0 8:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-428
+316
 constat 0 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-429
+317
 rstat 0 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-430
+318
+arrayelement 0 0:=
+asstat 0 0:;
+asstat 1 0:;
+asstat 2 0:;
+asstat 3 0:;
+atype 0 0:ID
+block 0 0:}
+block 1 1:}
+constat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+controlstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+controlstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+controlstat 2 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+controlstat 3 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+dowhilestat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+exestat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+exestat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+exestat 2 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+exestat 3 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+expstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+expstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+forstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+ifstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+ifstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+ifstat 2 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+ifstat 2 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+rstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+stype 0 0:ID [
+stype 1 0:ID [
+stype 2 0:ID [
+stype 3 0:ID [
+type 0 0:ID
+type 1 0:ID
+varstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+whilestat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+wrstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+wstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+wstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+===
+319
 ifstat 0 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ifstat 1 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
-ifstat 2 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-431
+320
 whilestat 0 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-432
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
+321
 boexp 0 0:)
 boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
 calexp 0 0:LE GE L G EQ NE + - %
 calexp 1 0:LE GE L G EQ NE + - %
 calexp 2 0:LE GE L G EQ NE + - %
@@ -2992,9 +2032,9 @@ factory 4 0:LE GE L G EQ NE + - % * /
 item 0 0:LE GE L G EQ NE + - % * /
 item 1 0:LE GE L G EQ NE + - % * /
 item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:OR ) &&
+regexp 0 0:&& )
 ===
-433
+322
 arrayelement 0 0:=
 asstat 0 0:)
 asstat 1 0:)
@@ -3002,24 +2042,70 @@ asstat 2 0:)
 asstat 3 0:)
 forstat 0 6:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-434
+323
+calexp 0 2:&& ; + - %
+factory 0 0:&& ; + - % * /
+factory 1 0:&& ; + - % * /
+factory 2 0:&& ; + - % * /
+factory 3 0:&& ; + - % * /
+factory 4 0:&& ; + - % * /
+item 0 0:&& ; + - % * /
+item 1 0:&& ; + - % * /
+item 2 0:&& ; + - % * /
+===
+324
+calexp 1 2:&& ; + - %
+factory 0 0:&& ; + - % * /
+factory 1 0:&& ; + - % * /
+factory 2 0:&& ; + - % * /
+factory 3 0:&& ; + - % * /
+factory 4 0:&& ; + - % * /
+item 0 0:&& ; + - % * /
+item 1 0:&& ; + - % * /
+item 2 0:&& ; + - % * /
+===
+325
+calexp 2 2:&& ; + - %
+factory 0 0:&& ; + - % * /
+factory 1 0:&& ; + - % * /
+factory 2 0:&& ; + - % * /
+factory 3 0:&& ; + - % * /
+factory 4 0:&& ; + - % * /
+item 0 0:&& ; + - % * /
+item 1 0:&& ; + - % * /
+item 2 0:&& ; + - % * /
+===
+326
+factory 0 0:&& ; + - % * /
+factory 1 0:&& ; + - % * /
+factory 2 0:&& ; + - % * /
+factory 3 0:&& ; + - % * /
+factory 4 0:&& ; + - % * /
+item 1 2:&& ; + - % * /
+===
+327
+factory 0 0:&& ; + - % * /
+factory 1 0:&& ; + - % * /
+factory 2 0:&& ; + - % * /
+factory 3 0:&& ; + - % * /
+factory 4 0:&& ; + - % * /
+item 0 2:&& ; + - % * /
+===
+328
+calexp 0 1:) + - %
+calexp 1 1:) + - %
+calexp 2 1:) + - %
+factory 4 2:&& ; + - % * /
+===
+329
+factory 3 2:&& ; + - % * /
+===
+330
 asstat 1 2:)
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
-boexp 0 0:)
-boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
-calexp 0 0:) + - % LE GE L G EQ NE
-calexp 1 0:) + - % LE GE L G EQ NE
-calexp 2 0:) + - % LE GE L G EQ NE
-calexp 3 0:) + - % LE GE L G EQ NE
-exp 0 0:)
-exp 1 0:)
+calexp 0 0:) + - %
+calexp 1 0:) + - %
+calexp 2 0:) + - %
+calexp 3 0:) + - %
 factory 0 0:) + - % * /
 factory 1 0:) + - % * /
 factory 2 0:) + - % * /
@@ -3028,29 +2114,16 @@ factory 4 0:) + - % * /
 item 0 0:) + - % * /
 item 1 0:) + - % * /
 item 2 0:) + - % * /
-regexp 0 0:OR ) &&
 ===
-435
+331
 forstat 0 8:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-436
+332
 asstat 0 2:)
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
-boexp 0 0:)
-boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
-calexp 0 0:) + - % LE GE L G EQ NE
-calexp 1 0:) + - % LE GE L G EQ NE
-calexp 2 0:) + - % LE GE L G EQ NE
-calexp 3 0:) + - % LE GE L G EQ NE
-exp 0 0:)
-exp 1 0:)
+calexp 0 0:) + - %
+calexp 1 0:) + - %
+calexp 2 0:) + - %
+calexp 3 0:) + - %
 factory 0 0:) + - % * /
 factory 1 0:) + - % * /
 factory 2 0:) + - % * /
@@ -3059,45 +2132,38 @@ factory 4 0:) + - % * /
 item 0 0:) + - % * /
 item 1 0:) + - % * /
 item 2 0:) + - % * /
-regexp 0 0:OR ) &&
 ===
-437
+333
 asstat 2 2:)
 ===
-438
+334
 asstat 3 2:)
 ===
-439
-calexp 0 3:; && + - %
-item 0 1:; && + - % * /
-item 1 1:; && + - % * /
+335
+calexp 0 0:; + - %
+calexp 1 0:; + - %
+calexp 2 0:; + - %
+calexp 3 0:; + - %
+factory 0 0:; + - % * /
+factory 1 0:; + - % * /
+factory 2 0:; + - % * /
+factory 3 0:; + - % * /
+factory 4 0:; + - % * /
+item 0 0:; + - % * /
+item 1 0:; + - % * /
+item 2 0:; + - % * /
+regexp 0 2:;
 ===
-440
-calexp 1 3:; && + - %
-item 0 1:; && + - % * /
-item 1 1:; && + - % * /
+336
+ifstat 2 9:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-441
-calexp 2 3:; && + - %
-item 0 1:; && + - % * /
-item 1 1:; && + - % * /
-===
-442
-item 1 3:; && + - % * /
-===
-443
-item 0 3:; && + - % * /
-===
-444
-factory 4 3:; && + - % * /
-===
-445
+337
 ifstat 1 9:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-446
+338
 elseifblock 1 2:ELSE ELSEIF
 ===
-447
+339
 arrayelement 0 0:=
 asstat 0 0:;
 asstat 1 0:;
@@ -3136,17 +2202,9 @@ wrstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-448
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
+340
 boexp 0 0:)
 boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
 calexp 0 0:LE GE L G EQ NE + - %
 calexp 1 0:LE GE L G EQ NE + - %
 calexp 2 0:LE GE L G EQ NE + - %
@@ -3160,55 +2218,61 @@ factory 4 0:LE GE L G EQ NE + - % * /
 item 0 0:LE GE L G EQ NE + - % * /
 item 1 0:LE GE L G EQ NE + - % * /
 item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:OR ) &&
+regexp 0 0:&& )
 ===
-449
-calexp 0 3:) && + - %
-item 0 1:) && + - % * /
-item 1 1:) && + - % * /
-===
-450
-calexp 1 3:) && + - %
-item 0 1:) && + - % * /
-item 1 1:) && + - % * /
-===
-451
-calexp 2 3:) && + - %
-item 0 1:) && + - % * /
-item 1 1:) && + - % * /
-===
-452
-item 1 3:) && + - % * /
-===
-453
-item 0 3:) && + - % * /
-===
-454
-factory 4 3:) && + - % * /
-===
-455
+341
 rstat 0 7:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-456
+342
+IME 0 1:}
+ifstat 2 7:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+===
+343
 elseifblock 0 0:ELSE ELSEIF
 elseifblock 1 0:ELSE ELSEIF
 ifstat 0 7:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ifstat 1 7:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
-ifstat 2 7:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-457
+344
 whilestat 0 7:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-458
+345
 dowhilestat 0 7:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-459
+346
 forstat 0 7:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-460
-asstat 1 3:)
+347
+calexp 0 3:&& ; + - %
+item 0 1:&& ; + - % * /
+item 1 1:&& ; + - % * /
 ===
-461
+348
+calexp 1 3:&& ; + - %
+item 0 1:&& ; + - % * /
+item 1 1:&& ; + - % * /
+===
+349
+calexp 2 3:&& ; + - %
+item 0 1:&& ; + - % * /
+item 1 1:&& ; + - % * /
+===
+350
+item 1 3:&& ; + - % * /
+===
+351
+item 0 3:&& ; + - % * /
+===
+352
+factory 4 3:&& ; + - % * /
+===
+353
+asstat 1 3:)
+calexp 0 1:) + - %
+calexp 1 1:) + - %
+calexp 2 1:) + - %
+===
+354
 arrayelement 0 0:=
 asstat 0 0:;
 asstat 1 0:;
@@ -3247,10 +2311,19 @@ wrstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-462
+355
 asstat 0 3:)
+calexp 0 1:) + - %
+calexp 1 1:) + - %
+calexp 2 1:) + - %
 ===
-463
+356
+calexp 0 1:; + - %
+calexp 1 1:; + - %
+calexp 2 1:; + - %
+regexp 0 3:;
+===
+357
 arrayelement 0 0:=
 asstat 0 0:;
 asstat 1 0:;
@@ -3289,17 +2362,9 @@ wrstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-464
-bfactory 0 0:OR ) &&
-bfactory 1 0:OR ) &&
-bfactory 2 0:OR ) &&
-bitem 0 0:OR ) &&
-bitem 1 0:OR ) &&
+358
 boexp 0 0:)
 boexp 1 0:)
-bool 0 0:OR ) &&
-bool 1 0:OR ) &&
-bool 2 0:OR ) &&
 calexp 0 0:LE GE L G EQ NE + - %
 calexp 1 0:LE GE L G EQ NE + - %
 calexp 2 0:LE GE L G EQ NE + - %
@@ -3313,46 +2378,52 @@ factory 4 0:LE GE L G EQ NE + - % * /
 item 0 0:LE GE L G EQ NE + - % * /
 item 1 0:LE GE L G EQ NE + - % * /
 item 2 0:LE GE L G EQ NE + - % * /
-regexp 0 0:OR ) &&
+regexp 0 0:&& )
 ===
-465
+359
 ifstat 0 10:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-466
+360
 elseifblock 0 3:ELSE ELSEIF
 ===
-467
+361
+ifstat 2 8:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+===
+362
 elseifblock 1 1:ELSE ELSEIF
 ifstat 1 8:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-468
+363
 ifstat 0 8:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-469
+364
 dowhilestat 0 8:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-470
+365
 forstat 0 8:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-471
+366
 forstat 0 10:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-472
+367
 ifstat 1 11:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-473
+368
 elseifblock 1 4:ELSE ELSEIF
 ===
-474
+369
 ifstat 0 11:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-475
+370
 elseifblock 0 4:ELSE ELSEIF
 ===
-476
+371
+ifstat 2 9:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
+===
+372
 ifstat 1 9:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-477
+373
 arrayelement 0 0:=
 asstat 0 0:;
 asstat 1 0:;
@@ -3391,7 +2462,7 @@ wrstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-478
+374
 arrayelement 0 0:=
 asstat 0 0:;
 asstat 1 0:;
@@ -3430,16 +2501,16 @@ wrstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-479
+375
 forstat 0 11:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-480
+376
 ifstat 1 12:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR RETURN
 ===
-481
+377
 elseifblock 1 5:ELSE ELSEIF
 ===
-482
+378
 arrayelement 0 0:=
 asstat 0 0:;
 asstat 1 0:;
@@ -3478,7 +2549,7 @@ wrstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-483
+379
 arrayelement 0 0:=
 asstat 0 0:;
 asstat 1 0:;
@@ -3517,13 +2588,13 @@ wrstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-484
+380
 ifstat 0 10:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-485
+381
 forstat 0 10:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-486
+382
 arrayelement 0 0:=
 asstat 0 0:;
 asstat 1 0:;
@@ -3562,27 +2633,27 @@ wrstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 0 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 wstat 1 0:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-487
+383
 elseifblock 0 6:ELSE ELSEIF
 ===
-488
+384
 ifstat 1 11:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-489
+385
 ifstat 0 11:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-490
+386
 forstat 0 11:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-491
+387
 elseifblock 1 7:ELSE ELSEIF
 ===
-492
+388
 elseifblock 0 7:ELSE ELSEIF
 ===
-493
+389
 ifstat 1 12:CONST BOOL INT DOUBLE CHAR ID SCANF PRINTF IF WHILE DO FOR }
 ===
-494
+390
 elseifblock 1 8:ELSE ELSEIF
 ===

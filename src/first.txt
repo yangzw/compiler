@@ -59,7 +59,6 @@ first of constat:0 CONST
 first of varstat:0 BOOL INT DOUBLE CHAR
 first of idlist:0 ID
 first of arrayelement:0 ID
-first of paralist:0 BOOL INT DOUBLE CHAR
 first of exestat:0 ID SCANF PRINTF IF WHILE DO FOR
 first of asstat:0 ID
 first of rstat:0 SCANF
@@ -67,18 +66,16 @@ first of wrstat:0 PRINTF
 first of printcontent:0 INTCON BOOLCON DIGIT - DOUBLECON ' " ID
 first of controlstat:0 IF WHILE DO FOR
 first of ifstat:0 IF
+first of IM:1
+first of IME:1
 first of elseifblock:0 ELSEIF
 first of whilestat:0 WHILE
 first of dowhilestat:0 DO
 first of forstat:0 FOR
-first of exp:0 ID INTCON DOUBLECON - ( BOOL !
 first of calexp:0 ID INTCON DOUBLECON - (
 first of item:0 ID INTCON DOUBLECON - (
 first of factory:0 ID INTCON DOUBLECON - (
-first of boexp:0 BOOL ID INTCON DOUBLECON - ( !
-first of bitem:0 BOOL ID INTCON DOUBLECON - ( !
-first of bfactory:0 BOOL ID INTCON DOUBLECON - ( !
-first of bool:0 BOOL ID INTCON DOUBLECON - (
+first of boexp:0 ID INTCON DOUBLECON - (
 first of regexp:0 ID INTCON DOUBLECON - (
 first of compare:0 LE GE L G EQ NE
 first of con:0 INTCON BOOLCON DIGIT - DOUBLECON ' "

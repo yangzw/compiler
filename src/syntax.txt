@@ -1,3 +1,35 @@
-S'::S
-S::C C
-C::c C|d
+S::program
+program::M INT MAIN ( ) { block RETURN INTCON ; }
+//M::eee
+block::wstat block|wstat
+wstat::expstat|exestat
+expstat::constat|varstat
+constat::CONST type ID = con ;
+//varstat::type idlist ;
+//idlist::idlist , ID|ID
+//arrayelement::ID [ INTCON ]
+exestat::asstat ;|rstat|wrstat|controlstat
+//asstat::ID = exp|arrayelement = exp|ID ++|ID --
+rstat::SCANF ( type , ID ) ;
+wrstat::PRINTF ( printcontent ) ;
+printcontent::printcontent , idlist|printcontent , con |con|idlist
+controlstat::ifstat|whilestat|dowhilestat|forstat 
+ifstat::IF ( boexp ) { block } ELSE { block }|IF ( boexp ) { block } elseifblock ELSE { block }|IF ( boexp ) IM { block } IME
+IM::eee
+IME::eee
+elseifblock::ELSEIF ( boexp ) { block }|elseifblock ELSEIF ( boexp ) { block }
+whilestat::WHILE ( boexp ) { block }
+dowhilestat::DO { block } WHILE ( boexp )
+forstat::FOR ( asstat ; boexp ; asstat ) { block }
+//exp::calexp|boexp
+//calexp::calexp + item|calexp - item|calexp % item|item
+//item::item * factory|item / factory|factory 
+//factory::ID|INTCON|DOUBLECON|- factory|( exp )
+//boexp::regexp && regexp| regexp
+//regexp::calexp compare calexp
+//compare::LE|GE|L|G|EQ|NE
+con::INTCON|BOOLCON|digit|DOUBLECON|' CHARCON '|" STRINGCON "
+digit::DIGIT|- DIGIT
+//type::stype|atype 
+//stype::BOOL|INT|DOUBLE|CHAR
+//atype::stype [ INTCON ]

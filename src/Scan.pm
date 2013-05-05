@@ -128,10 +128,9 @@ sub handle_id{
 	my $count = keys %Key::id_table;
 	my $keyref = \%Key::id_table;
 	$keyref->{$id} = {
-		id_name => $id,
-		id_address => $count+1,
+		id_address => undef,
 		id_type => undef,
-		id_attrib => undef,
+		id_defined => undef,
 		id_beg => undef,
 		id_end => undef,
 		id_value => undef,
