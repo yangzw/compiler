@@ -7,9 +7,9 @@ first of }:0 }
 first of [:0 [
 first of ]:0 ]
 first of ;:0 ;
-first of CONST:0 CONST
 first of ID:0 ID
 first of DIGIT:0 DIGIT
+first of CONST:0 CONST
 first of ,:0 ,
 first of VOID:0 VOID
 first of RETURN:0 RETURN
@@ -66,17 +66,21 @@ first of wrstat:0 PRINTF
 first of printcontent:0 INTCON BOOLCON DIGIT - DOUBLECON ' " ID
 first of controlstat:0 IF WHILE DO FOR
 first of ifstat:0 IF
-first of IM:1
-first of IME:1
-first of elseifblock:0 ELSEIF
+first of BE:1
+first of IME:1 ELSE
+first of IMEE:1
 first of whilestat:0 WHILE
+first of WE:1
 first of dowhilestat:0 DO
 first of forstat:0 FOR
 first of calexp:0 ID INTCON DOUBLECON - (
 first of item:0 ID INTCON DOUBLECON - (
 first of factory:0 ID INTCON DOUBLECON - (
 first of boexp:0 ID INTCON DOUBLECON - (
+first of bitem:0 ID INTCON DOUBLECON - (
 first of regexp:0 ID INTCON DOUBLECON - (
+first of ANDM:1
+first of ORM:1
 first of compare:0 LE GE L G EQ NE
 first of con:0 INTCON BOOLCON DIGIT - DOUBLECON ' "
 first of digit:0 DIGIT -

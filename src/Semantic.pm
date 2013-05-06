@@ -1,7 +1,7 @@
 package Semantic;
 use strict;
 use base qw /Exporter/;
-our @EXPORT = qw /trans /;
+our @EXPORT = qw /trans/;
 use Key;
 my $j = 0;
 open CODE,">","code.txt";
@@ -91,8 +91,8 @@ sub trans{
 		}
 	}elsif($right eq 'item'){
 		if($num eq '0'){
-			my $id1 = shift $stackref;
 			my $id2 = shift $stackref;
+			my $id1 = shift $stackref;
 			my $tmp;
 			if(not defined $id_tableref->{$id1}->{id_address} and not defined $id_tableref->{$id2}->{id_address}){ #是常量的情况,则直接计算
 				$id_tableref->{$id1}->{id_value} = $id_tableref->{$id1}->{id_value} * $id_tableref->{$id2}->{id_value};
@@ -101,14 +101,22 @@ sub trans{
 			else{
 				$tmp = "#tmp$j";
 				$j++;
-				$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id1}->{id_type};
+				if(not defined $id_tableref->{$id2}->{id_address}){
+					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id1}->{id_type};
+					code("* $id_tableref->{$id2}->{id_value} $id1 $tmp");
+				}elsif(not defined $id_tableref->{$id1}->{id_address}){
+					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
+					code("* $id1 $id_tableref->{$id1}->{id_value} $tmp");
+				}else{
+					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
+					code("* $id1 $id2 $tmp");
+				}
 				$id_tableref->{$tmp}->{id_address} = "-1";
-				code("* $id2 $id1 $tmp");
 			}
 			unshift @$stackref,$tmp;
 		}elsif($num eq '1'){
-			my $id1 = shift $stackref;
 			my $id2 = shift $stackref;
+			my $id1 = shift $stackref;
 			my $tmp;
 			if(not defined $id_tableref->{$id1}->{id_address} and not defined $id_tableref->{$id2}->{id_address}){ #是常量的情况,则直接计算
 				$id_tableref->{$id1}->{id_value} = $id_tableref->{$id2}->{id_value} / $id_tableref->{$id1}->{id_value};
@@ -117,17 +125,25 @@ sub trans{
 			else{
 				$tmp = "#tmp$j";
 				$j++;
-				$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id1}->{id_type};
+				if(not defined $id_tableref->{$id2}->{id_address}){
+					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id1}->{id_type};
+					code("/ $id_tableref->{$id2}->{id_value} $id1 $tmp");
+				}elsif(not defined $id_tableref->{$id1}->{id_address}){
+					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
+					code("/ $id1 $id_tableref->{$id1}->{id_value} $tmp");
+				}else{
+					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
+					code("/ $id1 $id2 $tmp");
+				}
 				$id_tableref->{$tmp}->{id_address} = "-1";
-				code("/ $id2 $id1 $tmp");
 			}
 			unshift @$stackref,$tmp;
 		}elsif($num eq '2'){
 		}
 	}elsif($right eq 'calexp'){
 		if($num eq '0'){
-			my $id1 = shift $stackref;
 			my $id2 = shift $stackref;
+			my $id1 = shift $stackref;
 			my $tmp;
 			if(not defined $id_tableref->{$id1}->{id_address} and not defined $id_tableref->{$id2}->{id_address}){ #是常量的情况,则直接计算
 				$id_tableref->{$id1}->{id_value} = $id_tableref->{$id1}->{id_value} + $id_tableref->{$id2}->{id_value};
@@ -136,14 +152,22 @@ sub trans{
 			else{
 				$tmp = "#tmp$j";
 				$j++;
-				$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id1}->{id_type};
+				if(not defined $id_tableref->{$id2}->{id_address}){
+					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id1}->{id_type};
+					code("+ $id_tableref->{$id2}->{id_value} $id1 $tmp");
+				}elsif(not defined $id_tableref->{$id1}->{id_address}){
+					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
+					code("+ $id1 $id_tableref->{$id1}->{id_value} $tmp");
+				}else{
+					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
+					code("+ $id1 $id2 $tmp");
+				}
 				$id_tableref->{$tmp}->{id_address} = "-1";
-				code("+ $id2 $id1 $tmp");
 			}
 			unshift @$stackref,$tmp;
 		}elsif($num eq '1'){
-			my $id1 = shift $stackref;
 			my $id2 = shift $stackref;
+			my $id1 = shift $stackref;
 			my $tmp;
 			if(not defined $id_tableref->{$id1}->{id_address} and not defined $id_tableref->{$id2}->{id_address}){ #是常量的情况,则直接计算
 				$id_tableref->{$id1}->{id_value} = $id_tableref->{$id2}->{id_value} - $id_tableref->{$id1}->{id_value};
@@ -152,14 +176,22 @@ sub trans{
 			else{
 				$tmp = "#tmp$j";
 				$j++;
-				$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id1}->{id_type};
+				if(not defined $id_tableref->{$id2}->{id_address}){
+					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id1}->{id_type};
+					code("- $id_tableref->{$id2}->{id_value} $id1 $tmp");
+				}elsif(not defined $id_tableref->{$id1}->{id_address}){
+					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
+					code("- $id1 $id_tableref->{$id1}->{id_value} $tmp");
+				}else{
+					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
+					code("- $id1 $id2 $tmp");
+				}
 				$id_tableref->{$tmp}->{id_address} = "-1";
-				code("- $id2 $id1 $tmp");
 			}
 			unshift @$stackref,$tmp;
 		}elsif($num eq '2'){
-			my $id1 = shift $stackref;
 			my $id2 = shift $stackref;
+			my $id1 = shift $stackref;
 			my $tmp;
 			if(not defined $id_tableref->{$id1}->{id_address} and not defined $id_tableref->{$id2}->{id_address}){ #是常量的情况,则直接计算
 				$id_tableref->{$id1}->{id_value} = $id_tableref->{$id1}->{id_value} % $id_tableref->{$id1}->{id_value};
@@ -168,9 +200,17 @@ sub trans{
 			else{
 				$tmp = "#tmp$j";
 				$j++;
-				$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id1}->{id_type};
+				if(not defined $id_tableref->{$id2}->{id_address}){
+					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id1}->{id_type};
+					code("% $id_tableref->{$id2}->{id_value} $id1 $tmp");
+				}elsif(not defined $id_tableref->{$id1}->{id_address}){
+					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
+					code("% $id1 $id_tableref->{$id1}->{id_value} $tmp");
+				}else{
+					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
+					code("% $id1 $id2 $tmp");
+				}
 				$id_tableref->{$tmp}->{id_address} = "-1";
-				code("% $id2 $id1 $tmp");
 			}
 			unshift @$stackref,$tmp;
 		}elsif($num eq '3'){
@@ -183,7 +223,7 @@ sub trans{
 			print "value:$value\n";
 			if(not defined $id_tableref->{$id}->{id_address}){ #是常量的情况
 				$id_tableref->{$id}->{id_address} = -1;
-				$id_tableref->{$value}->{id_value} = $id_tableref->{$id}->{id_value};
+				code("= $id_tableref->{$id}->{id_value} : $value");
 			}else{
 				code("= $id : $value");
 			}
@@ -194,7 +234,7 @@ sub trans{
 			print "id:$id arrayel:$arrayel\n";
 			if(not defined $id_tableref->{$id}->{id_address}){ #是常量的情况
 				$id_tableref->{$id}->{id_address} = -1;
-				$id_tableref->{$arrayel}->{id_value} = $id_tableref->{$id}->{id_value};
+				code("= $id_tableref->{$id}->{id_value} : $arrayel");
 			}else{
 				code("= $id : $arrayel");
 			}
@@ -239,38 +279,85 @@ sub trans{
 	}elsif($right eq "boexp"){
 		if($num eq '0'){
 			unshift @$stackref,"and";
-		}elsif($num eq '1'){
+		}elsif($num eq '2'){
 			unshift @$stackref,"single";
+		}elsif($num eq '1'){
+			unshift @$stackref,"or";
 		}
 	}elsif($right eq "IM"){
 		$flag = 0;
 		$step = 0;
 	}elsif($right eq "IME"){
+		$flag = '-1';
+		if($num eq '0'){
+			my $type = shift @$stackref;
+			print "type:$type\n";
+			if($type eq "single"){
+				singlehandle($stackref);
+				$step = $step + 1;
+				code("goto : : +$step");
+				printfifstack($stackref);
+			}elsif($type eq "and"){
+				$step = $step + 1;
+				andhandle($stackref);
+			}elsif($type eq 'or'){
+				orhandle($stackref);
+				$step = $step + 1;
+				code("goto : : +$step");
+				printfifstack($stackref);
+			}
+		}elsif($num eq '1'){
+			$step = $step + 1;
+			code("goto : : +$step");
+			printfifstack($stackref);
+		}
+		$step = 0;
+	}elsif($right eq 'EM'){
 		$flag = -1;
 		my $type = shift @$stackref;
 		print "type:$type\n";
 		if($type eq "single"){
-			my $id2 = shift @$stackref;
-			my $compare = shift @$stackref;
-			my $id1 = shift @$stackref;
-			code("j$compare $id1 $id2 +2");
+			singlehandle($stackref);
+			$step = $step + 2;
 			code("goto : : +$step");
-			print "$_\n" for @ifstack;
+			printfifstack($stackref);
+			code("goto : : -$step");
 		}elsif($type eq "and"){
-			my $id22 = shift @$stackref;
-			my $compare2 = shift @$stackref;
-			my $id21 = shift @$stackref;
-			my $id12 = shift @$stackref;
-			my $compare1 = shift @$stackref;
-			my $id11 = shift @$stackref;
-			code("j$compare1 $id11 $id12 +2");
-			my $tmp = $j + 2;
-			code("goto : : +$tmp");
-			code("j$compare2 $id21 $id22 +2");
+			$step = $step + 2;
+			andhandle($stackref);
+		}elsif($type eq 'or'){
+			orhandle($stackref);
+			$step = $step + 2;
 			code("goto : : +$step");
-			print "$_\n" for @ifstack;
+			printfifstack($stackref);
 		}
-		$step = -1;
+		$step = 0;
+	}elsif($right eq 'WE'){
+		$flag = -1;
+		my $type = shift @$stackref;
+		print "type:$type\n";
+		if($type eq "single"){
+			singlehandle($stackref);
+			$step = $step + 1;
+			code("goto : : +$step");
+			printfifstack($stackref);
+			$step = $step + 1;
+			code("goto : : -$step");
+		}elsif($type eq "and"){
+			$step = $step + 2;
+			andhandle($stackref);
+			$step = $step + 3;
+			code("goto : : -$step");
+		}elsif($type eq 'or'){
+			orhandle($stackref);
+			$step = $step + 2;
+			code("goto : : +$step");
+			printfifstack($stackref);
+			$step = $step + 2;
+			code("goto : : -$step");
+		}
+		$step = 0;
+	}elsif($right eq ''){
 	}
 	return $offset;
 }
@@ -280,10 +367,76 @@ sub error{
 }
 
 sub code{
-	if($step == -1){
+	if($flag == -1){
 		print CODE "@_\n";
+		if(@_ eq 'end'){
+			close CODE;
+		}
 	}else{
 		push @ifstack,@_;
 		$step++;
+	}
+}
+
+sub printfifstack{
+	while(@ifstack){
+		my $a = shift @ifstack;
+		print CODE "$a\n";
+	}
+}
+
+sub singlehandle{
+	my $stackref = shift;
+	my $id2 = shift @$stackref;
+	my $compare = shift @$stackref;
+	my $id1 = shift @$stackref;
+	if(not defined $id_tableref->{$id2}->{id_address}){
+		code("j$compare $id1 $id_tableref->{$id2}->{id_value} +2");
+	}else{
+		code("j$compare $id1 $id2 +2");
+	}
+}
+
+sub andhandle{
+	my $stackref = shift;
+	my $id22 = shift @$stackref;
+	my $compare2 = shift @$stackref;
+	my $id21 = shift @$stackref;
+	my $id12 = shift @$stackref;
+	my $compare1 = shift @$stackref;
+	my $id11 = shift @$stackref;
+	if(not defined $id_tableref->{$id12}->{id_address}){
+		code("j$compare2 $id11 $id_tableref->{$id12}->{id_value} +2");
+	}else{
+		code("j$compare2 $id11 $id12 +2");
+	}
+	my $tmp = $step + 2;
+	code("goto : : +$tmp");
+	if(not defined $id_tableref->{$id22}->{id_address}){
+		code("j$compare1 $id11 $id_tableref->{$id22}->{id_value} +2");
+	}else{
+		code("j$compare1 $id11 $id22 +2");
+	}
+	code("goto : : +$step");
+	printfifstack();
+}
+
+sub orhandle{
+	my $stackref = shift;
+	my $id22 = shift @$stackref;
+	my $compare2 = shift @$stackref;
+	my $id21 = shift @$stackref;
+	my $id12 = shift @$stackref;
+	my $compare1 = shift @$stackref;
+	my $id11 = shift @$stackref;
+	if(not defined $id_tableref->{$id12}->{id_address}){
+		code("j$compare1 $id11 $id_tableref->{$id12}->{id_value} +2");
+	}else{
+		code("j$compare1 $id11 $id12 +2");
+	}
+	if(not defined $id_tableref->{$id22}->{id_address}){
+		code("j$compare2 $id11 $id_tableref->{$id22}->{id_value} +2");
+	}else{
+		code("j$compare2 $id21 $id22 +2");
 	}
 }

@@ -1,16 +1,21 @@
 #! /usr/bin/perl
 use strict;
 use warnings;
+use Key;
+use Scan(qw /handle/);
+use Semantic(qw /trans/);
 
 my @terArray;
 my @ntArray;
-my %production;
 my %first;
 my @goto1;
 my @C;
 my @action;
 my @goto;
 my @stack;
+my @valstack;
+my $productionref = \%Key::production;
+my $offset = -1;
 
 #read terminator and not terminator
 sub openT{
@@ -41,16 +46,14 @@ sub openS{
 			my $left = $1;
 			my @rights; 
 			my $right = $2;
-			$production{$left} = \@rights;
-			#$left =~ s/ $//g;
+			$left =~ s/^ | $//g;
+			$productionref->{$left} = \@rights;
 			foreach (split('\|',$right)){
 				my $sright = $_;
 				#$sright =~ s/<|>/ /g;
-				#$sright =~ s/( )+/ /g;
-				$sright =~ s/ $//g;
+				$sright =~ s/( )+/ /g;
+				$sright =~ s/^ | $//g;
 				push @rights, $sright;
-				#my @rights = split(' ',$sright);
-				#print $_."\n" for @rights;
 			}
 			#print "$left=>@{$production{$left}}\n";
 		}
@@ -72,7 +75,7 @@ sub isTer{
 #某个非终结符是否可以产生空
 sub canEmp{
 	my $x = shift;
-	my $p = $production{$x};
+	my $p = $productionref->{$x};
 	foreach(@$p){
 		if($_ eq 'eee'){
 			return 1;
@@ -91,7 +94,7 @@ sub find_first{
 		push @firstarray,$x;
 	}
 	elsif($type == 2){	#非终结符
-		my $productions = $production{$x};	#产生式序列数组的引用
+		my $productions = $productionref->{$x};	#产生式序列数组的引用
 		#print "in find_first:$x\n";
 		if(defined @$productions){
 			for(my $j = 0; $j <= $#{$productions}; $j++){
@@ -150,54 +153,64 @@ sub closure{
 	my $anum;
 	my $end;
 	my $pro;
-	my $flag;
 	my @keys = keys %$I;	#每个项目集是一个哈希表,键为其在项目的特殊编号
-	foreach my $item (@keys){
+	#print "===============\n";
+	for(my $m = 0; $m <= $#keys;$m++){
+		my $item = $keys[$m];
 		($left,$right,$anum) = split(/ /,$item);
-		#print $_ for split(/ /,$item);
-		#print "\n";
+		#print "$item\n";
 		$end = $$I{$item};
-		$pro = $production{$left}->[$right];
+		#print "The end is:@{$end}\n";
+		$pro = $productionref->{$left}->[$right];
 		my @rights = split(' ',$pro);
-		if($anum eq ($#rights+1)){		#如果是到达产生式的结尾,则跳过
-			next;
+		next if not defined $rights[$anum];
+		my $after = $rights[$anum];
+		next if isTer($after) == 1;	#如果后面的是终结符，则停止
+		my @array;
+		#但下下一个不为空
+		my $tmp = 2;
+		my $j;
+		#将first集压入
+		for($j = $anum + 1;$j <= $#rights;$j++){
+			my $aafter = $rights[$j];
+			for(my $k = 1; $k <= $#{$first{$aafter}}; $k++){	
+				push @array,$first{$aafter}->[$k];
+			}
+			#如果aafter没有空的产生式，则停止
+			if($first{$aafter}->[0] eq '0'){
+				$tmp = 0;
+				last;
+			}
 		}
-		$flag = 1;
-		for(my $i = $anum;$i <= $#rights and $flag;$i++){	#对于点号后面的每个
-			my $aafter = $rights[$i + 1];
-			my $after = $rights[$i];
-			#print "after:$after and @rights and $i\n" if $aafter and not defined $first{$aafter}->[0];
-			$flag = 0 if((not defined $aafter) or ($first{$aafter}->[0] eq '0'));	#下下一个没有空的产生式，所以不再进行下一次循环
-			for(my $j = 0; $j <= $#{$production{$after}};$j++){	#对于每一个符号的每一个产生式
-				my $key = "$after $j 0";
-				#print "$key\n";
-				my @ends;
-				if(not defined $I->{$key}){
-					$I->{$key} = \@ends if not defined $I->{$key};	#假如还没有该项目，则生成
-					push @keys,$key;
-				}
-				if(not defined $aafter){	#假如后面没有了
-					for(my $j = 0 ; $j <= $#{$end};$j++){
-						if(notIn($end->[$j],$I->{$key})){
-							push  @{$I->{$key}},$end->[$j];
-						}
-					}
-					#print "here is next\n";
-					next;
-				}
-				#print "aafter:$aafter\n";
-				for(my $k = 1; $k <= $#{$first{$aafter}}; $k++){	#将first集压入
-					if(notIn($first{$aafter}->[$k],$I->{$key})){	#如果不在的话加入其中
-						push @{$I->{$key}},$first{$aafter}->[$k];
-					}
+		#到了最末尾,则把end集加入
+		if($tmp == 2){
+			#print "add end flag:$flag\n";
+			push @array,@$end;
+		}
+		for($j = 0; $j <= $#{$productionref->{$after}};$j++){	#对于每一个符号的每一个产生式
+			my $ntkey;
+			if($productionref->{$after}->[$j] eq 'eee'){ #空的
+				$ntkey = "$after $j 1";
+			}else{
+				$ntkey = "$after $j 0";
+			}
+			#print "$ntkey\n";
+			my @ntends;
+			#print "noterm:$ntkey and production:$production{$after}->[$j]\n";
+			#print "array:@{$I->{$ntkey}}\n" if defined $I->{$ntkey};
+			if(not defined $I->{$ntkey}){
+				$I->{$ntkey} = \@ntends;	#假如还没有该项目，则生成
+				my $length = $#keys;
+				$keys[$length+1] = $ntkey;
+				#print "notterm:i am pushing now $ntkey\n";
+			}
+			for(my $k = 0; $k <= $#array; $k++){	
+				if(notIn($array[$k],$I->{$ntkey})){
+					#print "no-term:$array[$k] add\n";
+					push @{$I->{$ntkey}},$array[$k];
 				}
 			}
 		}
-	}
-	foreach my $name(sort keys %$I){
-		print "$name:";
-		print "@{$I->{$name}}";
-		print "\n";
 	}
 }
 
@@ -206,13 +219,14 @@ sub my_goto{
 	my $x = shift;
 	my %j;
 	foreach my $item (sort keys %$i){
+		#print "$item>>goto>>$x\n";
 		my ($left,$right,$anum) = split(/ /,$item);	#获得编号信息
-		my @pro = split(' ',$production{$left}->[$right]);
-		next if (not defined $pro[$anum] or $pro[$anum] ne $x);	#假如后面不是的话就不goto了
-		#print "i am in\n";
+		my @pro = split(' ',$productionref->{$left}->[$right]);
+		next if(not defined $pro[$anum] or $pro[$anum] ne $x);	#假如已经到末尾了或者末尾不等
 		my $num = $i->{$item};		#如果是，则就创建
 		$anum = $anum + 1;
 		my $key = "$left $right $anum";
+		#print "$key:i am in\n";
 		my @array;
 		for(my $j = 0 ; $j <= $#{$num};$j++){
 			push  @array,$num->[$j];
@@ -256,26 +270,26 @@ sub isInC{
 #求项目集
 sub items{
 	my $b = $ntArray[0];	#第一个产生式的右部
-	my $key = "$b "."0 0";
+	my $key = "$b 0 0";
 	my %s;
 	$s{$key} = ['$'];
 	closure(\%s);
 	$C[0] = \%s;
 	for(my $i = 0; $i <= $#C;$i++){
-		foreach(@ntArray){
-			print "goto:$_\n";
-			my $j = my_goto($C[$i],$_);
+		for(my $n = 1; $n <= $#ntArray;$n++){
+			#print "goto:$_\n";
+			my $j = my_goto($C[$i],$ntArray[$n]);
 			if($j){
 				if(my $k = isInC($j)){		#是否转向其他的已有
-					$goto1[$i]->{$_} = $k;
+					$goto1[$i]->{$ntArray[$n]} = $k;
 				}else{
 					push @C,$j;
-					$goto1[$i]->{$_} = $#C;
+					$goto1[$i]->{$ntArray[$n]} = $#C;
 				}
 			}
 		}
 		foreach(@terArray){
-			print "goto:$_\n";
+			#print "goto:$_\n";
 			my $j = my_goto($C[$i],$_);
 			if($j){
 				if(my $k = isInC($j)){		#是否转向其他的已有
@@ -296,7 +310,7 @@ sub createTable{
 		my $I = $C[$i];
 		foreach my $item(keys $I){
 			my ($left,$right,$anum) = split(/ /,$item);
-			my $pro = $production{$left}->[$right];
+			my $pro = $productionref->{$left}->[$right];
 			my $after = (split(" ",$pro))[$anum];
 			#print "after:$after\n" if $after;
 			if(not defined $after){		
@@ -316,7 +330,82 @@ sub createTable{
 		}
 	}
 }
+#总控程序
+sub control{
+	$stack[0] = '0';
+	open IN,"<","token" or die "Could not open:$!";
+	my $s;
+	my @array;
+	my @value;
+	$value[0] = '0';
+	my @line;
+	while(<IN>){
+		chomp;
+		my @a = split(" ",$_);
+		push @array, @a[0,1];
+		push @line,$a[2];
+	}
+	close IN;
+	print "control write to control.txt\n";
+	open CONTROL,">","control.txt";
+	select CONTROL;
+	print "@array\n";
+	my $i = 0;
+	my $j = 0;
+	my $a;
+	while(@array){
+		$a = $array[$i];
+		$s= $stack[$#stack];
+		print "$a:$s\n";
+		print $action[$s]->{$a} // 'undef';
+		print "\n";
+		last if not defined $action[$s]->{$a};
+		my @next = split(" ",$action[$s]->{$a});
+		#last if not defined @next;
+		if($next[0] eq '+'){			#移进
+			print "move in:$a $next[1]\n";
+			push @stack,$a;
+			push @value,$array[$i+1];
+			push @stack,$next[1];
+			$i = $i + 2;
+			$j = $j + 1;
+		}elsif($next[0] eq '-'){		#规约
+			print "guiyue\n";
+			my $pro = $productionref->{$next[1]}->[$next[2]];	#产生式
+			$offset = trans($next[1],$next[2],$offset,\@valstack,\@value,$line[$j]);
+			print "offset:$offset\n";
+			last if($offset == -1);
+			if($pro ne 'eee'){
+				my $num = split(' ',$pro);
+				print "stack now:@stack..$num\n";
+				for(my $j = 0; $j < $num*2;$j++){
+					pop @stack;
+					pop @value if $j % 2 == 0;
+				}
+			}
+			my $p1 = $stack[$#stack];
+			my $s1 = $goto1[$p1]->{$next[1]};
+			print "$p1:$next[1]:$s1:$pro\n";
+			push @stack,$next[1];
+			push @value,"#";
+			push @stack,$s1;
+		}elsif($next[0] eq "acc"){
+			select STDOUT;
+			close CONTROL;
+			return 1;
+		}else{
+			last;
+		}
+		print "stack now:@stack\n================\n";
+	}
+	#print "stack:@stack\n";
+	select STDOUT;
+	close CONTROL;
+	print "wrong in line $line[$j]\n";
+	return 0;
+}
 
+Scan::handle();
 openT();	#打开终结符表
 openNT();	#打开非终结符表
 openS();	#打开语法定义表
@@ -325,37 +414,57 @@ my @left = @terArray;
 #print "====ter----\n";
 #print "$_\n" for @terArray;
 push @left, @ntArray;
+my $a = @left;
+#print "the number of t and nt:$a\n";
 #求first集 
 foreach(@left){
-	print "first:$_\n";
+	#print "first:$_\n";
 	find_first($_) if not defined $first{$_};
 }
 
+open FIRST,">","first.txt";
+select FIRST;
 foreach(@left){
 	my $lfirst = $first{$_};
 	print "first of $_:@$lfirst\n";
 }
+select STDOUT;
+close FIRST;
 #求items
+print "i am finding items\n";
 items();
-#print "===The clouse is:===\n";
-#for(my $i = 0; $i <= $#C;$i++){
-#	print "$i\n";
-#	foreach my $name(sort keys %{$C[$i]}){
-#		print "$name:";
-#		print "@{$C[$i]->{$name}}";
-#		print "\n";
-#	}
-#	print "===\n";
-#}
-print "===goto===\n";
+open CLOUSE,">","clouse.txt";
+select CLOUSE;
+print "===The clouse is:===\n";
+for(my $i = 0; $i <= $#C;$i++){
+	print "$i\n";
+	foreach my $name(sort keys %{$C[$i]}){
+		print "$name:";
+		print "@{$C[$i]->{$name}}";
+		print "\n";
+	}
+	print "===\n";
+}
+select STDOUT;
+close CLOUSE;
+print "closure write to clouse.txt\n";
+open GOTO,">","goto.txt";
+select GOTO;
+print "===here is goto===\n";
 for(my $j = 0;$j <= $#goto1;$j++){
 	my $go = $goto1[$j];
 	foreach(sort keys %$go){
 		print "$j:$_:$go->{$_}\n";
 	}
 }
+select STDOUT;
+close GOTO;
+print "goto write to goto.txt\n";
 #构造action表
+print "i am creating action table now\n";
 createTable();
+open ACTION,">","action.txt";
+select ACTION;
 print "=====action====\n";
 for(my $j = 0;$j <= $#action;$j++){
 	my $actioni = $action[$j];
@@ -363,41 +472,11 @@ for(my $j = 0;$j <= $#action;$j++){
 		print "$j:$_:$actioni->{$_}\n";
 	}
 }
-#control();
-
-#总控程序
-sub control{
-	$stack[0] = '0';
-	open IN,"<","token1" or die "Could not open:$!";
-	my $s;
-	while(<IN>){
-		chomp(my $a = $_);
-		$s= $stack[$#stack];
-		print "$a:$s\n";
-		print $action[$s]->{$a} // 'undef';
-		print "\n";
-		my @next = split(" ",$action[$s]->{$a});
-		if($next[0] eq '+'){			#移进
-			print "move in\n";
-			push @stack,$a;
-			push @stack,$next[1];
-		}elsif($next[0] eq '-'){		#规约
-			print "guiyue\n";
-			my $pro = $production{$next[1]}->[$next[2]];	#产生式
-			my $num = split(' ',$pro);
-			for(my $i = 0; $i < $num*2;$i++){
-				pop @stack;
-			}
-			my $p1 = $stack[$#stack];
-			my $s1 = $goto1[$p1]->{$next[1]};
-			push @stack,$p1;
-			push @stack,$s1;
-			print "$next[1]::$pro end\n";
-		}elsif($next[0] eq "acc"){
-			return 1;
-		}else{
-			return 0;
-			#error2();
-		}
-	}
-}
+select STDOUT;
+close ACTION;
+print "action write to action.txt\n";
+print "now, i am scanning\n";
+my $i = control();
+print "succed\n" if $i == 1;
+print "failed\n" if $i == 0;
+print_id_table();

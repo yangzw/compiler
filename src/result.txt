@@ -1,8 +1,0 @@
-i am finding items
-closure write to clouse.txt
-goto write to goto.txt
-i am creating action table now
-action write to action.txt
-now, i am scanning
-control write to control.txt
-succed

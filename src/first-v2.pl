@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use Key;
 use Scan(qw /handle/);
-use Semantic(qw /trans/);
+use Semanticv2(qw /trans/);
 
 my @terArray;
 my @ntArray;
@@ -19,7 +19,7 @@ my $offset = -1;
 
 #read terminator and not terminator
 sub openT{
-	open INTER,"<","T.txt0" or die "Could not open file";
+	open INTER,"<","T.txt1" or die "Could not open file";
 	while(<INTER>){
 		chomp;
 		push @terArray, $_;
@@ -27,7 +27,7 @@ sub openT{
 	close INTER;
 }
 sub openNT{
-	open INNTER,"<","NT.txt0" or die "Could not open file";
+	open INNTER,"<","NT.txt1" or die "Could not open file";
 	while(<INNTER>){
 		chomp;
 		push @ntArray, $_;
@@ -38,7 +38,7 @@ sub openNT{
 
 #save the syntax production
 sub openS{
-	open INSY,"<","Syntax.txt" or die "Could not open file";
+	open INSY,"<","Syntax.txt1" or die "Could not open file";
 	while(<INSY>){
 		chomp;
 		if(/^(.*)::(.*)/)

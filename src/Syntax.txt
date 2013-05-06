@@ -14,17 +14,17 @@ rstat::SCANF ( type , ID ) ;
 wrstat::PRINTF ( printcontent ) ;
 printcontent::printcontent , idlist|printcontent , con |con|idlist
 controlstat::ifstat|whilestat|dowhilestat|forstat 
-ifstat::IF ( boexp ) { block } ELSE { block }|IF ( boexp ) { block } elseifblock ELSE { block }|IF ( boexp ) IM { block IME }
-IM::eee
-IME::eee
-elseifblock::ELSEIF ( boexp ) { block }|elseifblock ELSEIF ( boexp ) { block }
-whilestat::WHILE ( boexp ) { block }
+ifstat::IF ( boexp ) { block } IME
+IME::eee|EM ELSE { block }
+EM::eee
+whilestat::WHILE ( BE boexp ) { block } WE
+WE::eee
 dowhilestat::DO { block } WHILE ( boexp )
 forstat::FOR ( asstat ; boexp ; asstat ) { block }
 calexp::calexp + item|calexp - item|calexp % item|item
 item::item * factory|item / factory|factory 
 factory::ID|INTCON|DOUBLECON|- factory|( calexp )
-boexp::regexp && regexp| regexp
+boexp::regexp && regexp|regexp OR regexp|regexp
 regexp::calexp compare calexp
 compare::LE|GE|L|G|EQ|NE
 con::INTCON|BOOLCON|digit|DOUBLECON|' CHARCON '|" STRINGCON "

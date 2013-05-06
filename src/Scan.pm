@@ -130,7 +130,6 @@ sub handle_id{
 	$keyref->{$id} = {
 		id_address => undef,
 		id_type => undef,
-		id_defined => undef,
 		id_beg => undef,
 		id_end => undef,
 		id_value => undef,
