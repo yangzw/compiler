@@ -4,6 +4,7 @@ use warnings;
 use Key;
 use Scan(qw /handle/);
 use Semanticv2(qw /trans/);
+use Code(qw /handlecode/);
 
 my @terArray;
 my @ntArray;
@@ -479,4 +480,9 @@ print "now, i am scanning\n";
 my $i = control();
 print "succed\n" if $i == 1;
 print "failed\n" if $i == 0;
-print_id_table();
+#print_id_table();
+print "code write to hui.s\n";
+open HUI,">","hui.s";
+select HUI;
+handlecode();
+select STDOUT;

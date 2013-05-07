@@ -1,50 +1,53 @@
-1:= 0 : a
-2:++ a : a
-3:* 2 a #tmp2
-4:- a #tmp2 #tmp3
-5:+ 15 #tmp3 #tmp6
-6:= #tmp6 : kk
-7:= -3.1 : __Des
-8:scan : : d
-9:= 2 : kd
-10:= 6.9 : jed
-11:j> a kd 13
-12:goto : : 15
-13:j< a 1 17
-14:goto : : 15
-15:j> kd 4 17
-16:goto : : 25
-17:= kd : a
-18:j< a 3 20
-19:goto : : 21
-20:= 3 : a
-21:j< a 4 23
-22:goto : : 25
-23:++ a : a
-24:goto : : 21
-25:++ a : a
-26:j> a kd 30
-27:goto : : 28
-28:j> kd 3 30
-29:goto : : 33
-30:++ a : a
-31:++ kd : kd
-32:goto : : 39
-33:-- a : a
-34:-- kd : kd
-35:j< a 10 37
-36:goto : : 39
-37:++ a : a
-38:goto : : 35
-39:= 0 : i
-40:j< i a 42
-41:goto : : 45
-42:++ i : i
-43:print i : :
-44:goto : : 40
-45:= kd : a
-46:= i : kd
-47:j< a i 49
-48:goto : : 50
-49:goto : : 46
-50:end
+1 = 0 : a
+2 ++ a : a
+3 2* a 2 #tmp2
+4 0- a #tmp2 #tmp2
+5 2* a 5 #tmp4
+6 0+ #tmp2 #tmp4 #tmp2
+7 #= #tmp2 : kk
+8 = -3.1 : __Des
+9 scan : : d
+10 = 2 : kd
+11 = 6.9 : jed
+12 #j:> a kd 14
+13 goto : : 16
+14 j:< a 1 18
+15 goto : : 16
+16 j:> kd 4 18
+17 goto : : 28
+18 #= kd : a
+19 j:< a 3 21
+20 goto : : 23
+21 = 3 : a
+22 goto : : 24
+23 = 5 : a
+24 j:< a 4 26
+25 goto : : 28
+26 ++ a : a
+27 goto : : 24
+28 ++ a : a
+29 #j:> a kd 33
+30 goto : : 31
+31 j:> kd 3 33
+32 goto : : 36
+33 ++ a : a
+34 ++ kd : kd
+35 goto : : 42
+36 -- a : a
+37 -- kd : kd
+38 j:< a 10 40
+39 goto : : 42
+40 ++ a : a
+41 goto : : 38
+42 = 0 : i
+43 #j:< i a 45
+44 goto : : 48
+45 ++ i : i
+46 print : : i
+47 goto : : 43
+48 #= kd : a
+49 #= i : kd
+50 #j:< a i 52
+51 goto : : 53
+52 goto : : 49
+53 end

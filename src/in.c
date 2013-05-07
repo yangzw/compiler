@@ -9,7 +9,7 @@ int main()
 	/*a = kk;*/
 	a = 0;
 	a++;
-	kk = a - a * 2 + 3*5;
+	kk = a - a * 2 + a*5;
 	double __Des;
 	/*double 4des;*/
 	__Des = -3.1;
@@ -26,6 +26,9 @@ int main()
 		a = kd;
 		if(a < 3){
 			a = 3;
+		}
+		else{
+			a = 5;
 		}
 		while(a < 4){
 			a++;

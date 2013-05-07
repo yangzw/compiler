@@ -1,4 +1,4 @@
-INT int MAIN main ( ( ) ) { { INT int ID a , , ID kk ; ; CHAR char ID d ; ; ID a = = INTCON 0 ; ; ID a ++ ++ ; ; ID kk = = ID a - - ID a * * INTCON 2 + + INTCON 3 * * INTCON 5 ; ; DOUBLE double ID __Des ; ; ID __Des = = - - DOUBLECON 3.1 ; ; INT int ID kd ; ; SCANF scanf ( ( ID d ) ) ; ; ID kd = = INTCON 2 ; ; INT int ID jed ; ; ID jed = = DOUBLECON 2.3 * * ( ( INTCON 1 + + INTCON 2 ) ) ; ; INT int ID i ; ; IF if ( ( ID a G > ID kd && && ID a L < INTCON 1 OR || ID kd G > INTCON 4 ) ) { { ID a = = ID kd ; ; IF if ( ( ID a L < INTCON 3 ) ) { { ID a = = INTCON 3 ; ; } } WHILE while ( ( ID a L < INTCON 4 ) ) { { ID a ++ ++ ; ; } } } } ID a ++ ++ ; ; IF if ( ( ID a G > ID kd OR || ID kd G > INTCON 3 ) ) { { ID a ++ ++ ; ; ID kd ++ ++ ; ; } } ELSE else { { ID a -- -- ; ; ID kd -- -- ; ; WHILE while ( ( ID a L < INTCON 10 ) ) { { ID a ++ ++ ; ; } } } } FOR for ( ( ID i = = INTCON 0 ; ; ID i L < ID a ; ; ID i ++ ++ ) ) { { PRINTF printf ( ( ID i ) ) ; ; } } ID a = = ID kd ; ; DO do { { ID kd = = ID i ; ; } } WHILE while ( ( ID a L < ID i ) ) ; ; RETURN return INTCON 2 ; ; } } $ 0
+INT int MAIN main ( ( ) ) { { INT int ID a , , ID kk ; ; CHAR char ID d ; ; ID a = = INTCON 0 ; ; ID a ++ ++ ; ; ID kk = = ID a - - ID a * * INTCON 2 + + ID a * * INTCON 5 ; ; DOUBLE double ID __Des ; ; ID __Des = = - - DOUBLECON 3.1 ; ; INT int ID kd ; ; SCANF scanf ( ( ID d ) ) ; ; ID kd = = INTCON 2 ; ; INT int ID jed ; ; ID jed = = DOUBLECON 2.3 * * ( ( INTCON 1 + + INTCON 2 ) ) ; ; INT int ID i ; ; IF if ( ( ID a G > ID kd && && ID a L < INTCON 1 OR || ID kd G > INTCON 4 ) ) { { ID a = = ID kd ; ; IF if ( ( ID a L < INTCON 3 ) ) { { ID a = = INTCON 3 ; ; } } ELSE else { { ID a = = INTCON 5 ; ; } } WHILE while ( ( ID a L < INTCON 4 ) ) { { ID a ++ ++ ; ; } } } } ID a ++ ++ ; ; IF if ( ( ID a G > ID kd OR || ID kd G > INTCON 3 ) ) { { ID a ++ ++ ; ; ID kd ++ ++ ; ; } } ELSE else { { ID a -- -- ; ; ID kd -- -- ; ; WHILE while ( ( ID a L < INTCON 10 ) ) { { ID a ++ ++ ; ; } } } } FOR for ( ( ID i = = INTCON 0 ; ; ID i L < ID a ; ; ID i ++ ++ ) ) { { PRINTF printf ( ( ID i ) ) ; ; } } ID a = = ID kd ; ; DO do { { ID kd = = ID i ; ; } } WHILE while ( ( ID a L < ID i ) ) ; ; RETURN return INTCON 2 ; ; } } $ 0
 INT:0
 - M 0
 guiyue
@@ -394,18 +394,18 @@ stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 27 =
 move in:+ 78
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 27 = 46 calexp 69 + 78
 ================
-INTCON:78
-+ 63
-move in:INTCON 63
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 27 = 46 calexp 69 + 78 INTCON 63
+ID:78
++ 61
+move in:ID 61
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 27 = 46 calexp 69 + 78 ID 61
 ================
-*:63
-- factory 1
+*:61
+- factory 0
 guiyue
-value:3
+name:a
 offset:9
-stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 27 = 46 calexp 69 + 78 INTCON 63..1
-78:factory:59:INTCON
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 27 = 46 calexp 69 + 78 ID 61..1
+78:factory:59:ID
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 ID 27 = 46 calexp 69 + 78 factory 59
 ================
 *:59
@@ -577,7 +577,7 @@ stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
 ;:91
 - factory 3
 guiyue
-id:#tmp7
+id:#tmp5
 offset:17
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 ID 27 = 46 - 62 factory 91..2
 46:factory:59:- factory
@@ -1720,11 +1720,119 @@ stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9
 move in:} 386
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386
 ================
-WHILE:386
-- IME 0
+ELSE:386
+- IMEE 0
 guiyue
 offset:29
-386:IME:402:eee
+386:IMEE:403:eee
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403
+================
+ELSE:403
++ 417
+move in:ELSE 417
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417
+================
+{:417
++ 427
+move in:{ 427
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427
+================
+ID:427
++ 27
+move in:ID 27
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 ID 27
+================
+=:27
++ 46
+move in:= 46
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 ID 27 = 46
+================
+INTCON:46
++ 63
+move in:INTCON 63
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 ID 27 = 46 INTCON 63
+================
+;:63
+- factory 1
+guiyue
+value:5
+offset:29
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 ID 27 = 46 INTCON 63..1
+46:factory:59:INTCON
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 ID 27 = 46 factory 59
+================
+;:59
+- item 2
+guiyue
+offset:29
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 ID 27 = 46 factory 59..1
+46:item:58:factory
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 ID 27 = 46 item 58
+================
+;:58
+- calexp 3
+guiyue
+offset:29
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 ID 27 = 46 item 58..1
+46:calexp:69:item
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 ID 27 = 46 calexp 69
+================
+;:69
+- asstat 0
+guiyue
+value:a
+offset:29
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 ID 27 = 46 calexp 69..3
+427:asstat:116:ID = calexp
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 asstat 116
+================
+;:116
++ 181
+move in:; 181
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 asstat 116 ; 181
+================
+}:181
+- exestat 0
+guiyue
+offset:29
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 asstat 116 ; 181..2
+427:exestat:115:asstat ;
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 exestat 115
+================
+}:115
+- wstat 1
+guiyue
+offset:29
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 exestat 115..1
+427:wstat:111:exestat
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 wstat 111
+================
+}:111
+- block 1
+guiyue
+offset:29
+111:block:180:eee
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 wstat 111 block 180
+================
+}:180
+- block 0
+guiyue
+offset:29
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 wstat 111 block 180..2
+427:block:430:wstat block
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 block 430
+================
+}:430
++ 432
+move in:} 432
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 block 430 } 432
+================
+WHILE:432
+- IME 1
+guiyue
+offset:29
+stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IMEE 403 ELSE 417 { 427 block 430 } 432..5
+386:IME:402:IMEE ELSE { block }
 stack now:0 M 2 INT 3 MAIN 4 ( 5 ) 6 { 7 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 wstat 9 IF 31 ( 52 BE 73 boexp 101 ) 170 { 214 wstat 111 IF 128 ( 186 BE 229 boexp 267 ) 295 { 331 block 362 } 386 IME 402
 ================
 WHILE:402

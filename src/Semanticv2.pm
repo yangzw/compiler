@@ -80,8 +80,10 @@ sub trans{
 			}else{ #不是常量
 				$tmp = "#tmp$j";
 				$j++;
-				$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id}->{id_type};
-				$id_tableref->{$tmp}->{id_address} = "-1";
+				my $type = $id_tableref->{$id}->{id_type};
+				$id_tableref->{$tmp}->{id_type} = $type;
+				$id_tableref->{$tmp}->{id_address} = $offset;
+				$offset += $lengthref->{$type};
 				code("uminus $id : $tmp");
 			}
 			unshift @$stackref,$tmp;
@@ -89,129 +91,18 @@ sub trans{
 		}
 	}elsif($right eq 'item'){
 		if($num eq '0'){
-			my $id2 = shift $stackref;
-			my $id1 = shift $stackref;
-			my $tmp;
-			if(not defined $id_tableref->{$id1}->{id_address} and not defined $id_tableref->{$id2}->{id_address}){ #是常量的情况,则直接计算
-				$id_tableref->{$id1}->{id_value} = $id_tableref->{$id1}->{id_value} * $id_tableref->{$id2}->{id_value};
-				$tmp = $id1;
-			}
-			else{
-				$tmp = "#tmp$j";
-				$j++;
-				if(not defined $id_tableref->{$id2}->{id_address}){
-					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id1}->{id_type};
-					code("* $id_tableref->{$id2}->{id_value} $id1 $tmp");
-				}elsif(not defined $id_tableref->{$id1}->{id_address}){
-					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
-					code("* $id1 $id_tableref->{$id1}->{id_value} $tmp");
-				}else{
-					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
-					code("* $id1 $id2 $tmp");
-				}
-				$id_tableref->{$tmp}->{id_address} = "-1";
-			}
-			unshift @$stackref,$tmp;
+			$offset = calhandle($stackref,'*',$offset);
 		}elsif($num eq '1'){
-			my $id2 = shift $stackref;
-			my $id1 = shift $stackref;
-			my $tmp;
-			if(not defined $id_tableref->{$id1}->{id_address} and not defined $id_tableref->{$id2}->{id_address}){ #是常量的情况,则直接计算
-				$id_tableref->{$id1}->{id_value} = $id_tableref->{$id2}->{id_value} / $id_tableref->{$id1}->{id_value};
-				$tmp = $id1;
-			}
-			else{
-				$tmp = "#tmp$j";
-				$j++;
-				if(not defined $id_tableref->{$id2}->{id_address}){
-					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id1}->{id_type};
-					code("/ $id_tableref->{$id2}->{id_value} $id1 $tmp");
-				}elsif(not defined $id_tableref->{$id1}->{id_address}){
-					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
-					code("/ $id1 $id_tableref->{$id1}->{id_value} $tmp");
-				}else{
-					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
-					code("/ $id1 $id2 $tmp");
-				}
-				$id_tableref->{$tmp}->{id_address} = "-1";
-			}
-			unshift @$stackref,$tmp;
+			$offset = calhandle($stackref,'/',$offset);
 		}elsif($num eq '2'){
 		}
 	}elsif($right eq 'calexp'){
 		if($num eq '0'){
-			my $id2 = shift $stackref;
-			my $id1 = shift $stackref;
-			my $tmp;
-			if(not defined $id_tableref->{$id1}->{id_address} and not defined $id_tableref->{$id2}->{id_address}){ #是常量的情况,则直接计算
-				$id_tableref->{$id1}->{id_value} = $id_tableref->{$id1}->{id_value} + $id_tableref->{$id2}->{id_value};
-				$tmp = $id1;
-			}
-			else{
-				$tmp = "#tmp$j";
-				$j++;
-				if(not defined $id_tableref->{$id2}->{id_address}){
-					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id1}->{id_type};
-					code("+ $id_tableref->{$id2}->{id_value} $id1 $tmp");
-				}elsif(not defined $id_tableref->{$id1}->{id_address}){
-					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
-					code("+ $id1 $id_tableref->{$id1}->{id_value} $tmp");
-				}else{
-					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
-					code("+ $id1 $id2 $tmp");
-				}
-				$id_tableref->{$tmp}->{id_address} = "-1";
-			}
-			unshift @$stackref,$tmp;
+			$offset = calhandle($stackref,'+',$offset);
 		}elsif($num eq '1'){
-			my $id2 = shift $stackref;
-			my $id1 = shift $stackref;
-			my $tmp;
-			if(not defined $id_tableref->{$id1}->{id_address} and not defined $id_tableref->{$id2}->{id_address}){ #是常量的情况,则直接计算
-				$id_tableref->{$id1}->{id_value} = $id_tableref->{$id2}->{id_value} - $id_tableref->{$id1}->{id_value};
-				$tmp = $id1;
-			}
-			else{
-				$tmp = "#tmp$j";
-				$j++;
-				if(not defined $id_tableref->{$id2}->{id_address}){
-					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id1}->{id_type};
-					code("- $id_tableref->{$id2}->{id_value} $id1 $tmp");
-				}elsif(not defined $id_tableref->{$id1}->{id_address}){
-					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
-					code("- $id1 $id_tableref->{$id1}->{id_value} $tmp");
-				}else{
-					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
-					code("- $id1 $id2 $tmp");
-				}
-				$id_tableref->{$tmp}->{id_address} = "-1";
-			}
-			unshift @$stackref,$tmp;
+			$offset = calhandle($stackref,'-',$offset);
 		}elsif($num eq '2'){
-			my $id2 = shift $stackref;
-			my $id1 = shift $stackref;
-			my $tmp;
-			if(not defined $id_tableref->{$id1}->{id_address} and not defined $id_tableref->{$id2}->{id_address}){ #是常量的情况,则直接计算
-				$id_tableref->{$id1}->{id_value} = $id_tableref->{$id1}->{id_value} % $id_tableref->{$id1}->{id_value};
-				$tmp = $id1;
-			}
-			else{
-				$tmp = "#tmp$j";
-				$j++;
-				if(not defined $id_tableref->{$id2}->{id_address}){
-					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id1}->{id_type};
-					code("% $id_tableref->{$id2}->{id_value} $id1 $tmp");
-				}elsif(not defined $id_tableref->{$id1}->{id_address}){
-					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
-					code("% $id1 $id_tableref->{$id1}->{id_value} $tmp");
-				}else{
-					$id_tableref->{$tmp}->{id_type} = $id_tableref->{$id2}->{id_type};
-					code("% $id1 $id2 $tmp");
-				}
-				$id_tableref->{$tmp}->{id_address} = "-1";
-			}
-			unshift @$stackref,$tmp;
-		}elsif($num eq '3'){
+			$offset = calhandle($stackref,'%',$offset);
 		}
 	}elsif($right eq 'exp'){
 	}elsif($right eq 'asstat'){
@@ -223,7 +114,7 @@ sub trans{
 				$id_tableref->{$id}->{id_address} = -1;
 				code("= $id_tableref->{$id}->{id_value} : $value");
 			}else{
-				code("= $id : $value");
+				code("#= $id : $value");
 			}
 			$id_tableref->{$value}->{id_defined} = "yes";
 		}elsif($num eq '1'){
@@ -234,7 +125,7 @@ sub trans{
 				$id_tableref->{$id}->{id_address} = -1;
 				code("= $id_tableref->{$id}->{id_value} : $arrayel");
 			}else{
-				code("= $id : $arrayel");
+				code("#= $id : $arrayel");
 			}
 			$id_tableref->{$arrayel}->{id_defined} = "yes";
 		}elsif($num eq '2'){
@@ -278,9 +169,9 @@ sub trans{
 		my $compare2 = shift @$stackref;
 		my $id21 = shift @$stackref;
 		if(not defined $id_tableref->{$id22}->{id_address}){
-			code("j$compare2 $id21 $id_tableref->{$id22}->{id_value} -");
+			code("j:$compare2 $id21 $id_tableref->{$id22}->{id_value} -");
 		}else{
-			code("j$compare2 $id21 $id22 -");
+			code("#j:$compare2 $id21 $id22 -");
 		}
 		code("goto : : -");
 	}elsif($right eq 'BE'){
@@ -338,7 +229,7 @@ sub trans{
 		back($codecount,$while+1);
 	}elsif($right eq 'wrstat'){
 	     my	$value = $valueref->[$i-2];
-	     code("print $value : :");
+	     code("print : : $value");
      	}elsif($right eq 'rstat'){
 	     my	$value = $valueref->[$i-2];
 	     $id_tableref->{$value}->{id_defined} = 'yes';
@@ -356,7 +247,7 @@ sub error{
 sub code{
 	my $msg = shift;
 	$codecount++;
-	push @codearray,"$codecount:$msg";
+	push @codearray,"$codecount $msg";
 	if($msg eq 'end'){
 		print "i am printing code now\n";
 		open CODE,">","code.txt";
@@ -370,6 +261,59 @@ sub code{
 sub back{
 	my $num = shift;
 	my $backnum = shift;
-	my ($op,$a,$b,undef) = split(" ",$codearray[$num-1]);
-	$codearray[$num-1] = "$op $a $b $backnum";
+	my ($count,$op,$a,$b,undef) = split(" ",$codearray[$num-1]);
+	$codearray[$num-1] = "$count $op $a $b $backnum";
+}
+
+sub calhandle{
+	my $stackref = shift;
+	my $op = shift;
+	my $offset = shift;
+	my $id2 = shift $stackref;
+	my $id1 = shift $stackref;
+	my $tmp;
+	if(not defined $id_tableref->{$id1}->{id_address} and not defined $id_tableref->{$id2}->{id_address}){ #是常量的情况,则直接计算
+		if($op eq '*'){
+			$id_tableref->{$id1}->{id_value} = $id_tableref->{$id1}->{id_value} * $id_tableref->{$id2}->{id_value};
+		}elsif($op eq '+'){
+			$id_tableref->{$id1}->{id_value} = $id_tableref->{$id1}->{id_value} + $id_tableref->{$id2}->{id_value};
+		}elsif($op eq '-'){
+			$id_tableref->{$id1}->{id_value} = $id_tableref->{$id1}->{id_value} - $id_tableref->{$id2}->{id_value};
+		}elsif($op eq '/'){
+			$id_tableref->{$id1}->{id_value} = $id_tableref->{$id1}->{id_value} / $id_tableref->{$id2}->{id_value};
+		}elsif($op eq '%'){
+			$id_tableref->{$id1}->{id_value} = $id_tableref->{$id1}->{id_value} % $id_tableref->{$id2}->{id_value};
+		}
+		$tmp = $id1;
+	}
+	else{
+		if(not defined $id_tableref->{$id2}->{id_address}){
+			$tmp = "#tmp$j";
+			$j++;
+			my $type = $id_tableref->{$id1}->{id_type};
+			$id_tableref->{$tmp}->{id_type} = $type;
+			code("2$op $id1 $id_tableref->{$id2}->{id_value} $tmp");
+		}elsif(not defined $id_tableref->{$id1}->{id_address}){
+			$tmp = "#tmp$j";
+			$j++;
+			my $type = $id_tableref->{$id2}->{id_type};
+			$id_tableref->{$tmp}->{id_type} = $type;
+			code("1$op $id_tableref->{$id1}->{id_value} $id2 $tmp");
+		}else{
+			if($id_tableref->{$id1}->{id_address} eq '-1'){
+				$tmp = $id1;
+			}elsif($id_tableref->{$id2}->{id_address} eq '-1'){
+				$tmp = $id2;
+			}else{
+				$tmp = "#tmp$j";
+				$j++;
+			}
+			my $type = $id_tableref->{$id1}->{id_type};
+			$id_tableref->{$tmp}->{id_type} = $type;
+			code("0$op $id1 $id2 $tmp");
+		}
+		$id_tableref->{$tmp}->{id_address} = '-1';
+	}
+	unshift @$stackref,$tmp;
+	return $offset;
 }

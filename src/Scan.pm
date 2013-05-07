@@ -35,7 +35,7 @@ sub handle{
 	close IN;
 	close OUT;
 	print "=======================\n";
-	print_id_table();
+	#print_id_table();
 }
 
 sub scanner{
